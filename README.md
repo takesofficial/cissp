@@ -12,9 +12,10 @@ If you find this repository helpful, share it. If you notice errors or have impr
 - [CISSP Exam Overview](#cissp-exam-overview)
 - [Who Qualifies for CISSP](#who-qualifies-for-cissp)
 - [How to Think for This Exam](#how-to-think-for-this-exam)
+- [PPT and RGLE (Short Exam Version)](#ppt-and-rgle-short-exam-version)
 - [Core Mindset Rules](#core-mindset-rules)
 - [Exam Structure](#exam-structure)
-- [Test-Taking Process](#test-taking-process)
+- [Test Taking Process](#test-taking-process)
 - [Coverage and Study Strategy](#coverage-and-study-strategy)
 - [Memorization](#memorization)
 - [Resources](#resources)
@@ -22,18 +23,15 @@ If you find this repository helpful, share it. If you notice errors or have impr
 ## My study approach
 Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
 
-## PPT and RGLE
-### PPT — People > Process > Technology
-A simple rule for choosing answers:  Always think of **people first**, then **process**, and **technology last**.
-### RGLE — Role > Goal > Lifecycle > Eliminate
-A method for breaking down CISSP questions:
-- **Role** – Who am I in this scenario?
-- **Goal** – What outcome do I need?
-- **Lifecycle** – Where in the security cycle am I?
-- **Eliminate** – Remove answers that don’t fit.
+- Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
+- Train pacing against the real format: the CAT runs 100–150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
+- Run a weekly full block of 150 timed questions to build rhythm.
+- Build memory tricks for formulas and models in week 1–2. Add no new sources after week 3.
+- Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
+- Close each domain with the Destination CISSP Mind Map. Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
 
-Use a minimal resource set: OSG practice tests, WannaPractice, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks). Train pacing against the real format: the CAT runs 100–150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace. Run a weekly full block of 150 timed questions to build rhythm. Build memory tricks for formulas and models in week 1–2. Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest. Close each domain with the Destination CISSP Mind Map. Use Exam Cram only in the final week. Add no new sources after week 3. You’re ready once you can remove two answers instantly using PPT and RGLE, even on material you haven’t seen"
-
+> [!NOTE]
+> You're ready once you can remove two answers instantly using PPT and RGLE, even on material you haven't seen.
 
 ## Study Timeline Table
 | Start | Finish | Activity | Notes |
@@ -60,6 +58,18 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
 How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
 
+## PPT and RGLE (Short Exam Version)
+### PPT - People > Process > Technology
+1. **People first** - Safety, reporting, management, legal.
+2. **Process next** - Policies, assessments, documentation, governance.
+3. **Technology last** - Only if the question makes you the technician.
+
+### RGLE - Role > Goal > Lifecycle > Eliminate
+1. **Role** - Answer only what *your job* is allowed to do.
+2. **Goal** - What is the question trying to protect?
+3. **Lifecycle** - Stay in order (detect → contain → eradicate → recover).
+4. **Eliminate** - Remove tech answers unless you *are* the tech.
+
 ## Core mindset rules
 Drawn from Destination CISSP, Gwen Bettwy, Study Notes and Theory.
 These rules describe the mental lens you need during the CISSP exam. They define how you should think by default: like a manager who prioritizes people, risk reduction, and high-level business impact rather than technical detail.
@@ -84,7 +94,7 @@ These steps describe the method you use to solve each question. They explain the
 - **Select the preventive or governance aligned control first** - In CISSP logic, preventing problems (with policies, training, and leadership decisions) is usually more valuable than detecting or fixing them later.
 - **Use business language logic** - Choose the answer senior management would expect: something that reduces risk, protects the organization, and supports long-term goals.
 - **If everything looks right, choose the most comprehensive control** - Prefer the answer that solves the whole problem across the organization, not just a small slice of it.
-- **When lost, pick the answer that is "different"** - If the question is confusing, look at all the answer choices and find the one that doesn't match the pattern of the others. This “odd one out” trick helps you avoid being misled by answers that all look equally correct.
+- **When lost, pick the answer that is "different"** - If the question is confusing, look at all the answer choices and find the one that doesn't match the pattern of the others. This "odd one out" trick helps you avoid being misled by answers that all look equally correct.
 
 ## Coverage and study strategy
 CISSP isn't about memorizing facts. You have to actually understand how things work.  
