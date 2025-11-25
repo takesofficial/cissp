@@ -37,7 +37,7 @@ Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shif
 | Start | Finish | Activity | Notes |
 |--------|---------|----------|--------|
 | 01/11/25 | 03/11/25 | Bought ISC2 CISSP Study Guide 10th Edition | You've got to start somewhere |
-| 04/11/25 | 07/11/25 | Finished index labeling the book | Labeled each chapter and domain (could've been done in 1 evening) |
+| 04/11/25 | 07/11/25 | Finished index labeling the book | Labeled each chapter and domain |
 | 08/11/25 | 11/11/25 | Planning learning approach | Time estimates and study strategy |
 | 12/11/25 | 14/11/25 | Overall difficulty assessment | Source review and expectations |
 | 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week |
