@@ -20,7 +20,7 @@ If you find this repository helpful, share it. If you notice errors or have impr
 - [Memorization](#memorization)
 - [Resources](#resources)
 
-## My study approach
+## My Study Approach
 Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
 
 - Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
@@ -54,7 +54,7 @@ The CISSP exam has a huge amount of available study material: the Official Study
 ## Who qualifies for CISSP
 You need five years of paid, cumulative experience across two or more CISSP domains. A four-year degree or an ISC2-approved credential waives one year. If you lack the required experience, you can pass the exam and become an Associate of ISC2 until you meet the requirement.
 
-## How to think for this exam
+## How to Think for This Exam
 CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
 How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
 
@@ -70,7 +70,7 @@ How to Think Like a Manager reinforces this: managers choose options that reduce
 3. **Lifecycle** - Stay in order (detect → contain → eradicate → recover).
 4. **Eliminate** - Remove tech answers unless you *are* the tech.
 
-## Core mindset rules
+## Core Mindset Rules
 Drawn from Destination CISSP, Gwen Bettwy, Study Notes and Theory.
 These rules describe the mental lens you need during the CISSP exam. They define how you should think by default: like a manager who prioritizes people, risk reduction, and high-level business impact rather than technical detail.
 - **People first.** Keep humans safe before anything else. If an answer protects people, it wins.
@@ -81,12 +81,12 @@ These rules describe the mental lens you need during the CISSP exam. They define
 - **Pick the answer that covers the others.** Broadest impact wins. Choose the option that solves the whole problem, not just a small piece of it. Narrow, purely techical answers don't win.
 - **If stuck: which answer is not like the others.** When a question is confusing, don't focus on the question first. Look at the four answer choices and find the one that doesn't fit with the others.
 
-## Exam structure
+## Exam Structure
 The English exam is a 3 hour Computer Adaptive Test (CAT) with 100–150 questions.
 You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold.
 All eight domains contribute roughly 10–16 percent.
 
-## Test taking process
+## Test Taking Process
 These steps describe the method you use to solve each question. They explain the practical workflow: how to read, classify, eliminate, and choose answers using a structured manager-focused approach.
 - **Read the question before the answers** - First understand what the question is really asking. Figure out who you are supposed to be (manager, responder, auditor), which part of the security lifecycle you're in, and what the core problem is.
 - **Classify the question** - Decide whether the question is about confidentiality, integrity, availability, safety, governance, risk, or compliance. This tells you what type of answer will fit.
@@ -96,7 +96,7 @@ These steps describe the method you use to solve each question. They explain the
 - **If everything looks right, choose the most comprehensive control** - Prefer the answer that solves the whole problem across the organization, not just a small slice of it.
 - **When lost, pick the answer that is "different"** - If the question is confusing, look at all the answer choices and find the one that doesn't match the pattern of the others. This "odd one out" trick helps you avoid being misled by answers that all look equally correct.
 
-## Coverage and study strategy
+## Coverage and Study Strategy
 CISSP isn't about memorizing facts. You have to actually understand how things work.  
 Some topics are big ideas you must know, and others are details you're likely to be tested on.  
 The exam mixes topics together on purpose, so questions often pull pieces from different domains at the same time.
