@@ -1,4 +1,6 @@
-# CISSP Study Resources
+## Takes' CISSP Study Resources
+Last Update: 25/11/2025
+
 Material and Resources for CISSP Certification
 
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam. I continue to refine and expand the content to keep it useful for anyone working toward certification.
@@ -6,7 +8,24 @@ The volume of available material can make it difficult to know where to start or
 The study guides included here are updated for 2025 and aligned with the latest (ISC)² objectives and the 10th edition of the Official Study Guide.
 If you find this repository helpful, share it. If you notice errors or have improvements to suggest, let me know. Connect with me on [LinkedIn](https://www.linkedin.com/nicktakes).
 
-# references
+## Table of contents
+- [Study Timeline](#study-timeline)
+- [Resources](#resources)
+
+## Study Timeline
+
+| Date | Activity | Notes |
+|------|----------|-------|
+| 01/11/2025 | Bought ISC2 CISSP Study Guide 10th Edition | You've got to start somewhere |
+| 04/11/2025 | Finished index labeling the book (I labeled each chapter & domain for easy navigation) | Starting point for structured study. |
+| 08/11/2025 | Planning how to approach learning, how much time will it take ? | What's best practice for acing this exam for time? |
+| 12/11/2025 | Completed having an overall idea about the difficulty of the exam | Searching for sources, reading online |
+| 16/11/2025 | Phase 1 of my study plan, read 1 domain per week | Not every domain is the same, so time gain when finishing a domain faster than 1 week |
+| 17/11/2025 | Start reading Domain 1 | I took it very slow - finished it after 1 week |
+| 24/11/2025 | Start reading Domain 2 - Official Study Guide 10th edition | completed in 2 days |
+| 26/11/2025 | Start reading Domain 3 - Official Study Guide 10th edition | completed in - days |
+
+## resources
 **GitHub - jefferywmoore/CISSP-Study-Resources: CISSP Study Resources**
 https://github.com/jefferywmoore/CISSP-Study-Resources?tab=readme-ov-file
 
