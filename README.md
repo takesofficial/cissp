@@ -18,14 +18,14 @@ If you find this repository helpful, share it. If you notice errors or have impr
 |------|----------|-------|
 | 01/11/2025 | Bought ISC2 CISSP Study Guide 10th Edition | You've got to start somewhere |
 | 04/11/2025 | Finished index labeling the book (I labeled each chapter & domain for easy navigation) | Starting point for structured study. |
-| 08/11/2025 | Planning how to approach learning, how much time will it take ? | What's best practice for acing this exam for time? |
+| 08/11/2025 | Planning learning approach | how much time will it take ? What's best practice for acing this exam for time? |
 | 12/11/2025 | Completed having an overall idea about the difficulty of the exam | Searching for sources, reading online |
 | 16/11/2025 | Phase 1 of my study plan, read 1 domain per week | Not every domain is the same, so time gain when finishing a domain faster than 1 week |
 | 17/11/2025 | Start reading Domain 1 | I took it very slow - finished it after 1 week |
 | 24/11/2025 | Start reading Domain 2 - Official Study Guide 10th edition | completed in 2 days |
 | 26/11/2025 | Start reading Domain 3 - Official Study Guide 10th edition | completed in - days |
 
-## resources
+## Resources
 **GitHub - jefferywmoore/CISSP-Study-Resources: CISSP Study Resources**
 https://github.com/jefferywmoore/CISSP-Study-Resources?tab=readme-ov-file
 
