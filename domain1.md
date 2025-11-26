@@ -355,4 +355,9 @@ Identify how attackers can exploit systems and where to apply defenses.
 - STIX, TAXII, CAPEC intel formats  
 - Expanded intellectual property law (patents, trademarks, copyrights)  
 - Complete BCP/DR project-management theory  
-- All US-specific case law and legislative nuance  
+- All US-specific case law and legislative nuance
+
+--- 
+
+## 🧠 Mind Map 
+[Alignment of Security Function MindMap | CISSP Domain 1](https://www.youtube.com/watch?v=hf5NwUSEkwA)
