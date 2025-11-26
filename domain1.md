@@ -65,6 +65,21 @@ The lifecycle of identity, access, and accountability.
 ## 📉 Risk Management  
 Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
 
+### 🔢 Risk Equation Variants  
+Some sources express risk differently. All mean the same thing:
+
+- **Risk = Likelihood × Impact**  
+- **Risk = Threat × Vulnerability × Asset Value**  
+These show up in explanation-style questions but do not replace SLE/ALE.
+
+### 🔍 Qualitative  
+Used when numbers are impossible or unnecessary.
+
+- Brainstorming – group discussion to identify threats.  
+- Delphi Method – anonymous expert rounds until consensus.  
+- Heat Maps – visual likelihood vs impact.  
+- Subjective Ranking – high/medium/low scoring based on expert judgment.
+
 ### 🔢 Quantitative  
 **Think of this as “security math for babies.”  
 Everything you calculate here tells you HOW MUCH MONEY the company will lose.  
@@ -133,6 +148,7 @@ This is what CISSP wants you to recognize instantly.
 - **Deter** - Discourage attacks.
 
 **Residual risk** is ALWAYS owned by **senior management**.
+**Compliance is an administrative control.**
 
 ---
 
@@ -325,4 +341,18 @@ Identify how attackers can exploit systems and where to apply defenses.
 - Data flows  
 - Entry points  
 - Privileged operations  
-- Attack vectors
+- Attack vectors  
+
+---
+
+## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)  
+- Full legal history and international privacy laws  
+- Deep PCI-DSS configuration details  
+- Full NIST 800-53 / 800-171 control catalogs  
+- ITIL, COSO, SABSA deep dives  
+- M&A processes, divestiture complexities  
+- AI/crypto/blockchain training requirements  
+- STIX, TAXII, CAPEC intel formats  
+- Expanded intellectual property law (patents, trademarks, copyrights)  
+- Complete BCP/DR project-management theory  
+- All US-specific case law and legislative nuance  
