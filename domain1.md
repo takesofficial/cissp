@@ -1,192 +1,274 @@
 # <p align=center>Domain 1 - Security and Risk Management</p>
 
-## 🚨 Elevator Pitch
+## 🚨 Elevator Pitch  
 Risk cannot be eliminated. Only reduced, transferred, or accepted by senior management. Domain 1 defines governance, policy, ethics, risk analysis, legal requirements, personnel security, investigations, business continuity, and supply-chain risk.
 
-## ⚖️ ISC2 Code of Ethics
-- Protect society and the common good.
-- Act honorably and legally.
-- Provide competent service.
-- Advance the profession.
+---
 
-## 🏛️ Governance
-Ensure security directly supports business mission, goals, and risk appetite.
+## ⚖️ ISC2 Code of Ethics  
+- Protect society and the common good.  
+- Act honorably, legally, and responsibly.  
+- Provide diligent and competent service.  
+- Advance and protect the profession.  
 
-Security must support mission, goals, and risk appetite.
-Documentation hierarchy: Policies → Standards → Baselines → Guidelines → Procedures.
-Frameworks: ISO 27001, NIST CSF, COBIT, CIS Controls, RMF, ISO 31000.
+---
 
-## 👥 Roles & Responsibilities
-Assign ownership, accountability, and operational duties for protecting assets.
+## 🏛️ Governance  
+Ensure security directly supports the business mission, goals, and risk appetite.
 
-**Senior Management**: accountable; accepts residual risk.  
-**Owner**: classifies data; defines access.  
-**Custodian**: implements/maintains controls.  
-**User**: follows policy.  
-**Auditor**: verifies; never accepts risk.
+**Documentation hierarchy:**  
+**Policies → Standards → Baselines → Guidelines → Procedures**
 
-## 🔺 CIA Triad
-Three core security outcomes every control must support.
+### 📚 Documentation Types (MUST KNOW)
+- **Policy** - High-level direction from senior management; mandatory.  
+- **Standard** - Mandatory, uniform requirements (config, tech, process).  
+- **Baseline** - Minimum acceptable security level.  
+- **Guideline** - Optional recommendations; flexible.  
+- **Procedure** - Step-by-step instructions for performing tasks.
 
-**Confidentiality**: prevent unauthorized disclosure.  
-**Integrity**: prevent unauthorized modification; ensure authenticity.  
-**Availability**: ensure timely, reliable access for authorized subjects.
+**Frameworks:** ISO 27001, NIST CSF, COBIT, CIS Controls, RMF, ISO 31000.  
+**Security governance goal:** Align security with business value, risk, and objectives.
 
-## 🔐 AAA
-The lifecycle for verifying identity, controlling access, and tracking actions.
+---
 
-Identification (stating your identity).  
-Authentication (proving your identity).  
-Authorization (what you may access).  
-Accountability (trace actions to subjects).  
-Auditing (record and review events).
+## 👥 Roles & Responsibilities  
+Assign ownership, accountability, and operational duties.
 
-## 📉 Risk Management
+- **Senior Management** - Ultimately accountable; accepts residual risk.  
+- **Owner** - Classifies data; defines access; decides on controls.  
+- **Custodian** - Implements and maintains controls (backups, access).  
+- **User** - Follows policy; uses resources securely.  
+- **Auditor** - Reviews compliance; never accepts risk.  
+
+---
+
+## 🔺 CIA Triad  
+Three core security outcomes.
+
+- **Confidentiality** - Prevent unauthorized disclosure.  
+- **Integrity** - Prevent unauthorized modification; ensure authenticity.  
+- **Availability** - Ensure timely, reliable access for authorized users.
+
+---
+
+## 🔐 AAA  
+The lifecycle of identity, access, and accountability.
+
+- **Identification** - Claiming an identity ("I am Nick").  
+- **Authentication** - Proving identity (password, token, biometric).  
+- **Authorization** - What you’re allowed to access.  
+- **Accountability** - Tying actions to subjects.  
+- **Auditing** - Recording and reviewing events.
+
+---
+
+## 📉 Risk Management  
 Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
 
-Risk = Threat × Vulnerability.
-SLE = AV × EF  
-ALE = SLE × ARO  
-Safeguard Value = ALE1 - ALE2 - cost.
-Responses: mitigate, transfer, avoid, accept, deter.
-Residual risk owned by senior management.
+### 🔢 Quantitative  
+- **Risk = Threat × Vulnerability**  
+- **SLE = AV × EF**  
+- **ALE = SLE × ARO**  
+- **Safeguard Value = ALE₁ - ALE₂ - Cost**
 
-## 🧱 Control Types
+### 🧭 Risk responses  
+- **Mitigate** - Add controls.  
+- **Transfer** - Insurance/outsourcing.  
+- **Avoid** - Stop activity entirely.  
+- **Accept** - Management formally accepts risk.  
+- **Deter** - Discourage attacks.
+
+**Residual risk** is ALWAYS owned by **senior management**.
+
+---
+
+## 🧱 Control Types  
+How controls are implemented.
+
+### 1️⃣ **Administrative (Managerial)**  
+Policies, training, background checks, risk management.
+
+### 2️⃣ **Technical (Logical)**  
+Firewalls, encryption, MFA, SIEM, access controls.
+
+### 3️⃣ **Physical**  
+Locks, guards, cameras, fences.
+
+---
+
+## ⚙️ Control Functions  
 How controls behave before, during, and after incidents.
 
-**Administrative**: Policies + processes that guide people.  
-**Technical**: Technology that enforces security.  
-**Physical**: Real-world barriers that protect assets.  
+- **Preventive** - Stop incidents before they happen.  
+- **Detective** - Discover events during/after occurrence.  
+- **Corrective** - Fix damage after detection.  
+- **Recovery** - Restore full operations after major failure.  
+- **Compensating** - Alternative when the primary control is unavailable.  
+- **Directive** - Guide actions (signage, rules, banners).  
+- **Deterrent** - Discourage attempts (visible cameras, warnings).
 
-## 📈 Maturity Models (CMM / RMM)
-Measure how consistent, repeatable, and well-governed an organization's security and risk processes are.
+---
 
-### **CMM - Capability Maturity Model (5 Levels)**
-1. **Initial** - ad hoc, undocumented, reactive.  
-2. **Repeatable** - basic processes exist and can be repeated.  
-3. **Defined** - standardized, documented organization-wide processes.  
-4. **Managed** - processes measured with metrics and performance controls.  
-5. **Optimizing** - continuous improvement based on feedback and lessons learned.
+## 📈 Maturity Models (CMM / RMM)  
+Measure how consistent, repeatable, and well-governed security processes are.
+
+### **CMM - Capability Maturity Model**
+1. **Initial** - Ad hoc; chaotic.  
+2. **Repeatable** - Some process consistency.  
+3. **Defined** - Standardized organization-wide.  
+4. **Managed** - Measured with metrics.  
+5. **Optimizing** - Continuous improvement.
 
 ### **RMM - Risk Maturity Model**
-Assesses how systematically an organization handles risk.
+- **Ad Hoc → Preliminary → Defined → Integrated → Optimized**
 
-- **Ad Hoc** - chaotic; no consistent risk approach.  
-- **Preliminary** - inconsistent, varies by department.  
-- **Defined** - organization-wide risk framework exists.  
-- **Integrated** - risk integrated into business processes; metrics used.  
-- **Optimized** - strategic, proactive, continuously improving.
+Higher maturity = fewer failures, more predictable outcomes.
 
-## ⚙️ Control Functions (when/why applied)
-**Preventive**: Stop an incident before it happens.  
-**Detective**: Reveal an incident as it happens or after.  
-**Corrective** Fix damage after detection.  
-**Recovery**: Restore full operations after major failure.  
-**Compensating**: Alternate control when the primary isn't possible.  
-**Directive**: Tell people what to do (rules, guidance).  
-**Deterrent**: Discourage attacks through visibility and pressure.  
+---
 
-## 📜 Law Types
-Different legal consequences, authorities, and evidentiary standards.
+## 🔗 Third-Party Governance  
+Oversight of vendors, partners, and contractors.
 
-**Civil**: disputes; compensation; preponderance of evidence.  
-**Criminal**: prosecution by government; punishment; beyond reasonable doubt.  
-**Administrative**: regulatory agency rules; fines/sanctions.
+- **On-site assessments** - Physical and operational review.  
+- **Document exchange & review** - Policies, architecture, procedures.  
+- **Process/policy evaluation** - Validate controls and compliance.  
+- **Right-to-audit clauses** - Legal authority to inspect.  
+- **Minimum security requirements** - Contractual security baselines.  
+- **Continuous monitoring** - Ongoing vendor risk evaluation.
 
-## 📝 Major Regulations
-The legal obligations for protecting specific categories of data or systems.
+---
 
-**SOX**: accuracy of financial reporting.  
-**HIPAA**: medical data privacy and security.  
-**GLBA**: financial customer data protection.  
-**PCI-DSS**: credit card security (contractual).  
-**GDPR**: EU personal data rights; 72h breach notice.  
-**CCPA**: California consumer privacy rights.  
-**CFAA**: anti-hacking law.  
-**ECPA**: protects electronic communications.  
-**DMCA**: digital copyright/DRM.  
-**FISMA**: federal agency security programs.
+## 📜 Law Types  
+Different legal consequences and standards.
 
-## 📑 Privacy Principles
-Rules for how organizations must collect, store, use, and protect personal data.
+- **Civil** - Disputes; compensation; preponderance of evidence.  
+- **Criminal** - Prosecuted by government; punishment; beyond reasonable doubt.  
+- **Administrative** - Agency rules; fines, sanctions.
 
-**Minimization**: collect only what is necessary.  
-**Purpose Limitation**: use data only for stated purposes.  
-**Transparency**: inform subjects how data is used.  
-**Storage Limitation**: keep data only as long as needed.  
-**Integrity/Confidentiality**: protect data from alteration and disclosure.  
-**Accountability**: organization must prove compliance.
+---
 
-## 💥 DAD 
-The forms of harm that occur when CIA is violated.
+## 📝 Major Regulations  
+What each protects.
 
-**Disclosure** - data becomes visible to unauthorized parties (loss of confidentiality).  
-**Alteration** - data is changed, corrupted, or tampered with (loss of integrity).  
-**Destruction** - data is deleted, damaged, or made unusable (loss of availability).
+- **SOX** - Financial reporting integrity.  
+- **HIPAA** - Medical data privacy/security (PHI).  
+- **GLBA** - Customer financial data protection.  
+- **PCI-DSS** - Credit card security (contractual).  
+- **GDPR** - EU personal data rights; 72h breach notification.  
+- **CCPA** - California consumer privacy rights.  
+- **CFAA** - Anti-hacking law.  
+- **ECPA** - Protects electronic communications (in transit + stored).  
+- **DMCA** - Digital copyright & DRM protection.  
+- **FISMA** - Federal agency security program requirements.
 
-## 🧭 Due Care vs Due Diligence
-Define planning (Diligence) vs execution (Care) responsibilities for maintaining defensible security.
+---
 
-**Due Diligence** (do): plan, assess risk, define controls.  
-**Due Care** (choose): execute and maintain those controls.
+## 📑 Privacy Principles  
+Rules for handling personal data.
+
+- **Minimization** - Collect only what is needed.  
+- **Purpose Limitation** - Use data for the stated purpose only.  
+- **Transparency** - Tell subjects what data is collected & why.  
+- **Storage Limitation** - Keep data only as long as required.  
+- **Integrity/Confidentiality** - Protect against alteration/disclosure.  
+- **Accountability** - Organization must prove compliance.
+
+---
+
+## 💥 DAD  
+What happens when CIA fails.
+
+- **Disclosure** - Unauthorized exposure (loss of confidentiality).  
+- **Alteration** - Unauthorized changes (loss of integrity).  
+- **Destruction** - Damage or deletion (loss of availability).
+
+---
+
+## 🧭 Due Care vs Due Diligence  
+Legal and defensive security responsibilities.
+
+- **Due Diligence** - Planning: risk assessments, documentation, policies.  
+- **Due Care** - Execution: following and enforcing those controls.
+
+---
 
 ## 🧑‍💼 Personnel Security  
-Reduce risk from people by controlling trust, access, and behavior throughout the employment lifecycle.
+Reduce human risk through controls and lifecycle management.
 
-**Screening** - verify identity, background, qualifications before hiring.  
-**NDAs** - legally bind employees to protect confidential information.  
-**AUP** - defines acceptable use of company systems and resources.  
-**Separation of duties** - no single person controls all steps of a critical process.  
-**Job rotation** - periodically switch roles to expose fraud and reduce dependency.  
-**Least privilege** - employees receive only the minimum access needed for their role.
+- **Screening** - Criminal history, employment verification, references.  
+- **NDAs** - Protect confidential info.  
+- **AUP** - Defines acceptable behavior.  
+- **Separation of duties** - No one person controls a full process.  
+- **Job rotation** - Detect fraud; reduce dependency.  
+- **Least privilege** - Minimum access required.
 
-### Employment Lifecycle  
-**Onboarding** - create accounts, assign least-privilege access, complete training.  
-**Transfer** - adjust access rights to match new role; remove old permissions.  
-**Termination** - immediately revoke access; collect assets; escort if necessary.
+### 🔄 Employment Lifecycle  
+- **Onboarding** - Accounts, training, access provisioning.  
+- **Transfer** - Adjust access to match new role.  
+- **Termination** - Immediate access removal; collect assets.
+
+---
 
 ## 🔍 Investigations  
-Apply the correct legal and procedural approach depending on who is investigating and why.
+Apply correct legal and procedural rules.
 
-**Administrative** - internal HR or management inquiry; goal is policy enforcement.  
-**Civil** - dispute between private parties; focuses on financial or contractual damages.  
-**Criminal** - law enforcement investigates alleged crimes; highest evidentiary standard.  
-**Regulatory** - government agency verifies compliance with industry rules (SEC, FINRA, HHS).  
-**Industry Standards** - checks whether the organization meets best-practice frameworks (PCI, ISO).
+- **Administrative** - HR or management; policy violations.  
+- **Civil** - Private disputes; financial damages.  
+- **Criminal** - Law enforcement; crimes; highest standard.  
+- **Regulatory** - Agencies enforcing industry rules.  
+- **Industry Standards** - PCI, ISO, SOC audits.
 
-**Key Forensics Rules**  
-**Chain of custody** - document every handoff of evidence.  
-**Order of volatility** - collect the most fragile data first (RAM → disk → logs).  
-**Admissibility** - evidence must be legally obtained, reliable, and unaltered.
+### 🧪 Key Forensics Rules  
+- **Chain of custody** - Track every handoff of evidence.  
+- **Order of volatility** - RAM → disk → logs → archival data.  
+- **Admissibility** - Evidence must be legal, reliable, unaltered.
+
+---
 
 ## 🕒 Business Continuity  
-Ensure critical business operations continue or quickly resume during and after disruptions, with people and safety always first.  
+Ensure critical operations survive incidents and resume quickly.
 
-**Business Continuity Plan (BCP) Phases**  
-Scope & Planning → BIA (identify impacts) → Continuity Strategy (mitigation + recovery) → Approval, Training, Testing, Maintenance.
+### **BCP Phases**  
+1. Scope & Planning  
+2. **BIA** - Identify impacts  
+3. Continuity Strategy (mitigation + recovery)  
+4. Approval, Training, Testing, Maintenance  
 
-### BIA Outputs  
-- **RTO** (Recovery Time Objective - how fast to restore),  
-- **RPO** (Recovery Point Objective - how much data loss is tolerable),  
-- **MTD** (Maximum Tolerable Downtime - maximum downtime before the business fails).  
+### **BIA Outputs**  
+- **RTO** - How fast to restore.  
+- **RPO** - How much data loss is acceptable.  
+- **MTD** - Max downtime before business fails.
 
-### **COOP** 
-**Continuity of Operations Plan**: How the organization keeps its most essential functions running during long-term disruptions.
+### **COOP**  
+Continuity of Operations Plan - Long-term functionality of essential services.
+
+---
 
 ## 🔗 Supply Chain Risk  
-Ensure external vendors, hardware, software, and services do not introduce vulnerabilities, backdoors, counterfeit components, or operational weaknesses.  
+Ensure vendors do not introduce vulnerabilities or tampered components.
 
-**Key Activities**: Vendor due diligence, third-party risk assessments, on-site reviews, documentation audits, minimum security requirements.  
-**Contracts**: SLAs (service levels), BPAs (business partner agreements), security addendums.  
-**Focus Areas**: Component provenance, integrity of updates, tampering risk, dependency mapping, continuous monitoring of suppliers.
+- Vendor due diligence  
+- Third-party risk assessments  
+- SLAs, BPAs, and security addendums  
+- Component provenance  
+- Tampering and counterfeit risk  
+- Continuous monitoring  
+
+---
 
 ## 🎯 Threat Modeling  
-Identify what can go wrong in a system, how attackers could exploit it, and where to place controls to prevent or limit damage.  
+Identify how attackers can exploit systems and where to apply defenses.
 
-**Methods**: STRIDE (categorize threats), DREAD (prioritize impact), PASTA (risk-based stages), VAST (agile/scalable), Trike (risk auditing).  
-**Approaches**: Adversarial (simulate attacker behavior) vs. Defensive (design-in security early).  
-**Focus Areas**: Trust boundaries, data flows, entry points, privileged operations, attack vectors.
+### **Methods**  
+- **STRIDE** - Categorize threats.  
+- **DREAD** - Prioritize impact.  
+- **PASTA** - 7-stage risk-based modeling.  
+- **VAST** - Scalable, Agile-friendly.  
+- **Trike** - Risk auditing.  
 
-## Useful links
-- [Inside Cloud and Security - Domain 1](https://www.youtube.com/watch?v=iArcmcGPp7k)
-- [Security Controls](https://www.f5.com/labs/articles/education/what-are-security-controls#:~:text=Corrective%20controls%20include%20any%20measures,process%2C%20or%20rebooting%20a%20system.)
+### **Focus Areas**  
+- Trust boundaries  
+- Data flows  
+- Entry points  
+- Privileged operations  
+- Attack vectors
