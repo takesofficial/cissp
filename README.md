@@ -5,7 +5,7 @@ Material and Resources for CISSP Certification | Last Update: 25/11/2025 |
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam.
 The volume of available material can make it difficult to know where to start or what deserves focused attention. This isn't a complete list, but it points you to the resources and practice materials that actually matter.
 The study guides included here are updated for 2025 and aligned with the latest ISC2 objectives and the 10th edition of the Official Study Guide.
-If you find this repository helpful, share it. If you notice errors or have improvements to suggest, let me know. Connect with me on [LinkedIn](https://www.linkedin.com/nicktakes).
+If you find this repository helpful, share it. If you notice errors or have improvements to suggest, let me know. Connect with me on [LinkedIn](https://www.linkedin.com/in/nicktakes/).
 
 ## CISSP Exam Overview
 The CISSP exam has a huge amount of available study material: the Official Study Guide, third-party books, instructor content, and community notes. For a structured start, the Sybex Study Guide combined with the Official Practice Tests is still the most complete foundation.
