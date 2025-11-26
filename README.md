@@ -1,20 +1,38 @@
 ## Takes' CISSP Study
 Material and Resources for CISSP Certification | Last Update: 25/11/2025 |
 
+## Intro
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam. I continue to refine and expand the content to keep it useful for anyone working toward certification.
 The volume of available material can make it difficult to know where to start or what deserves focused attention. This collection is not exhaustive, but it is designed to highlight resources, practice material, and references that provide real value.
 The study guides included here are updated for 2025 and aligned with the latest (ISC)² objectives and the 10th edition of the Official Study Guide.
 If you find this repository helpful, share it. If you notice errors or have improvements to suggest, let me know. Connect with me on [LinkedIn](https://www.linkedin.com/nicktakes).
 
+## CISSP Exam Overview
+The CISSP exam has a huge amount of available study material: the Official Study Guide, third-party books, instructor content, and community notes. For a structured start, the Sybex Study Guide combined with the Official Practice Tests is still the most complete foundation.
+
+## Exam Structure
+The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions.  
+You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold.  
+All eight domains contribute roughly 10-16 percent.
+
+## Who qualifies for CISSP
+You need five years of paid, cumulative experience across two or more CISSP domains. A four-year degree or an ISC2-approved credential waives one year. If you lack the required experience, you can pass the exam and become an Associate of ISC2 until you meet the requirement.
+
+## How to Think for This Exam
+CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
+How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
+
+
 ## Table of contents
-- [My Study Approach](#my-study-approach)
-- [Study Timeline Table](#study-timeline-table)
+- [Intro](#intro)
 - [CISSP Exam Overview](#cissp-exam-overview)
+- [Exam Structure](#exam-structure)
 - [Who Qualifies for CISSP](#who-qualifies-for-cissp)
 - [How to Think for This Exam](#how-to-think-for-this-exam)
+- [My Study Approach](#my-study-approach)
+- [Study Timeline Table](#study-timeline-table)
 - [PPT and RGLE (Short Exam Version)](#ppt-and-rgle-short-exam-version)
 - [Core Mindset Rules](#core-mindset-rules)
-- [Exam Structure](#exam-structure)
 - [Test Taking Process](#test-taking-process)
 - [Coverage and Study Strategy](#coverage-and-study-strategy)
 - [Memorization](#memorization)
@@ -24,7 +42,7 @@ If you find this repository helpful, share it. If you notice errors or have impr
 Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
 
 - Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
-- Train pacing against the real format: the CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
+- The CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
 - Run a weekly full block of 150 timed questions to build rhythm.
 - Build memory tricks for formulas and models in week 1-2. Add no new sources after week 3.
 - Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
@@ -47,16 +65,6 @@ Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shif
 | 25/11/25 | continuous | Started exam questions | Suggested starting this after reading Domain 1 |
 | 25/11/25 | continuous | Started Thor Teaches' [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1  |
 | 26/11/25 | ? | Domain 3 | OSG 10th - In progress |
-
-# CISSP Exam Overview
-The CISSP exam has a huge amount of available study material: the Official Study Guide, third-party books, instructor content, and community notes. For a structured start, the Sybex Study Guide combined with the Official Practice Tests is still the most complete foundation.
-
-## Who qualifies for CISSP
-You need five years of paid, cumulative experience across two or more CISSP domains. A four-year degree or an ISC2-approved credential waives one year. If you lack the required experience, you can pass the exam and become an Associate of ISC2 until you meet the requirement.
-
-## How to Think for This Exam
-CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
-How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
 
 ## PPT and RGLE (Short Exam Version)
 ### PPT - People > Process > Technology
@@ -81,10 +89,6 @@ These rules describe the mental lens you need during the CISSP exam. They define
 - **Pick the answer that covers the others.** Broadest impact wins. Choose the option that solves the whole problem, not just a small piece of it. Narrow, purely techical answers don't win.
 - **If stuck: which answer is not like the others.** When a question is confusing, don't focus on the question first. Look at the four answer choices and find the one that doesn't fit with the others.
 
-## Exam Structure
-The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions.
-You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold.
-All eight domains contribute roughly 10-16 percent.
 
 ## Test Taking Process
 These steps describe the method you use to solve each question. They explain the practical workflow: how to read, classify, eliminate, and choose answers using a structured manager-focused approach.
