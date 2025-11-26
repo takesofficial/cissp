@@ -130,3 +130,6 @@ The exam mixes topics together on purpose, so questions often pull pieces from d
 ### Others' GitHub
 - [GitHub - alios7/CISSP](https://github.com/alios7/CISSP/tree/main)
 - [GitHub - jefferywmoore/CISSP-Study-Resources: CISSP Study Resources](https://github.com/jefferywmoore/CISSP-Study-Resources?tab=readme-ov-file)
+
+### Flashcards
+- [Inside The Microsoft Cloud](https://cards.flashexam.io/)
