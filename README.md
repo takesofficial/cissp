@@ -24,9 +24,9 @@ If you find this repository helpful, share it. If you notice errors or have impr
 Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
 
 - Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
-- Train pacing against the real format: the CAT runs 100–150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
+- Train pacing against the real format: the CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
 - Run a weekly full block of 150 timed questions to build rhythm.
-- Build memory tricks for formulas and models in week 1–2. Add no new sources after week 3.
+- Build memory tricks for formulas and models in week 1-2. Add no new sources after week 3.
 - Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
 - Close each domain with the Destination CISSP Mind Map. Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
 
@@ -82,9 +82,9 @@ These rules describe the mental lens you need during the CISSP exam. They define
 - **If stuck: which answer is not like the others.** When a question is confusing, don't focus on the question first. Look at the four answer choices and find the one that doesn't fit with the others.
 
 ## Exam Structure
-The English exam is a 3 hour Computer Adaptive Test (CAT) with 100–150 questions.
+The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions.
 You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold.
-All eight domains contribute roughly 10–16 percent.
+All eight domains contribute roughly 10-16 percent.
 
 ## Test Taking Process
 These steps describe the method you use to solve each question. They explain the practical workflow: how to read, classify, eliminate, and choose answers using a structured manager-focused approach.
