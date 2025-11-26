@@ -75,13 +75,13 @@ These show up in explanation-style questions but do not replace SLE/ALE.
 ### 🔍 Qualitative  
 Used when numbers are impossible or unnecessary.
 
-- Brainstorming – group discussion to identify threats.  
-- Delphi Method – anonymous expert rounds until consensus.  
-- Heat Maps – visual likelihood vs impact.  
-- Subjective Ranking – high/medium/low scoring based on expert judgment.
+- Brainstorming - group discussion to identify threats.  
+- Delphi Method - anonymous expert rounds until consensus.  
+- Heat Maps - visual likelihood vs impact.  
+- Subjective Ranking - high/medium/low scoring based on expert judgment.
 
 ### 🔢 Quantitative  
-**Think of this as “security math for babies.”  
+**Think of this as "security math for babies."
 Everything you calculate here tells you HOW MUCH MONEY the company will lose.  
 If you know the money, you know the risk.**
 
