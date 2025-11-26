@@ -34,7 +34,7 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 - [Resources](#resources)
 
 ## My Study Approach
-Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
+Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
 
 - Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
 - The CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
