@@ -58,6 +58,25 @@ How controls behave before, during, and after incidents.
 **Technical**: Technology that enforces security.  
 **Physical**: Real-world barriers that protect assets.  
 
+## 📈 Maturity Models (CMM / RMM)
+Measure how consistent, repeatable, and well-governed an organization's security and risk processes are.
+
+### **CMM - Capability Maturity Model (5 Levels)**
+1. **Initial** - ad hoc, undocumented, reactive.  
+2. **Repeatable** - basic processes exist and can be repeated.  
+3. **Defined** - standardized, documented organization-wide processes.  
+4. **Managed** - processes measured with metrics and performance controls.  
+5. **Optimizing** - continuous improvement based on feedback and lessons learned.
+
+### **RMM - Risk Maturity Model**
+Assesses how systematically an organization handles risk.
+
+- **Ad Hoc** - chaotic; no consistent risk approach.  
+- **Preliminary** - inconsistent, varies by department.  
+- **Defined** - organization-wide risk framework exists.  
+- **Integrated** - risk integrated into business processes; metrics used.  
+- **Optimized** - strategic, proactive, continuously improving.
+
 ## ⚙️ Control Functions (when/why applied)
 **Preventive**: Stop an incident before it happens.  
 **Detective**: Reveal an incident as it happens or after.  
