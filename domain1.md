@@ -19,7 +19,7 @@ Ensure security directly supports the business mission, goals, and risk appetite
 **Documentation hierarchy:**  
 **Policies → Standards → Baselines → Guidelines → Procedures**
 
-### 📚 Documentation Types (MUST KNOW)
+### 📚 Documentation Types
 - **Policy** - High-level direction from senior management; mandatory.  
 - **Standard** - Mandatory, uniform requirements (config, tech, process).  
 - **Baseline** - Minimum acceptable security level.  
