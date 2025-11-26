@@ -18,19 +18,14 @@ All eight domains contribute roughly 10-16 percent.
 ## Who qualifies for CISSP
 You need five years of paid, cumulative experience across two or more CISSP domains. A four-year degree or an ISC2-approved credential waives one year. If you lack the required experience, you can pass the exam and become an Associate of ISC2 until you meet the requirement.
 
-## How to Think for This Exam
-CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
-How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
-
-
 ## Table of contents
 - [Intro](#intro)
 - [CISSP Exam Overview](#cissp-exam-overview)
 - [Exam Structure](#exam-structure)
 - [Who Qualifies for CISSP](#who-qualifies-for-cissp)
-- [How to Think for This Exam](#how-to-think-for-this-exam)
 - [My Study Approach](#my-study-approach)
 - [Study Timeline Table](#study-timeline-table)
+- [How to Think for This Exam](#how-to-think-for-this-exam)
 - [PPT and RGLE (Short Exam Version)](#ppt-and-rgle-short-exam-version)
 - [Core Mindset Rules](#core-mindset-rules)
 - [Test Taking Process](#test-taking-process)
@@ -65,6 +60,10 @@ Use the (ISC)² Official Study Guide (OSG) once to build the baseline, then shif
 | 25/11/25 | continuous | Started exam questions | Suggested starting this after reading Domain 1 |
 | 25/11/25 | continuous | Started Thor Teaches' [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1  |
 | 26/11/25 | ? | Domain 3 | OSG 10th - In progress |
+
+## How to Think for This Exam
+CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
+How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
 
 ## PPT and RGLE (Short Exam Version)
 ### PPT - People > Process > Technology
