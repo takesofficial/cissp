@@ -257,8 +257,8 @@ What happens when CIA fails.
 ## 🧭 Due Care vs Due Diligence  
 Legal and defensive security responsibilities.
 
-- **Due Diligence** - Planning: risk assessments, documentation, policies.  
-- **Due Care** - Execution: following and enforcing those controls.
+- **Due Diligence** - Investigation: risk assessments, documentation, policies. (Research and find out what to do.)
+- **Due Care** - Execution: following and enforcing those controls. (Do it and prove you did it.)
 
 ---
 
