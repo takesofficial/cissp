@@ -1,4 +1,4 @@
-## Takes' CISSP Study
+# Takes' CISSP Study
 Material and Resources for CISSP Certification | Last Update: 25/11/2025 |
 
 ## Intro
@@ -40,6 +40,8 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 - The CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
 - Run a weekly full block of 150 timed questions to build rhythm.
 - Build memory tricks for formulas and models in week 1-2. Add no new sources after week 3.
+-- I picked 
+
 - Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
 - Close each domain with the Destination CISSP Mind Map. Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
 
@@ -57,9 +59,10 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 17/11/25 | 23/11/25 | Domain 1 | OSG 10th - Slow, 1 week completion  |
 | 24/11/25 | 26/11/25 | Domain 2 | OSG 10th - Completed in 2 days |
 | 25/11/25 | 25/11/25 | GitHub repository creation | Helps me structure tremendously |
-| 25/11/25 | continuous | Started exam questions | Suggested starting this after reading Domain 1 |
-| 25/11/25 | continuous | Started Thor Teaches' [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1  |
-| 26/11/25 | ? | Domain 3 | OSG 10th - In progress |
+| 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1  |
+| 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education |
+| 25/11/25 | continuous | Started exam questions daily | Suggested starting this after reading Domain 1 |
+| 27/11/25 | ? | Domain 3 | OSG 10th - In progress |
 
 ## How to Think for This Exam
 CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
@@ -78,7 +81,7 @@ How to Think Like a Manager reinforces this: managers choose options that reduce
 4. **Eliminate** - Remove tech answers unless you *are* the tech.
 
 ## Core Mindset Rules
-Drawn from Destination CISSP, Gwen Bettwy, Study Notes and Theory.
+Drawn from Destination CISSP, Gwen Bettwy, Study Notes and Theory. I went with the [Complete CISSP Course, Exam and the Mindset](https://www.udemy.com/course/cisspcertification) for more in depth learning.
 These rules describe the mental lens you need during the CISSP exam. They define how you should think by default: like a manager who prioritizes people, risk reduction, and high-level business impact rather than technical detail.
 - **People first.** Keep humans safe before anything else. If an answer protects people, it wins.
 - **Integrity vs confidentiality vs availability.** Figure out what the question is really about: keeping data correct, keeping it secret, or keeping it usable. Choose the answer that matches that one thing.
@@ -87,7 +90,6 @@ These rules describe the mental lens you need during the CISSP exam. They define
 - **Avoid technician answers.** If the answer sounds like technical/hands-on work (patching, configuring, running tools), it's probably a trick unless the question clearly puts you in an operational role.
 - **Pick the answer that covers the others.** Broadest impact wins. Choose the option that solves the whole problem, not just a small piece of it. Narrow, purely techical answers don't win.
 - **If stuck: which answer is not like the others.** When a question is confusing, don't focus on the question first. Look at the four answer choices and find the one that doesn't fit with the others.
-
 
 ## Test Taking Process
 These steps describe the method you use to solve each question. They explain the practical workflow: how to read, classify, eliminate, and choose answers using a structured manager-focused approach.
@@ -120,6 +122,7 @@ The exam mixes topics together on purpose, so questions often pull pieces from d
 - Use diagrams for CIA, AAA, access control models, and risk formulas.
 
 ## Resources
+- [Complete CISSP Course, Exam and the Mindset](https://www.udemy.com/course/cisspcertification)
 - [Gwen Bettwy's CISSP Playlist](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)
 - [Best CISSP Books To Read To Crack The Exam - Free Download (PDF) - Tech Hyme](https://techhyme.com/best-cissp-books-to-read-to-crack-the-exam-free-download-pdf)
 
