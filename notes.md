@@ -49,3 +49,52 @@ A distributed network of servers that serves content from the closest location t
 Degaussing destroys magnetic storage by applying a strong magnetic field.
 
 ---
+
+### ❓ What is non-repudiation?
+
+**Known:** [ ] 
+**Source:** Complete CISSP Course, Exam and the Mindset
+**Note:** Put this in Domain 3!
+
+**Answer:**  
+ Non-repudiation ensures the integrity and origin of data, providing proof that prevents parties involved from later denying their actions, such as sending, receiving, or creating information.
+- It aims to prevent users from falsely denying participation in a transaction or action within a system.
+-It can be implemented using digital signatures, access controls, and physical security methods.
+
+---
+
+### ❓ The complete OSI Model
+
+**Known:** [ ]
+**Source:** Complete CISSP Course, Exam and the Mindset
+**Note:** Put this in Domain 3!
+
+**Answer:**  
+Open Systems Interconnection (OSI) model explains how computers talk to each other in 7 steps, from the wire to the app. Domain 3 is all about how systems are built and how data moves, so OSI naturally belongs there.
+
+## 🌐 OSI Model (7 Layers)
+The OSI model explains how data moves from one device to another.  
+Each layer has a specific job, from electricity on a cable up to the apps you see.
+
+---
+
+1. **Physical** - hardware  
+2. **Data Link** - MAC, switches  
+3. **Network** - IP, routing  
+4. **Transport** - TCP/UDP, ports  
+5. **Session** - sessions  
+6. **Presentation** - encryption/format  
+7. **Application** - protocols (HTTP, DNS)
+
+### 🧠 Mnemonic (1 → 7)
+**PLEASE  
+DO  
+NOT  
+THROW  
+AWAY  
+SAUSAGE  
+PIZZA**
+
+![osi](https://datageneral.co/wp-content/uploads/2023/12/Capas-modelo-OSI.png) 
+
+---
