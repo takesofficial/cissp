@@ -348,6 +348,28 @@ Identify how attackers can exploit systems and where to apply defenses.
 
 ---
 
+## 🧠 Exam Priorities Recap
+
+Recognize and apply quickly:  
+- Governance stack: policies → standards → baselines → guidelines → procedures (who writes what, what is mandatory).  
+- Roles: senior management vs owner vs custodian vs user vs auditor, and who accepts residual risk (always senior management).  
+- CIA vs DAD: what each violation looks like in a scenario-style question.  
+- AAA: identification, authentication, authorization, accountability, auditing.  
+- Risk math: AV, EF, SLE, ARO, ALE, safeguard value, and which variable a question is really asking for.  
+- Qualitative vs quantitative risk: when to use which and typical qualitative techniques (Delphi, heat maps, rankings).  
+- Risk responses: mitigate, transfer, avoid, accept, deter - and which one a scenario is pointing at.  
+- Control types (administrative / technical / physical) vs control functions (preventive, detective, corrective, recovery, compensating, directive, deterrent).  
+- Due diligence (investigation) vs due care (execution): research vs doing.
+- High-level legal buckets: civil vs criminal vs administrative and why it matters in investigations.  
+- Anchor regulations: SOX, HIPAA, GLBA, PCI-DSS, GDPR/CCPA, CFAA, ECPA, DMCA, FISMA (know what they broadly protect).  
+- Privacy principles: minimization, purpose limitation, transparency, storage limitation, integrity/confidentiality, accountability.  
+- Personnel controls: separation of duties, job rotation, least privilege, onboarding/transfer/termination access handling.  
+- Investigation and forensics anchors: chain of custody, order of volatility, admissibility.  
+- BCP/BIA core outputs: RTO, RPO, MTD and where they appear in lifecycle questions.  
+- Third-party governance and supply chain: right-to-audit clauses, minimum security requirements, continuous monitoring.
+
+---
+
 ## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)  
 - Full legal history and international privacy laws  
 - Deep PCI-DSS configuration details  
