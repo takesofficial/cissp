@@ -287,9 +287,6 @@ Recognize and apply quickly:
 ---
 
 ## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)
-
-These topics appear in full textbooks but are **not** test-critical for CISSP Domain 2 and were intentionally excluded to keep this chapter compact:
-
 - Full government classification procedures and clearance adjudication  
 - Detailed GDPR article-by-article legal analysis  
 - All U.S.-specific data disposal statutes and case law  
