@@ -87,8 +87,11 @@ If you know the money, you know the risk.**
 
 ---
 
-#### 🧩 Step 1 - Single Loss Expectancy (SLE)  
+#### 🧩 Step 1 - SLE
 **SLE = AV × EF**
+
+- **Single Loss Expectancy (SLE)** = “How much money we lose from ONE bad event.”  
+  Example: €100,000 × 0.40 = **€40,000 loss** each time it happens.
 
 - **Asset Value (AV)** = “How much money this thing is worth.”  
   Example: A server worth **€100,000**.
@@ -96,49 +99,49 @@ If you know the money, you know the risk.**
 - **Exposure Factor (EF)** = “How much % of the thing is destroyed when bad stuff happens.”  
   Example: A fire damages **40%** → EF = **0.40**.
 
-- **SLE** = “How much money we lose from ONE bad event.”  
-  Example: €100,000 × 0.40 = **€40,000 loss** each time it happens.
-
 ---
 
-#### 🧮 Step 2 - Annualized Loss Expectancy (ALE)  
+#### 🧮 Step 2 - ALE
 **ALE = SLE × ARO**
+
+- **Annualized Loss Expectancy (ALE)** = “How much money we lose PER YEAR from this threat.”  
+  Example: €40,000 × 0.2 = **€8,000 per year**.
 
 - **Annualized Rate of Occurrence (ARO)** = “How many times per year this bad thing happens.”  
   Example: Fire happens **once every 5 years** → ARO = **0.2**.
-
-- **ALE** = “How much money we lose PER YEAR from this threat.”  
-  Example: €40,000 × 0.2 = **€8,000 per year**.
 
 This tells management:  
 **“If we do nothing, we lose €8,000 per year from this threat.”**
 
 ---
 
-#### 💰 Step 3 - Safeguard Value  
+#### 💰 Step 3
 **Safeguard Value = ALE₁ - ALE₂ - Cost**
+
+If the result is **positive**, the control is **worth it**.  
+If **negative**, the control **costs more than the damage**, so don’t buy it.
+**This is how you justify buying security tools without getting fired.**
 
 - **ALE₁** = “Money we lose per year BEFORE the control.”  
 - **ALE₂** = “Money we lose per year AFTER the control.”  
 - **Cost** = price of the control.
 
-If the result is **positive**, the control is **worth it**.  
-If **negative**, the control **costs more than the damage**, so don’t buy it.
-
-**This is how you justify buying security tools without getting fired.**
-
 ---
 
 #### 🧠 Summary (caveman mode)
-- **AV** = How much thing is worth.  
-- **EF** = How much % breaks when bad thing happens.  
+1.
 - **SLE** = Money lost each time bad thing happens.  
+- **AV** = How much thing is worth.  
+- **EF** = How much % breaks when bad thing happens.
+
+2.
+- **ALE** = Money lost per year from bad thing.    
 - **ARO** = How often bad thing happens each year.  
-- **ALE** = Money lost per year from bad thing.  
+
+3.
 - **Safeguard Value** = Is the control worth buying?
 
-This is the only math Domain 1 cares about.  
-This is what CISSP wants you to recognize instantly.
+This is the only math Domain 1 cares about. This is what CISSP wants you to recognize instantly.
 
 ### 🧭 Risk responses  
 - **Mitigate** - Add controls.  
