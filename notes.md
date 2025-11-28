@@ -52,7 +52,7 @@ Degaussing destroys magnetic storage by applying a strong magnetic field.
 
 ### ❓ What is non-repudiation?
 
-**Known:** [ ] 
+**Known:** [x] 28/11/25 
 **Source:** Complete CISSP Course, Exam and the Mindset
 **Note:** Put this in Domain 3!
 
@@ -65,7 +65,7 @@ Degaussing destroys magnetic storage by applying a strong magnetic field.
 
 ### ❓ The complete OSI Model
 
-**Known:** [ ]
+**Known:** [x] 28/11/25
 **Source:** Complete CISSP Course, Exam and the Mindset
 **Note:** Put this in Domain 3!
 
