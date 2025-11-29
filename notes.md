@@ -98,3 +98,40 @@ PIZZA**
 ![osi](https://datageneral.co/wp-content/uploads/2023/12/Capas-modelo-OSI.png) 
 
 ---
+
+# CISSP Notes
+
+## 2025-11-28
+
+## ⚖️ ISC2 Code of Ethics – The Four Canons
+
+**Known:** [ ]
+**Source:** Complete CISSP Course, Exam and the Mindset
+**Note:** Put this in Domain 1! Just remember the order.
+
+The canons define the mandatory ethical standards all CISSPs must follow.
+
+1. **Protect society, the common good, necessary public trust, and confidence.**  
+   - Prioritize safety, stability, and ethical behavior.  
+   - Do not cause harm through technology or negligence.
+
+2. **Act honorably, honestly, justly, responsibly, and legally.**  
+   - Follow the law.  
+   - Avoid conflicts of interest.  
+   - Maintain integrity in all actions and decisions.
+
+3. **Provide diligent and competent service to principals.**  
+   - Deliver high-quality, professional work.  
+   - Protect your employer’s or client’s interests within ethical boundaries.  
+   - Maintain knowledge and stay current in the field.
+
+4. **Advance and protect the profession.**  
+   - Share knowledge responsibly.  
+   - Report unethical behavior.  
+   - Do not disparage or misrepresent the profession.
+
+---
+
+### 🧠 Quick Memory Trick  
+**“Protect – Act – Serve – Advance.”**
+
