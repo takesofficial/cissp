@@ -6,7 +6,7 @@
 
 ### ❓ What are tangible and intangible assets?
 
-**Known:** [ ] 
+**Known:** [x] 2025-11-28 
 **Source:** ThorTeaches  
 
 **Answer:**  
@@ -135,3 +135,4 @@ The canons define the mandatory ethical standards all CISSPs must follow.
 ### 🧠 Quick Memory Trick  
 **“Protect – Act – Serve – Advance.”**
 
+Runtime application self-protection (RASP)
