@@ -49,20 +49,28 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 > You're ready once you can remove two answers instantly using PPT and RGLE, even on material you haven't seen.
 
 ## Study Timeline Table
-| Start | Finish | Activity | Notes |
-|--------|---------|----------|--------|
-| 01/11/25 | 03/11/25 | Bought ISC2 CISSP Study Guide 10th Edition | You've got to start somewhere |
-| 04/11/25 | 07/11/25 | Finished index labeling the book | Labeled each chapter and domain |
-| 08/11/25 | 11/11/25 | Planning learning approach | Time estimates and study strategy |
-| 12/11/25 | 14/11/25 | Overall difficulty assessment | Source review and expectations |
-| 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week |
-| 17/11/25 | 23/11/25 | Domain 1 | OSG 10th - Slow, 1 week completion  |
-| 24/11/25 | 26/11/25 | Domain 2 | OSG 10th - Completed in 2 days |
-| 25/11/25 | 25/11/25 | GitHub repository creation | Helps me structure tremendously |
-| 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1  |
-| 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education |
-| 25/11/25 | continuous | Started exam questions daily | Suggested starting this after reading Domain 1 |
-| 27/11/25 | ? | Domain 3 | OSG 10th - In progress |
+| Start | Finish | Activity | Notes | # of chapters | % of book |
+|--------|---------|----------|--------|---------------|-----------|
+| 01/11/25 | 03/11/25 | Bought ISC2 CISSP Study Guide 10th Edition | You've got to start somewhere | - | - |
+| 04/11/25 | 07/11/25 | Finished index labeling the book | Labeled each chapter and domain | - | - |
+| 08/11/25 | 11/11/25 | Planning learning approach | Time estimates and study strategy | - | - |
+| 12/11/25 | 14/11/25 | Overall difficulty assessment | Source review and expectations | - | - |
+| 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week,   Finish date under the stated plan: 11/01/2026 | - | - |
+| 17/11/25 | 23/11/25 | Domain 1 – OSG 10th book | Slow reading, 1 week completion | 2 | ~9.5% |
+| 24/11/25 | 26/11/25 | Domain 2 – OSG 10th book | Completed in 2 days | 2 | ~9.5% |
+| 25/11/25 | 25/11/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
+| 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
+| 27/11/25 | 16/12/25 | Domain 3 – OSG 10th book | Completed in 3 weeks | 9 | ~42.9% |
+| ??/12/25 | ??/??/25 | Domain 4 – OSG 10th book | Completed in ? weeks | 2 | ~9.5% |
+| ??/12/25 | ??/??/25 | Domain 5 – OSG 10th book | Completed in ? weeks | 1 | ~4.8% |
+| ??/12/25 | ??/??/25 | Domain 6 – OSG 10th book | Completed in ? weeks | 2 | ~9.5% |
+| ??/12/25 | ??/??/25 | Domain 7 – OSG 10th book | Completed in ? weeks | 2 | ~9.5% |
+| ??/12/25 | ??/??/25 | Domain 8 – OSG 10th book | Completed in ? weeks | 1 | ~4.8% |
+| ??/??/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education | - | - |
+| ??/??/25 | continuous | Started exam questions daily | Suggested starting this after reading Domain 1 | - | - |
+
+> [!IMPORTANT]
+> Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book’s structure. 
 
 ## How to Think for This Exam
 CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
