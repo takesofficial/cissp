@@ -43,7 +43,7 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 -- I picked 
 
 - Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
-- Close each domain with the Destination CISSP Mind Map. Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
+- Close each domain with the [Destination CISSP Mind Map](https://www.youtube.com/watch?v=hf5NwUSEkwA&list=PLZKdGEfEyJhLd-pJhAD7dNbJyUgpqI4pu&index=2). Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
 
 > [!NOTE]
 > You're ready once you can remove two answers instantly using PPT and RGLE, even on material you haven't seen.
