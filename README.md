@@ -34,13 +34,12 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 - [Resources](#resources)
 
 ## My Study Approach
-Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions by day 7. 
+Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions after you've completed read the OSG. 
 
 - Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
 - The CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
 - Run a weekly full block of 150 timed questions to build rhythm.
 - Build memory tricks for formulas and models in week 1-2. Add no new sources after week 3.
--- I picked 
 
 - Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
 - Close each domain with the [Destination CISSP Mind Map](https://www.youtube.com/watch?v=hf5NwUSEkwA&list=PLZKdGEfEyJhLd-pJhAD7dNbJyUgpqI4pu&index=2). Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
