@@ -60,7 +60,7 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 25/11/25 | 25/11/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
 | 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
 | 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
-| 27/11/25 | continous | Started [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) during public transport travels | by Aviv Avitan | - | - |
+| 27/11/25 | continuous | Started [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) during public transport travels | by Aviv Avitan | - | - |
 | 27/11/25 | 16/12/25 | Domain 3 – OSG 10th book | Completed in 3 weeks | 9 | ~42.9% |
 | 17/12/25 | ??/??/25 | Domain 4 – OSG 10th book | Completed in ? weeks | 2 | ~9.5% |
 | ??/12/25 | ??/??/25 | Domain 5 – OSG 10th book | Completed in ? weeks | 1 | ~4.8% |
