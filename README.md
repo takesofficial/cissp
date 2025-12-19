@@ -65,7 +65,8 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | ??/12/25 | ??/??/25 | Domain 6 – OSG 10th book | Completed in ? weeks | 2 | ~9.5% |
 | ??/12/25 | ??/??/25 | Domain 7 – OSG 10th book | Completed in ? weeks | 2 | ~9.5% |
 | ??/12/25 | ??/??/25 | Domain 8 – OSG 10th book | Completed in ? weeks | 1 | ~4.8% |
-| 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education | - | - |
+| 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
+| 27/11/25 | continous | Started [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) | by Aviv Avitan during public transport | - | - |
 
 > [!IMPORTANT]
 > Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book’s structure. 
