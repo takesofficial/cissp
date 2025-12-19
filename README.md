@@ -1,5 +1,5 @@
 # Takes' CISSP Study
-Material and Resources for CISSP Certification | Last Update: 27/11/2025 |
+Material and Resources for CISSP Certification | Last Update: 19/12/2025 |
 
 ## Intro
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam.
