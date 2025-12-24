@@ -308,4 +308,4 @@ Recognize and apply quickly:
 ---
 
 ## 🔗 Useful Links / Mind Map  
-[Asset Classification MindMap (1 of 1) | CISSP Domain 2](https://www.youtube.com/watch?v=WBlQQ6qTlGI)
+[CISSP Domain 2 Destination Certification](https://www.youtube.com/watch?v=WBlQQ6qTlGI)
