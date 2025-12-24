@@ -291,4 +291,4 @@ Recognize and apply quickly:
 ---
 
 ## 🔗 Useful Links / Mind Map  
-[Asset Classification MindMap (1 of 4) | CISSP Domain 4](https://youtu.be/KpULwJNlX9g)
+[CISSP Domain 4 Destination Certification](https://youtu.be/KpULwJNlX9g)
