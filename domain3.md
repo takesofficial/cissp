@@ -233,4 +233,4 @@ Recognize and apply quickly:
 
 ---
 ## 🔗 Useful Links / Mind Map  
-[Asset Classification MindMap (1 of 9) | CISSP Domain 3](https://youtu.be/TreDxg9Y3yo)
+[CISSP Domain 3 Destination Certification](https://youtu.be/TreDxg9Y3yo)
