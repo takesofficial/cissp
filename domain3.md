@@ -232,3 +232,5 @@ Recognize and apply quickly:
 - Exhaustive OS hardening checklists and kernel tuning parameters.
 
 ---
+## 🔗 Useful Links / Mind Map  
+[Asset Classification MindMap (1 of 9) | CISSP Domain 3](https://youtu.be/TreDxg9Y3yo)
