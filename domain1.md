@@ -385,4 +385,4 @@ Recognize and apply quickly:
 --- 
 
 ## 🧠 Mind Map 
-[Alignment of Security Function MindMap | CISSP Domain 1](https://www.youtube.com/watch?v=hf5NwUSEkwA)
+[CISSP Domain 1 Destination Certification](https://www.youtube.com/watch?v=hf5NwUSEkwA)
