@@ -64,7 +64,7 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 27/11/25 | 16/12/25 | Domain 3 – OSG 10th book | Completed in 3 weeks | 9 | ~42.9% |
 | 17/12/25 | 20/12/25 | Domain 4 – OSG 10th book | Completed in 2 days | 2 | ~9.5% |
 | 22/12/25 | 24/12/25 | Domain 5 – OSG 10th book | Completed in 2 days | 1 | ~4.8% |
-| ??/12/25 | ??/??/25 | Domain 6 – OSG 10th book | Completed in ? days | 2 | ~9.5% |
+| 26/12/25 | 27/12/25 | Domain 6 – OSG 10th book | Completed in 2 days | 2 | ~9.5% |
 | ??/12/25 | ??/??/25 | Domain 7 – OSG 10th book | Completed in ? days | 2 | ~9.5% |
 | ??/12/25 | ??/??/25 | Domain 8 – OSG 10th book | Completed in ? days | 1 | ~4.8% |
 
