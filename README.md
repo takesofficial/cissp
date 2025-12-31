@@ -55,18 +55,18 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 08/11/25 | 11/11/25 | Planning learning approach | Time estimates and study strategy | - | - |
 | 12/11/25 | 14/11/25 | Overall difficulty assessment | Source review and expectations | - | - |
 | 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week,   Finish date under the stated plan: 11/01/2026 | - | - |
-| 17/11/25 | 23/11/25 | Domain 1 – OSG 10th book | Slow reading, 1 week completion | 2 | ~10% |
+| 17/11/25 | 23/11/25 | Domain 1 – OSG 10th book | Slow reading, 1 week completion | 5 | ~24% |
 | 24/11/25 | 26/11/25 | Domain 2 – OSG 10th book | Completed in 2 days | 2 | ~10% |
 | 25/11/25 | 25/11/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
 | 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
 | 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
 | 27/11/25 | continuous | Started [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) during public transport travels | by Aviv Avitan | - | - |
-| 27/11/25 | 16/12/25 | Domain 3 – OSG 10th book | Completed in 3 weeks | 9 | ~45% |
+| 27/11/25 | 16/12/25 | Domain 3 – OSG 10th book | Completed in 3 weeks | 8 | ~38% |
 | 17/12/25 | 20/12/25 | Domain 4 – OSG 10th book | Completed in 2 days | 2 | ~10% |
 | 22/12/25 | 24/12/25 | Domain 5 – OSG 10th book | Completed in 2 days | 1 | ~5% |
 | 26/12/25 | 27/12/25 | Domain 6 – OSG 10th book | Completed in 2 days | 2 | ~10% |
-| 30/12/25 | 31/12/25 | Domain 7 – OSG 10th book | Completed in 2 days | 2 | ~10% |
-| 31/12/25 | 31/12/25 | Domain 8 – OSG 10th book | Completed in 1 days | 0 | 0% (implicitly completed) |
+| 30/12/25 | 31/12/25 | Domain 7 – OSG 10th book | Completed in 2 days | 1 | ~5% |
+| 31/12/25 | 31/12/25 | Domain 8 – OSG 10th book | Covered in previous domains | 0% |
 
 > [!IMPORTANT]
 > Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book’s structure. 
