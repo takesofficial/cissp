@@ -55,8 +55,8 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 08/11/25 | 11/11/25 | Planning learning approach | Time estimates and study strategy | - | - |
 | 12/11/25 | 14/11/25 | Overall difficulty assessment | Source review and expectations | - | - |
 | 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week,   Finish date under the stated plan: 11/01/2026 | - | - |
-| 17/11/25 | 23/11/25 | Domain 1 – OSG 10th book | Slow reading, 1 week completion | 5 | 24% |
-| 24/11/25 | 26/11/25 | Domain 2 – OSG 10th book | Completed in 2 days | 2 | 10% |
+| 17/11/25 | 23/11/25 | Domain 1 - OSG 10th book | Slow reading, 1 week completion | 5 | 24% |
+| 24/11/25 | 26/11/25 | Domain 2 - OSG 10th book | Completed in 2 days | 2 | 10% |
 | 25/11/25 | 25/11/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
 | 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
 | 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
