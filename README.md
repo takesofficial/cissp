@@ -66,7 +66,7 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 22/12/25 | 24/12/25 | Domain 5 – OSG 10th book | Completed in 2 days | 1 | ~5% |
 | 26/12/25 | 27/12/25 | Domain 6 – OSG 10th book | Completed in 2 days | 2 | ~10% |
 | 30/12/25 | 31/12/25 | Domain 7 – OSG 10th book | Completed in 2 days | 1 | ~5% |
-| 31/12/25 | 31/12/25 | Domain 8 – OSG 10th book | Covered in previous domains | 0% |
+| 31/12/25 | 31/12/25 | Domain 8 – OSG 10th book | Covered in previous domains | 0 | 0% |
 
 > [!IMPORTANT]
 > Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book’s structure. 
