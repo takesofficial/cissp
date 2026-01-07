@@ -37,7 +37,7 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 ## My Study Approach
 
 ### Phase 1 - Build the baseline (Weeks 1-8)
-I started by reading the **(ISC)² CISSP Official Study Guide (OSG)** cover-to-cover. This took ~2 months (Nov/Dec). Some people prefer the Destination CISSP book, but I chose to start with the OSG to get full domain coverage.
+I started by reading the **(ISC)² CISSP Official Study Guide (OSG)** cover-to-cover. This took ~2 months (Nov/Dec). Some people prefer the Destination CISSP book, but I chose to start with the OSG to get full domain coverage. After
 
 While reading, I listened to the **[Aviv Avitan CISSP podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv)** during commutes. By the time I finished the OSG, I was ~75% through the podcast.
 
@@ -46,8 +46,7 @@ Early on (Weeks 1–2), I built **memory tricks** for key formulas/models and st
 ---
 
 ### Phase 2 - Questions-first loop (after finishing the OSG)
-Once the book was done, I shifted to a tight loop:
-
+Once the book was done, I started with [Pete Zerger - Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) - and [Pete Zerger - CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) (I repeated these videos weekly) and I shifted to a tight loop:
 1. **Practice exams**
 2. **Identify gaps**
 3. **Read only for those gaps**
@@ -58,7 +57,7 @@ My main focus was practice questions. A weekly target that helped me:
 - Do **one full timed block of ~150 questions** to build stamina and pacing
 - Aim for **≤ 2 minutes per question** (use a timer)
 
-When I wasn’t doing full exams, I used question apps for volume and repetition:
+When I wasn't doing full exams, I used question apps for volume and repetition:
 - **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)**
 - **[DestCert Exam Prep](https://play.google.com/store/apps/details?id=com.destcert.app&hl=en&pli=1)**
 
@@ -67,10 +66,10 @@ In spare time, I used videos for reinforcement (lighter than rereading the OSG) 
 ---
 
 ### Video / content priority (in order)
-1. Finish **[Andrew Ramdayal’s CISSP course](https://www.udemy.com/course/cisspcertification)** ASAP.
-2. Then watch **[Gwen Bettwy’s CISSP videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)**.
+1. Finish **[Andrew Ramdayal's CISSP course](https://www.udemy.com/course/cisspcertification)** ASAP.
+2. Then watch **[Gwen Bettwy's CISSP videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)**.
 3. Then review **[Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW)**.
-4. **Two weeks before the exam:** start skimming **[Pete Zerger’s CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md)**  
+4. **Two weeks before the exam:** start skimming **[Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md)**  
    - Focus heavily in the **final week** only.
 
 ---
@@ -181,8 +180,6 @@ CISSP isn't about memorizing facts. You need working understanding and the abili
 - Use diagrams for CIA, AAA, access control models, and risk formulas.
 
 ## Resources
-- [Pete Zerger - Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw)
-- [Pete Zerger - CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj)
 - [Complete CISSP Course, Exam and the Mindset](https://www.udemy.com/course/cisspcertification)
 - [Gwen Bettwy's CISSP Playlist](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)
 - [Best CISSP Books To Read To Crack The Exam - Free Download (PDF) - Tech Hyme](https://techhyme.com/best-cissp-books-to-read-to-crack-the-exam-free-download-pdf)
