@@ -63,8 +63,7 @@ Don’t fear formulas. Repetition fixes that.
 - SLE, ALE, ARO, EF are easy once drilled.
 - Practice eliminates hesitation.
 
-📺 Pete Zerger - CISSP Math:  
-https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj
+📺 [Pete Zerger - CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj)
 
 ---
 
