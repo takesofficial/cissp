@@ -170,7 +170,6 @@ CISSP isn't about memorizing facts. You need working understanding and the abili
 - Staying in the managerial viewpoint under pressure
 - Maintaining pace and consistency over months
 
-
 ### Ways to correct this
 - Use different books and sources so you see the same idea explained in different ways. This helps the hard parts make more sense.
 - Use lots of practice questions to find the areas you didn't realize you were weak in.
@@ -182,6 +181,8 @@ CISSP isn't about memorizing facts. You need working understanding and the abili
 - Use diagrams for CIA, AAA, access control models, and risk formulas.
 
 ## Resources
+- [Pete Zerger - Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw)
+- [Pete Zerger - CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj)
 - [Complete CISSP Course, Exam and the Mindset](https://www.udemy.com/course/cisspcertification)
 - [Gwen Bettwy's CISSP Playlist](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)
 - [Best CISSP Books To Read To Crack The Exam - Free Download (PDF) - Tech Hyme](https://techhyme.com/best-cissp-books-to-read-to-crack-the-exam-free-download-pdf)
