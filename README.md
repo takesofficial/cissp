@@ -1,5 +1,5 @@
-# Takes' CISSP Study
-Material and Resources for CISSP Certification | Last Update: 19/12/2025 |
+# Nick Takes' CISSP Study
+Material and Resources for CISSP Certification | Last Update: 2026/01/07 _(YYYY/MM/DD)_ |
 
 ## Intro
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam.
@@ -69,54 +69,68 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 31/12/25 | 31/12/25 | Domain 8 - OSG 10th book | Covered in previous domains | 0 | 0% |
 
 > [!IMPORTANT]
-> Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book’s structure. 
+> Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book's structure. 
 
 ## How to Think for This Exam
-CISSP is a management-level test. Not technical. You answer as the person accountable for risk, governance, cost, and people.  
-How to Think Like a Manager reinforces this: managers choose options that reduce organizational risk with the broadest positive impact, not the option that is technically elegant.
+CISSP is a **management and governance** exam. It's **not hands-on**, but it **is technical knowledge applied in a business context**. You answer as the person accountable for **enterprise risk**, **governance/compliance**, **cost/impact**, and **people**.
+
+**Default lens (in order):**
+- **Risk:** reduce likelihood/impact to the organization
+- **Business impact:** protect operations, revenue, resilience, contractual/legal obligations
+- **Governance & compliance:** align with laws/regulations, policy, standards, and documented process
 
 ## PPT and RGLE (Short Exam Version)
-### PPT - People > Process > Technology
-1. **People first** - Safety, reporting, management, legal.
-2. **Process next** - Policies, assessments, documentation, governance.
-3. **Technology last** - Only if the question makes you the technician.
 
-### RGLE - Role > Goal > Lifecycle > Eliminate
-1. **Role** - Answer only what *your job* is allowed to do.
-2. **Goal** - What is the question trying to protect?
-3. **Lifecycle** - Stay in order (detect → contain → eradicate → recover).
-4. **Eliminate** - Remove tech answers unless you *are* the tech.
+### PPT
+1. **People** first - life safety / HR / legal
+2. **Process** next - policy, governance, documented procedures
+3. **Technology** last - use when the question is implementation/operations  
+   - Also consider **Facilities/Physical** controls when the scenario is physical/environmental.
+
+> Governance stack (helpful tie-breaker): **Laws/Regulations → Policy → Standards → Procedures → Guidelines**  
+> Prefer **recognized best practices/framework-aligned** options over niche or "clever" solutions.
+
+### RGLE
+1. **Role** - answer only what your role is authorized to do
+2. **Goal** - what CIA/business objective is being protected?
+3. **Lifecycle** - use the lifecycle that fits the scenario  
+   - For incidents (common CISSP framing): **(Prepare →) Detect → Respond → Mitigate/Contain → Report → Recover → Remediate → Lessons learned**
+4. **Eliminate** - drop answers that are overly technical or ignore risk/GRC **unless** your role/situation requires technical action
 
 ## Core Mindset Rules
-Drawn from Destination CISSP, Gwen Bettwy, Study Notes and Theory. I went with the [Complete CISSP Course, Exam and the Mindset](https://www.udemy.com/course/cisspcertification) for more in depth learning.
-These rules describe the mental lens you need during the CISSP exam. They define how you should think by default: like a manager who prioritizes people, risk reduction, and high-level business impact rather than technical detail.
-- **People first.** Keep humans safe before anything else. If an answer protects people, it wins.
-- **Integrity vs confidentiality vs availability.** Figure out what the question is really about: keeping data correct, keeping it secret, or keeping it usable. Choose the answer that matches that one thing.
-- **Manager, not engineer.** Think like the boss of the company, not the person fixing computers. Pick the answer that saves money, lowers risk, and supports the big goals.
-- **Choose prevention first.** CISSP favors preventing risk over detecting or correcting it, unless the question forces another lifecycle point (Stopping a problem before it happens is almost always the best choice.).
-- **Avoid technician answers.** If the answer sounds like technical/hands-on work (patching, configuring, running tools), it's probably a trick unless the question clearly puts you in an operational role.
-- **Pick the answer that covers the others.** Broadest impact wins. Choose the option that solves the whole problem, not just a small piece of it. Narrow, purely techical answers don't win.
-- **If stuck: which answer is not like the others.** When a question is confusing, don't focus on the question first. Look at the four answer choices and find the one that doesn't fit with the others.
+Drawn from Destination CISSP, Gwen Bettwy, Study Notes and Theory. I used the [Complete CISSP Course, Exam and the Mindset](https://www.udemy.com/course/cisspcertification) for deeper coverage.
+
+These rules describe the mental lens you need during the CISSP exam: default to the manager who prioritizes **people**, **risk reduction**, and **enterprise-wide outcomes** over tactical detail.
+
+- **People first.** Human safety beats everything else.
+- **Identify the primary objective.** Decide whether the question is mainly about **Confidentiality**, **Integrity**, **Availability**, **safety**, **legal/regulatory**, or **mission continuity**.
+- **Manager, not engineer.** Prefer decisions that are defensible, scalable, and aligned to policy and business goals.
+- **Prefer prevention, but don't be absolute.** Choose the best fit for the scenario and timing. Sometimes the right move is **detect/contain/recover**, or even a risk response like **accept/transfer/avoid**.
+- **Avoid "technician" traps.** Patching/configuring/running tools is often wrong unless the question explicitly puts you in an operations/engineering role.
+- **Pick the answer with broadest positive impact.** Enterprise controls beat narrow point fixes.
+- **Balance risk and business.** Choose the option that reduces risk appropriately **while supporting business needs and continuity** (not "cheapest," not "gold-plated").
+- **Don't add facts.** Use only what's stated; don't "what-if" the scenario.
+- **If stuck, use "odd one out" as a last resort.** Useful tie-breaker, not a primary strategy.
 
 ## Test Taking Process
-These steps describe the method you use to solve each question. They explain the practical workflow: how to read, classify, eliminate, and choose answers using a structured manager-focused approach.
-- **Read the question before the answers** - First understand what the question is really asking. Figure out who you are supposed to be (manager, responder, auditor), which part of the security lifecycle you're in, and what the core problem is.
-- **Classify the question** - Decide whether the question is about confidentiality, integrity, availability, safety, governance, risk, or compliance. This tells you what type of answer will fit.
-- **Eliminate tech answers unless the question is explicitly technical** - Hands-on actions like patching, configuring, or running tools are usually the wrong path in management-style questions.
-- **Select the preventive or governance aligned control first** - In CISSP logic, preventing problems (with policies, training, and leadership decisions) is usually more valuable than detecting or fixing them later.
-- **Use business language logic** - Choose the answer senior management would expect: something that reduces risk, protects the organization, and supports long-term goals.
-- **If everything looks right, choose the most comprehensive control** - Prefer the answer that solves the whole problem across the organization, not just a small slice of it.
-- **When lost, pick the answer that is "different"** - If the question is confusing, look at all the answer choices and find the one that doesn't match the pattern of the others. This "odd one out" trick helps you avoid being misled by answers that all look equally correct.
+A practical workflow to read, classify, eliminate, and choose using a structured manager-focused approach.
+
+- **Read the question before the answers.** Identify: your role (manager/responder/auditor), the scenario type, and what's being asked (MOST/FIRST/BEST/LEAST).
+- **Classify the question.** Map it to the primary objective: CIA, safety, governance, risk, or compliance.
+- **Eliminate mismatched actions.** Remove answers that don't match your role, don't address the core objective, or are extreme/absolute.
+- **Prefer governance-aligned answers first.** Policies, standards, training, risk treatment, and oversight often beat one-off technical actions (unless the scenario is clearly operational).
+- **Use business logic.** Choose what leadership would approve: reduces risk, supports operations, and is legally/contractually defensible.
+- **If multiple are "right," pick the most comprehensive.** Enterprise-wide, sustainable, and aligned with governance.
+- **When lost, pick what's different (last resort).** If three answers are technical fixes and one is a policy/risk decision (or vice versa), the outlier is often the CISSP answer.
 
 ## Coverage and Study Strategy
-CISSP isn't about memorizing facts. You have to actually understand how things work.  
-Some topics are big ideas you must know, and others are details you're likely to be tested on.  
-The exam mixes topics together on purpose, so questions often pull pieces from different domains at the same time.
+CISSP isn't about memorizing facts. You need working understanding and the ability to apply concepts across domains. The exam mixes topics intentionally, so questions often blend multiple domains.
 
 ### Common prep challenges
-- Knowing whether you are studying the right depth  
-- Understanding the managerial viewpoint  
-- Maintaining pace and consistency over months  
+- Knowing the right depth (concept vs implementation detail)
+- Staying in the managerial viewpoint under pressure
+- Maintaining pace and consistency over months
+
 
 ### Ways to correct this
 - Use different books and sources so you see the same idea explained in different ways. This helps the hard parts make more sense.
