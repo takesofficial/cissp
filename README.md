@@ -37,11 +37,11 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 ## My Study Approach
 
 ### Phase 1 - Build the baseline (Weeks 1-8)
-I started by reading the **(ISC)² CISSP Official Study Guide (OSG)** cover-to-cover. This took ~2 months (Nov/Dec). Some people prefer the Destination CISSP book, but I chose to start with the OSG to get full domain coverage. After
+I started by reading the **(ISC)² CISSP Official Study Guide (OSG)** cover-to-cover. This took ~2 months (Nov/Dec). Some people prefer the Destination CISSP book, but I chose to start with the OSG to get full domain coverage.
 
-While reading, I listened to the **[Aviv Avitan CISSP podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv)** during commutes. By the time I finished the OSG, I was ~75% through the podcast.
+During commutes I listened to the **[Aviv Avitan CISSP podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv)**. By the time I finished the Official Study Guide, I also finished the podcast.
 
-Early on (Weeks 1–2), I built **memory tricks** for key formulas/models and started assembling my notes (everything in this GitHub comes from that early foundation). By **Week 3**, I set a rule: **no new sources**-only refine what I already had.
+Early on (Weeks 1–2), I built **memory tricks** for key formulas (PPT/RGLE) and started assembling my notes. By **Week 3**, I set a rule: **no new sources**-only refine what I already had.
 
 ---
 
