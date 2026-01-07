@@ -43,8 +43,7 @@ Understanding is important, but memory matters.
 - Mnemonics reduce cognitive load.
 - Don’t wait until the last week to do this.
 
-📺 Pete Zerger - Memorization Techniques:  
-https://www.youtube.com/watch?v=LGqZbiitiDw&list=PL7XJSuT7Dq_XPK_qmYMqfiBjbtHJRWigD&index=12
+- [Pete Zerger - Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw)
 
 ---
 
