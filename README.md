@@ -1,5 +1,6 @@
 # Nick Takes' CISSP Study
-Material and Resources for CISSP Certification | Last Update: 2026/01/07 _(YYYY/MM/DD)_ |
+Material and Resources for CISSP Certification | Last Update: 07/01/25 (DD/MM/YY) |
+Started learning: 01/11/25 | Exam date: 25/03/26 |
 
 ## Intro
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam.
@@ -11,7 +12,7 @@ If you find this repository helpful, share it. If you notice errors or have impr
 The CISSP exam has a huge amount of available study material: the Official Study Guide, third-party books, instructor content, and community notes. For a structured start, the Sybex Study Guide combined with the Official Practice Tests is still the most complete foundation.
 
 ## Exam Structure
-The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions.  
+The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions. Because it is adaptive, the only number that matters is the lower end. You must be able to answer confidently at roughly under 2 minutes per question without relying on extra time later. Time saved early is not banked. The clock runs continuously until the exam stops.
 You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold.  
 All eight domains contribute roughly 10-16 percent.
 
@@ -34,18 +35,51 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 - [Resources](#resources)
 
 ## My Study Approach
-Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift entirely to Destination CISSP textbook as your core. Treat the OSG only as a reference when something needs clarification. Lock in PPT and RGLE early and start practice questions after you've completed read the OSG. 
 
-- Use a minimal resource set: OSG practice tests, the 50 CISSP YouTube questions, and Gwen Bettwy's approach videos (not her trap-heavy mocks).
-- The CAT runs 100-150 questions in 3 hours, which gives you about 72 seconds per question. Set a timer in every session and hold the pace.
-- Run a weekly full block of 150 timed questions to build rhythm.
-- Build memory tricks for formulas and models in week 1-2. Add no new sources after week 3.
+### Phase 1 - Build the baseline (Weeks 1-8)
+I started by reading the **(ISC)² CISSP Official Study Guide (OSG)** cover-to-cover. This took ~2 months (Nov/Dec). Some people prefer the Destination CISSP book, but I chose to start with the OSG to get full domain coverage.
 
-- Follow one tight cycle: questions, identify gaps, read only for those gaps, update notes, retest.
-- Close each domain with the [Destination CISSP Mind Map](https://www.youtube.com/watch?v=hf5NwUSEkwA&list=PLZKdGEfEyJhLd-pJhAD7dNbJyUgpqI4pu&index=2). Use [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) only in the final week.
+While reading, I listened to the **[Aviv Avitan CISSP podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv)** during commutes. By the time I finished the OSG, I was ~75% through the podcast.
 
-> [!NOTE]
-> You're ready once you can remove two answers instantly using PPT and RGLE, even on material you haven't seen.
+Early on (Weeks 1–2), I built **memory tricks** for key formulas/models and started assembling my notes (everything in this GitHub comes from that early foundation). By **Week 3**, I set a rule: **no new sources**-only refine what I already had.
+
+---
+
+### Phase 2 - Questions-first loop (after finishing the OSG)
+Once the book was done, I shifted to a tight loop:
+
+1. **Practice exams**
+2. **Identify gaps**
+3. **Read only for those gaps**
+4. **Update notes**
+5. **Retest**
+
+My main focus was practice questions. A weekly target that helped me:
+- Do **one full timed block of ~150 questions** to build stamina and pacing
+- Aim for **≤ 2 minutes per question** (use a timer)
+
+When I wasn’t doing full exams, I used question apps for volume and repetition:
+- **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)**
+- **[DestCert Exam Prep](https://play.google.com/store/apps/details?id=com.destcert.app&hl=en&pli=1)**
+
+In spare time, I used videos for reinforcement (lighter than rereading the OSG) and kept updating this GitHub/notes based on missed concepts.
+
+---
+
+### Video / content priority (in order)
+1. Finish **[Andrew Ramdayal’s CISSP course](https://www.udemy.com/course/cisspcertification)** ASAP.
+2. Then watch **[Gwen Bettwy’s CISSP videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)**.
+3. Then review **[Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW)**.
+4. **Two weeks before the exam:** start skimming **[Pete Zerger’s CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md)**  
+   - Focus heavily in the **final week** only.
+
+---
+
+### Rules that kept me on track
+- **No new sources after Week 3** (reduce context switching and conflicting wording)
+- **Questions drive the study plan**
+- **Read only to close gaps**, then immediately retest
+- **Train pacing and endurance** (timed sets)
 
 ## Study Timeline Table
 | Start | Finish | Activity | Notes | # of chapters | % of book |
@@ -58,8 +92,7 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 17/11/25 | 23/11/25 | Domain 1 - OSG 10th book | Slow reading, 1 week completion | 5 | 24% |
 | 24/11/25 | 26/11/25 | Domain 2 - OSG 10th book | Completed in 2 days | 2 | 10% |
 | 25/11/25 | 25/11/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
-| 27/11/25 | 27/11/25 | Started taking all 50 Thor Teaches' and note down what I don't know [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
-| 27/11/25 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
+| 27/11/25 | continuous | Started taking all 50 Thor Teaches' [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
 | 27/11/25 | continuous | Started [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) during public transport travels | by Aviv Avitan | - | - |
 | 27/11/25 | 16/12/25 | Domain 3 - OSG 10th book | Completed in 3 weeks | 8 | 38% |
 | 17/12/25 | 20/12/25 | Domain 4 - OSG 10th book | Completed in 2 days | 2 | 10% |
@@ -67,12 +100,18 @@ Use the ISC2 Official Study Guide (OSG) once to build the baseline, then shift e
 | 26/12/25 | 27/12/25 | Domain 6 - OSG 10th book | Completed in 2 days | 2 | 10% |
 | 30/12/25 | 31/12/25 | Domain 7 - OSG 10th book | Completed in 2 days | 1 | 5% |
 | 31/12/25 | 31/12/25 | Domain 8 - OSG 10th book | Covered in previous domains | 0 | 0% |
+| 01/01/26 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
+| 07/01/26 | continuous | Started [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) during spare time | by Jason Dion, Dion Training Solutions | - | - |
+| 11/03/26 | continuous | Started [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) 2 weeks before the exam | by Jason Dion, Dion Training Solutions | - | - |
 
 > [!IMPORTANT]
 > Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book's structure. 
 
 ## How to Think for This Exam
 CISSP is a **management and governance** exam. It's **not hands-on**, but it **is technical knowledge applied in a business context**. You answer as the person accountable for **enterprise risk**, **governance/compliance**, **cost/impact**, and **people**.
+
+> [!NOTE]
+> You're ready once you can remove two answers instantly using PPT and RGLE, even on material you haven't seen.
 
 **Default lens (in order):**
 - **Risk:** reduce likelihood/impact to the organization
