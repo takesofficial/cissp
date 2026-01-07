@@ -46,7 +46,7 @@ Early on (Weeks 1–2), I built **memory tricks** for key formulas/models and st
 ---
 
 ### Phase 2 - Questions-first loop (after finishing the OSG)
-Once the book was done, I started with [Pete Zerger - Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) - and [Pete Zerger - CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) (I repeated these videos weekly) and I shifted to a tight loop:
+Once the book was done, I started with Pete Zerger's [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) & [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) videos (repeated weekly) and I shifted to a tight loop:
 1. **Practice exams**
 2. **Identify gaps**
 3. **Read only for those gaps**
