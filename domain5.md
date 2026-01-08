@@ -182,7 +182,8 @@ SSO increases convenience, **not security by itself**.
 
 ---
 
-## 🧠 Federation Trust Models (exam critical)
+## 🧠 Federation Trust Models (!!)
+**Authentication always occurs at the IdP; authorization always occurs at the SP.**
 
 ### Centralized Identity
 - One directory  
