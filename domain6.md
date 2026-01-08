@@ -60,6 +60,7 @@ Exam trap: Design ≠ operation.
 
 ## 🧾 SOC Reports (assurance artifacts)
 Used for **third-party assurance**, not internal testing.
+**SOC reports provide assurance, not detection or prevention.**
 
 - **SOC 1**
   - Financial reporting controls (ICFR)
