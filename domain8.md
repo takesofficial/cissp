@@ -1,276 +1,237 @@
 # <p align=center>Domain 8 - Software Development Security</p>
 
 ## 🚨 Elevator Pitch  
-Build security in from the start, not after the breach.  
-Domain 8 is about **secure software lifecycle**, **secure coding**, **testing**, and **controlling change** so applications do not become your biggest attack surface.
+Build security **into** software, not around it.  
+Domain 8 is about integrating security throughout the **SDLC**, preventing vulnerabilities before deployment, and understanding what testing can and cannot find.
 
-Think: **design secure, build carefully, test aggressively, deploy safely, maintain forever.**
-
----
-
-## 🧠 SDLC Mindset  
-
-Security is cheapest **before code is written** and most expensive **after production**.
-
-This domain focuses on:
-- Preventing vulnerabilities
-- Reducing attack surface
-- Catching flaws early
-- Managing change safely
+Think: design choices, secure coding, testing limits, and operational constraints.
 
 ---
 
-## 🔁 Software Development Life Cycle (SDLC)  
+## 🧠 DevSec Mindset  
 
-Security applies to **every phase**.
+Security failures in software are **design failures first**, coding failures second.
 
-### Common Phases  
-1. **Requirements**  
-2. **Design**  
-3. **Development**  
-4. **Testing**  
-5. **Deployment**  
-6. **Maintenance**  
-7. **Disposal**
-
-Security must exist in all phases.
+- Fixing bugs early is cheaper than fixing breaches later
+- Automation helps, but **humans catch logic flaws**
+- Availability and safety may outweigh confidentiality in some systems
 
 ---
 
-## 🧩 Secure SDLC Models  
+## 🔄 Secure SDLC
+Security must be present in **every phase**.
+**Security added late is weak security.**
 
-You do not need diagrams. Just recognize intent.
+1. **Requirements**
+   - Security requirements
+   - Abuse cases
+   - Regulatory constraints
 
-- **Waterfall** - Sequential, rigid, security added early only.  
-- **Agile** - Iterative, continuous feedback, security integrated per sprint.  
-- **DevOps / DevSecOps** - Security embedded into CI/CD pipelines.  
-- **Spiral** - Risk-driven iterations.  
-- **RAD** - Rapid prototyping, higher risk if controls are weak.
+2. **Design**
+   - Threat modeling
+   - Trust boundaries
+   - Architecture reviews
 
-Exam mindset:  
-**DevSecOps = security as code + automation + continuous testing.**
+3. **Development**
+   - Secure coding standards
+   - Code reviews
+   - Dependency management
+
+4. **Testing**
+   - SAST, DAST, IAST
+   - Manual testing
+   - Negative testing
+
+5. **Deployment**
+   - Secure configuration
+   - Secrets management
+   - Change control
+
+6. **Maintenance**
+   - Patch management
+   - Monitoring
+   - Vulnerability remediation
+
 
 ---
 
-## 🧱 Security Requirements  
+## 🧠 Threat Modeling (early risk reduction)
 
-Security must be defined as a requirement, not an afterthought.
+Purpose: identify threats **before code exists**.
 
-Examples:
-- Authentication and authorization rules  
-- Logging and auditing  
-- Encryption requirements  
+Common methods:
+- **STRIDE** - Categorize threats
+- **DREAD** - Prioritize risk
+- **PASTA** - Risk-based modeling
+- **VAST** - Scalable modeling
+- **Trike** - Risk-centric
+
+Focus on:
+- Trust boundaries
+- Data flows
+- Entry points
+- Privileged operations
+
+---
+
+## 🧱 Secure Design Principles  
+Encryption does not fix poor design.
+
+- Least privilege  
+- Defense in depth  
+- Fail secure  
+- Secure defaults  
 - Input validation  
-- Error handling  
-
-If it is not written down, it will be skipped.
+- Complete mediation  
 
 ---
 
-## 🧠 Threat Modeling  
+## 🧬 Secure Coding Practices  
 
-Identify threats **before** coding.
+- Validate all input
+- Encode all output
+- Use parameterized queries
+- Handle errors securely
+- Log security events
+- Avoid hardcoded secrets
 
-### Common Models  
-- **STRIDE** - Spoofing, Tampering, Repudiation, Information disclosure, DoS, Elevation of privilege  
-- **PASTA** - Risk-based, business-focused  
-- **Attack surface analysis** - Reduce exposed entry points  
-
-Threat modeling answers:
-- What can go wrong?
-- How?
-- What is the impact?
-- How do we prevent it?
+Frameworks help, but do not guarantee security.
 
 ---
 
-## 🧪 Secure Coding Concepts  
+## 🧪 Application Security Testing (what finds what)
+**No single test finds everything.**
 
-You do NOT need to write code.  
-You need to recognize **bad patterns**.
+### SAST (Static)
+- Source code analysis
+- Finds logic and design flaws
+- Early SDLC
+- High false positives
 
-### Common Vulnerabilities  
-- Buffer overflows  
-- Injection (SQL, command, LDAP)  
-- Cross-site scripting (XSS)  
-- Cross-site request forgery (CSRF)  
-- Insecure deserialization  
-- Race conditions  
-- Improper error handling  
+### DAST (Dynamic)
+- Tests running app
+- Finds runtime issues
+- Black-box
+- Misses logic flaws
 
-Exam rule:  
-**Never trust user input. Ever.**
+### IAST (Interactive)
+- Combines static + dynamic
+- Runs inside application
+- Better context, more coverage
 
----
-
-## 🔐 Input Validation and Output Encoding  
-
-Primary defense against injection attacks.
-
-- Validate input length, type, range  
-- Reject unexpected input  
-- Encode output for its destination  
-
-Input validation prevents exploitation.  
-Output encoding prevents execution.
 
 ---
 
-## 🧬 Memory and Resource Management  
+## 🧪 Testing Types
 
-Poor memory handling = critical vulnerabilities.
+Automation misses business logic abuse.
 
-- Buffer overflows  
-- Memory leaks  
-- Dangling pointers  
-- Race conditions  
+- **Negative testing**
+  - Invalid input
+  - Boundary conditions
+  - Input length, type, format
 
-Managed languages reduce risk but do not eliminate it.
+- **Interface testing**
+  - API boundaries
+  - Component interaction failures
 
----
-
-## 🔑 Authentication and Authorization in Code  
-
-Security failures often live here.
-
-- Hardcoded credentials = instant fail  
-- Strong authentication required  
-- Authorization must be checked server-side  
-- Least privilege applies to applications too  
-
-Never rely on client-side enforcement.
-
----
-
-## 🔐 Cryptography in Applications  
-
-Use crypto correctly or not at all.
-
-Key principles:
-- Use proven algorithms and libraries  
-- Never roll your own crypto  
-- Protect keys, not just data  
-- Separate encryption from access control  
-
-Crypto mistakes are silent but catastrophic.
-
----
-
-## 🧪 Software Testing  
-
-Security testing catches flaws before attackers do.
-
-### Testing Types  
-- **Unit testing** - individual components  
-- **Integration testing** - components together  
-- **System testing** - full application  
-- **Acceptance testing** - business requirements  
-
----
-
-### Security Testing Methods  
-
-- **Static analysis (SAST)**  
-  - Source code review  
-  - Finds flaws early  
-
-- **Dynamic analysis (DAST)**  
-  - Tests running application  
-  - Finds runtime issues  
-
-- **Interactive testing (IAST)**  
-  - Combines static and dynamic  
-
-- **Fuzzing**  
-  - Random or malformed input  
-  - Exposes crashes and logic errors  
+- **Fuzzing**
+  - Random or malformed input
+  - Crashes and unexpected behavior
 
 ---
 
 ## 🔍 Code Review  
 
-Manual review finds logic flaws tools miss.
+Manual review is irreplaceable.
 
-Focus on:
-- Authentication logic  
-- Authorization checks  
-- Error handling  
-- Input validation  
-- Logging  
+Finds:
+- Authorization flaws
+- Privilege escalation
+- Insecure logic
+- Missing validation
 
-Peer review reduces risk.
+Best done:
+- Peer review
+- Before deployment
+- With security checklist
 
 ---
 
-## 📦 Third-Party Code and Libraries  
+## 📦 Dependency and Supply Chain Risk  
 
-Most apps are built from reused code.
+Modern software depends on third parties.
 
 Risks:
-- Vulnerable dependencies  
-- Abandoned projects  
-- License violations  
+- Vulnerable libraries
+- Abandoned projects
+- Malicious packages
 
 Controls:
-- Software composition analysis (SCA)  
-- Dependency scanning  
-- Approved library lists  
-
-You inherit vulnerabilities you import.
-
----
-
-## 🔄 Configuration and Change Control  
-
-Applications change constantly.
-
-Controls:
-- Version control  
-- Change approval  
-- Rollback capability  
-- Secure defaults  
-
-Uncontrolled change = new vulnerabilities.
+- SBOM
+- Version pinning
+- Trusted repositories
+- Patch monitoring
 
 ---
 
-## 🚀 Deployment and Release Management  
+## 🧪 Test Environments (Never test _destructively_ in production.)
 
-Secure deployment matters as much as secure code.
+- **Development** - Fast, unsafe
+- **Test** - Controlled
+- **Staging** - Production-like
+- **Production** - Restricted
 
-Key points:
-- Harden environments  
-- Separate dev, test, prod  
-- Secure secrets (no plaintext config files)  
-- Validate builds  
-
-Production should never be a test environment.
 
 ---
 
-## 🧯 Patch and Maintenance  
+## 🧠 Automation Limits (!!)
 
-Security does not end at release.
+Automation cannot reliably detect:
+- Business logic abuse
+- Authorization bypass via workflow
+- Context-dependent flaws
 
-- Monitor vulnerabilities  
-- Patch dependencies  
-- Retest after changes  
-- Decommission safely  
-
-Unmaintained software becomes dangerous quickly.
+Human review is mandatory.
 
 ---
 
-## 🗑️ Disposal  
+## ⚠️ ICS / SCADA Constraints (!!)
+Industrial systems prioritize **availability and safety**.
+**Do not scan or patch ICS aggressively.**
 
-End-of-life code must be handled safely.
+Characteristics:
+- Fragile systems
+- Long lifecycles
+- Legacy protocols
+- Limited patch windows
 
-- Remove access  
-- Archive securely  
-- Destroy sensitive data  
-- Revoke credentials and keys  
+Security priorities:
+- Availability > integrity > confidentiality
+- Monitoring over prevention
+- Change control is critical
 
-Forgotten systems become backdoors.
+---
+
+## 🔐 Secure Configuration and Secrets  
+
+- Secure defaults
+- Least functionality
+- Secrets stored outside code
+- Rotate credentials
+
+Hardcoded secrets = instant fail.
+
+---
+
+## 🧾 Change and Release Management  
+
+- Approved changes only
+- Rollback plans
+- Segregation of duties
+- Logging and validation
+
+Unauthorized changes = security incidents.
 
 ---
 
@@ -278,31 +239,28 @@ Forgotten systems become backdoors.
 
 Recognize and apply quickly:
 
-- SDLC phases and where security fits  
-- Secure SDLC vs traditional SDLC  
-- Threat modeling purpose and STRIDE  
-- Common coding vulnerabilities by name  
-- Input validation vs output encoding  
-- Static vs dynamic testing  
-- Dependency and third-party risk  
-- DevSecOps principles  
-- Change and release control importance  
-- Never trust user input  
-- Never roll your own crypto  
+- Security in every SDLC phase  
+- Threat modeling before coding  
+- SAST vs DAST vs IAST  
+- Negative vs interface vs fuzz testing  
+- Automation limits  
+- Manual code review value  
+- Dependency risk awareness  
+- ICS availability-first mindset  
+- Secure configuration and secrets handling  
 
 ---
 
 ## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)
 
-- Language-specific syntax  
-- Full OWASP Top 10 explanations  
-- Secure coding standards per language  
-- Detailed CI/CD tooling examples  
-- Container security internals  
-- Advanced fuzzing frameworks  
-- Secure compiler flags and build pipelines  
-- Software license legal analysis  
+- Language-specific coding examples  
+- Detailed OWASP Top 10 walkthroughs  
+- CI/CD pipeline tooling  
+- Container hardening deep dives  
+- Advanced exploit development  
+- Secure compiler internals  
 
 ---
+
 ## 🔗 Useful Links / Mind Map  
-[CISSP Domain 8 Destination Certification](https://youtu.be/t-CXqjxJn_I)
+[CISSP Domain 8 Destination Certification](https://www.youtube.com/watch?v=ZK_S3Z5r6dM)
