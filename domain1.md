@@ -300,9 +300,9 @@ Apply correct legal and procedural rules.
 
 **Type = how deep is it?**
 - **Type 1** → Looks good on paper  
-  (design only, point in time)
+  (control **design assessed by an independent auditor**, point in time)
 - **Type 2** → Proved it works  
-  (tested over time)
+  (control **design and operating effectiveness tested by an independent auditor** over time)
 
 
 ### 🧪 Key Forensics Rules  
