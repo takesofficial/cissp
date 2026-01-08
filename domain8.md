@@ -199,6 +199,7 @@ Human review is mandatory.
 ## ⚠️ ICS / SCADA Constraints (!!)
 Industrial systems prioritize **availability and safety**.
 **Do not scan or patch ICS aggressively.**
+Active scanning and frequent patching increase risk in ICS environments.
 
 Characteristics:
 - Fragile systems
