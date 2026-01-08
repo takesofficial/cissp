@@ -64,6 +64,26 @@ Exam angle: WAN = higher risk, lower control.
 
 ---
 
+## 🚄 MPLS (Multiprotocol Label Switching)
+
+MPLS is used in **WAN environments** to control traffic paths.
+
+Key behavior:
+- **First router decides the path**
+- Packet is given a **label**
+- All following routers **forward based on the label**
+- No per-hop routing decisions
+
+Why this matters:
+- Faster forwarding  
+- Predictable paths  
+- Better traffic engineering  
+
+Exam hook:  
+**MPLS = first router thinks, the rest obey**
+
+---
+
 ## 🧱 Network Topologies
 
 - **Bus** - Single backbone, legacy  
@@ -103,6 +123,34 @@ Goal: limit lateral movement.
 
 ---
 
+## 🧠 Software-Defined Networking (SDN)
+
+SDN separates **decision-making** from **packet forwarding**.
+
+### SDN Planes
+
+- **Data Plane**
+  - Forwards packets  
+  - Lives on switches and routers  
+
+- **Control Plane**
+  - Makes forwarding decisions  
+  - Centralized in SDN controller  
+
+- **Application Plane**
+  - Defines network intent and policy  
+  - Talks to controller via APIs  
+
+Why this matters:
+- Centralized control = efficiency  
+- Centralized control = high-value target  
+
+Exam angle:
+- **Compromise of the control plane impacts the entire network**
+- SDN increases power **and** risk
+
+---
+
 ## 🧩 VLANs and Trunking
 
 - **VLAN** - Logical network separation  
@@ -110,13 +158,13 @@ Goal: limit lateral movement.
 - **Access port** - Single VLAN
 
 Risks:
-- VLAN hopping
-- Misconfigured trunks
+- VLAN hopping  
+- Misconfigured trunks  
 
 Controls:
-- Disable unused ports
-- Native VLAN hardening
-- Port security
+- Disable unused ports  
+- Native VLAN hardening  
+- Port security  
 
 ---
 
@@ -124,9 +172,9 @@ Controls:
 
 Controls who can connect and under what conditions.
 
-- Device posture checks
-- Authentication before access
-- Quarantine networks
+- Device posture checks  
+- Authentication before access  
+- Quarantine networks  
 
 Exam angle: NAC is **preventive and detective**.
 
@@ -149,7 +197,7 @@ Exam angle: NAC is **preventive and detective**.
 - **SMTP / POP3 / IMAP**  
 - **DNS**  
 - **SNMP**  
-- **NTP**
+- **NTP**  
 
 Exam mindset: insecure protocols still exist, security wraps them.
 
@@ -187,7 +235,7 @@ You do not need all of them, just the common ones.
 
 - **Site-to-site** - Network level trust  
 - **Remote access** - User to network  
-- **Clientless** - Browser based
+- **Clientless** - Browser based  
 
 VPNs protect confidentiality, not endpoint compromise.
 
@@ -199,19 +247,19 @@ VPNs protect confidentiality, not endpoint compromise.
 
 - **WEP** - Broken, never acceptable  
 - **WPA/WPA2** - Improved, still vulnerable if misused  
-- **WPA3** - Modern standard
+- **WPA3** - Modern standard  
 
 ### Wireless Attacks
 
 - Evil twin  
 - Deauthentication  
 - Rogue AP  
-- Jamming
+- Jamming  
 
 Controls:
-- Strong auth
-- Monitoring
-- Disable legacy protocols
+- Strong auth  
+- Monitoring  
+- Disable legacy protocols  
 
 ---
 
@@ -220,30 +268,30 @@ Controls:
 DNS is critical infrastructure.
 
 Threats:
-- Cache poisoning
-- Spoofing
-- Amplification attacks
+- Cache poisoning  
+- Spoofing  
+- Amplification attacks  
 
 Controls:
 - **DNSSEC** - Integrity and authenticity  
 - Logging and monitoring  
-- Redundancy
+- Redundancy  
 
 ---
 
 ## 🧯 Firewalls (conceptual, not vendor)
 
 Types:
-- Packet filtering
-- Stateful inspection
-- Application-aware
-- Next-gen firewalls
+- Packet filtering  
+- Stateful inspection  
+- Application-aware  
+- Next-gen firewalls  
 
 Rule design:
-- Default deny
-- Least privilege
-- Explicit allow rules
-- Logging enabled
+- Default deny  
+- Least privilege  
+- Explicit allow rules  
+- Logging enabled  
 
 Exam trap: firewalls enforce policy, routers forward traffic.
 
@@ -261,6 +309,23 @@ Best defense often involves **architecture**, not tools.
 
 ---
 
+## 🕸️ WAN Availability and Resilience
+
+WAN security prioritizes **availability and predictability**.
+
+Key concepts:
+- Redundant links  
+- Diverse physical paths  
+- Failover and load sharing  
+- SLA-driven design  
+
+Exam mindset:
+- WAN outages = business outages  
+- Availability controls matter as much as encryption  
+- Architecture decisions often beat filtering rules  
+
+---
+
 ## 🧠 Exam Priorities Recap  
 
 Recognize and apply quickly:
@@ -273,7 +338,7 @@ Recognize and apply quickly:
 - VPN types and use cases  
 - Wireless threats and protections  
 - Why DNS and ICMP matter  
-- Availability-focused thinking (DDoS, redundancy)
+- Availability-focused thinking (DDoS, redundancy)  
 
 ---
 
@@ -286,7 +351,7 @@ Recognize and apply quickly:
 - Advanced multicast tuning  
 - Full IPv6 transition mechanics  
 - Detailed SDN controller architectures  
-- Carrier-grade WAN engineering
+- Carrier-grade WAN engineering  
 
 ---
 
