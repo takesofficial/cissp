@@ -13,8 +13,7 @@ The CISSP exam has a huge amount of available study material: the Official Study
 
 ## Exam Structure
 The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions. Because it is adaptive, the only number that matters is the lower end. You must be able to answer confidently at roughly under 2 minutes per question without relying on extra time later. Time saved early is not banked. The clock runs continuously until the exam stops.
-You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold.  
-All eight domains contribute roughly 10-16 percent.
+You may pass or fail at question 100. The exam stops the moment the system is confident you are above or below the passing threshold. All eight domains contribute roughly 10-16 percent.
 
 ## Who qualifies for CISSP
 You need five years of paid, cumulative experience across two or more CISSP domains. A four-year degree or an ISC2-approved credential waives one year. If you lack the required experience, you can pass the exam and become an Associate of ISC2 until you meet the requirement.
@@ -53,26 +52,11 @@ Once the book was done, I started with Pete Zerger's [Memorization Techniques](h
 4. **Update notes**
 5. **Retest**
 
-My main focus was practice questions. A weekly target that helped me:
-- Do **one full timed block of ~150 questions** to build stamina and pacing
-- Aim for **≤ 2 minutes per question** (use a timer)
-
-When I wasn't doing full exams, I used question apps for volume and repetition:
+When I wasn't doing practice exams, I used question apps for volume and repetition:
 - **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)**
 - **[DestCert Exam Prep](https://play.google.com/store/apps/details?id=com.destcert.app&hl=en&pli=1)**
 
-In spare time, I used videos for reinforcement (lighter than rereading the OSG) and kept updating this GitHub/notes based on missed concepts.
-
----
-
-### Video / content priority (in order)
-1. Finish **[Andrew Ramdayal's CISSP course](https://www.udemy.com/course/cisspcertification)** ASAP.
-2. Then watch **[Gwen Bettwy's CISSP videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw)**.
-3. Then review **[Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW)**.
-4. **Two weeks before the exam:** start skimming **[Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md)**  
-   - Focus heavily in the **final week** only.
-
----
+In spare time, I used videos & audio(book) for reinforcement (lighter than rereading the OSG) and kept updating this GitHub/notes based on missed concepts.
 
 ### Rules that kept me on track
 - **No new sources after Week 3** (reduce context switching and conflicting wording)
@@ -87,24 +71,33 @@ In spare time, I used videos for reinforcement (lighter than rereading the OSG) 
 | 04/11/25 | 07/11/25 | Finished index labeling the book | Labeled each chapter and domain | - | - |
 | 08/11/25 | 11/11/25 | Planning learning approach | Time estimates and study strategy | - | - |
 | 12/11/25 | 14/11/25 | Overall difficulty assessment | Source review and expectations | - | - |
-| 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week,   Finish date under the stated plan: 11/01/2026 | - | - |
+| 15/11/25 | 16/11/25 | Phase 1 Plan | Set for reading 1 domain per week | - | - |
+| 25/11/25 | ??/??/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
 | 17/11/25 | 23/11/25 | Domain 1 - OSG 10th book | Slow reading, 1 week completion | 5 | 24% |
 | 24/11/25 | 26/11/25 | Domain 2 - OSG 10th book | Completed in 2 days | 2 | 10% |
-| 25/11/25 | 25/11/25 | GitHub repository creation | Helped me structure my study path tremendously | - | - |
-| 27/11/25 | continuous | Started taking all 50 Thor Teaches' [QOTD](https://thorteaches.com/qotd/) | Suggested starting this after reading Domain 1 | - | - |
-| 27/11/25 | continuous | Started [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) during public transport travels | by Aviv Avitan | - | - |
 | 27/11/25 | 16/12/25 | Domain 3 - OSG 10th book | Completed in 3 weeks | 8 | 38% |
 | 17/12/25 | 20/12/25 | Domain 4 - OSG 10th book | Completed in 2 days | 2 | 10% |
 | 22/12/25 | 24/12/25 | Domain 5 - OSG 10th book | Completed in 2 days | 1 | 5% |
 | 26/12/25 | 27/12/25 | Domain 6 - OSG 10th book | Completed in 2 days | 2 | 10% |
 | 30/12/25 | 31/12/25 | Domain 7 - OSG 10th book | Completed in 2 days | 1 | 5% |
 | 31/12/25 | 31/12/25 | Domain 8 - OSG 10th book | Covered in previous domains | 0 | 0% |
-| 01/01/26 | continuous | Started [This Course](https://www.udemy.com/course/cisspcertification) during spare time | by Andrew Ramdayal, TIA Education | - | - |
-| 07/01/26 | continuous | Started [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) during spare time | by Jason Dion, Dion Training Solutions | - | - |
-| 11/03/26 | continuous | Started [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) 2 weeks before the exam | by Jason Dion, Dion Training Solutions | - | - |
+| | | | | | |
+| | | | |**total**|**amount**|
+| 27/11/25 | 10/01/25 | [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) | by Aviv Avitan | 12 | hrs |
+| ??/01/26 | ??/??/26 | [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) | by Peter Zerger, Inside Cloud and Security | 21 | min |
+| ??/01/26 | ??/??/26 | [Think Like A Manager](https://www.youtube.com/watch?v=vfC9OLsCqgk) | by Peter Zerger, Inside Cloud and Security | 35 | min |
+| ??/01/26 | ??/??/26 | [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) | by Peter Zerger, Inside Cloud and Security | 20 | min |
+| ??/01/26 | ??/??/26 | [CISSP Videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw) | by Gwen Bettwy, Tactical Security Inc. | 4 | hrs |
+| ??/01/26 | ??/??/26 | [CISSP Exam Prep 2025](https://youtu.be/aLIFzIBNM_8) | by Peter Zerger, Inside Cloud and Security | 8 | hrs |
+| ??/01/26 | ??/??/26 | [Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW) | by Peter Zerger, Dion Training Solutions | 8 | hrs |
+| ??/01/26 | ??/??/26 | [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) | by Jason Dion, Dion Training Solutions | 4 | hrs |
+| ??/01/26 | ??/??/26 | [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education | 41 | hrs |
+| 11/03/26 | ??/??/26 | [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) | by Jason Dion, Dion Training Solutions | - | hrs |
 
 > [!IMPORTANT]
-> Progress is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book's structure. 
+> Progress of the OSG book is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book's structure.
+
+> I listened to [This Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) exclusively in Public Transport or during my walks. I started [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) 2 weeks before my exam.
 
 ## How to Think for This Exam
 CISSP is a **management and governance** exam. It's **not hands-on**, but it **is technical knowledge applied in a business context**. You answer as the person accountable for **enterprise risk**, **governance/compliance**, **cost/impact**, and **people**.
