@@ -52,7 +52,6 @@ Your own words beat the textbook.
 
 - Notes written in your own language stick better.
 - Re-reading notes early prevents last-minute panic.
-- Destination CISSP Workbook is especially effective here.
 
 ---
 
@@ -69,26 +68,10 @@ Don’t fear formulas. Repetition fixes that.
 ### 7. Have a Study Buddy (Optional)
 Not required, but helpful.
 
-- Someone following the same plan keeps momentum.
-- Explaining concepts helps retention.
-
 ---
 
 ### 8. Avoid Doomscrolling r/CISSP
 Too many stories cause noise.
-
-- Use success/failure stories to build your plan.
-- Once the plan exists, stop reading them.
-- Everyone’s background is different.
-
----
-
-## 🧠 Memorization Collection (Mnemonics)
-
-_Source:_  
-https://www.reddit.com/r/cissp/comments/156q0l1/heres_my_collection_of_the_memorization/
-
-Silly works. Silly sticks.
 
 ---
 
@@ -107,7 +90,6 @@ Silly works. Silly sticks.
 
 ### 🧬 Risk Maturity Model
 **Alien Pizza Doesn’t Ingest Organically**
-
 - Ad Hoc  
 - Preliminary  
 - Defined  
@@ -116,52 +98,8 @@ Silly works. Silly sticks.
 
 ---
 
-### 🔐 Hash Algorithms
-**MRS. H**
-
-- MD5  
-- RIPEMD  
-- SHA  
-- HAVAL  
-
----
-
-### 🔑 Asymmetric Crypto
-**DEREK**
-
-- Diffie-Hellman  
-- El Gamal  
-- RSA  
-- Elliptic Curve  
-- Knapsack  
-
----
-
-### 🔒 Symmetric Crypto
-**23 BRAIDS**
-
-- Twofish  
-- 3DES  
-- Blowfish  
-- RC (Rivest Ciphers)  
-- AES  
-- IDEA  
-- DES  
-- Skipjack  
-
-_Derek gives Mrs. H 23 braids_
-
----
-
-### 🔁 Diffie-Hellman
-“If your key is going through hell, protect it with Diffie-Hellman.”
-
-- Secure key exchange over insecure channels.
-
----
-
 ### 🔄 Change Management
-**RRATS!**
+**RRATS!** (Richard Rarely Approves The Scheduled Deployment)
 
 - Request  
 - Review  
@@ -258,8 +196,8 @@ Initiate → Diagnose → Establish → Act → Learn
 
 ### 🧱 Security Models Quick Hooks
 
-- **Bell-LaPadula** - WURD (Write Up, Read Down)  
-- **Biba** - No WURD (No Write Up, No Read Down)  
+- **Bell-LaPadula** - BL(UD) (Write Up, Read Down)  
+- **Biba(DU)** - (No Write Up, No Read Down)  
 - **Clark-Wilson** - Integrity + well-formed transactions  
 - **Brewer-Nash** - Conflict of interest  
 
