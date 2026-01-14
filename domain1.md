@@ -128,7 +128,7 @@ If **negative**, the control **costs more than the damage**, so don’t buy it.
 
 ---
 
-#### 🧠 Summary (caveman mode)
+#### 🧠 Summary
 1.
 - **SLE** = Money lost each time bad thing happens.  
 - **AV** = How much thing is worth.  
