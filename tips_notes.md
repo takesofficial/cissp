@@ -248,7 +248,7 @@ Initiate → Diagnose → Establish → Act → Learn
 ### 📦 OSI PDUs
 **Definitely Some People Fear Bedbugs**
 
-- Layers 5–7: Data  
+- Layers 5-7: Data  
 - Layer 4: Segments  
 - Layer 3: Packets  
 - Layer 2: Frames  
@@ -258,17 +258,17 @@ Initiate → Diagnose → Establish → Act → Learn
 
 ### 🧱 Security Models Quick Hooks
 
-- **Bell-LaPadula** – WURD (Write Up, Read Down)  
-- **Biba** – No WURD (No Write Up, No Read Down)  
-- **Clark-Wilson** – Integrity + well-formed transactions  
-- **Brewer-Nash** – Conflict of interest  
+- **Bell-LaPadula** - WURD (Write Up, Read Down)  
+- **Biba** - No WURD (No Write Up, No Read Down)  
+- **Clark-Wilson** - Integrity + well-formed transactions  
+- **Brewer-Nash** - Conflict of interest  
 
 ---
 
 ### 🧾 Common Criteria (EAL)
-- EAL 1–2: Simple  
-- EAL 3–4: Methodical  
-- EAL 5–6: Semi-formal  
+- EAL 1-2: Simple  
+- EAL 3-4: Methodical  
+- EAL 5-6: Semi-formal  
 - EAL 7: Formal  
 
 ---
