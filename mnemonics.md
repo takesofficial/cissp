@@ -132,7 +132,7 @@
 ## Chapter 8 - Principles of Security Models, Design, and Capabilities
 
 <p align="center">
-<img width="572" height="562" alt="Image" src="https://github.com/user-attachments/assets/dac295c5-161c-4396-aaa6-bba9e89af8e0" /> 
+ <img width="572" height="562" alt="Image" src="https://github.com/user-attachments/assets/a616215f-c09f-4d17-a3ef-26e72e407001" />
 </p>
 
 <p align="center">
