@@ -1,4 +1,4 @@
-# 🧠 Mnemonic
+# 🧠 notes
 
 Collected lessons, study advice, and memorization techniques from others who passed the CISSP.
 This page exists to reduce friction, not to be perfect. Use what sticks. Ignore the rest.
