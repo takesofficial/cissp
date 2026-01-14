@@ -67,10 +67,8 @@ Identify threats, evaluate vulnerabilities, calculate business impact, and selec
 
 ### 🔢 Risk Equation Variants  
 Some sources express risk differently. All mean the same thing:
-
 - **Risk = Likelihood × Impact**  
 - **Risk = Threat × Vulnerability × Asset Value**  
-These show up in explanation-style questions but do not replace SLE/ALE.
 
 ### 🔍 Qualitative  
 Used when numbers are impossible or unnecessary.
@@ -87,7 +85,7 @@ If you know the money, you know the risk.**
 
 ---
 
-#### 🧩 Step 1 - SLE
+#### 🧩 Step 1 - SLE (Money lost each time bad thing happens.)
 **SLE = AV × EF**
 
 - **Single Loss Expectancy (SLE)** = “How much money we lose from ONE bad event.”  
@@ -101,7 +99,7 @@ If you know the money, you know the risk.**
 
 ---
 
-#### 🧮 Step 2 - ALE
+#### 🧮 Step 2 - ALE (Money lost per year from bad thing.)
 **ALE = SLE × ARO**
 
 - **Annualized Loss Expectancy (ALE)** = “How much money we lose PER YEAR from this threat.”  
@@ -130,12 +128,12 @@ If **negative**, the control **costs more than the damage**, so don’t buy it.
 
 #### 🧠 Summary
 1.
-- **SLE** = Money lost each time bad thing happens.  
+- **SLE** = Money lost each time bad thing happens. (SLE = AV × EF)
 - **AV** = How much thing is worth.  
 - **EF** = How much % breaks when bad thing happens.
 
 2.
-- **ALE** = Money lost per year from bad thing.    
+- **ALE** = Money lost per year from bad thing. (SLE × ARO)
 - **ARO** = How often bad thing happens each year.  
 
 3.
