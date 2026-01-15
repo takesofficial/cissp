@@ -50,19 +50,16 @@ High level, manager brain first, engineer brain second.
 
 Focus on what each model protects and the simple rule you see in questions.
 
-- **Bell-LaPadula** - Confidentiality  
+- **Bell-LaPadula** BL(UD) - Confidentiality  
   - "No read up" - subject cannot read higher classification.  
   - "No write down" - subject cannot write to lower classification.
-
-- **Biba** - Integrity  
+- **Biba(DU)** - Integrity  
   - "No read down" - subject cannot read lower integrity data.  
   - "No write up" - subject cannot write to higher integrity level.
-
-- **Clark-Wilson** - Commercial integrity  
+- **Clark-Wilson** - Integrity 
   - Well-formed transactions + separation of duties.  
   - Users cannot touch data directly, only through controlled programs.
-
-- **Brewer-Nash (Chinese Wall)**  
+- **Brewer-Nash (Chinese Wall)** - Confidentiality  
   - Avoid conflicts of interest.  
   - Access decisions depend on what you already accessed (e.g. only one bank in a sector).
 
@@ -204,12 +201,21 @@ Big picture: stop easy physical attacks that make all logical controls useless.
 
 ---
 
+## 🏭 ICS / OT (SCADA)
+Industrial Control Systems (ICS) run physical processes (OT). Expect **safety + availability first**.
+**If it controls the real world** (power grid / water plant / refinery / manufacturing line) → think **ICS/SCADA**
+
+### Types (recognize)
+- **SCADA** - wide-area supervision + data acquisition (utilities, pipelines)
+- **DCS** - local, process/state-driven control (plants)
+- **PLC** - device-level controller (machines)
+
 ## 🎯 Exam Priorities Recap  
 
 Recognize and apply quickly:
 
 - TCB, reference monitor, security kernel, protection rings.  
-- Which security model maps to **confidentiality** (Bell-LaPadula) vs **integrity** (Biba, Clark-Wilson).  
+- Which security model maps to **confidentiality** (Bell-LaPadula, Brewer–Nash/Chinese Wall) vs **integrity** (Biba, Clark–Wilson).
 - Basic crypto decisions: symmetric vs asymmetric, hashing, digital signatures, PKI role of CA.  
 - ECB vs CBC/GCM at a high level, and why ECB is weak.  
 - What TPM/HSM do, and why HSM is used for high-value keys.  
