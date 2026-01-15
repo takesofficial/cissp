@@ -55,7 +55,10 @@
 ### RAID
 - **RAID 0:** **"0 = 0 redundancy"** (striping; performance; any disk loss = data loss)
 - **RAID 1:** **"1 = 1 mirror"** (mirroring; availability)
-- ~**RAID 2** and **RAID 3**~ (RAID 2 and RAID 3 are effectively not used.)
+- ~~**RAID 2** and **RAID 3**~~ (effectively not used / rare)
+- **RAID 5:** (striping + distributed parity; balanced; tolerates 1 disk failure; write penalty)
+- **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
+- **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
 
 > [!TIP]
 > - How long? think **RTO**.
