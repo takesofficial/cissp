@@ -1,5 +1,5 @@
 # Nick Takes' CISSP Study
-📌 **Last update:** 2026-01-15 | 🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  
+📌 **Last update:** 2026-01-16 | 🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  
 
 ## Table of contents
 - [Intro](#intro)
@@ -46,7 +46,7 @@ Once the book was done, I started with Pete Zerger's [Memorization Techniques](h
 4. **Update notes**
 5. **Retest**
 
-When I wasn't doing practice exams, I used question apps for volume and repetition:
+I used these for repetition and knowing where to focus on:
 - **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)** (they have a [web app](https://isc2-learnzapp.web.app/prepare)).
 
 In spare time, I used videos & audio(book) for reinforcement (lighter than rereading the OSG) and kept updating this GitHub/notes based on missed concepts.
