@@ -13,10 +13,6 @@
   
 - **AAA** = **A**uthentication, **A**uthorization, **A**ccounting
 
-> [!TIP]
-> - "direction" or "management intent," think **policy** (not configs).
-> - "mandatory specifics," think **standard**.
-
 ---
 
 ## Chapter 2 - Personnel Security and Risk Management Concepts
@@ -32,10 +28,6 @@
 - **Care vs Diligence**  
   **Care = DO** reasonable controls  
   **Diligence = PROVE** (evaluate/monitor/verify)
-
-> [!TIP]
-> - "Insurance/contract" language usually points to **transfer**.
-> - "Formally approve and record" language points to **accept**.
 
 ---
 
@@ -60,11 +52,6 @@
 - **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
 - **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
 
-> [!TIP]
-> - How long? think **RTO**.
-> - How much data loss? think **RPO**.
-> - **RAID ≠ Backup** (availability/fault tolerance is not the same as recoverability)
-
 ---
 
 ## Chapter 4 - Laws, Regulations, and Compliance
@@ -80,9 +67,6 @@
   **T**rademark (brand)  
   **Trade secret** (protect by secrecy)
 
-> [!TIP]
-> - Reasonable care and defensibility? look for **due care/due diligence**.
-
 ---
 
 ## Chapter 5 - Protecting Security of Assets
@@ -94,9 +78,6 @@
 - **Data roles: "Owner decides, Custodian applies"**  
   Owner = classification + access approval  
   Custodian = implements safeguards
-
-> [!TIP]
-> - Classify by business impact; label/handle based on classification.
 
 ---
 
@@ -110,11 +91,6 @@
     → integrity + message authentication → **HMAC-SHA**
 - **I**dentify/Sign → nonrepudiation → **digital signatures**
 
-> [!TIP]
-> - Hash ≠ encrypt. Hash is for **integrity**, not confidentiality.
-
-
-
 ---
 
 ## Chapter 7 - PKI and Cryptographic Applications
@@ -126,10 +102,6 @@
 - **Revocation: "CRL = list, OCSP = ask"**  
   CRL = download list  
   OCSP = query status
-
-> [!TIP]
-> - Certificates bind identity to a public key; trust flows from the CA chain.
-
 ---
 
 ## Chapter 8 - Principles of Security Models, Design, and Capabilities
@@ -173,10 +145,6 @@ Not directional.
 - **Reference Monitor: "ATT"**  
   **A**lways invoked, **T**amperproof, **T**iny (small/verifiable)
 
-> [!TIP]
-> - prevent disclosure? think **BLP**.
-> - prevent improper modification? think **Biba/Clark-Wilson**.
-
 ---
 
 ## Chapter 9 - Security Vulnerabilities, Threats, and Countermeasures
@@ -188,9 +156,6 @@ Not directional.
   **V**irus = needs host/user action  
   **T**rojan = looks legit, does bad
 
-> [!TIP]
-> - Prefer layered controls: preventive + detective + corrective.
-
 ---
 
 ## Chapter 10 - Physical Security Requirements
@@ -199,9 +164,6 @@ Not directional.
 - **Physical goals: DDDR**  
   **D**eter → **D**etect → **D**elay → **R**espond
 - **Priority:** Life safety > everything else
-
-> [!TIP]
-> - Many physical controls are about buying **time** (delay) to enable response.
 
 ---
 ## Chapter 11 - Secure Network Architecture and Components
@@ -215,9 +177,6 @@ Not directional.
 OSI helps decide where to place controls. If one system is hacked, the attacker cannot move sideways to others.
 This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
 
-> [!TIP]
-> - Architecture? think "segmentation/least privilege," not a specific product.
-
 ---
 
 ## Chapter 12 - Secure Communications and Network Attacks
@@ -228,10 +187,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
 - **IPsec: "AH = Authenticity, ESP = Privacy"**  
   AH = integrity/auth (no encryption)  
   ESP = encryption + can provide integrity
-
-> [!TIP]
-> - Match controls to layer: web apps often need app-aware protections.
-
 ---
 
 ## Chapter 13 - Managing Identity and Authentication
@@ -241,10 +196,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
   
 - **Kerberos: "TGT → TGS → Service"**  
   Get TGT, trade for service ticket, use service ticket
-
-> [!TIP]
-> - Authentication = prove identity;
-> - Authorization = permissions.
 
 ---
 
@@ -262,14 +213,9 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
   **S**eparation of duties  
   **S**ingle accountability (unique IDs)
 
-> [!TIP]
-> - If many users share job functions, **RBAC** reduces admin overhead cleanly.
-
 ---
 
 ## Chapter 15 - Security Assessment and Testing
-
-
 
 <p align="center">
 <img width="405" height="304" alt="Image" src="https://github.com/user-attachments/assets/062e3b5c-9a7e-4e35-be22-785fa0a5fd8f" />
@@ -279,9 +225,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
   **W**hite (full knowledge)  
   **G**ray (some)  
   **B**lack (none)
-
-> [!TIP]
-> - Scans find known issues; deeper testing demonstrates real-world exploitability.
 
 ---
 
@@ -295,9 +238,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
 - **Logs: "TI"**  
   **T**roubleshooting + **I**nvestigation
 
-> [!TIP]
-> - Operational controls (change mgmt, logging, backup validation) are foundational.
-
 ---
 
 ## Chapter 17 - Preventing and Responding to Incidents
@@ -305,9 +245,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
 <p align="center">
 <img width="318" height="314" alt="Image" src="https://github.com/user-attachments/assets/e8acf9cb-07e6-4a42-8514-31561d54a99e" />
 </p>
-
-> [!TIP]
-> - Preserve evidence early; coordinate comms through approved channels.
 
 ---
 
@@ -319,9 +256,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
   **C**old (space/utilities)  
   **W**arm (some gear)  
   **H**ot (ready now)
-
-> [!TIP]
-> - Site choice is driven by recovery objectives and cost tolerance.
 
 ---
 
@@ -339,9 +273,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
   **A**ct honorably/lawfully  
   **P**rofession (advance/protect)
 
-> [!TIP]
-> - If evidence might go legal, protect integrity first; document everything.
-
 ---
 
 ## Chapter 20 - Software Development Security
@@ -353,9 +284,6 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
 - **Web defense: "Validate IN, Encode OUT"**
 - **Threat modeling: STRIDE**  
   Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation
-
-> [!TIP]
-> - Strong requirements + secure design prevent the most expensive fixes later.
 
 ---
 
@@ -370,8 +298,5 @@ This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
   - Parameterize queries
   - Validate inputs
   - Least privilege for service accounts
-
-> [!TIP]
-> - Prefer structural fixes (parameterization/encoding) over fragile pattern filters.
 
 ---
