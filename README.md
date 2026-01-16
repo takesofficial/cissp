@@ -1,6 +1,5 @@
 # Nick Takes' CISSP Study
 📌 **Last update:** 2026-01-15 | 🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  
-> Note: This repo does not contain exam questions or copyrighted text. It's made up of my own summaries and memory hooks.
 
 ## Table of contents
 - [Intro](#intro)
