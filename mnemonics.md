@@ -18,6 +18,8 @@
 ## Chapter 2 - Personnel Security and Risk Management Concepts
 
 <p align="center">
+<img width="615" height="590" alt="Image" src="https://github.com/user-attachments/assets/40cf06e8-4bce-4134-90b6-d1ae3c8e8f0f" />
+
 <img width="515" height="490" alt="Image" src="https://github.com/user-attachments/assets/4d93b4d2-c618-4ba2-bc2c-c26db77fe9d8" />
 </p>
 
