@@ -45,11 +45,12 @@
   **RTO** = Recovery Time Objective (time to restore service)
   **RPO** = Recovery Point Objective (point-in-time data loss allowed)
   
-- **Business Impact Analysis. (BIA) outputs: "R³"**  
-  **R**TO / **R**PO / **R**esource priorities
+- **Business Impact Analysis. (BIA) **  
+  **M**TD / **R**TO / **R**PO
   
 <p align="center">
-<img width="588" height="352" alt="Image" src="https://github.com/user-attachments/assets/39e7f6fb-26a6-428c-b960-dfc2e94010bb" />
+<img width="850" height="480" alt="Image" src="https://github.com/user-attachments/assets/041247bd-0b1a-4762-aa5d-1f717577796b" />
+<img width="850" height="680" alt="Image" src="https://github.com/user-attachments/assets/68786796-19fd-4849-8568-b06b1ba49e41" />
 </p>
 
 ### DR exercise order (least → most disruptive)
@@ -285,12 +286,16 @@ The OSI model provides a framework for placing security controls at appropriate 
   **C**hain of custody  
   **C**ontrol access  
   **C**onserve integrity
-  
-- **Ethics canons: "SPAP"**  
-  **S**ociety/common good  
-  **P**rincipals (diligent service)  
-  **A**ct honorably/lawfully  
-  **P**rofession (advance/protect)
+
+<p align="center">
+<img width="374" height="228" alt="Image" src="https://github.com/user-attachments/assets/222953af-d6f1-451b-8faa-0de218bfce23" />
+</p>
+
+- **ISC2 Ethics canons: "SASP"**  
+1. Protect **s**ociety, the common good, necessary public trust and confidence, and the infrastructure.
+2. **A**ct honorably, honestly, justly, responsibly, and legally.
+3. Provide diligent and competent **s**ervice to principals.
+4. Advance and protect the **p**rofession.
 
 ---
 
