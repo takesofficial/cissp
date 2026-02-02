@@ -218,19 +218,31 @@ Different legal consequences and standards.
 
 ---
 
-## 📝 Major Regulations  
-What each protects.
+## 🏛️ Legal & Regulatory Awareness
+CISSP tests laws at two levels:
+1. **U.S. or EU-based** → know it well
+2. **Non-U.S./EU** → recognize it and apply general privacy principles
 
-- **SOX** - Financial reporting integrity.  
-- **HIPAA** - Medical data privacy/security (PHI).  
-- **GLBA** - Customer financial data protection.  
-- **PCI-DSS** - Credit card security (contractual).  
-- **GDPR** - EU personal data rights; 72h breach notification.  
-- **CCPA** - California consumer privacy rights.  
-- **CFAA** - Anti-hacking law.  
-- **ECPA** - Protects electronic communications (in transit + stored).  
-- **DMCA** - Digital copyright & DRM protection.  
-- **FISMA** - Federal agency security program requirements.
+**🔴 Must Know Well (High Exam Weight)** Laws you must understand and reason about
+- 🌍 **GDPR** - EU personal data protection; data subject rights and breach notification  
+- 🩺 **HIPAA** - Protection of medical data (PHI); healthcare privacy and security  
+- 🧾 **SOX** - Financial reporting integrity and executive accountability (Sarbanes–Oxley Act)
+- 💳 **GLBA** - Protection of customer financial data held by financial institutions  
+- 💳 **PCI DSS** - Protection of cardholder data; contractual industry security standard  
+- 🏛️ **FISMA** - Security program requirements for U.S. federal agencies and contractors  
+- 👤 **CCPA** - California consumer personal data privacy rights  
+- 👮 **CFAA** - Criminal law addressing unauthorized access to computer systems  
+- 📡 **ECPA** - Protection of electronic communications privacy (in transit and stored)  
+- ©️ **DMCA** - Digital copyright protection and anti-circumvention rules  
+
+**🟡 Recognize & Classify (Lower Exam Weight)** Laws you only need to recognize and classify by region and intent
+You only need to know **what region they belong to** and **that they are privacy/data protection laws**.
+
+- 🍁 **PIPEDA (Canada)** - Canadian personal data protection law.
+- 🏯 **APPI (Japan)** - Japanese personal data protection law.
+- 👲 **PIPL (China)** - Chinese personal information protection law.
+- 🦁 **POPIA (South Africa)** - South African personal data protection law.
+- 🌅 **LGPD (Brazil)** - Brazilian personal data protection law.
 
 ---
 
