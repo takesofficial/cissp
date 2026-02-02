@@ -10,7 +10,10 @@
   
 - **Policy Stack: PSPG**  
   **P**olicy (why) → **S**tandard (what) → **P**rocedure (how) → **G**uideline (optional tips)
-  
+<p align="center">
+<img width="473" height="414" alt="Image" src="https://github.com/user-attachments/assets/b05d47d8-5e12-4e61-befc-561a6d4a7360" />
+</p>
+
 - **AAA** = **A**uthentication, **A**uthorization, **A**ccounting
 <p align="center">
 <img width="512" height="768" alt="Image" src="https://github.com/user-attachments/assets/137b47b5-5e56-42db-beee-0d6767bf4cd9" />
@@ -44,6 +47,10 @@
   
 - **Business Impact Analysis. (BIA) outputs: "R³"**  
   **R**TO / **R**PO / **R**esource priorities
+  
+<p align="center">
+<img width="588" height="352" alt="Image" src="https://github.com/user-attachments/assets/39e7f6fb-26a6-428c-b960-dfc2e94010bb" />
+</p>
 
 ### DR exercise order (least → most disruptive)
 - **C-T-P-F** = **C**hecklist → **T**abletop → **P**arallel → **F**ull interruption
@@ -177,18 +184,17 @@ Not directional.
 <img width="334" height="343" alt="Image" src="https://github.com/user-attachments/assets/f0bf42e9-1379-415a-b589-14b222340ab1" />
 </p>
 
-💥 = Blast Radius Reducution
+1. 🔌 **Physical** – Cables / Fiber / Voltage
+2. 🔄 Segmentation: **Data Link** – MAC / Ethernet / ARP 💥
+3. 🌐 Segmentation: **Network** – ICMP / Routing (Where **IP** lives) 💥
+4. ⚡ Traffic: **Transport** – TCP / UDP / (Where **Ports** live) (Where traffic is limited)
+5. 🤝 Behavior: **Session** – Setup / teardown / NetBIOS
+6. 🔐 Behavior: **Presentation** – TLS / SSL (Where **encryption** lives)
+7. 🎯 Behavior: **Application** –  SMTP / SFTP (Where **HTTPS/DNS** live)
 
-1. **Physical** – Cables / Fiber / Voltage
-2. Segmentation: **Data Link** – MAC / Ethernet / ARP 💥
-3. Segmentation: **Network** – ICMP / Routing (Where **IP** lives) 💥
-4. Traffic: **Transport** – TCP / UDP / (Where **Ports** live) (Where traffic is limited)
-5. Behavior: **Session** – Setup / teardown / NetBIOS
-6. Behavior: **Presentation** – TLS / SSL (Where **encryption** lives)
-7. Behavior: **Application** –  SMTP / SFTP (Where **HTTPS/DNS** live)
-
-- **Blast Radius**  
+**💥 = Blast Radius Reducution**
 The OSI model provides a framework for placing security controls at appropriate layers. To reduce the blast radius (how much damage happens when something goes wrong.) of a compromise, segmentation controls are applied primarily at Layer 2 and Layer 3, where VLANs, subnets, and routing rules enforce isolation and prevent lateral movement between systems.
+
 
 ---
 
