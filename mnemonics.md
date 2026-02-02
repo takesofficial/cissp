@@ -177,9 +177,18 @@ Not directional.
 <img width="334" height="343" alt="Image" src="https://github.com/user-attachments/assets/f0bf42e9-1379-415a-b589-14b222340ab1" />
 </p>
 
-- **Segmentation goal: "Blast Radius"**  
-OSI helps decide where to place controls. If one system is hacked, the attacker cannot move sideways to others.
-This is mainly done at Layer 2 and Layer 3 (VLANs, subnets, routing rules).
+💥 = Blast Radius Reducution
+
+1. **Physical** – Cables / Fiber / Voltage
+2. Segmentation: **Data Link** – MAC / Ethernet / ARP 💥
+3. Segmentation: **Network** – ICMP / Routing (Where **IP** lives) 💥
+4. Traffic: **Transport** – TCP / UDP / (Where **Ports** live) (Where traffic is limited)
+5. Behavior: **Session** – Setup / teardown / NetBIOS
+6. Behavior: **Presentation** – TLS / SSL (Where **encryption** lives)
+7. Behavior: **Application** –  SMTP / SFTP (Where **HTTPS/DNS** live)
+
+- **Blast Radius**  
+The OSI model provides a framework for placing security controls at appropriate layers. To reduce the blast radius (how much damage happens when something goes wrong.) of a compromise, segmentation controls are applied primarily at Layer 2 and Layer 3, where VLANs, subnets, and routing rules enforce isolation and prevent lateral movement between systems.
 
 ---
 
