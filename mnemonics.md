@@ -12,7 +12,9 @@
   **P**olicy (why) → **S**tandard (what) → **P**rocedure (how) → **G**uideline (optional tips)
   
 - **AAA** = **A**uthentication, **A**uthorization, **A**ccounting
-
+<p align="center">
+<img width="512" height="768" alt="Image" src="https://github.com/user-attachments/assets/137b47b5-5e56-42db-beee-0d6767bf4cd9" />
+</p>
 ---
 
 ## Chapter 2 - Personnel Security and Risk Management Concepts
