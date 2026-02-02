@@ -49,6 +49,8 @@ Three core security outcomes.
 - **Integrity** - Prevent unauthorized modification; ensure authenticity.  
 - **Availability** - Ensure timely, reliable access for authorized users.
 
+Non-repudiation and accountability are services built on top of it.
+
 ---
 
 ## 🔐 AAA  
