@@ -228,11 +228,11 @@ CISSP tests laws at two levels:
 **🔴 Must Know Well (High Exam Weight)** Laws you must understand and reason about
 - 🌍 **GDPR** - EU personal data protection; data subject rights and breach notification  
 - 🩺 **HIPAA** - Protection of medical data (PHI); healthcare privacy and security  
-- 🧾 **SOX** - Financial reporting integrity and executive accountability (Sarbanes–Oxley Act)
-- 💳 **GLBA** - Protection of customer financial data held by financial institutions  
+- 💰 **SOX** - Financial reporting integrity and executive accountability (Sarbanes–Oxley Act)
+- 💵 **GLBA** - Protection of customer financial data held by financial institutions  
 - 💳 **PCI DSS** - Protection of cardholder data; contractual industry security standard  
 - 🏛️ **FISMA** - Security program requirements for U.S. federal agencies and contractors  
-- 👤 **CCPA** - California consumer personal data privacy rights  
+- 🌴 **CCPA** - California consumer personal data privacy rights  
 - 👮 **CFAA** - Criminal law addressing unauthorized access to computer systems  
 - 📡 **ECPA** - Protection of electronic communications privacy (in transit and stored)  
 - ©️ **DMCA** - Digital copyright protection and anti-circumvention rules  
