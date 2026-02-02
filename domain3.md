@@ -105,12 +105,13 @@ Know high level:
 - **ECB** - identical blocks produce identical ciphertext. Weak, avoid.  
 - **CBC / GCM / CTR** - use IV/counter, hide patterns, commonly used.
 
-### Crypto Attacks (names only)  
+### Crypto Attacks
 
-- **Brute force** - try all keys.  
-- **Birthday attack** - targets hashes and collisions.  
-- **Side channel** - power, timing, EM leaks.  
-- **Chosen plaintext / ciphertext** - attacker can feed chosen data and analyze outputs.
+- **Brute force** - attacker keeps trying every possible password or key one by one until the system finally accepts one and lets them in.
+- **Birthday attack** - attacker keeps trying different messages until 2 of them accidentally get the same hash, just like two people sharing a birthday by chance. targets (old) hash weakness, integrity failure and collisions.
+- **Side channel** -  attacker doesn't attack the system itself, but instead learns secrets by watching how it behaves, like how long it takes, how much power it uses, or what sounds it makes.
+- **Chosen plaintext** -  attacker can deliberately send messages of their own choosing to be encrypted, then studies the encrypted results to learn how the encryption behaves.
+- **Chosen ciphertext** - attacker decides encrypted messages to decrypt and uses the results to figure out the secret key or how decryption works.
 
 ---
 
