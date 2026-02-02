@@ -281,14 +281,13 @@ The OSI model provides a framework for placing security controls at appropriate 
 
 ## Chapter 19 - Investigations and Ethics
 
-
 - **Evidence handling: "C³"**  
   **C**hain of custody  
   **C**ontrol access  
   **C**onserve integrity
 
 <p align="center">
-<img width="374" height="228" alt="Image" src="https://github.com/user-attachments/assets/222953af-d6f1-451b-8faa-0de218bfce23" />
+<img width="580" height="428" alt="Image" src="https://github.com/user-attachments/assets/222953af-d6f1-451b-8faa-0de218bfce23" />
 </p>
 
 - **ISC2 Ethics canons: "SASP"**  
