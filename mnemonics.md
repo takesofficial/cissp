@@ -221,6 +221,9 @@ The OSI model provides a framework for placing security controls at appropriate 
 
 ## Chapter 14 - Controlling and Monitoring Access
 
+<p align="center">
+ <img width="934" height="493" alt="Image" src="https://github.com/user-attachments/assets/69dbb4a7-40e8-46fa-9c64-2df3879a1c24" />
+</p>
 
 - **Access models: "DMRA"**  
   **D**AC (owner decides)  
