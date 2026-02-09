@@ -173,11 +173,11 @@ You do not need truth tables, just the basic behavior and that XOR "cancels" wit
 
 ### Fire Classes  
 
-- **Class A** - ordinary combustibles (wood, paper). Water, foam.  
-- **Class B** - flammable liquids. Foam, CO₂, dry chemicals.  
-- **Class C** - energized electrical. CO₂, nonconductive agents.  
-- **Class D** - combustible metals. Special dry powders.  
-- **Class K** (sometimes tested) - cooking oils/fats. Wet chemicals.
+- **Class A** - Fire Extinguisher / A = Ash  
+- **Class B** - Combustile / B = Boil
+- **Class C** - Liquid / C = Current
+- **Class D** - Metal / D = Dent
+- **Class K** - Oil/Fat / K = Kitchen
 
 ### Suppression Systems  
 
