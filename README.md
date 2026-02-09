@@ -78,7 +78,8 @@ In spare time, I used videos & audio(book) for reinforcement (lighter than rerea
 |  |  |  |  |  |  |
 |  |  |  | **total** | **amount** |  |
 | 2025-11-27 | 2026-01-10 | [AI Generated Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) | by Aviv Avitan | 12 | hrs |
-| 2026-01-15 | 2026-01-15 | [Why you will pass the CISSP](https://www.youtube.com/watch?v=v2Y6Zog8h2A) | by Kelly Handerhan | 16 | min |
+| 2026-01-15 | 2026-01-15 | [Why you will pass the CISSP (Legacy)](https://www.youtube.com/watch?v=v2Y6Zog8h2A) | by Kelly Handerhan, Cybertrain.IT | 16 | min |
+| 2026-02-26 | 2026-02-26 | [Why You WILL Pass the CISSP Exam (New)](https://www.youtube.com/watch?v=gKe88tIeVYo) | by Kelly Handerhan, Destination Certification | 20 | min |
 | 2026-01-?? | 2026-??-?? | [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) | by Peter Zerger, Inside Cloud and Security | 21 | min |
 | 2026-01-?? | 2026-??-?? | [Think Like A Manager](https://www.youtube.com/watch?v=vfC9OLsCqgk) | by Peter Zerger, Inside Cloud and Security | 35 | min |
 | 2026-01-?? | 2026-??-?? | [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) | by Peter Zerger, Inside Cloud and Security | 20 | min |
