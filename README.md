@@ -1,5 +1,5 @@
 # Nick Takes' CISSP Study
-📌 **Last update:** 2026-01-16 | 🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  
+🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  | 📌 **Last update:** 2026-02-09 
 
 ## Table of contents
 - [Intro](#intro)
@@ -16,7 +16,17 @@
 ## Intro
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam. The volume of available material can make it difficult to know where to start or what deserves focused attention. This isn't a complete list, but it points you to the resources and practice materials that actually matter. The study guides included here are updated for 2025 and aligned with the latest ISC2 objectives and the 10th edition of the Official Study Guide.
 
-If you find this repository helpful, share it. If you notice errors or have improvements to suggest, let me know. Connect with me on [LinkedIn](https://www.linkedin.com/in/nicktakes/).
+You are probably wondering how difficult this path really is, how hard the exam feels, or what approach worked for me. If there is one thing I can say (as of 2026-02-09), it is this: stay positive and trust that you can do this.
+
+If I had to recommend a starting point, I would suggest beginning with **[This CISSP Course](https://www.udemy.com/course/cisspcertification)** by Andrew Ramdayal before diving straight into the book. Starting with the Official Study Guide is perfectly fine as well - this is simply a bit of learning efficiency optimization. I also strongly recommend using **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)** early in your studies (buy it for 3 months and start right away, without overthinking online opinions), and pairing it with **[Quantum Exams](https://quantumexams.com)** as soon as possible to establish a realistic baseline. Do not be discouraged by low initial scores. A 200 Quantum Exams score is not failure, it is a reference point. The improvement you can make in a single focused week is surprisingly motivating. Accept that, for a while, you will be living with the material: the book, the concepts, the domains. Be curious. Wake up wanting to understand the topics you are weakest in. 
+
+These notes are personal and may differ from other sources. They do not cover everything, and they were originally created for my own learning. Some areas are more refined than others, simply because I was not always in a position to immediately update everything. Still, I believe this repository gives a solid sense of how much ground the CISSP exam really covers and how to think about it.
+
+If this helps you gain even the smallest insight, even 0.01 percent toward passing your CISSP, then sharing it was worth it.
+
+If you find this repository helpful, share it. If you notice errors or have improvements to suggest, let me know.
+
+Connect with me on **[LinkedIn](https://www.linkedin.com/in/nicktakes/)**.
 
 ## CISSP Exam Overview
 The CISSP exam has a huge amount of available study material: the Sybex (ISC)² CISSP Official Study Guide (OSG), third-party books, instructor content, and community notes. For a structured start, the OSG combined with the Official Practice Tests is still the most complete foundation.
@@ -39,23 +49,21 @@ During commutes I listened to this **[AI generated CISSP podcast](https://open.s
 ---
 
 ### Phase 2 - Questions-first loop (after finishing the OSG)
-Once the book was done, I started with Pete Zerger's [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) & [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) videos (repeated weekly) and I shifted to a tight loop:
+Once the book was done, I started with Pete Zerger's [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) & [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) videos - after that I switched to [This Course](https://www.udemy.com/course/cisspcertification) and shifted to a tight loop:
 1. **Practice exams**
 2. **Identify gaps**
-3. **Read only for those gaps**
+3. **Watch videos & learn only for those gaps**
 4. **Update notes**
 5. **Retest**
 
 I used these for repetition and knowing where to focus on:
 - **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)** (they have a [web app](https://isc2-learnzapp.web.app/prepare)).
-
-In spare time, I used videos & audio(book) for reinforcement (lighter than rereading the OSG) and kept updating this GitHub/notes based on missed concepts.
+- I tested my knowledge every week via **[Quantum Exams](https://quantumexams.com)** to see where to focus on and kept updating this GitHub/notes during studying based on missed concepts.
 
 ### Rules that kept me on track
-- **No new sources after Week 3** (reduce context switching and conflicting wording)
+- **No new sources after month 3** (reduce context switching and conflicting wording)
 - **Questions drive the study plan**
-- **Read only to close gaps**, then immediately retest
-- **Train pacing and endurance** (timed sets)
+- **Train pacing and endurance** (timed sets - 2 minute per question maximum)
 
 ## Study Timeline Table
 
