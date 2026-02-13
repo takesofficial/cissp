@@ -193,7 +193,7 @@ Not directional.
 6. 🔐 Behavior: **Presentation** – TLS / SSL (Where **encryption** lives)
 7. 🎯 Behavior: **Application** –  SMTP / SFTP (Where **HTTPS/DNS** live)
 
-**💥 = Blast Radius Reducution**
+**💥 = Blast Radius Reduction**
 The OSI model provides a framework for placing security controls at appropriate layers. To reduce the blast radius (how much damage happens when something goes wrong.) of a compromise, segmentation controls are applied primarily at Layer 2 and Layer 3, where VLANs, subnets, and routing rules enforce isolation and prevent lateral movement between systems.
 
 
