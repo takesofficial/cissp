@@ -18,7 +18,7 @@ This repository contains the study materials, references, and notes I used while
 
 You are probably wondering how difficult this path really is, how hard the exam feels, or what approach worked for me. If there is one thing I can say (as of 2026-02-09), it is this: stay positive and trust that you can do this.
 
-If I had to recommend a starting point, I would suggest beginning with [This CISSP Course](https://www.udemy.com/course/cisspcertification) by Andrew Ramdayal before diving straight into the book. Starting with the Official Study Guide is perfectly fine as well - this is simply a bit of learning efficiency optimization. I also strongly recommend using [LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en) early in your studies (buy it for 3 months and start right away, without overthinking online opinions), and introducing [Quantum Exams](https://quantumexams.com) CAT **in the latter half of your overall study timeline, not just the final 1 to 2 weeks**. The goal is to give yourself enough runway to process the feedback, identify weak domains, update your review list, and actually fix gaps before exam day.
+If I had to recommend a starting point, I would suggest beginning with [This CISSP Course](https://www.udemy.com/course/cisspcertification) by Andrew Ramdayal before diving straight into the book. Starting with the Official Study Guide is perfectly fine as well - this is simply a bit of learning efficiency optimization. I also strongly recommend using [LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en) early in your studies (buy it for 3 months and start right away, without overthinking online opinions), and introducing [Quantum Exams](https://quantumexams.com) CAT **in the latter half of your overall study timeline, and also not just the final 1 to 2 weeks**. The goal is to give yourself enough runway to process the feedback, identify weak domains, update your review list, and actually fix gaps before exam day.
 
 Do not be discouraged by low initial scores. A 200 Quantum score is not failure, it is a reference point. The improvement you can make in a focused week is surprisingly motivating. Accept that, for a while, you will be living with the material: the book, the concepts, the domains. Be curious. Wake up wanting to understand the topics you are weakest in.
 
@@ -167,42 +167,5 @@ These are the default rules I use to avoid overthinking and eliminate answers fa
 - **Least-wrong rule.** When multiple answers are "kind of right," pick the option that causes the **least long-term damage if it fails**.
 
 ## Test Taking Process
-A repeatable process for: **read carefully → eliminate 2 → choose best**.
-
-### 1. Read the stem (10–15 seconds)
-- Identify the keyword: **MOST / BEST / FIRST / NEXT / LEAST**.
-- Identify your **role** (manager / responder / auditor / architect).
-- Decide the **right level**: Governance / Architecture / Operations / Assurance.
-- Identify the main objective: CIA / safety / compliance / continuity.
-
-### 2. Predict before looking at answers (5 seconds)
-Make a quick "expected shape" guess:
-- governance/process?
-- architecture/segmentation?
-- operational containment?
-- assurance/audit evidence?
-
-This prevents answer-choice hypnosis.
-
-### 3. The 10-second elimination method (remove 2 fast)
-Immediately eliminate answers that:
-- require perfect users or perfect admins
-- assume ideal behavior or perfect configuration
-- depend on a **single control** / single point of failure
-- violate **least privilege** or **separation of duties**
-- ignore **availability** / business continuity
-- skip escalation / management involvement when clearly required
-- say "eliminate all risk" / "guarantee security" / absolute language
-- are vendor-specific or feel like "buy this product"
-- push legacy tech (e.g., WEP/TKIP, SSLv2/v3, Telnet, SMBv1, SNMPv1/2c, MD5/SHA-1 for signatures, LM/NTLMv1, PAP, DES/3DES, etc.)
-
-> If an answer survives this elimination pass, it's often a finalist.
-
-### 4. Pick between the final 2 (20–30 seconds)
-Use the tie-break ladder:
-1. **Right level** (level of the layer/scope for the question)
-2. **Right owner** (accountability is placed appropriately)
-3. **Right time** (Fits lifecycle & right action *for now*)
-4. **Survives failure reality** (still works when it breaks)
-5. **Broadest positive impact** (Prefer the fix that helps the whole organization, not one tiny spot.)
-6. **Least-wrong** (If it fails, pick the one that causes the least long-term damage)
+“Just answer the f****** question”
+-DarkHelmet
