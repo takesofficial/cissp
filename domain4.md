@@ -205,18 +205,36 @@ Exam mindset: insecure protocols still exist, security wraps them.
 
 ## 🔑 Ports You Should Instantly Recognize
 
-- 20/21 - FTP  
-- 22 - SSH  
-- 23 - Telnet (insecure)  
-- 25 - SMTP  
-- 53 - DNS  
-- 80 - HTTP  
-- 443 - HTTPS  
-- 110 - POP3  
-- 143 - IMAP  
-- 161 - SNMP  
-- 389 - LDAP  
-- 636 - LDAPS  
+- 20 - FTP (data active mode)
+- 21 - FTP (control)
+- 22 - SSH
+- 23 - Telnet
+- 25 - SMTP
+- 49 - TACACS+
+- 53 - DNS
+- 67 - DHCP (server)
+- 68 - DHCP (client)
+- 80 - HTTP
+- 88 - Kerberos
+- 110 - POP3
+- 123 - NTP
+- 137 - NetBIOS Name Service
+- 138 - NetBIOS Datagram Service
+- 139 - NetBIOS Session Service
+- 143 - IMAP
+- 161 - SNMP
+- 162 - SNMP Trap
+- 389 - LDAP
+- 443 - HTTPS
+- 445 - SMB
+- 636 - LDAPS
+- 989 - FTPS (data)
+- 990 - FTPS (control)
+- 993 - IMAPS
+- 995 - POP3S
+- 1812 - RADIUS (authentication)
+- 1813 - RADIUS (accounting)
+- 3389 - RDP
 
 You do not need all of them, just the common ones.
 
