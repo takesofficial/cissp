@@ -196,7 +196,10 @@ Not directional.
 **💥 = Blast Radius Reduction**
 The OSI model provides a framework for placing security controls at appropriate layers. To reduce the blast radius (how much damage happens when something goes wrong.) of a compromise, segmentation controls are applied primarily at Layer 2 and Layer 3, where VLANs, subnets, and routing rules enforce isolation and prevent lateral movement between systems.
 
-
+**PORTS**
+<p align="center">
+<img width="996" height="492" alt="Image" src="https://github.com/user-attachments/assets/7a2b0da4-41c8-45bd-8856-c68fb7a0fdd3" />
+</p>
 ---
 
 ## Chapter 12 - Secure Communications and Network Attacks
