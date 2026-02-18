@@ -8,10 +8,7 @@
 - [Who qualifies for CISSP](#who-qualifies-for-cissp)
 - [My Study Approach](#my-study-approach)
 - [Study Timeline Table](#study-timeline-table)
-- [How to Think for This Exam](#how-to-think-for-this-exam)
-- [PPT and RGLE](#ppt-and-rgle)
-- [Core Mindset Rules](#core-mindset-rules)
-- [Test Taking Process](#test-taking-process)
+- [Taking The Exam](#taking-the-exam)
 
 ## Intro
 This repository contains the study materials, references, and notes I used while preparing for the CISSP exam. The volume of available material can make it difficult to know where to start or what deserves focused attention. This isn't a complete list, but it points you to the resources and practice materials that actually matter. The study guides included here are updated for 2025 and aligned with the latest ISC2 objectives and the 10th edition of the Official Study Guide.
@@ -31,7 +28,7 @@ If you find this repository helpful, share it. If you notice errors or have impr
 Connect with me on **[LinkedIn](https://www.linkedin.com/in/nicktakes/)**.
 
 ## CISSP Exam Overview
-The CISSP exam has a huge amount of available study material: the Sybex (ISC)² CISSP Official Study Guide (OSG), third-party books, instructor content, and community notes. For a structured start, the OSG combined with the Official Practice Tests is still the most complete foundation.
+The CISSP exam has a huge amount of available study material: the Sybex ISC2 CISSP Official Study Guide (OSG), third-party books, instructor content, and community notes. For a structured start, the OSG combined with the Official Practice Tests is still the most complete foundation.
 
 ## Exam Structure
 The English exam is a 3 hour Computer Adaptive Test (CAT) with 100-150 questions. Because it is adaptive, the only number that matters is the lower end. You must be able to answer confidently at roughly under 2 minutes per question without relying on extra time later. Because it's adaptive, you can't rely on 'making time up later' - build a steady ~1-2 minute rhythm.
@@ -68,7 +65,6 @@ I used these for repetition and knowing where to focus on:
 - **Train pacing and endurance** (timed sets - 2 minute per question maximum)
 
 ## Study Timeline Table
-
 | Start (YYYY-MM-DD) | Finish (YYYY-MM-DD) | Activity | Notes | # of chapters | % of book |
 |---|---|---|---|---:|---:|
 | 2025-11-01 | 2025-11-03 | Bought ISC2 CISSP Study Guide 10th Edition | You've got to start somewhere | - | - |
@@ -105,67 +101,11 @@ I used these for repetition and knowing where to focus on:
 >
 > I started [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) 2 weeks before my exam.
 
-## How to Think for This Exam
-CISSP is not testing "what's technically true." It's testing whether you can choose the **best decision** for an organization: **right level, right owner, right lifecycle, survivable when things fail**.
+# Taking The Exam
+1. Read the question without reading the answers and try to answer it in your head.
+2. Read ALL the answer choices (even if you feel you know the right answer already).
+3. Read the entire question again, this time including the answer choices and look for any context or clues you may have missed in your first reading.
+4. Explain to yourself why the answer you think is correct, is correct, and why each of the other choices are incorrect.
+5. Select the answer and click next.
 
-Use this in order - it's designed to help you **eliminate 2 answers fast**, then pick the best remaining one.
-
-### The 3-Step Decision Lens (use on every question)
-1. **Decision altitude (what level is this question really at?)**  
-   Is this about **Governance/Policy**, **Architecture/Design**, **Operations/Implementation**, or **Assurance/Audit**?  
-   - If an answer is *too high* (policy) when the question is *implementation*, it's usually wrong.  
-   - If an answer is *too low* (tool/config) when the question is *governance*, it's usually wrong.
-
-2. **Responsibility owner (who must be accountable if this fails?)**  
-   Best answers usually put accountability on **management, process, or architecture** - not "admins doing everything right" and not "a tool magically fixing it."
-
-3️. **Failure Reality Test (assume it breaks at 3 a.m.)**  
-   Choose answers that still work when:
-   - users mess up
-   - configs drift
-   - one control fails
-   - the org needs continuity
-
-> [!NOTE]
-> You're ready when you can remove two answers quickly *even on topics you don't love*.
-
-**Default bias (when stuck):**
-- **Process/architecture over tools**
-- **Risk reduction over "stop the attack"**
-- **Solutions that work continuously and at scale over one-time actions**
-- **Business continuity and defensibility over technical elegance**
-
-## PPT and RGLE
-### PPT (Tie-breaker bias)
-Use PPT once you have 2 plausible answers left.
-
-1. **People** - life safety, HR, legal exposure
-2. **Process** - policy, standards, governance, documented procedures
-3. **Technology** - technical implementation details (only when the question is clearly operational)
-   - Include **Facilities/Physical** controls when the scenario is physical/environmental.
-
-> Governance stack (quick sanity check): **Laws/Regulations → Policy → Standards → Procedures → Guidelines**  
-> If the question is "what should the organization do," governance/process often beats a point fix.
-
-### RGLE (Quick dissection checklist)
-Use RGLE to keep you from overthinking.
-
-1. **Role** - what am I authorized/responsible to do here?
-2. **Goal** - what is the primary objective (CIA / safety / compliance / resilience)?
-3. **Lifecycle** - what stage are we in?
-   - Incidents often map to: **(Prepare →) Detect → Respond → Contain → Report/Escalate → Recover → Remediate → Lessons learned**
-4. **Eliminate** - drop options that miss the altitude/owner/lifecycle or assume perfect conditions.
-
-## Core Mindset Rules
-These are the default rules I use to avoid overthinking and eliminate answers faster.
-
-- **Eliminate answers that "do the work" first.** Tools/commands/configs/single controls are often decoys unless the question explicitly asks for implementation.
-- **Pick "reduces risk" over "stops the attack."** CISSP cares about acceptable risk and organizational survivability.
-- **Assume systems and people fail.** Prefer resilient controls and continuous governance.
-- **Time matters.** Prefer controls that work **over time**, **continuously**, and **org-wide** over one-time snapshots.
-- **If senior management is explicitly involved, pay attention.** Risk acceptance and accountability frequently sit there.
-- **Least-wrong rule.** When multiple answers are "kind of right," pick the option that causes the **least long-term damage if it fails**.
-
-## Test Taking Process
-“Just answer the f****** question”
--DarkHelmet
+> "Just answer the f****** question" -DarkHelmet
