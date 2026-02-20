@@ -21,7 +21,7 @@ You protect what you classify. Labels drive handling, controls, and access.
 - Sensitive - Needs strong protection, but not the highest tier.  
 - Public - Safe to share externally.  
 
-**Quick mapping idea:**  
+**Mapping**  
 
 | `Government` | `Commercial` |
 |-------------:|-------------:|
