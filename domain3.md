@@ -67,42 +67,84 @@ Other names (Goguen-Meseguer, Sutherland, information flow models, lattice)
 
 ---
 
-## 🔐 Crypto Fundamentals (Domain 3 level)  
+## 🔐 Crypto Fundamentals
 
-Goal: recognize what to use where, not calculate key schedules.
+Goal: recognize **what to use when** - not calculate key schedules.
 
-### Types  
+---
 
-- **Symmetric crypto**  
-  - One shared key, fast, used for bulk encryption.  
-  - Examples: AES, 3DES, ChaCha20.  
-  - Problems: key distribution and scale.
+### 🔑 Symmetric Cryptography (disk encryption, VPNs, TLS session encryption) ⚡ Fast - used for **bulk data encryption**  
+- 🔥 Most common: **AES** - encrypt data
+- ⚡ Efficient modern option: **ChaCha20** (mobile devices - high performance)  
 
-- **Asymmetric crypto**  
-  - Public/private key pair.  
-  - Used for key exchange, digital signatures, identity.  
-  - Examples: RSA, ECC, Diffie-Hellman (for key agreement).
+- 🔁 One shared key - same key encrypts & decrypts
+- 🚨 Main weakness: **key distribution & scalability**
+- 🌊 Modern stream option: ChaCha20  
 
-- **Hash functions**  
-  - One way, fixed size output.  
-  - Used for integrity checks, password storage, digital signatures.  
-  - Examples: SHA-256, SHA-3.  
-  - Properties: preimage resistance, second preimage resistance, collision resistance.
+### 🔲 Block Ciphers (type of symmetric encryption)
+- Operate on fixed-size blocks  
+- Require a **mode of operation**:
+ - 🟩 **GCM** - encryption + authentication (modern favorite, provides confidentiality + integrity)
+ - 🔄 **CBC** - uses IV, hides patterns (older mode, no built-in integrity)
+ - ⚡ **CTR** - counter mode (turns a block cipher into stream-like behavior)
+ - ❌ **ECB** - identical plaintext > identical ciphertext (weak, avoid)
 
-### Digital Signatures and PKI  
+### 🌊 Stream Ciphers (type of symmetric encryption)
+- Generate a continuous **keystream**
+- 🔀 Encrypt by XORing keystream with plaintext
+- ⚡ Very fast, low latency
+- 📡 Ideal for:
+  - 📞 Real-time communication (VoIP, video, wireless)
+  - 🔗 Error-sensitive links (bit errors don’t corrupt entire blocks)
+- 🚨 Never reuse a nonce/keystream (breaks security)
 
-- Sign with **private key**, verify with **public key**.  
-- Provides: **integrity + authentication + non-repudiation**.  
-- **PKI**: CAs issue and sign certificates, CRLs/OCSP revoke, key management is the real problem.
+---
 
-### Block vs Stream  
+### 🔓 Asymmetric Cryptography (Public/Private Key) 🐢 Slower - not used for bulk encryption  
+- 🔥 Most common: **RSA**  - commonly used for digital signatures (and key exchange)
+- ⚡ Efficient modern option: **ECC** (mobile/IoT - smaller keys)  
+- 🤝 Diffie-Hellman: Secure 🔑Key Exchange; agree on a shared secret over an insecure channel; not encryption itself.
 
-- **Block ciphers** - operate on fixed-size blocks. Need a mode of operation (CBC, GCM, etc).  
-- **Stream ciphers** - generate a keystream and XOR with data. Great for real-time and error-sensitive links.
+- 🔐 Key pair: public + private  
 
-Know high level:  
-- **ECB** - identical blocks produce identical ciphertext. Weak, avoid.  
-- **CBC / GCM / CTR** - use IV/counter, hide patterns, commonly used.
+- Used for:
+  - 🔑 Key exchange  
+  - ✍️ Digital signatures  
+  - 🪪 Identity & authentication  
+
+---
+
+### 🧾 Hash Functions (Integrity)
+- 🔥 Most common: **SHA-256**
+
+- 🔁 One-way function  
+- 📏 Fixed-size output  
+- Used for:
+  - Integrity checks  
+  - Password storage  
+  - Digital signatures  
+
+**Security properties:**
+- 🚫 Preimage resistance  
+- 🚫 Second preimage resistance  
+- 🚫 Collision resistance  
+
+---
+
+## ✍️ Digital Signatures & PKI
+
+- 🔐 Sign with **private key**  
+- 🔓 Verify with **public key**  
+
+**PKI (Public Key Infrastructure) - trust in public keys Components:**
+- 🏢 CA (Certificate Authority) - issues & signs certificates  
+- 📜 CRL - certificate revocation / 🌐 OCSP - real time status check
+
+---
+
+
+
+
 
 ### Crypto Attacks
 
@@ -199,28 +241,31 @@ Big picture: stop easy physical attacks that make all logical controls useless.
 
 ---
 
-## 🏭 ICS / OT (SCADA)
-Industrial Control Systems (ICS) run physical processes (OT). Expect **safety + availability first**.
-**If it controls the real world** (power grid / water plant / refinery / manufacturing line) → think **ICS/SCADA**
+## 🏭 ICS / Operational Technology (SCADA / DCS / PLC)
 
-### Types (recognize)
-- **SCADA** - wide-area supervision + data acquisition (utilities, pipelines)
-- **DCS** - local, process/state-driven control (plants)
-- **PLC** - device-level controller (machines)
+Industrial Control Systems (ICS) control **real world physical processes** (⚡ grid / 💧 water / 🛢 refinery / 🏭 plant).
+
+- 🌍  **SCADA** (**S**upervisory **C**ontrol **A**nd **D**ata **A**cquisition)
+  - Wide-area control of **geographically dispersed sites** (🛠️ utilities, 🛢 pipelines, 🔌 power grids)
+  
+- 🏭  **DCS** (**D**istributed **C**ontrol **S**ystem)
+  - Tightly integrated control within a **single facility** (🛢 refinery, 🧪 chemical plant, 🏭 manufacturing plant)
+  
+- 🤖  **PLC** (**P**rogrammable **L**ogic **C**ontroller)
+  - Device-level controller (🛠 individual machines, 🔧 assembly lines)
 
 ## 🎯 Exam Priorities Recap  
 
-Recognize and apply quickly:
-
-- TCB, reference monitor, security kernel, protection rings.  
+- OSI layers enough to place controls and troubleshoot where a problem sits.
 - Which security model maps to **confidentiality** (Bell-LaPadula, Brewer–Nash/Chinese Wall) vs **integrity** (Biba, Clark–Wilson).
+- TCB, reference monitor, security kernel, protection rings.  
 - Basic crypto decisions: symmetric vs asymmetric, hashing, digital signatures, PKI role of CA.  
 - ECB vs CBC/GCM at a high level, and why ECB is weak.  
 - What TPM/HSM do, and why HSM is used for high-value keys.  
 - Difference between virus, worm, trojan, ransomware, macro virus, boot sector virus.  
 - Logical operations especially XOR in the context of crypto.  
-- Physical security layers and which fire suppression type fits a data center.  
-- OSI layers enough to place controls and troubleshoot where a problem sits.
+- Physical security layers and which fire suppression type fits a data center.
+- Understand the difference between SCADA, DCS and PLC.
 
 ---
 
