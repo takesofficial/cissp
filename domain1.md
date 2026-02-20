@@ -17,7 +17,7 @@ Risk cannot be eliminated. Only reduced, transferred, or accepted by senior mana
 Ensure security directly supports the business mission, goals, and risk appetite.
 
 **Documentation hierarchy:**  
-**Policies → Standards → Baselines → Guidelines → Procedures**
+**Policies > Standards > Baselines > Guidelines > Procedures**
 
 ### 📚 Documentation Types
 - **Policy** - High-level direction from senior management; mandatory.  
@@ -97,7 +97,7 @@ If you know the money, you know the risk.**
   Example: A server worth **€100,000**.
 
 - **Exposure Factor (EF)** = “How much % of the thing is destroyed when bad stuff happens.”  
-  Example: A fire damages **40%** → EF = **0.40**.
+  Example: A fire damages **40%** > EF = **0.40**.
 
 ---
 
@@ -108,7 +108,7 @@ If you know the money, you know the risk.**
   Example: €40,000 × 0.2 = **€8,000 per year**.
 
 - **Annualized Rate of Occurrence (ARO)** = “How many times per year this bad thing happens.”  
-  Example: Fire happens **once every 5 years** → ARO = **0.2**.
+  Example: Fire happens **once every 5 years** > ARO = **0.2**.
 
 This tells management:  
 **“If we do nothing, we lose €8,000 per year from this threat.”**
@@ -193,7 +193,7 @@ Measure how consistent, repeatable, and well-governed security processes are.
 5. **Optimizing** - Continuous improvement.
 
 ### **RMM - Risk Maturity Model**
-- **Ad Hoc → Preliminary → Defined → Integrated → Optimized**
+- **Ad Hoc > Preliminary > Defined > Integrated > Optimized**
 
 Higher maturity = fewer failures, more predictable outcomes.
 
@@ -222,8 +222,8 @@ Different legal consequences and standards.
 
 ## 🏛️ Legal & Regulatory Awareness
 CISSP tests laws at two levels:
-1. **U.S. or EU-based** → know it well
-2. **Non-U.S./EU** → recognize it and apply general privacy principles
+1. **U.S. or EU-based** > know it well
+2. **Non-U.S./EU** > recognize it and apply general privacy principles
 
 **🔴 Must Know Well (High Exam Weight)** Laws you must understand and reason about
 - 🌍 **GDPR** - EU personal data protection; data subject rights and breach notification  
@@ -306,20 +306,20 @@ Apply correct legal and procedural rules.
 ## 📊 Service Organization Controls (SOC)
 
 **SOC = what kind of controls?**
-- **SOC 1** → Money / financial reporting
-- **SOC 2** → Security and system controls
-- **SOC 3** → Public, marketing-safe summary of SOC 2
+- **SOC 1** > Money / financial reporting
+- **SOC 2** > Security and system controls
+- **SOC 3** > Public, marketing-safe summary of SOC 2
 
 **Type = how deep is it?**
-- **Type 1** → Looks good on paper  
+- **Type 1** > Looks good on paper  
   (control **design assessed by an independent auditor**, point in time)
-- **Type 2** → Proved it works  
+- **Type 2** > Proved it works  
   (control **design and operating effectiveness tested by an independent auditor** over time)
 
 
 ### 🧪 Key Forensics Rules  
 - **Chain of custody** - Track every handoff of evidence.  
-- **Order of volatility** - RAM → disk → logs → archival data.  
+- **Order of volatility** - RAM > disk > logs > archival data.  
 - **Admissibility** - Evidence must be legal, reliable, unaltered.
 
 ---
@@ -377,7 +377,7 @@ Identify how attackers can exploit systems and where to apply defenses.
 ## 🧠 Exam Priorities Recap
 
 Recognize and apply quickly:  
-- Governance stack: policies → standards → baselines → guidelines → procedures (who writes what, what is mandatory).  
+- Governance stack: policies > standards > baselines > guidelines > procedures (who writes what, what is mandatory).  
 - Roles: senior management vs owner vs custodian vs user vs auditor, and who accepts residual risk (always senior management).  
 - CIA vs DAD: what each violation looks like in a scenario-style question.  
 - AAA: identification, authentication, authorization, accountability, auditing.  
