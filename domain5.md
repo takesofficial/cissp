@@ -50,7 +50,7 @@ Key exam phrase: **🆕joiner** / **🔄 mover** / **🗑️ leaver**.
 - **Subject** - Active entity (user, process, service, device)  
 - **Object** - Passive resource (file, database, system)  
 
-Access control always mediates **subject → object**.
+Access control always mediates **subject > object**.
 
 ---
 
