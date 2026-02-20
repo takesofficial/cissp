@@ -1,8 +1,7 @@
 # <p align=center>Domain 4 - Communication and Network Security</p>
 
 ## 🚨 Elevator Pitch  
-Move data safely from A to B.  
-Domain 4 is about how data travels across networks, how networks are designed, and how security controls are applied to prevent interception, manipulation, and disruption.  
+Move data safely from A to B.   Domain 4 is about how data travels across networks, how networks are designed, and how security controls are applied to prevent interception, manipulation, and disruption.  
 Think: protocols, segmentation, secure architecture, and controlling trust across connections.
 
 ---
