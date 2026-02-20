@@ -94,6 +94,7 @@ Encryption does not fix poor design.
 - Handle errors securely
 - Log security events
 - Avoid hardcoded secrets
+- ORM promotes parameterized queries → reduces SQL injection risk
 
 Frameworks help, but do not guarantee security.
 
