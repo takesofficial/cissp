@@ -173,32 +173,30 @@ You do not need truth tables, just the basic behavior and that XOR "cancels" wit
 
 ### Fire Classes  
 
-- **Class A** - Fire Extinguisher / A = Ash  
-- **Class B** - Combustile / B = Boil
-- **Class C** - Liquid / C = Current
-- **Class D** - Metal / D = Dent
-- **Class K** - Oil/Fat / K = Kitchen
+- **Class A** - 📦 **A**sh - ordinary combustibles (environment: 📃 paper, 🪑 furniture, 🧃 plastics)
+- **Class B** - 🧪 **B**oil - flammable liquids/gases (environment: ⛽ fuel, 🧪 solvents, 🛢️ oils)
+- **Class C** - 🔌 **C**urrent - energized electrical (environment: 💻 servers, 🔌 power panels, 📡 live equipment)
+- **Class D** - ⚙️ **D**ent - combustible metals (environment: 🧲 magnesium, 🔩 titanium, 🌫 metal dust)
+- **Class K** - 👨‍🍳 **K**itchen - cooking oils/fats (environment: 🍟 deep fryers, 🫕 grease, 🍳 stovetops)
 
 ### Suppression Systems  
 
-- **Wet pipe** - water in pipes, released immediately. Simple, fastest.  
-- **Dry pipe** - air in pipes, water admitted when triggered. For cold areas.  
-- **Deluge** - open heads, huge water volume. Industrial, not for server rooms.  
-- **Preaction** - combination: detection fills pipes, second trigger opens heads.  
-  - Best answer for areas with people and computers.
+- 💧 **Wet pipe** - water in pipes, released immediately. Simple, fastest.  
+- ❄️ **Dry pipe** - air in pipes, water admitted when triggered. For cold areas.  
+- 🌊 **Deluge** - open heads, huge water volume. Industrial, not for server rooms.  
+- 🚨💧 **Preaction** - combination: detection fills pipes, second trigger opens heads, water. > Best for areas with people and computers.
 
 ---
 
 ## 🏢 Physical and Environmental Security  
-
 Big picture: stop easy physical attacks that make all logical controls useless.
 
-- **Perimeter** - fences, gates, guards, lighting, CCTV.  
-- **Building** - mantraps, turnstiles, badges, locks, reception.  
-- **Interior** - locked server rooms, racks, safes, cable protection.  
-- **Environmental** - HVAC, temperature and humidity control, power conditioning, UPS, generators.  
-- **Emanations** - shielding, TEMPEST, Faraday cages to reduce signal leakage.  
-- **CCTV basics** - placement, coverage, retention.
+- 🚧 **Perimeter** - fences, gates, guards, lighting, CCTV.  
+- 🏢**Building** - mantraps, turnstiles, badges, locks, reception.  
+- 🔐**Interior** - locked server rooms, racks, safes, cable protection.  
+- 🌡️ **Environmental** - HVAC, temperature and humidity control, power conditioning, UPS, generators.  
+- 📡 **Emanations** - shielding, TEMPEST, Faraday cages to reduce signal leakage.  
+- 🎥 **CCTV basics** - camera placement, coverage zones, blind spots, lighting, monitoring, retention policies.
 
 ---
 
