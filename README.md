@@ -108,4 +108,4 @@ I used these for repetition and knowing where to focus on:
 4. Explain to yourself why the answer you think is correct, is correct, and why each of the other choices are incorrect.
 5. Select the answer and click next.
 
-> "Just answer the f****** question" -DarkHelmet
+> "Just answer the question" -DarkHelmet
