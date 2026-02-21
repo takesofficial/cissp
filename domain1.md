@@ -490,7 +490,7 @@ When analyzing a system for security risk, concentrate on the areas attackers ar
 - **Trust Boundaries**  
   Points where data or access moves between different trust levels (e.g., user → app, app → database, external → internal network). These transitions introduce risk and require strong controls.
 - **Data Flows**  
-  How information moves through the system — including storage, transmission, and processing. Evaluate confidentiality, integrity, and validation at each stage.
+  How information moves through the system - including storage, transmission, and processing. Evaluate confidentiality, integrity, and validation at each stage.
 - **Entry Points**  
   All interfaces where an external or internal actor can interact with the system (APIs, login forms, open ports, admin panels). These define the attack surface.
 - **Privileged Operations**  
