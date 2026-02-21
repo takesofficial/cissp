@@ -251,6 +251,8 @@ Key exam point:
 
 ## 🧪 Exercises and Testing  
 
+**C-T-P-F** = **C**hecklist > **T**abletop > **P**arallel > **F**ull interruption (least > most disruptive)
+
 - Tabletop exercises  
 - Walkthroughs  
 - Simulations  
@@ -268,6 +270,16 @@ Practice before real incidents.
 - Documentation  
 
 People leave. Knowledge must stay.
+
+---
+
+## RAID
+- **RAID 0:** **"0 = 0 redundancy"** (striping; performance; any disk loss = data loss)
+- **RAID 1:** **"1 = 1 mirror"** (mirroring; availability)
+- ~~**RAID 2** and **RAID 3**~~ (effectively not used / rare)
+- **RAID 5:** (striping + distributed parity; balanced; tolerates 1 disk failure; write penalty)
+- **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
+- **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
 
 ---
 
