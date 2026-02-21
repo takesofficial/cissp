@@ -66,62 +66,55 @@ Order matters. Do not skip steps.
 ---
 
 ### 1️⃣ Preparation  
+No plan = panic.
 - IR plan  
 - Roles and contacts  
 - Tools and access  
 - Training and exercises  
 
-No plan = panic.
-
 ---
 
 ### 2️⃣ Detection and Analysis  
+Do not destroy evidence during analysis.
 - Validate alerts  
 - Identify scope  
 - Preserve evidence  
 
-Do not destroy evidence during analysis.
-
 ---
 
 ### 3️⃣ Containment  
+Disable accounts, block IPs, isolate hosts.
 - Short-term: stop the bleeding  
 - Long-term: isolate and stabilize  
 
-Examples: disable accounts, block IPs, isolate hosts.
-
 ---
 
-### 4️⃣ Eradication  
+### 4️⃣ Eradication
+Root cause must be addressed.
 - Remove malware  
 - Close vulnerabilities  
 - Patch systems  
 
-Root cause must be addressed.
-
 ---
 
 ### 5️⃣ Recovery  
+Return to production carefully.
 - Restore systems  
 - Monitor for recurrence  
 - Validate normal operations  
 
-Return to production carefully.
-
 ---
 
 ### 6️⃣ Lessons Learned  
+This step improves future security posture.
 - What failed  
 - What worked  
-- What to improve  
-
-This step improves future security posture.
+- What to improve 
 
 ---
 
 ## 🧪 Incident Classification  
-
-Common categories:
+Classification drives response and reporting.
 
 - Malware  
 - Unauthorized access  
@@ -130,21 +123,38 @@ Common categories:
 - Insider threat  
 - Physical security incident  
 
-Classification drives response and reporting.
-
 ---
 
 ## 🧬 Forensics Basics  
+Preservation first, investigation second. Documentation matters as much as technical skill. Volatile data is prioritized. Integrity must always be provable. Preserve, collect, analyze, and present digital evidence in a legally defensible way.  
+**🚨 Never analyze original evidence — always work on a verified copy.**
 
-Purpose: preserve and analyze evidence.
+- 🧾 **Chain of Custody**
+  - Document every person who handled the evidence  
+  - Record: who, when, where, why, and how  
+  - Must be continuous and traceable  
+  - Broken chain = evidence may be inadmissible  
 
-### Key Rules  
-- **Chain of custody** - document every handoff  
-- **Order of volatility** - RAM first, then disk, then logs  
-- **Imaging** - bit-for-bit copies  
-- **Integrity** - hashes before and after  
+- ⚡ **Order of Volatility**
+  Collect most volatile data first (data that disappears fastest):
+  1. CPU registers / cache  
+  2. RAM  
+  3. Network connections / processes  
+  4. Disk data  
+  5. Logs / archival media  
 
-Never analyze original evidence.
+  👉 If you power off too early, volatile evidence is lost forever.
+
+- 💽 **Forensic Imaging**
+  - Create a **bit-for-bit (forensic) copy**
+  - Includes deleted space and slack space  
+  - Use write blockers to prevent modification  
+  - Work only on the image, never the original  
+
+- 🔎 **Integrity Verification**
+  - Hash evidence before and after imaging  
+  - Matching hashes prove integrity  
+  - Common hashes: SHA-256  
 
 ---
 
