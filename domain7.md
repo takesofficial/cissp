@@ -127,7 +127,8 @@ Classification drives response and reporting.
 
 ## 🧬 Forensics Basics  
 Preservation first, investigation second. Documentation matters as much as technical skill. Volatile data is prioritized. Integrity must always be provable. Preserve, collect, analyze, and present digital evidence in a legally defensible way.  
-**🚨 Never analyze original evidence — always work on a verified copy.**
+
+> **🚨 Never analyze original evidence; always work on a verified copy.**
 
 - 🧾 **Chain of Custody**
   - Document every person who handled the evidence  
