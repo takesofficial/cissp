@@ -237,18 +237,6 @@ BCP may operate without IT. DR restores IT.
 
 ---
 
-## 🔄 Backup Operations  
-
-Backup types:
-- Full  
-- Incremental  
-- Differential  
-
-Key exam point:
-**Backups must be tested. Untested backups are assumptions.**
-
----
-
 ## 🧪 Exercises and Testing  
 
 **C-T-P-F** = **C**hecklist > **T**abletop > **P**arallel > **F**ull interruption (least > most disruptive)
@@ -274,12 +262,42 @@ People leave. Knowledge must stay.
 ---
 
 ## RAID
-- **RAID 0:** **"0 = 0 redundancy"** (striping; performance; any disk loss = data loss)
+- Mission-critical database: **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
+- Minimize risk of data loss in large array: **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
+- Maximize storage efficiency: **RAID 5:** (striping + distributed parity; balanced; tolerates 1 disk failure; write penalty)
 - **RAID 1:** **"1 = 1 mirror"** (mirroring; availability)
+- Maximum performance, no redundancy: **RAID 0:** **"0 = 0 redundancy"** (striping; performance; any disk loss = data loss)
 - ~~**RAID 2** and **RAID 3**~~ (effectively not used / rare)
-- **RAID 5:** (striping + distributed parity; balanced; tolerates 1 disk failure; write penalty)
-- **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
-- **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
+
+---
+
+## 🔄 Backup Operations  
+
+⚠️ **Backups must be tested regularly. Untested backups are assumptions.**  
+A backup only has value if it can be successfully restored.
+
+### 💾 Backup Types
+
+- 📦 **Full** - Complete copy of all data  
+- ➕ **Incremental** - Changes since last backup (small backup, slower restore)  
+- 📈 **Differential** - Changes since last full backup (grows over time, faster restore than incremental)  
+- 🧩 **Synthetic** - Creates a new full backup from previous backups without re-copying all original data  
+
+### 🗂 Rotation Strategy - GFS (Grandfather-Father-Son)
+Used to balance retention, cost, and recovery flexibility.
+Provides structured retention and versioning over time.
+
+- 👶 **Son** = Daily backups  
+- 👨 **Father** = Weekly backups  
+- 👴 **Grandfather** = Monthly backups  
+
+### 🛡️ Backup Rule – 3-2-1 Rule
+Consider **immutable or air-gapped backups** to resist ransomware.
+Best practice for resilience and ransomware protection:
+
+- 3️⃣ **Three** copies of data (1 production + 2 backups)  
+- 2️⃣ **Two** different media types (e.g., disk + cloud/tape)  
+- 1️⃣ **One** copy offsite (or offline/immutable)  
 
 ---
 
