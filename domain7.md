@@ -1,9 +1,7 @@
 # <p align=center>Domain 7 - Security Operations</p>
 
 ## 🚨 Elevator Pitch  
-Keep security running day to day and respond when things go wrong.  
-Domain 7 is about **operating**, **monitoring**, **responding**, and **recovering**.  
-This is where incidents happen, alerts fire, people make mistakes, and processes either save you or sink you.
+Keep security running day to day and respond when things go wrong. Domain 7 is about **operating**, **monitoring**, **responding**, and **recovering**. This is where incidents happen, alerts fire, people make mistakes, and processes either save you or sink you.
 
 Think: **detect fast, respond correctly, recover cleanly, and learn afterward.**
 
@@ -13,9 +11,9 @@ Think: **detect fast, respond correctly, recover cleanly, and learn afterward.**
 
 This domain is about **execution**, not theory.
 
-- Design controls → Domains 1–3  
-- Secure systems → Domains 4–5  
-- **Run and defend systems → Domain 7**
+- Design controls > Domains 1-3  
+- Secure systems > Domains 4-5  
+- **Run and defend systems > Domain 7**
 
 When security fails, this domain decides the damage.
 
