@@ -261,7 +261,7 @@ People leave. Knowledge must stay.
 
 ---
 
-## RAID
+## 💽 RAID
 - Mission-critical database: **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
 - Minimize risk of data loss in large array: **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
 - Maximize storage efficiency: **RAID 5:** (striping + distributed parity; balanced; tolerates 1 disk failure; write penalty)
