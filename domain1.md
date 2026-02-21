@@ -453,18 +453,50 @@ Ensure vendors do not introduce vulnerabilities or tampered components.
 Identify how attackers can exploit systems and where to apply defenses.
 
 ### **Methods**  
-- **STRIDE** - Categorize threats.  
-- **DREAD** - Prioritize impact.  
-- **PASTA** - 7-stage risk-based modeling.  
+- Ⓜ️ **STRIDE** - Categorize threats.
+STRIDE is a threat-focused methodology that's less strategic and thorough than PASTA. It is an acronym of:
+ - Spoofing
+ - Tampering
+ - Repudiation
+ - Information disclosure
+ - Denial-of-service
+ - Elevation of privilege
+
+- 🍝**PASTA** - 7-stage risk-based modeling.
+Process for Attack Simulation and Threat Analysis (PASTA), contrary to STRIDE, is an attacker-focused, risk-centric methodology. It is much more detailed than STRIDE and performs threat analysis from a strategic perspective.
+
+ - Define objectives
+ - Define technical scope
+ - Application decomposition
+ - Threat analysis
+ - Vulnerability and weakness analysis
+ - Attack modeling
+ - Risk and impact analysis
+
+- 💀 **DREAD** - Prioritize impact.
+DREAD is a threat model primarily used to measure and rank the severity of threats. DREAD is often used in combination with the STRIDE model, where STRIDE identifies the threats, and DREAD is then used to rank the severity of threats. The acronym means:
+ - Damage
+ - Reproducibility
+ - Exploitability
+ - Affected users
+ - Discoverabilit
+
 - **VAST** - Scalable, Agile-friendly.  
 - **Trike** - Risk auditing.  
 
-### **Focus Areas**  
-- Trust boundaries  
-- Data flows  
-- Entry points  
-- Privileged operations  
-- Attack vectors  
+### Focus Areas in Threat Modeling
+When analyzing a system for security risk, concentrate on the areas attackers are most likely to exploit:
+
+- **Trust Boundaries**  
+  Points where data or access moves between different trust levels (e.g., user → app, app → database, external → internal network). These transitions introduce risk and require strong controls.
+- **Data Flows**  
+  How information moves through the system — including storage, transmission, and processing. Evaluate confidentiality, integrity, and validation at each stage.
+- **Entry Points**  
+  All interfaces where an external or internal actor can interact with the system (APIs, login forms, open ports, admin panels). These define the attack surface.
+- **Privileged Operations**  
+  Actions that modify system state or grant elevated access (e.g., account creation, permission changes, configuration updates). These have high impact if compromised.
+- **Attack Vectors**  
+  The paths or techniques an attacker may use to exploit weaknesses (e.g., phishing, injection attacks, credential theft, misconfiguration).
 
 ---
 
