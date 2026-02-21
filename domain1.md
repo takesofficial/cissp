@@ -11,6 +11,14 @@ Risk cannot be eliminated. Only reduced, transferred, or accepted by senior mana
 - Provide diligent and competent service.  
 - Advance and protect the profession.  
 
+### Ethics Complaint Rules
+Who can file complaints
+- **Canon I & II** - Anyone (including the public)
+- **Canon III** - Only employer or contractual client
+- **Canon IV** - Any certified professional bound by ethics
+
+If public harm is involved, think Canon I.
+
 ---
 
 ## 🏛️ Governance  
@@ -19,7 +27,10 @@ Ensure security directly supports the business mission, goals, and risk appetite
 **Documentation hierarchy:**  
 **Policies > Standards > Baselines > Guidelines > Procedures**
 
-### 📚 Documentation Types
+### 📚 Documentation Hierarchy
+
+**Policies > Standards > Baselines > Guidelines > Procedures**
+
 - **Policy** - High-level direction from senior management; mandatory.  
 - **Standard** - Mandatory, uniform requirements (config, tech, process).  
 - **Baseline** - Minimum acceptable security level.  
@@ -31,8 +42,26 @@ Ensure security directly supports the business mission, goals, and risk appetite
 
 ---
 
+## 🧪 Security Control Assessment (SCA)
+
+Formal evaluation of controls against a defined baseline.
+
+Purpose:
+- Implemented correctly?
+- Operating as intended?
+- Producing desired outcomes?
+
+Often paired with **ST&E (Security Test & Evaluation)**.  
+SCA is governance validation, not penetration testing.
+
+Output:
+- Formal assessment report
+- Control gaps
+- Remediation plan
+
 ## 👥 Roles & Responsibilities  
 Assign ownership, accountability, and operational duties.
+Residual risk is ALWAYS owned by senior management.
 
 - **Senior Management** - Ultimately accountable; accepts residual risk.  
 - **Owner** - Classifies data; defines access; decides on controls.  
@@ -49,6 +78,12 @@ Three core security outcomes.
 - **Integrity** - Prevent unauthorized modification; ensure authenticity.  
 - **Availability** - Ensure timely, reliable access for authorized users.
 
+### 💥 DAD (When CIA Fails)
+- **Disclosure**
+- **Alteration**
+- **Destruction**
+
+
 Non-repudiation and accountability are services built on top of it.
 
 ---
@@ -56,9 +91,9 @@ Non-repudiation and accountability are services built on top of it.
 ## 🔐 AAA  
 The lifecycle of identity, access, and accountability.
 
-- **Identification** - Claiming an identity ("I am Nick").  
-- **Authentication** - Proving identity (password, token, biometric).  
-- **Authorization** - What you’re allowed to access.  
+- **Identification** - Claim identity ("I am Nick").  
+- **Authentication** - Prove identity (password, token, biometric).  
+- **Authorization** - What you can access.
 - **Accountability** - Tying actions to subjects.  
 - **Auditing** - Recording and reviewing events.
 
@@ -67,23 +102,23 @@ The lifecycle of identity, access, and accountability.
 ## 📉 Risk Management  
 Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
 
-### 🔢 Risk Equation Variants  
-Some sources express risk differently. All mean the same thing:
+### 🔢 Core Expressions
+Some sources express risk differently. All mean the same thing;
 - **Risk = Likelihood × Impact**  
 - **Risk = Threat × Vulnerability × Asset Value**  
-
-### 🔍 Qualitative  
-Used when numbers are impossible or unnecessary.
-
-- Brainstorming - group discussion to identify threats.  
-- Delphi Method - anonymous expert rounds until consensus.  
-- Heat Maps - visual likelihood vs impact.  
-- Subjective Ranking - high/medium/low scoring based on expert judgment.
 
 ### 🔢 Quantitative  
 **Think of this as "security math for babies."
 Everything you calculate here tells you HOW MUCH MONEY the company will lose.  
 If you know the money, you know the risk.**
+
+### 🔍 Qualitative  
+Used when numbers are impractical.
+
+- Delphi Method - anonymous expert rounds until consensus.  
+- Brainstorming - group discussion to identify threats.  
+- Heat Maps - visual likelihood vs impact.  
+- Subjective Ranking - high/medium/low scoring based on expert judgment.
 
 ---
 
@@ -144,6 +179,8 @@ If **negative**, the control **costs more than the damage**, so don’t buy it.
 This is the only math Domain 1 cares about. This is what CISSP wants you to recognize instantly.
 
 ### 🧭 Risk responses  
+Never ignore or deny risk.
+
 - **Mitigate** - Add controls.  
 - **Transfer** - Insurance/outsourcing.  
 - **Avoid** - Stop activity entirely.  
@@ -152,6 +189,11 @@ This is the only math Domain 1 cares about. This is what CISSP wants you to reco
 
 **Residual risk** is ALWAYS owned by **senior management**.
 **Compliance is an administrative control.**
+
+---
+
+## 📊 Risk Register  
+Tracks identified risks, severity, mitigation, and status.
 
 ---
 
@@ -211,6 +253,26 @@ Oversight of vendors, partners, and contractors.
 
 ---
 
+## 🔐 Supply Chain Risk  
+
+Risks:
+- Counterfeit hardware
+- Malicious implants
+- Tampered firmware
+- Compromised libraries
+
+Mitigations:
+- Vendor due diligence
+- Security SLAs
+- Monitoring
+
+### Technical Anchors
+- Silicon Root of Trust  
+- PUF (Physically Unclonable Function)  
+- SBOM (Software Bill of Materials)  
+
+---
+
 ## 📜 Law Types  
 Different legal consequences and standards.
 
@@ -220,10 +282,27 @@ Different legal consequences and standards.
 
 ---
 
+## 🌐 RFC 1087 - Unethical Internet Activity  
+
+Unethical if it:
+- Gains unauthorized access
+- Disrupts intended use
+- Wastes resources
+- Destroys integrity
+- Compromises privacy
+
+---
+
 ## 🏛️ Legal & Regulatory Awareness
 CISSP tests laws at two levels:
 1. **U.S. or EU-based** > know it well
 2. **Non-U.S./EU** > recognize it and apply general privacy principles
+
+**👮 FedRAMP concepts:**
+- 3PAO
+- ATO
+- Impact levels
+- Continuous monitoring
 
 **🔴 Must Know Well (High Exam Weight)** Laws you must understand and reason about
 - 🌍 **GDPR** - EU personal data protection; data subject rights and breach notification  
@@ -245,6 +324,21 @@ You only need to know **what region they belong to** and **that they are privacy
 - 👲 **PIPL (China)** - Chinese personal information protection law.
 - 🦁 **POPIA (South Africa)** - South African personal data protection law.
 - 🌅 **LGPD (Brazil)** - Brazilian personal data protection law.
+
+---
+
+## 🌍 OECD Privacy Principles  
+
+1. Collection limitation  
+2. Data quality  
+3. Purpose specification  
+4. Use limitation  
+5. Security safeguards  
+6. Openness  
+7. Individual participation  
+8. Accountability  
+
+Fallback when GDPR is not the answer.
 
 ---
 
@@ -272,15 +366,15 @@ What happens when CIA fails.
 ## 🧭 Due Care vs Due Diligence  
 Legal and defensive security responsibilities.
 
-- **Due Diligence** - Investigation: risk assessments, documentation, policies. (Research and find out what to do.)
-- **Due Care** - Execution: following and enforcing those controls. (Do it and prove you did it.)
+- **Due Diligence** - Investigate, design, document (Research and find out what to do.)
+- **Due Care** - Implement, enforce, prove (Do it and prove you did it.)
 
 ---
 
 ## 🧑‍💼 Personnel Security  
 Reduce human risk through controls and lifecycle management.
 
-- **Screening** - Criminal history, employment verification, references.  
+- **Background Check** - Criminal history, employment verification, references.  
 - **NDAs** - Protect confidential info.  
 - **AUP** - Defines acceptable behavior.  
 - **Separation of duties** - No one person controls a full process.  
@@ -396,17 +490,18 @@ Recognize and apply quickly:
 
 ---
 
-## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)  
-- Full legal history and international privacy laws  
-- Deep PCI-DSS configuration details  
-- Full NIST 800-53 / 800-171 control catalogs  
-- ITIL, COSO, SABSA deep dives  
-- M&A processes, divestiture complexities  
-- AI/crypto/blockchain training requirements  
-- STIX, TAXII, CAPEC intel formats  
+## 📦 What Was Intentionally Excluded (Out of CISSP Exam Scope / Low ROI)
+
+- Detailed historical timelines of global privacy legislation  
+- Vendor-specific PCI-DSS implementation steps  
+- Full NIST 800-53 / 800-171 control-by-control catalogs  
+- Deep operational frameworks (ITIL, COSO, SABSA architecture layers)  
+- Mergers & acquisitions execution playbooks  
+- Divestiture infrastructure separation strategies  
+- AI / crypto / blockchain governance deep dives  
 - Expanded intellectual property law (patents, trademarks, copyrights)  
-- Complete BCP/DR project-management theory  
-- All US-specific case law and legislative nuance
+- Full BCP/DR project management methodology (Gantt-level detail)  
+- US-specific court precedents and legislative edge cases
 
 --- 
 
