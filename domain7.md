@@ -278,10 +278,36 @@ A backup only has value if it can be successfully restored.
 
 ### 💾 Backup Types
 
-- 📦 **Full** - Complete copy of all data  
-- ➕ **Incremental** - Changes since last backup (small backup, slower restore)  
-- 📈 **Differential** - Changes since last full backup (grows over time, faster restore than incremental)  
-- 🧩 **Synthetic** - Creates a new full backup from previous backups without re-copying all original data  
+- 1️⃣📦 **Full**
+Complete copy of all data  
+  - 🐢 Slow backup  
+  - ⚡ Fastest restore  
+  - 💾 Highest storage use  
+  - 🏭 Heavy production impact  
+
+- 2️⃣➕ **Incremental** 👉 Small backup, but restoring takes more steps.
+Backs up only the files that changed since the last backup (full or incremental).
+After backing them up, it marks them as "saved" (clears the archive bit).
+  - ⚡ Fast backup  
+  - 🐢 Slowest restore (must restore full + every incremental)  
+  - 💾 Lowest storage use  
+  - 🏭 Light production impact  
+  - ⚠️ More restore steps = higher failure risk  
+
+- 3️⃣📈 **Differential** 👉 Backup gets bigger each day, but restore is easier (full + latest differential).
+Backs up only the files that changed since the last full backup.
+It does not mark them as "saved" (archive bit stays set).
+  - ⏳ Backup grows over time  
+  - ⚡ Faster restore than incremental (full + latest differential only)  
+  - 💾 Medium storage use  
+  - 🎯 Lower RTO than incremental  
+
+- 3️4️⃣🧩 **Synthetic** 👉 Less impact on production systems.
+Creates a new full backup by combining a previous full backup with incremental or differential backups, without copying everything again from the original system.
+  - ⏱️ Reduces production impact  
+  - 📦 Minimizes backup window load
+
+---
 
 ### 🗂 Rotation Strategy - GFS (Grandfather-Father-Son)
 Used to balance retention, cost, and recovery flexibility.
@@ -290,6 +316,8 @@ Provides structured retention and versioning over time.
 - 👶 **Son** = Daily backups  
 - 👨 **Father** = Weekly backups  
 - 👴 **Grandfather** = Monthly backups  
+
+---
 
 ### 🛡️ Backup Rule – 3-2-1 Rule
 Consider **immutable or air-gapped backups** to resist ransomware.
