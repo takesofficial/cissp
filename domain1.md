@@ -453,7 +453,7 @@ Ensure vendors do not introduce vulnerabilities or tampered components.
 Identify how attackers can exploit systems and where to apply defenses.
 
 ### **Methods**  
-- Ⓜ️ **STRIDE** - Categorize threats.
+Ⓜ️ **STRIDE** - Categorize threats.
 STRIDE is a threat-focused methodology that's less strategic and thorough than PASTA. It is an acronym of:
  - Spoofing
  - Tampering
@@ -462,7 +462,7 @@ STRIDE is a threat-focused methodology that's less strategic and thorough than P
  - Denial-of-service
  - Elevation of privilege
 
-- 🍝**PASTA** - 7-stage risk-based modeling.
+🍝**PASTA** - 7-stage risk-based modeling.
 Process for Attack Simulation and Threat Analysis (PASTA), contrary to STRIDE, is an attacker-focused, risk-centric methodology. It is much more detailed than STRIDE and performs threat analysis from a strategic perspective.
 
  - Define objectives
@@ -473,7 +473,7 @@ Process for Attack Simulation and Threat Analysis (PASTA), contrary to STRIDE, i
  - Attack modeling
  - Risk and impact analysis
 
-- 💀 **DREAD** - Prioritize impact.
+💀 **DREAD** - Prioritize impact.
 DREAD is a threat model primarily used to measure and rank the severity of threats. DREAD is often used in combination with the STRIDE model, where STRIDE identifies the threats, and DREAD is then used to rank the severity of threats. The acronym means:
  - Damage
  - Reproducibility
@@ -484,7 +484,7 @@ DREAD is a threat model primarily used to measure and rank the severity of threa
 - **VAST** - Scalable, Agile-friendly.  
 - **Trike** - Risk auditing.  
 
-### Focus Areas in Threat Modeling
+### 🎯 Focus Areas in Threat Modeling
 When analyzing a system for security risk, concentrate on the areas attackers are most likely to exploit:
 
 - **Trust Boundaries**  
