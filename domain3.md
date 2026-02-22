@@ -82,12 +82,14 @@ Goal: recognize **what to use when** - not calculate key schedules.
 - 🌊 Modern stream option: ChaCha20  
 
 ### 🔲 Block Ciphers (type of symmetric encryption)
-- Operate on fixed-size blocks  
+Operate on fixed-size blocks  
+
 - Require a **mode of operation**:
- - 🟩 **GCM** - encryption + authentication (modern favorite, provides confidentiality + integrity)
- - 🔄 **CBC** - uses IV, hides patterns (older mode, no built-in integrity)
- - ⚡ **CTR** - counter mode (turns a block cipher into stream-like behavior)
- - ❌ **ECB** - identical plaintext > identical ciphertext (weak, avoid)
+ - 🥇 **GCM** - encryption + authentication (**Golden** Standard) -confidentiality + integrity
+ - 🔄 **CBC** - chains, uses IV, hides patterns (older mode, no built-in integrity) - confidentiality
+ - 🏎️ **CTR** - counter (turns a block cipher into stream-like behavior) - confidentiality
+ - 💾 XTS = disk encryption (e**XT**ra for s**T**orage) - confidentiality
+ - ❌ **ECB** - identical plaintext > identical ciphertext (weak, **avoid**)
 
 ### 🌊 Stream Ciphers (type of symmetric encryption)
 - Generate a continuous **keystream**
@@ -96,7 +98,7 @@ Goal: recognize **what to use when** - not calculate key schedules.
 - 📡 Ideal for:
   - 📞 Real-time communication (VoIP, video, wireless)
   - 🔗 Error-sensitive links (bit errors don’t corrupt entire blocks)
-- 🚨 Never reuse a nonce/keystream (breaks security)
+- 🚨 Critical: Never reuse a nonce/keystream (breaks security)
 
 ---
 
