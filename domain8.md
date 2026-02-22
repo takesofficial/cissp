@@ -18,7 +18,7 @@ Security failures in software are **design failures first**, coding failures sec
 
 ---
 
-## 🔄 Secure SDLC
+## 🔄 Secure (S)SDLC
 Security must be present in **every phase**.
 **Security added late is weak security.**
 
@@ -52,6 +52,93 @@ Security must be present in **every phase**.
    - Monitoring
    - Vulnerability remediation
 
+
+---
+
+---
+
+## 📈 Maturity Models (CMM, SAMM, IDEAL)
+Maturity models show **how disciplined and repeatable** an organization’s processes are.  
+They don’t just tell you whether something is “secure” — they tell you whether security (and delivery) is **predictable, governed, and improving** over time.
+
+Use them to answer:
+- Are we reacting to problems and relying on heroics?
+- Or do we have standardized, measurable practices that improve continuously?
+
+Security maturity matters because mature organizations handle incidents, change, and risk **consistently**—not improvisationally.
+
+## ☑️ COMPARISON
+| Model | Focus | Structure | Best Used For |
+|-------|-------|----------|---------------|
+| **CMM** | General process maturity | 5 Levels | Evaluating organizational discipline |
+| **SAMM** | Secure software development | 4 Functions × 3 Practices × 5 Levels | Improving secure SDLC maturity |
+| **IDEAL** | Change lifecycle | 5 Phases | Implementing structured improvement |
+
+
+---
+
+## 🪜 Capability Maturity Model (CMM) CMM = altitude (how mature you are)  
+A useful way to spot CMM levels in questions: if you see "no documentation" and "no standard way of doing things," you’re looking at **Initial**. If you see "metrics, KPIs, and control," you're in **Managed** territory. If the organization is continuously refining and improving based on data and lessons learned, that's **Optimizing**.
+
+### Levels
+
+- 1️⃣ **Initial**  
+Ad hoc, inconsistent, reactive. Success depends on individuals, not process.
+
+- 2️⃣ **Repeatable**  
+Basic project management exists. Teams can repeat earlier success, but it may still vary by group.
+
+- 3️⃣ **Defined**  
+Organization-wide standards exist. Processes are documented and institutionalized across teams.
+
+- 4️⃣ **Managed**  
+Processes are measured and controlled. Decisions become metrics-driven, not intuition-driven.
+
+- 5️⃣ **Optimizing**  
+Continuous improvement is the norm. The organization learns, adapts, and systematically refines process performance.
+
+---
+
+## 🛡️ Software Assurance Maturity Model (SAMM) by OWASP
+Secure navigation (how mature secure software practices are). 
+SAMM is purpose-built for **secure software development maturity**, it's like CMM, but focused specifically on software assurance practices.
+4 Business Functions × 3 Security Practices × 5 Maturity Levels
+
+SAMM is useful because it's modular: teams can assess maturity by practice and improve iteratively. Where CMM gives you a broad "how mature is the org," tells you **where your secure SDLC is strong or weak** (governance, build, verification, deployment).
+
+### Business Functions
+
+### 1️⃣ Governance
+- Strategy & Metrics  
+- Policy & Compliance  
+- Education & Guidance  
+
+### 2️⃣ Construction
+- Threat Assessment  
+- Secure Architecture  
+- Secure Build  
+
+### 3️⃣ Verification
+- Security Testing  
+- Code Review  
+- Security Assessment  
+
+### 4️⃣ Deployment
+- Environment Hardening  
+- Operational Enablement  
+- Defect Management  
+
+---
+
+## 🔄 IDEAL Model (Improvement Lifecycle) = flight plan (how you improve on purpose)
+IDEAL is not a maturity scorecard. It's a structured lifecycle for **driving improvement**. Shows up when the question is really asking: "How do we run a disciplined improvement program?" It's especially relevant when security has been fragmented and the organization needs a repeatable way to transform.
+
+Acronym:
+- **Initiating** - Identify need, build sponsorship  
+- **Diagnosing** - Assess current state  
+- **Establishing** - Define target state & roadmap  
+- **Acting** - Implement changes  
+- **Learning** - Measure outcomes and refine  
 
 ---
 
