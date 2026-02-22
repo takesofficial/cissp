@@ -85,13 +85,16 @@ Goal: recognize **what to use when** - not calculate key schedules.
 Operate on fixed-size blocks  
 
 - Require a **mode of operation**:
- - 🥇 **GCM** - encryption + authentication (**Golden** Standard) -confidentiality + integrity
- - 🔄 **CBC** - chains, uses IV, hides patterns (older mode, no built-in integrity) - confidentiality
- - 🏎️ **CTR** - counter (turns a block cipher into stream-like behavior) - confidentiality
- - 💾 XTS = disk encryption (e**XT**ra for s**T**orage) - confidentiality
- - ❌ **ECB** - identical plaintext > identical ciphertext (weak, **avoid**)
+- 📕 **ECB** - no I.V. - ment for short messages - identical plaintext > identical ciphertext (weak, **avoid** ❌)
+- 🔄 **CBC** - chains, uses IV, hides patterns (older mode, no built-in integrity) - confidentiality
 
-### 🌊 Stream Ciphers (type of symmetric encryption)
+- 🏎️ **CTR** - counter (turns a block cipher into stream-like behavior) - confidentiality
+ - 🥇 **GCM** - encryption + authentication (**Golden** Standard) -confidentiality + integrity 
+ 
+ - 💾 **XTS** - disk encryption (e**XT**ra for s**T**orage) - confidentiality
+
+
+### 🌊 Stream Ciphers (encrypts bit by bit. type of symmetric encryption)
 - Generate a continuous **keystream**
 - 🔀 Encrypt by XORing keystream with plaintext
 - ⚡ Very fast, low latency
