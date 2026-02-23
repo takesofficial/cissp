@@ -610,7 +610,7 @@ DREAD is a threat model primarily used to measure and rank the severity of threa
 When analyzing a system for security risk, concentrate on the areas attackers are most likely to exploit:
 
 - **Trust Boundaries**  
-  Points where data or access moves between different trust levels (e.g., user → app, app → database, external → internal network). These transitions introduce risk and require strong controls.
+  Points where data or access moves between different trust levels (e.g., user > app, app > database, external > internal network). These transitions introduce risk and require strong controls.
 - **Data Flows**  
   How information moves through the system - including storage, transmission, and processing. Evaluate confidentiality, integrity, and validation at each stage.
 - **Entry Points**  
@@ -651,7 +651,7 @@ When analyzing a system for security risk, concentrate on the areas attackers ar
 ---
 
 ### Identity & Accountability
-- Identification → Authentication → Authorization → Accountability → Auditing.
+- Identification > Authentication > Authorization > Accountability > Auditing.
 - Assurance levels (IAL / AAL).
 - Traceability and evidence integrity.
 
