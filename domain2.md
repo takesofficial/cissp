@@ -51,54 +51,72 @@ Classification is driven by impact - not convenience.
 
 ---
 
-## 💽 Assets, Data Types, and Memory  
+---
 
-### 💡 What Is An Asset  
-Anything of value to the organization:  
-- Data (most important)  
-- Hardware, software, media  
-- Intangibles: IP, reputation, brand, patents, copyrights, trademarks
+## 💽 Assets, Data Types, and Memory
 
-### 🧠 Memory Types (for destruction and remanence questions)  
-- ROM - Nonvolatile, not changed by users.  
-- PROM - Programmable once.  
-- EPROM / UVEPROM - Erased with ultraviolet light.  
-- EEPROM - Erased electrically.  
-- RAM - Volatile; loses contents when powered off.
+### 💡 Asset Categories
 
-### 📡 Emanations and TEMPEST  
-- TEMPEST - Controls electromagnetic emanations so attackers cannot capture data from signals.  
-- Countermeasures: Faraday cages, shielding, white noise, control zones.
+| Asset Type | Examples | Notes |
+|-------------|----------|-------|
+| **Data (Primary Asset)** | Customer data, IP, financial records | Most important asset in Domain 2 |
+| **Hardware** | Servers, laptops, network devices | Must follow lifecycle and destruction rules |
+| **Software** | Applications, OS, licenses | Includes licensing compliance |
+| **Media** | USB, tapes, backup drives | Subject to remanence risk |
+| **Intangible Assets** | Reputation, brand, patents, copyrights, trademarks | Often highest long-term business impact |
+
+Data is typically the highest-value asset.
 
 ---
 
-## 🌊 Data States  
+## 🧠 Memory Types (Remanence-Relevant)
 
-Protect data in every state, using appropriate controls.
+| Memory Type | Volatile? | Erasable? | Notes |
+|--------------|------------|------------|------|
+| **RAM** | Yes | Yes (power off) | Data lost when powered down |
+| **ROM** | No | No | Firmware storage |
+| **PROM** | No | No (one-time programmable) | Program once |
+| **EPROM (UVEPROM)** | No | Yes (UV light) | Requires physical UV exposure |
+| **EEPROM** | No | Yes (electrically) | Can be reprogrammed |
 
-- **Data at Rest** - Stored on disks, tapes, backups, cloud storage.  
-  - Main controls: encryption, access controls, physical security, DRM.  
-
-- **Data in Transit (in Motion)** - Moving over networks or between systems.  
-  - Main controls: TLS, IPsec, VPNs, secure protocols, DLP on the wire.  
-
-- **Data in Use** - In memory, being processed by CPUs.  
-  - Main controls: hardening endpoints, patching, anti-malware, memory handling, CASB for SaaS.
-
-Best single answer for confidentiality in any state: strong encryption.
+Volatile memory = loses contents without power.  
+Nonvolatile memory = retains data after shutdown.
 
 ---
 
-## 🧮 Data Aggregation Risk
+## 📡 Emanations & TEMPEST
 
-Individually low-classification data may become highly sensitive when aggregated.
+| Concept | Purpose | Countermeasures |
+|----------|----------|----------------|
+| **TEMPEST** | Prevent interception of electromagnetic signals | Shielding, Faraday cages, control zones, white noise |
+| **Emanation Risk** | Data leakage through unintended signals | Physical and architectural controls |
 
-Security decisions must consider:
-- Data volume
-- Correlation potential
-- Contextual exposure
+Focus: prevent signal-based data capture.
 
-Aggregation can increase impact classification.
+---
+
+# 🌊 Data States
+
+| State | Description | Primary Controls |
+|--------|------------|-----------------|
+| **Data at Rest** | Stored on disk, tape, cloud | Encryption, access control, physical security, DRM |
+| **Data in Transit (Motion)** | Moving across networks | TLS, IPsec, VPN, secure protocols, network DLP |
+| **Data in Use** | In memory during processing | Endpoint hardening, patching, anti-malware, memory controls |
+
+Best single confidentiality control across states: **Strong encryption**.
+
+---
+
+# 🧮 Data Aggregation Risk
+
+| Factor | Risk Impact |
+|--------|------------|
+| **Volume** | Larger datasets increase sensitivity |
+| **Correlation** | Combined datasets reveal new intelligence |
+| **Context** | Seemingly harmless data gains meaning when linked |
+
+Low-classification data can become high-impact when aggregated.
+Classification decisions must consider aggregation effects.
 
 ---
 
