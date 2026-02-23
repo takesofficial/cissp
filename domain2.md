@@ -36,6 +36,21 @@ You protect what you classify. Labels drive handling, controls, and access.
 
 ---
 
+## 📊 Classification Criteria
+
+Data classification is based on:
+
+| Factor | Description |
+|--------|------------|
+| **Value** | Business or operational importance |
+| **Sensitivity** | Impact if disclosed |
+| **Criticality** | Impact if unavailable |
+| **Legal / Regulatory Requirements** | Compliance obligations |
+
+Classification is driven by impact - not convenience.
+
+---
+
 ## 💽 Assets, Data Types, and Memory  
 
 ### 💡 What Is An Asset  
@@ -74,35 +89,35 @@ Best single answer for confidentiality in any state: strong encryption.
 
 ---
 
-## 👥 Roles and Ownership  
+## 🧮 Data Aggregation Risk
 
-Clear ownership is required to protect anything properly.
+Individually low-classification data may become highly sensitive when aggregated.
 
-- **Data Owner**  
-  - Usually senior management or department head.  
-  - Classifies data, defines handling, approves access.  
+Security decisions must consider:
+- Data volume
+- Correlation potential
+- Contextual exposure
 
-- **System Owner**  
-  - Owns the system that processes/stores data.  
-  - Responsible for system configuration, security plan, patching, and operations.  
+Aggregation can increase impact classification.
 
-- **Data Controller (GDPR)**  
-  - Decides what personal data is collected and how it is processed.  
+---
 
-- **Data Processor (GDPR)**  
-  - Processes personal data on behalf of the controller, per contract.  
-  - Must protect data and follow controller instructions.  
+## 👥 Roles and Ownership
+Clear ownership is required to protect assets properly.
+Ownership defines authority. Custodians implement. Users comply.
 
-- **Data Custodian**  
-  - Day-to-day handling: backups, storage, archiving, technical protection.  
+| Role | Primary Responsibility | Authority Level |
+|------|------------------------|-----------------|
+| **Data Owner** | Classifies data, defines handling requirements, approves access | Final authority over the data |
+| **System Owner** | Ensures system security, configuration, patching, and operational integrity | Authority over the system, not the data itself |
+| **Data Controller (GDPR)** | Determines purpose and means of processing personal data | Legal authority over personal data decisions |
+| **Data Processor (GDPR)** | Processes personal data on behalf of the controller | Acts under contractual instruction |
+| **Data Custodian** | Performs day-to-day protection (backup, storage, archiving, technical safeguards) | No classification authority |
+| **Data Steward** | Maintains data quality, governance, metadata, compliance alignment | Advisory / governance-focused |
+| **User / Data Subject** | Uses data per policy and approved access rights | No ownership authority |
 
-- **Data Steward**  
-  - Business-focused: data quality, governance, metadata, compliance.  
-
-- **Users / Subjects**  
-  - Use data to perform work, must follow policies and only access what they are authorized to.  
-
-Core principles: need-to-know and least privilege apply everywhere.
+**Core principles:**  
+- Need-to-know & Least privilege  
 
 ---
 
@@ -127,36 +142,69 @@ Goal: no uncontrolled copy, movement, or disclosure of sensitive data.
 
 ---
 
-## 🔐 Data Protection Methods  
+## 🏛️ Authority Model
 
-### 🧰 Core Tools  
-- **Encryption** - Primary method for confidentiality at rest and in transit.  
-- **DRM** - Protects documents and media wherever they go; controls viewing, printing, forwarding.  
-- **DLP**  
-  - Network DLP - Watches outbound traffic.  
-  - Endpoint DLP - Watches local files, printing, USB use.  
-  - Cloud DLP - Integrated with cloud apps and storage.  
-- **CASB**  
-  - Sits between users and cloud services.  
-  - Focus: visibility, data security, threat detection, compliance.  
-  - Often bundles DLP, auth, logging, and policy enforcement for SaaS usage.
+| Role | Authority |
+|------|----------|
+| **Data Owner** | Classifies data and approves access |
+| **Custodian** | Implements controls |
+| **User** | Must comply with policy |
 
-### 🧬 Privacy Techniques  
-- **Anonymization**  
-  - Permanently removes the link to individuals.  
-  - Correctly done, it cannot be reversed.  
+IT does not classify data. Owners do.
 
-- **Pseudonymization**  
-  - Replaces identifiers with pseudonyms; can be reversed using a separate mapping.  
+---
 
-- **Tokenization**  
-  - Replaces sensitive data (like card numbers) with meaningless tokens.  
-  - Mapping is stored in a secure vault.  
+## 🔐 Data Protection Methods
 
-- **Randomized masking**  
-  - Alters data so it is useful statistically but cannot be linked back to individuals (when properly done).  
+- **Anonymization = irreversible**
+- **Pseudonymization / Tokenization = reversible**
+- Encryption protects confidentiality.
+- DLP detects movement.
+- DRM controls usage.
+- CASB governs cloud data behavior.
 
-Exam angle: know which method is reversible vs permanent.
+### 🧰 Core Protection Controls
+
+| Method | Purpose | Where It Applies | Key Point |
+|--------|----------|----------------|-----------|
+| **Encryption** | Protect confidentiality | Data at rest & in transit | Strongest single control for confidentiality |
+| **DRM (Digital Rights Management)** | Control usage after access | Documents, media | Restricts viewing, printing, forwarding |
+| **DLP (Data Loss Prevention)** | Detect and prevent data exfiltration | Network, Endpoint, Cloud | Monitors and blocks sensitive data movement |
+| **CASB (Cloud Access Security Broker)** | Enforce cloud data security policies | SaaS / Cloud services | Adds visibility, DLP, auth, logging, compliance |
+
+### DLP Types
+
+| Type | Focus Area |
+|------|------------|
+| **Network DLP** | Monitors outbound traffic |
+| **Endpoint DLP** | Monitors local files, USB, printing |
+| **Cloud DLP** | Protects data inside cloud apps/storage |
+
+---
+
+## 🧬 Privacy & Data Transformation Techniques
+
+| Method | Reversible? | Description | Use Case |
+|--------|------------|-------------|----------|
+| **Anonymization** | ❌ No | Permanently removes link to individual | Public data release |
+| **Pseudonymization** | ✅ Yes | Replaces identifiers; mapping stored separately | GDPR risk reduction |
+| **Tokenization** | ✅ Yes | Replaces sensitive data with token; vault stores mapping | Payment systems |
+| **Randomized Masking** | Depends | Alters data while preserving statistical utility | Testing / analytics |
+
+---
+
+## ☁️ Cloud Data Responsibility
+
+Cloud providers secure infrastructure.  
+Customers remain responsible for:
+
+- Data classification
+- Encryption decisions
+- Retention policy
+- Access control
+- Regulatory compliance
+
+Outsourcing storage does not transfer ownership.
 
 ---
 
@@ -174,6 +222,18 @@ Security must exist at each step.
 6. **Destruction** - Permanently remove data per policy and classification.
 
 Data collection guideline: if it has no clear purpose, do not collect it.
+
+---
+
+## 📉 Data Minimization Principle
+
+Collect and retain only what is necessary.
+
+Reduces:
+- Legal exposure
+- Breach impact
+- Storage cost
+- Regulatory risk
 
 ---
 
@@ -222,6 +282,18 @@ Term to remember: defensible destruction - destruction that is controlled, docum
 
 ---
 
+## 📘 Media Sanitization Levels (NIST Alignment)
+
+| Method | When Used |
+|--------|----------|
+| **Clear** | Reuse within same security domain |
+| **Purge** | Strong sanitization against advanced recovery |
+| **Destroy** | Final disposal or highest sensitivity |
+
+Selection depends on classification and reuse intent.
+
+---
+
 ## 🧾 Asset Inventory and Management  
 
 You cannot protect what you do not know you have.
@@ -242,6 +314,21 @@ Use:
 
 ---
 
+## 🏷️ Asset Accountability Requirements
+
+Asset records should include:
+
+- Unique identifier
+- Owner
+- Location
+- Classification
+- Lifecycle status
+- Disposal method
+
+Untracked assets are unmanaged risk.
+
+---
+
 ## 🕰️ EOL and EOS (End of Life / End of Support)  
 
 - **End of Life (EOL)** - Product no longer sold.  
@@ -255,6 +342,18 @@ Also: retaining data is pointless if you no longer have:
 - Hardware that can read it  
 - Software that can interpret it  
 - People who know how to operate both
+
+---
+
+## ⚠️ Unsupported Systems Risk Handling
+Options for EOL/EOS systems:
+
+- Replace
+- Isolate
+- Apply compensating controls
+- Accept risk (management decision)
+
+Technical teams cannot unilaterally accept unsupported risk.
 
 ---
 
