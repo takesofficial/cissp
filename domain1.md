@@ -694,7 +694,7 @@ When analyzing a system for security risk, concentrate on the areas attackers ar
 
 ---
 
-## 📦 Out of Scope / Low ROI
+## 📦 Out of Scope
 
 - Full NIST 800-53 control catalog detail.
 - Deep ITIL / COSO / SABSA operational mapping.
