@@ -85,16 +85,16 @@ I used these for repetition and knowing where to focus on:
 |  |  |  | **total** | **amount** |  |
 | 2025-11-27 | 2026-01-10 | [AI Generated Podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv) | by Aviv Avitan | 12 | hrs |
 | 2026-01-15 | 2026-01-15 | [Why you will pass the CISSP (Legacy)](https://www.youtube.com/watch?v=v2Y6Zog8h2A) | by Kelly Handerhan, Cybertrain.IT | 16 | min |
+| 2026-01-12 | 2026-01-12 | [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) | by Peter Zerger, Inside Cloud and Security | 21 | min |
+| 2026-01-12 | 2026-01-12 | [Think Like A Manager](https://www.youtube.com/watch?v=vfC9OLsCqgk) | by Peter Zerger, Inside Cloud and Security | 35 | min |
+| 2026-01-12 | 2026-01-12 | [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) | by Peter Zerger, Inside Cloud and Security | 20 | min |
+| 2026-01-14 | 2026-02-23 | [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education | 41 | hrs |
 | 2026-02-26 | 2026-02-26 | [Why You WILL Pass the CISSP Exam (New)](https://www.youtube.com/watch?v=gKe88tIeVYo) | by Kelly Handerhan, Destination Certification | 20 | min |
-| 2026-01-?? | 2026-??-?? | [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) | by Peter Zerger, Inside Cloud and Security | 21 | min |
-| 2026-01-?? | 2026-??-?? | [Think Like A Manager](https://www.youtube.com/watch?v=vfC9OLsCqgk) | by Peter Zerger, Inside Cloud and Security | 35 | min |
-| 2026-01-?? | 2026-??-?? | [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) | by Peter Zerger, Inside Cloud and Security | 20 | min |
-| 2026-01-?? | 2026-??-?? | [CISSP Videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw) | by Gwen Bettwy, Tactical Security Inc. | 4 | hrs |
-| 2026-01-?? | 2026-??-?? | [CISSP Exam Prep 2025](https://youtu.be/aLIFzIBNM_8) | by Peter Zerger, Inside Cloud and Security | 8 | hrs |
-| 2026-01-?? | 2026-??-?? | [Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW) | by Peter Zerger, Dion Training Solutions | 8 | hrs |
-| 2026-01-?? | 2026-??-?? | [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) | by Jason Dion, Dion Training Solutions | 4 | hrs |
-| 2026-01-?? | 2026-??-?? | [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education | 41 | hrs |
-| 2026-03-11 | TBD | [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) | by Jason Dion, Dion Training Solutions | - | hrs |
+| 2026-03-?? | 2026-03-?? | [CISSP Videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw) | by Gwen Bettwy, Tactical Security Inc. | 4 | hrs |
+| 2026-03-?? | 2026-03-?? | [CISSP Exam Prep 2025](https://youtu.be/aLIFzIBNM_8) | by Peter Zerger, Inside Cloud and Security | 8 | hrs |
+| 2026-03-?? | 2026-03-?? | [Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW) | by Peter Zerger, Dion Training Solutions | 8 | hrs |
+| 2026-03-?? | 2026-03-?? | [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) | by Jason Dion, Dion Training Solutions | 4 | hrs |
+| 2026-03-11 | 2026-03-?? | [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) | by Jason Dion, Dion Training Solutions | - | hrs |
 
 > [!IMPORTANT]
 > Progress of the OSG book is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book's structure.
