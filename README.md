@@ -43,21 +43,21 @@ You need five years of paid, cumulative experience across two or more CISSP doma
 ### Phase 1 - Build the baseline (Weeks 1-8)
 I started by reading the **OSG** cover-to-cover. This took ~2 months (Nov/Dec). Some people prefer the Destination CISSP book, but I chose to start with the OSG to get full domain coverage.
 
-During commutes I listened to this **[AI generated CISSP podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv)** made by Aviv Avitan. By the time I finished the Official Study Guide, I also finished the podcast.
+During commutes I listened to this **[AI generated CISSP podcast](https://open.spotify.com/show/6TwfSGne4GPJiDbZwBpOOv)** made by Aviv Avitan. By the time I finished the Official Study Guide, I also finished the podcast. I've listened to it a second time after finishing [This Course](https://www.udemy.com/course/cisspcertification) by Andrew Ramdayal.
 
 ---
 
 ### Phase 2 - Questions-first loop (after finishing the OSG)
-Once the book was done, I started with Pete Zerger's [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) & [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) videos - after that I switched to [This Course](https://www.udemy.com/course/cisspcertification) and shifted to a tight loop:
+Once the book was done, I started with Pete Zerger's [Memorization Techniques](https://www.youtube.com/watch?v=LGqZbiitiDw) & [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) videos - after that I switched to [This Course](https://www.udemy.com/course/cisspcertification):
 1. **Practice exams**
 2. **Identify gaps**
-3. **Watch videos & learn only for those gaps**
+3. **Read and watch videos & learn only for those gaps**
 4. **Update notes**
 5. **Retest**
 
 I used these for repetition and knowing where to focus on:
 - **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)** (they have a [web app](https://isc2-learnzapp.web.app/prepare)).
-- I tested my knowledge every week via **[Quantum Exams](https://quantumexams.com)** to see where to focus on and kept updating this GitHub/notes during studying based on missed concepts.
+- I tested my knowledge every week via **[Quantum Exams](https://quantumexams.com)** to see where to focus on and kept updating this GitHub/notes during studying based on missed concepts. Wrote down gaps, and learned them, repeat.
 
 ### Rules that kept me on track
 - **No new sources after month 3** (reduce context switching and conflicting wording)
