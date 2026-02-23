@@ -1,7 +1,7 @@
 # <p align=center>Domain 1 - Security and Risk Management</p>
 
 ## 🚨 Elevator Pitch  
-Risk cannot be eliminated — only identified, analyzed, and managed.
+Risk cannot be eliminated - only identified, analyzed, and managed.
 
 Domain 1 establishes the governance foundation of security: aligning risk decisions with business objectives, defining policy and accountability, understanding legal and ethical obligations, managing personnel risk, overseeing third parties, conducting investigations, and ensuring continuity of operations.
 
@@ -213,7 +213,7 @@ Used when reliable numerical data is unavailable.
 
 ---
 
-## Step 1 — SLE
+## Step 1 - SLE
 
 ```
 SLE = AV × EF
@@ -227,7 +227,7 @@ SLE = AV × EF
 
 ---
 
-## Step 2 — ALE
+## Step 2 - ALE
 
 ```
 ALE = SLE × ARO
@@ -240,7 +240,7 @@ ALE = SLE × ARO
 
 ---
 
-## Step 3 — Safeguard Value
+## Step 3 - Safeguard Value
 
 ```
 Safeguard Value = ALE₁ − ALE₂ − Cost
