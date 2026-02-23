@@ -20,19 +20,17 @@ Manager view: reduce business risk, not maximize packet filtering.
 
 ---
 
-## 📶 OSI Model (exam anchor)
+## 📶 OSI Model
+| # | Mnemonic | OSI Layer      | Example        | Phrase  | PDU      |
+|---|----------|---------------|----------------|---------|----------|
+| 1 | **P**lease   | Physical      | Hardware       | **D**on't   | Data     |
+| 2 | **D**o       | Data          | MAC            | **D**on't   | Data     |
+| 3 | **N**ot      | Network       | IP             | **D**on't   | Data     |
+| 4 | **T**hrow    | Transport     | TCP/UDP        | **S**top    | Segments |
+| 5 | **S**ausage  | Session       | Connections    | **P**ouring | Packets  |
+| 6 | **P**izza    | Presentation | Encryption     | **F**ree    | Frames   |
+| 7 | **A**way     | Application  | HTTPS / DNS    | **B**eer    | Bits     |
 
-Mnemonic: **PLEASE DO NOT THROW AWAY SAUSAGE PIZZA**
-
-1. **Physical** - Hardware, cables, signals  
-2. **Data Link** - MAC, frames, switches  
-3. **Network** - IP, routing, packets  
-4. **Transport** - TCP/UDP, ports  
-5. **Session** - Sessions, connections  
-6. **Presentation** - Encryption, format  
-7. **Application** - Protocols (HTTP, DNS)
-
-Exam use:
 - Place controls and failures at the correct layer.
 - Troubleshooting questions almost always map to OSI.
 
