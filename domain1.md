@@ -286,13 +286,13 @@ Tracks identified risks, severity, mitigation, and status.
 ## 🧱 Control Types  
 How controls are implemented.
 
-### 1️⃣ **Administrative (Managerial)**  
+### 1. **Administrative (Managerial)**  
 Policies, training, background checks, risk management.
 
-### 2️⃣ **Technical (Logical)**  
+### 2. **Technical (Logical)**  
 Firewalls, encryption, MFA, SIEM, access controls.
 
-### 3️⃣ **Physical**  
+### 3. **Physical**  
 Locks, guards, cameras, fences.
 
 ---
