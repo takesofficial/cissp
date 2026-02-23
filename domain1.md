@@ -1,7 +1,9 @@
 # <p align=center>Domain 1 - Security and Risk Management</p>
 
 ## 🚨 Elevator Pitch  
-Risk cannot be eliminated. Only reduced, transferred, or accepted by senior management. Domain 1 defines governance, policy, ethics, risk analysis, legal requirements, personnel security, investigations, business continuity, and supply-chain risk.
+Risk cannot be eliminated — only identified, analyzed, and managed.
+
+Domain 1 establishes the governance foundation of security: aligning risk decisions with business objectives, defining policy and accountability, understanding legal and ethical obligations, managing personnel risk, overseeing third parties, conducting investigations, and ensuring continuity of operations.
 
 ---
 
@@ -24,6 +26,33 @@ If public harm is involved, think Canon I.
 ## 🏛️ Governance  
 Ensure security directly supports the business mission, goals, and risk appetite.
 
+## 🎯 Strategic vs Tactical vs Operational Planning
+
+| Level | Focus | Time Horizon | Owned By |
+|-------|--------|--------------|----------|
+| **Strategic** | Long-term direction, mission alignment | 3–5 years | Executive leadership |
+| **Tactical** | Program implementation | 1 year | Senior / middle management |
+| **Operational** | Day-to-day execution | Quarterly / ongoing | Operational managers |
+
+Security strategy must align to business strategy.
+
+---
+
+## 🏛️ Governance Committee
+
+Responsible for:
+
+- Strategic oversight
+- Policy approval
+- Risk monitoring
+- Compliance enforcement
+- Role assignment
+- Performance metrics review
+
+Governance sets direction. Management executes.
+
+---
+
 ### 📚 Documentation Hierarchy
 
 **Policies > Standards > Baselines > Guidelines > Procedures**
@@ -36,6 +65,16 @@ Ensure security directly supports the business mission, goals, and risk appetite
 
 **Frameworks:** ISO 27001, NIST CSF, COBIT, CIS Controls, RMF, ISO 31000.  
 **Security governance goal:** Align security with business value, risk, and objectives.
+
+---
+
+## 🧩 Scoping vs Tailoring (Control Selection)
+Used in RMF and governance-level control decisions.
+
+| Term | Meaning |
+|------|----------|
+| **Scoping** | Selecting which controls apply to a system |
+| **Tailoring** | Adjusting baseline controls based on risk |
 
 ---
 
@@ -69,124 +108,174 @@ Residual risk is ALWAYS owned by senior management.
 ---
 
 ## 🔺 CIA Triad  
-Three core security outcomes.
+Over time, the CIA model was expanded to include **Authenticity** and **Non-repudiation**, forming the **Five Pillars of Information Security**.
+These pillars represent core security objectives. On the exam, questions often use synonymous wording instead of the pillar names directly.
 
-- **Confidentiality** - Prevent unauthorized disclosure.  
-- **Integrity** - Prevent unauthorized modification; ensure authenticity.  
-- **Availability** - Ensure timely, reliable access for authorized users.
-
-### 💥 DAD (When CIA Fails)
-- **Disclosure**
-- **Alteration**
-- **Destruction**
-
-
-Non-repudiation and accountability are services built on top of it.
+| Pillar | Description | Key Terms | If It Fails (DAD / Equivalent) |
+|--------|------------|-----------|--------------------------------|
+| **Confidentiality** | Ensures an asset is accessible only to authorized users. Protects against unauthorized disclosure. | Concealment, Discretion, Sensitivity, Secrecy | **Disclosure** |
+| **Integrity** | Ensures an asset is not modified or deleted in an unauthorized manner. Maintains accuracy and completeness. | Accuracy, Validity, Veracity, Authenticity | **Alteration** |
+| **Availability** | Ensures authorized users can access an asset when needed. Focuses on reliability and uptime. | Accessibility, Usability, Redundancy, Resiliency | **Destruction** |
+| **Authenticity** | Ensures a user, system, or data source is genuine and truly who/what it claims to be. | Genuineness, Legitimacy, Trustworthiness, Verifiability | Impersonation / Forgery |
+| **Non-repudiation** | Ensures a user cannot deny performing an action or transaction. Provides proof of origin and delivery. | Irrefutability, Indisputability, Undeniability, Unquestionability | Repudiation |
 
 ---
 
 ## 🔐 AAA  
 The lifecycle of identity, access, and accountability.
 
-- **Identification** - Claim identity ("I am Nick").  
-- **Authentication** - Prove identity (password, token, biometric).  
-- **Authorization** - What you can access.
-- **Accountability** - Tying actions to subjects.  
-- **Auditing** - Recording and reviewing events.
+| Component | What It Answers | Purpose | Example |
+|------------|----------------|----------|----------|
+| **Identification** | Who are you? | User claims an identity. | Username: `nick.admin` |
+| **Authentication** | Can you prove it? | Verifies the claimed identity. | Password, MFA token, biometric |
+| **Authorization** | What are you allowed to do? | Grants or denies access based on permissions. | Access to HR database: Approved |
+| **Accountability** | Who performed this action? | Links actions to a specific subject. | User ID tied to activity |
+| **Auditing** | What happened? | Records and reviews events for compliance and investigation. | Log review, SIEM report |
+
+---
+
+## 🏷️ Identity Assurance Levels (NIST 800-63)
+
+### Identity Assurance Level (IAL)
+
+| Level | Description |
+|-------|-------------|
+| **IAL1** | Self-asserted identity |
+| **IAL2** | Verified identity |
+| **IAL3** | In-person verified identity |
+
+### Authenticator Assurance Level (AAL)
+
+| Level | Description |
+|-------|-------------|
+| **AAL1** | Single-factor authentication |
+| **AAL2** | Multi-factor authentication |
+| **AAL3** | Hardware-based MFA with cryptographic binding |
 
 ---
 
 ## 📉 Risk Management  
+Risk is never eliminated - only managed.
+
 Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
 
-### 🔢 Core Expressions
-Some sources express risk differently. All mean the same thing;
-- **Risk = Likelihood × Impact**  
-- **Risk = Threat × Vulnerability × Asset Value**  
+---
 
-### 🔢 Quantitative  
-**Think of this as "security math for babies."
-Everything you calculate here tells you HOW MUCH MONEY the company will lose.  
-If you know the money, you know the risk.**
+## 🎚️ Risk Appetite Model
+Defined by senior management.
 
-### 🔍 Qualitative  
-Used when numbers are impractical.
-
-- Delphi Method - anonymous expert rounds until consensus.  
-- Brainstorming - group discussion to identify threats.  
-- Heat Maps - visual likelihood vs impact.  
-- Subjective Ranking - high/medium/low scoring based on expert judgment.
+| Term | Meaning |
+|------|----------|
+| **Risk Appetite** | Amount of risk organization is willing to pursue |
+| **Risk Tolerance** | Acceptable variation from objectives |
+| **Risk Capacity** | Maximum risk organization can survive |
 
 ---
 
-#### 🧩 Step 1 - SLE (Money lost each time bad thing happens.)
-**SLE = AV × EF**
+## Risk Formula Variations
 
-- **Single Loss Expectancy (SLE)** = “How much money we lose from ONE bad event.”  
-  Example: €100,000 × 0.40 = **€40,000 loss** each time it happens.
+| Expression | Meaning |
+|------------|----------|
+| **Risk = Likelihood × Impact** | Probability of event × Business damage |
+| **Risk = Threat × Vulnerability × Asset Value** | Threat exploiting weakness affecting asset |
 
-- **Asset Value (AV)** = “How much money this thing is worth.”  
-  Example: A server worth **€100,000**.
-
-- **Exposure Factor (EF)** = “How much % of the thing is destroyed when bad stuff happens.”  
-  Example: A fire damages **40%** > EF = **0.40**.
+Both expressions represent the same concept:  
+**Risk = probability combined with consequence.**
 
 ---
 
-#### 🧮 Step 2 - ALE (Money lost per year from bad thing.)
-**ALE = SLE × ARO**
+## Quantitative Risk Analysis
 
-- **Annualized Loss Expectancy (ALE)** = “How much money we lose PER YEAR from this threat.”  
-  Example: €40,000 × 0.2 = **€8,000 per year**.
+Used when numerical data is available.
 
-- **Annualized Rate of Occurrence (ARO)** = “How many times per year this bad thing happens.”  
-  Example: Fire happens **once every 5 years** > ARO = **0.2**.
-
-This tells management:  
-**“If we do nothing, we lose €8,000 per year from this threat.”**
+| Characteristic | Description |
+|---------------|------------|
+| Measurement | Financial impact |
+| Output | Monetary value (e.g., ALE) |
+| Purpose | Cost justification and budgeting |
 
 ---
 
-#### 💰 Step 3
-**Safeguard Value = ALE₁ - ALE₂ - Cost**
+## Qualitative Risk Analysis
 
-If the result is **positive**, the control is **worth it**.  
-If **negative**, the control **costs more than the damage**, so don’t buy it.
-**This is how you justify buying security tools without getting fired.**
+Used when reliable numerical data is unavailable.
 
-- **ALE₁** = “Money we lose per year BEFORE the control.”  
-- **ALE₂** = “Money we lose per year AFTER the control.”  
-- **Cost** = price of the control.
+| Method | Description |
+|--------|------------|
+| **Delphi Method** | Anonymous expert consensus rounds |
+| **Brainstorming** | Group threat identification |
+| **Heat Maps** | Visual likelihood vs impact matrix |
+| **Subjective Ranking** | High / Medium / Low scoring |
 
 ---
 
-#### 🧠 Summary
-1.
-- **SLE** = Money lost each time bad thing happens. (SLE = AV × EF)
-- **AV** = How much thing is worth.  
-- **EF** = How much % breaks when bad thing happens.
+## 📉 Quantitative Risk Analysis
 
-2.
-- **ALE** = Money lost per year from bad thing. (SLE × ARO)
-- **ARO** = How often bad thing happens each year.  
+---
 
-3.
-- **Safeguard Value** = Is the control worth buying?
+## Step 1 — SLE
 
-This is the only math Domain 1 cares about. This is what CISSP wants you to recognize instantly.
+```
+SLE = AV × EF
+```
 
-### 🧭 Risk responses  
-Never ignore or deny risk.
+| Term | Meaning |
+|------|--------|
+| **AV (Asset Value)** | Total value of asset |
+| **EF (Exposure Factor)** | % of loss per incident |
+| **SLE (Single Loss Expectancy)** | Loss per single event |
 
-- **Mitigate** - Add controls.  
-- **Transfer** - Insurance/outsourcing.  
-- **Avoid** - Stop activity entirely.  
-- **Accept** - Management formally accepts risk.  
-- **Deter** - Discourage attacks.
+---
 
-**Residual risk** is ALWAYS owned by **senior management**.
-**Compliance is an administrative control.**
+## Step 2 — ALE
 
+```
+ALE = SLE × ARO
+```
+
+| Term | Meaning |
+|------|--------|
+| **ARO (Annualized Rate of Occurrence)** | Frequency per year |
+| **ALE (Annualized Loss Expectancy)** | Expected yearly loss |
+
+---
+
+## Step 3 — Safeguard Value
+
+```
+Safeguard Value = ALE₁ − ALE₂ − Cost
+```
+
+| Result | Decision |
+|--------|----------|
+| Positive | Implement control |
+| Negative | Do not implement |
+
+---
+
+## Formula Flow
+
+| Step | Formula | Output |
+|------|---------|--------|
+| 1 | AV × EF | SLE |
+| 2 | SLE × ARO | ALE |
+| 3 | ALE₁ − ALE₂ − Cost | Control decision |
+
+---
+
+## Risk Responses
+
+| Response | Meaning |
+|----------|--------|
+| **Mitigate** | Reduce risk |
+| **Transfer** | Shift risk |
+| **Avoid** | Eliminate activity |
+| **Accept** | Management approval |
+| **Deter** | Discourage threat |
+
+---
+
+**Residual risk = Senior management.**
 ---
 
 ## 📊 Risk Register  
@@ -247,6 +336,18 @@ Oversight of vendors, partners, and contractors.
 - **Right-to-audit clauses** - Legal authority to inspect.  
 - **Minimum security requirements** - Contractual security baselines.  
 - **Continuous monitoring** - Ongoing vendor risk evaluation.
+
+---
+
+## 🔍 Audit the Auditor
+
+Organizations remain accountable for:
+
+- Vendor security posture
+- Accuracy of third-party audits
+- Effectiveness of external assessors
+
+Outsourcing does not transfer accountability.
 
 ---
 
@@ -336,6 +437,18 @@ You only need to know **what region they belong to** and **that they are privacy
 8. Accountability  
 
 Fallback when GDPR is not the answer.
+
+---
+
+## 🔐 Privacy vs Cybersecurity
+
+| Privacy | Cybersecurity |
+|----------|--------------|
+| Protects individual rights | Protects systems and data |
+| Focused on lawful data use | Focused on technical safeguards |
+| Driven by regulation | Driven by risk management |
+
+Privacy violations may occur without cybersecurity failure.
 
 ---
 
@@ -446,6 +559,18 @@ Ensure vendors do not introduce vulnerabilities or tampered components.
 
 ---
 
+## 🔄 Mergers, Acquisitions, Divestitures Risk
+
+| Scenario | Risk |
+|-----------|------|
+| **Acquisition** | Unknown inherited vulnerabilities |
+| **Merger** | Control misalignment and integration gaps |
+| **Divestiture** | Data leakage and residual access |
+
+Security must assess risk during business transitions.
+
+---
+
 ## 🎯 Threat Modeling  
 Identify how attackers can exploit systems and where to apply defenses.
 
@@ -497,40 +622,90 @@ When analyzing a system for security risk, concentrate on the areas attackers ar
 
 ---
 
-## 🧠 Exam Priorities Recap
+## 🧠 Exam Priorities Recap (Domain 1)
 
-Recognize and apply quickly:  
-- Governance stack: policies > standards > baselines > guidelines > procedures (who writes what, what is mandatory).  
-- Roles: senior management vs owner vs custodian vs user vs auditor, and who accepts residual risk (always senior management).  
-- CIA vs DAD: what each violation looks like in a scenario-style question.  
-- AAA: identification, authentication, authorization, accountability, auditing.  
-- Risk math: AV, EF, SLE, ARO, ALE, safeguard value, and which variable a question is really asking for.  
-- Qualitative vs quantitative risk: when to use which and typical qualitative techniques (Delphi, heat maps, rankings).  
-- Risk responses: mitigate, transfer, avoid, accept, deter - and which one a scenario is pointing at.  
-- Control types (administrative / technical / physical) vs control functions (preventive, detective, corrective, recovery, compensating, directive, deterrent).  
-- Due diligence (investigation) vs due care (execution): research vs doing.
-- High-level legal buckets: civil vs criminal vs administrative and why it matters in investigations.  
-- Anchor regulations: SOX, HIPAA, GLBA, PCI-DSS, GDPR/CCPA, CFAA, ECPA, DMCA, FISMA (know what they broadly protect).  
-- Privacy principles: minimization, purpose limitation, transparency, storage limitation, integrity/confidentiality, accountability.  
-- Personnel controls: separation of duties, job rotation, least privilege, onboarding/transfer/termination access handling.  
-- Investigation and forensics anchors: chain of custody, order of volatility, admissibility.  
-- BCP/BIA core outputs: RTO, RPO, MTD and where they appear in lifecycle questions.  
-- Third-party governance and supply chain: right-to-audit clauses, minimum security requirements, continuous monitoring.
+### Governance & Authority
+- Documentation hierarchy: **Policy > Standard > Baseline > Guideline > Procedure**
+- Governance sets direction; management executes.
+- Strategic vs Tactical vs Operational planning layers.
+- **Senior management accepts residual risk.**
 
 ---
 
-## 📦 What Was Intentionally Excluded (Out of CISSP Exam Scope / Low ROI)
+### Risk Foundations
+- Risk expressions:
+  - Risk = Likelihood × Impact
+  - Risk = Threat × Vulnerability × Asset Value
+- Quantitative: AV, EF, SLE, ARO, ALE, Safeguard Value.
+- Qualitative: Delphi, heat maps, expert ranking.
+- Risk responses: Mitigate, Transfer, Avoid, Accept, Deter.
+- Risk appetite vs tolerance vs capacity.
 
-- Detailed historical timelines of global privacy legislation  
-- Vendor-specific PCI-DSS implementation steps  
-- Full NIST 800-53 / 800-171 control-by-control catalogs  
-- Deep operational frameworks (ITIL, COSO, SABSA architecture layers)  
-- Mergers & acquisitions execution playbooks  
-- Divestiture infrastructure separation strategies  
-- AI / crypto / blockchain governance deep dives  
-- Expanded intellectual property law (patents, trademarks, copyrights)  
-- Full BCP/DR project management methodology (Gantt-level detail)  
-- US-specific court precedents and legislative edge cases
+---
+
+### Security Objectives
+- CIA vs DAD failure states.
+- Authenticity and Non-repudiation as additional pillars.
+- Recognize synonyms used in exam questions.
+
+---
+
+### Identity & Accountability
+- Identification → Authentication → Authorization → Accountability → Auditing.
+- Assurance levels (IAL / AAL).
+- Traceability and evidence integrity.
+
+---
+
+### Control Structure
+- Control types: Administrative / Technical / Physical.
+- Control functions: Preventive / Detective / Corrective / Recovery / Compensating / Directive / Deterrent.
+- Compliance is an administrative control, not risk elimination.
+
+---
+
+### Legal & Compliance
+- Law types: Civil vs Criminal vs Administrative.
+- Due care (execute) vs Due diligence (investigate).
+- Core regulations: GDPR, HIPAA, SOX, GLBA, PCI DSS, FISMA, CCPA, CFAA, ECPA, DMCA.
+- OECD and core privacy principles.
+
+---
+
+### Personnel & Investigations
+- Separation of duties, least privilege, job rotation.
+- Employment lifecycle controls.
+- Chain of custody, order of volatility, admissibility.
+
+---
+
+### Business Continuity
+- BCP lifecycle.
+- BIA outputs: RTO, RPO, MTD.
+- Continuity strategy selection.
+
+---
+
+### Third-Party & Supply Chain
+- Right-to-audit clauses.
+- Minimum security requirements.
+- Continuous monitoring.
+- Vendor accountability remains internal responsibility.
+
+---
+
+## 📦 Out of Scope / Low ROI
+
+- Full NIST 800-53 control catalog detail.
+- Deep ITIL / COSO / SABSA operational mapping.
+- Vendor-specific PCI implementation steps.
+- Historical legal timelines.
+- Detailed M&A execution mechanics.
+- Advanced AI / blockchain governance.
+- Court precedent analysis.
+- Project management–level BCP detail.
+
+Focus on governance reasoning, risk decisions, and executive accountability.
 
 --- 
 
