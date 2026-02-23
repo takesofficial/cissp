@@ -24,9 +24,6 @@ If public harm is involved, think Canon I.
 ## 🏛️ Governance  
 Ensure security directly supports the business mission, goals, and risk appetite.
 
-**Documentation hierarchy:**  
-**Policies > Standards > Baselines > Guidelines > Procedures**
-
 ### 📚 Documentation Hierarchy
 
 **Policies > Standards > Baselines > Guidelines > Procedures**
