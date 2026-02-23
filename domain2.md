@@ -226,20 +226,32 @@ Outsourcing storage does not transfer ownership.
 
 ---
 
-## 🔄 Data Lifecycle  
+## 🔄 Data Lifecycle
+Security must exist at every stage of the data lifecycle.
+Data security is continuous, not a single control at a single stage.
 
-Think: Create -> Store -> Use -> Share -> Archive -> Destroy.  
-Security must exist at each step.
+### 📊 Lifecycle Stages
 
-### 🧬 High-level Lifecycle  
-1. **Creation / Collection** - Generate or collect data.  
-2. **Classification & Storage** - Assign label, store securely according to classification.  
-3. **Use / Processing** - Enforce need-to-know and least privilege, protect against exfiltration.  
-4. **Sharing / Distribution** - Apply DRM, encryption, and proper marking.  
-5. **Archiving** - Move to long-term storage with proper protection.  
-6. **Destruction** - Permanently remove data per policy and classification.
+| Stage | Description | Primary Security Focus |
+|--------|------------|------------------------|
+| **Create** | Data is generated or gathered | Data minimization, lawful purpose |
+| **Store** | Assign classification and store appropriately | Labeling, access control, encryption |
+| **Use** | Data actively accessed or processed | Least privilege, need-to-know, endpoint security |
+| **Share** | Data transmitted or disclosed | Encryption, DRM, secure transfer controls |
+| **Archive** | Long-term retention storage | Secure storage, retention compliance |
+| **Destroy** | Permanent removal per policy | Clear, purge, destroy, crypto shredding |
 
-Data collection guideline: if it has no clear purpose, do not collect it.
+---
+
+## 🧭 Lifecycle Control Principles
+
+| Principle | Application |
+|------------|-------------|
+| **Need-to-Know** | Limit access during use and sharing |
+| **Least Privilege** | Grant minimum required permissions |
+| **Data Minimization** | Do not collect without defined purpose |
+| **Retention Limitation** | Keep only as long as legally/business required |
+| **Defensible Destruction** | Documented, compliant disposal |
 
 ---
 
