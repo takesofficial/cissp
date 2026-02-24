@@ -259,32 +259,6 @@ Industrial Control Systems (ICS) control **real world physical processes** (⚡ 
 - 🤖  **PLC** (**P**rogrammable **L**ogic **C**ontroller)
   - Device-level controller (🛠 individual machines, 🔧 assembly lines)
 
-## 🎯 Exam Priorities Recap  
-
-- OSI layers enough to place controls and troubleshoot where a problem sits.
-- Which security model maps to **confidentiality** (Bell-LaPadula, Brewer–Nash/Chinese Wall) vs **integrity** (Biba, Clark–Wilson).
-- TCB, reference monitor, security kernel, protection rings.  
-- Basic crypto decisions: symmetric vs asymmetric, hashing, digital signatures, PKI role of CA.  
-- ECB vs CBC/GCM at a high level, and why ECB is weak.  
-- What TPM/HSM do, and why HSM is used for high-value keys.  
-- Difference between virus, worm, trojan, ransomware, macro virus, boot sector virus.  
-- Logical operations especially XOR in the context of crypto.  
-- Physical security layers and which fire suppression type fits a data center.
-- Understand the difference between SCADA, DCS and PLC.
-
----
-
-## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)  
-
-- Full formal proofs of all security models.  
-- Detailed DES/3DES internals and full mode diagrams.  
-- Exact key lengths and parameter choices for every algorithm revision.  
-- Deep TPM command sets, UEFI internals, and vendor specific secure boot flows.  
-- Complete malware taxonomy and every historical worm.  
-- Full NFPA fire code details and building regulations.  
-- All TEMPEST classification levels and measurement techniques.  
-- Exhaustive OS hardening checklists and kernel tuning parameters.
-
 ---
 ## 🔗 Useful Links / Mind Map  
 [CISSP Domain 3 Destination Certification](https://youtu.be/TreDxg9Y3yo)
