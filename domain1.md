@@ -346,9 +346,9 @@ Safeguard Value = ALE₁ − ALE₂ − Cost
 
 | Response | Meaning |
 |----------|--------|
+| **Avoid** | Eliminate activity |
 | **Mitigate** | Reduce risk |
 | **Transfer** | Shift risk |
-| **Avoid** | Eliminate activity |
 | **Accept** | Management approval |
 | **Deter** | Discourage threat |
 
