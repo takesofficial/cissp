@@ -21,7 +21,8 @@ When security fails, this domain decides the damage.
 
 ## 👀 Monitoring and Detection  
 
-You cannot respond to what you cannot see.
+**Alerts without response are useless**.
+You cannot respond to what you cannot see. 
 
 ### Sources  
 - System logs  
@@ -36,7 +37,19 @@ You cannot respond to what you cannot see.
 - IDS/IPS  
 - File integrity monitoring  
 
-Key exam point: **alerts without response are useless**.
+---
+
+### Monitoring Quick Reference
+
+Visibility without response = wasted telemetry.
+
+| Area | What You Watch | Why |
+|------|---------------|-----|
+| Auth | Logins, failures, privilege use | Detect account compromise |
+| Network | Firewall, IDS | Lateral movement |
+| Endpoint | EDR alerts | Malware execution |
+| Files | Integrity changes | Unauthorized modification |
+| SIEM | Correlation | Single-pane visibility |
 
 ---
 
@@ -52,8 +65,6 @@ Not every event is an incident.
 
 ## 🔥 Incident Response Lifecycle  
 
-Standard flow CISSP expects:
-
 1. **Preparation**  
 2. **Detection and Analysis**  
 3. **Containment**  
@@ -65,51 +76,20 @@ Order matters. Do not skip steps.
 
 ---
 
-### 1️⃣ Preparation  
-No plan = panic.
-- IR plan  
-- Roles and contacts  
-- Tools and access  
-- Training and exercises  
+### 🔥 Incident Response Lifecycle (What happens, why, and how)
 
----
+Containment is not equal to eradication. Stop spread first. Remove root cause later.
 
-### 2️⃣ Detection and Analysis  
-Do not destroy evidence during analysis.
-- Validate alerts  
-- Identify scope  
-- Preserve evidence  
+| Phase | Core Meaning | Primary Goal | Key Actions | Hook |
+|------|--------------|-------------|------------|-----------|
+| **Preparation** | Be ready | Ensure readiness | IR plan, defined roles, tools, access, exercises | No prep = chaos |
+| **Detection & Analysis** | Confirm + scope | Validate and understand incident | Alert triage, impact assessment, evidence preservation | Do not destroy evidence |
+| **Containment** | Stop spread | Limit damage | Isolate hosts, disable accounts, block IPs | Buys time |
+| **Eradication** | Remove cause | Eliminate root issue | Delete malware, patch vulnerabilities, remove persistence | Happens after containment |
+| **Recovery** | Restore service | Return to production safely | Rebuild systems, monitor closely, validate operations | Watch for recurrence |
+| **Lessons Learned** | Fix process | Improve posture | Document findings, update controls, refine IR plan | Prevent repeat incidents |
 
----
-
-### 3️⃣ Containment  
-Disable accounts, block IPs, isolate hosts.
-- Short-term: stop the bleeding  
-- Long-term: isolate and stabilize  
-
----
-
-### 4️⃣ Eradication
-Root cause must be addressed.
-- Remove malware  
-- Close vulnerabilities  
-- Patch systems  
-
----
-
-### 5️⃣ Recovery  
-Return to production carefully.
-- Restore systems  
-- Monitor for recurrence  
-- Validate normal operations  
-
----
-
-### 6️⃣ Lessons Learned  
-This step improves future security posture.
-- What failed  
-- What worked  
-- What to improve 
+Never jump straight to eradication. Never skip lessons learned.
 
 ---
 
@@ -122,6 +102,14 @@ Classification drives response and reporting.
 - Denial of service  
 - Insider threat  
 - Physical security incident  
+
+---
+
+### Malware Response
+
+Detect > Isolate > Analyze > Eradicate > Restore > Review
+
+Never skip isolation.
 
 ---
 
@@ -156,6 +144,19 @@ Preservation first, investigation second. Documentation matters as much as techn
   - Hash evidence before and after imaging  
   - Matching hashes prove integrity  
   - Common hashes: SHA-256  
+
+---
+
+### Evidence Handling Summary
+
+Powering off early destroys evidence.
+
+| Rule | Meaning |
+|------|--------|
+| Never touch original | Always image first |
+| Hash before + after | Proves integrity |
+| Document everything | Legal defensibility |
+| RAM first | Volatile data disappears |
 
 ---
 
@@ -237,6 +238,18 @@ DR is technical. BCP is business.
 
 ---
 
+### IR vs DR vs BCP
+
+IR handles security events. DR restores systems. BCP keeps operations alive.
+
+| Discipline | Focus |
+|-----------|------|
+| Incident Response | Stop attack |
+| Disaster Recovery | Restore IT |
+| Business Continuity | Keep business running |
+
+---
+
 ## 🕒 Business Continuity vs DR  
 
 - **BCP** - keep business running  
@@ -248,14 +261,13 @@ BCP may operate without IT. DR restores IT.
 
 ## 🧪 Exercises and Testing  
 
+Practice before real incidents.
 **C-T-P-F** = **C**hecklist > **T**abletop > **P**arallel > **F**ull interruption (least > most disruptive)
 
 - Tabletop exercises  
 - Walkthroughs  
 - Simulations  
 - Full interruption tests  
-
-Practice before real incidents.
 
 ---
 
@@ -311,14 +323,26 @@ It does not mark them as "saved" (archive bit stays set).
   - 💾 Medium storage use  
   - 🎯 Lower RTO than incremental  
 
-- 3️4️⃣🧩 **Synthetic** 👉 Less impact on production systems.
+- 4️⃣🧩 **Synthetic** 👉 Less impact on production systems.
 Creates a new full backup by combining a previous full backup with incremental or differential backups, without copying everything again from the original system.
   - ⏱️ Reduces production impact  
   - 📦 Minimizes backup window load
 
 ---
 
-### 🗂 Rotation Strategy - GFS (Grandfather-Father-Son)
+### Restore Complexity
+
+More restore steps = higher failure probability.
+
+| Type | Restore Steps | Risk |
+|------|--------------|------|
+| Full | One | Lowest |
+| Differential | Two | Medium |
+| Incremental | Many | Highest |
+
+---
+
+### ♻️ Rotation Strategy - GFS (Grandfather-Father-Son)
 Used to balance retention, cost, and recovery flexibility.
 Provides structured retention and versioning over time.
 
@@ -353,6 +377,17 @@ Controls:
 
 ---
 
+### Insider Threat Controls
+
+| Control | Purpose |
+|--------|--------|
+| Mandatory vacation | Detect fraud |
+| Job rotation | Reduce knowledge silos |
+| Monitoring | Catch abuse |
+| SoD | Prevent single-person compromise |
+
+---
+
 ## 🧯 Operational Resilience  
 
 - Redundancy  
@@ -363,35 +398,14 @@ Systems should fail safely, not catastrophically.
 
 ---
 
-## 🧠 Exam Priorities Recap  
+## 📊 Operational Metrics
 
-Recognize and apply quickly:
+Lower is better.
 
-- Incident vs event  
-- Incident response lifecycle order  
-- Containment vs eradication  
-- Evidence handling rules  
-- Chain of custody and order of volatility  
-- DR vs BCP distinction  
-- RTO vs RPO usage  
-- Privileged access controls  
-- Patch and vulnerability management flow  
-- Change management importance  
-- Insider threat categories  
-- Backup testing requirement  
-
----
-
-## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)
-
-- Vendor-specific IR tooling  
-- Detailed malware reverse engineering  
-- Advanced memory forensics  
-- SOC staffing models  
-- Deep threat hunting techniques  
-- SIEM rule syntax  
-- Cloud-native incident tooling internals  
-- Regulatory breach notification timelines by country  
+| Metric | Meaning |
+|-------|--------|
+| MTTD | Time to detect |
+| MTTR | Time to respond |
 
 ---
 
