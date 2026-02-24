@@ -1,7 +1,7 @@
 # <p align=center>Domain 1 - Security and Risk Management</p>
 
 ## 🚨 Elevator Pitch  
-Risk cannot be eliminated - only identified, analyzed, and managed. Domain 1 establishes the governance foundation of security: aligning risk decisions with business objectives, defining policy and accountability, understanding legal and ethical obligations, managing personnel risk, overseeing third parties, conducting investigations, and ensuring continuity of operations.
+Risk cannot be eliminated, only identified, analyzed, and managed. Domain 1 establishes the governance foundation of security: aligning risk decisions with business objectives, defining policy and accountability, understanding legal and ethical obligations, managing personnel risk, overseeing third parties, conducting investigations, and ensuring continuity of operations.
 
 ---
 
