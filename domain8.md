@@ -1,10 +1,9 @@
 # <p align=center>Domain 8 - Software Development Security</p>
 
 ## 🚨 Elevator Pitch  
-Build security **into** software, not around it.  
-Domain 8 is about integrating security throughout the **SDLC**, preventing vulnerabilities before deployment, and understanding what testing can and cannot find.
+Build security into software, not around it. Domain 8 focuses on integrating security throughout the **software development lifecycle (SDLC)** to reduce risk before deployment. It covers secure design, secure coding practices, application testing, and the operational realities that shape how software can be protected in production.
 
-Think: design choices, secure coding, testing limits, and operational constraints.
+The emphasis is on preventing vulnerabilities early through proper requirements, architecture, and development practices, understanding the strengths and limitations of automated testing, and recognizing when human review is required. The domain also addresses environments where availability and safety outweigh confidentiality, such as ICS/SCADA systems, and highlights why design decisions matter more than tools in determining long-term security outcomes.
 
 ---
 
@@ -21,45 +20,20 @@ Security failures in software are **design failures first**, coding failures sec
 ## 🔄 Secure (S)SDLC
 Security must be present in **every phase**.
 **Security added late is weak security.**
-
-1. **Requirements**
-   - Security requirements
-   - Abuse cases
-   - Regulatory constraints
-
-2. **Design**
-   - Threat modeling
-   - Trust boundaries
-   - Architecture reviews
-
-3. **Development**
-   - Secure coding standards
-   - Code reviews
-   - Dependency management
-
-4. **Testing**
-   - SAST, DAST, IAST
-   - Manual testing
-   - Negative testing
-
-5. **Deployment**
-   - Secure configuration
-   - Secrets management
-   - Change control
-
-6. **Maintenance**
-   - Patch management
-   - Monitoring
-   - Vulnerability remediation
-
-
----
+| Phase | Security Activities | Hook |
+|------|---------------------|-----------|
+| **Requirements** | Security requirements, abuse cases | Security starts here |
+| **Design** | Threat modeling, trust boundaries | Design flaws > code flaws |
+| **Development** | Secure coding, dependency mgmt | Humans catch logic |
+| **Testing** | SAST, DAST, IAST, negative tests | No tool finds everything |
+| **Deployment** | Secure config, secrets handling | Misconfig = breach |
+| **Maintenance** | Patching, monitoring | Security never ends |
 
 ---
 
 ## 📈 Maturity Models (CMM, SAMM, IDEAL)
-Maturity models show **how disciplined and repeatable** an organization’s processes are.  
-They don’t just tell you whether something is “secure” — they tell you whether security (and delivery) is **predictable, governed, and improving** over time.
+Maturity models show **how disciplined and repeatable** an organization's processes are.  
+They don't just tell you whether something is "secure" — they tell you whether security (and delivery) is **predictable, governed, and improving** over time.
 
 Use them to answer:
 - Are we reacting to problems and relying on heroics?
@@ -77,56 +51,36 @@ Security maturity matters because mature organizations handle incidents, change,
 
 ---
 
-## 🪜 Capability Maturity Model (CMM) CMM = altitude (how mature you are)  
-A useful way to spot CMM levels in questions: if you see "no documentation" and "no standard way of doing things," you’re looking at **Initial**. If you see "metrics, KPIs, and control," you're in **Managed** territory. If the organization is continuously refining and improving based on data and lessons learned, that's **Optimizing**.
+## 🪜 Capability Maturity Model Integration (CMMI) altitude (how mature you are)  
 
-### Levels
+CMMI (Capability Maturity Model Integration) measures how mature an organization’s processes are, not how skilled individual people are. It shows whether work succeeds because of heroes or because of repeatable systems. A practical way to recognize CMMI levels is to look at how work is executed, measured, and improved. When processes are informal, undocumented, and success depends on individual effort, the organization is at Initial. When work is planned, tracked, and controlled using defined objectives and basic metrics, it has reached Managed. When performance data is actively used to refine processes, remove inefficiencies, and drive continuous improvement rather than just maintain control, the organization is operating at Optimizing.
 
-- 1️⃣ **Initial**  
-Ad hoc, inconsistent, reactive. Success depends on individuals, not process.
+### Levels (Integrated Model)
 
-- 2️⃣ **Repeatable**  
-Basic project management exists. Teams can repeat earlier success, but it may still vary by group.
-
-- 3️⃣ **Defined**  
-Organization-wide standards exist. Processes are documented and institutionalized across teams.
-
-- 4️⃣ **Managed**  
-Processes are measured and controlled. Decisions become metrics-driven, not intuition-driven.
-
-- 5️⃣ **Optimizing**  
-Continuous improvement is the norm. The organization learns, adapts, and systematically refines process performance.
+| Level | Name | Process Characteristics | Organizational Behavior | Mental State | Hook |
+|-------|------|------------------------|-------------------------|-------------|-----------|
+| 1️⃣ | **Initial** | Ad hoc, chaotic, unpredictable | Success depends on individuals | Chaos | No consistent processes |
+| 2️⃣ | **Managed** | Plans and requirements are documented, executed, tracked | Basic project discipline exists | Controlled | Processes are repeatable |
+| 3️⃣ | **Defined** | Standardized and documented organization-wide | Processes institutionalized across teams | Standardized | Formal policies and procedures |
+| 4️⃣ | **Quantitatively Managed** | Process performance measured + controlled | Decisions driven by metrics and statistical techniques | Data-driven | Use metrics to manage quality |
+| 5️⃣ | **Optimizing** | Continuous process improvement based on measurement | Proactive refinement and innovation | Continuous improvement | Lessons learned drive evolution |
 
 ---
 
 ## 🛡️ Software Assurance Maturity Model (SAMM) by OWASP
-Secure navigation (how mature secure software practices are). 
-SAMM is purpose-built for **secure software development maturity**, it's like CMM, but focused specifically on software assurance practices.
+Secure navigation (how mature secure software practices are). SAMM is purpose-built for **secure software development maturity**, it's like CMM, but focused specifically on software assurance practices.
 4 Business Functions × 3 Security Practices × 5 Maturity Levels
 
 SAMM is useful because it's modular: teams can assess maturity by practice and improve iteratively. Where CMM gives you a broad "how mature is the org," tells you **where your secure SDLC is strong or weak** (governance, build, verification, deployment).
 
-### Business Functions
+### 🛡️ Business Functions (Secure SDLC Maturity)
 
-### 1️⃣ Governance
-- Strategy & Metrics  
-- Policy & Compliance  
-- Education & Guidance  
-
-### 2️⃣ Construction
-- Threat Assessment  
-- Secure Architecture  
-- Secure Build  
-
-### 3️⃣ Verification
-- Security Testing  
-- Code Review  
-- Security Assessment  
-
-### 4️⃣ Deployment
-- Environment Hardening  
-- Operational Enablement  
-- Defect Management  
+| Function | What It Covers | Core Practices | Primary Goal | Mental Model | Hook |
+|---------|----------------|---------------|--------------|-------------|-----------|
+| **1️⃣ Governance** | Organization-wide security direction | Strategy & Metrics · Policy & Compliance · Education & Guidance | Define expectations and build security culture | Direction | Sets the rules and trains people |
+| **2️⃣ Construction** | Building software securely | Threat Assessment · Secure Architecture · Secure Build | Prevent vulnerabilities during design and development | Prevention | Design flaws beat code flaws |
+| **3️⃣ Verification** | Proving security actually works | Security Testing · Code Review · Security Assessment | Find weaknesses before release | Validation | Humans + tools validate controls |
+| **4️⃣ Deployment** | Running software securely in production | Environment Hardening · Operational Enablement · Defect Management | Maintain security after release | Sustainment | Security doesn’t stop at go-live |
 
 ---
 
@@ -144,20 +98,16 @@ Acronym:
 
 ## 🧠 Threat Modeling (early risk reduction)
 
-Purpose: identify threats **before code exists**.
+Threat modeling happens **before coding** by analyzing architecture, data flows, and trust boundaries. Design flaws beat code flaws.
+Always focus on: Trust boundaries, data flows, entry points, privileged operations  
 
-Common methods:
-- **STRIDE** - Categorize threats
-- **DREAD** - Prioritize risk
-- **PASTA** - Risk-based modeling
-- **VAST** - Scalable modeling
-- **Trike** - Risk-centric
-
-Focus on:
-- Trust boundaries
-- Data flows
-- Entry points
-- Privileged operations
+| Method | Core Purpose | What It Emphasizes | Hook |
+|--------|-------------|-------------------|-----------|
+| Ⓜ️ STRIDE | Categorize threats | Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation | Think attacker techniques |
+| 💀 DREAD | Prioritize risk | Damage, Reproducibility, Exploitability, Affected users, Discoverability | Ranking and scoring |
+| 🍝  PASTA | Risk-driven modeling | Business impact + attacker paths | Business-context threats |
+| 🏴‍☠️ VAST | Scalable modeling | Enterprise-wide automation | DevOps-friendly |
+| 🦖 Trike | Risk auditing | Assets + trust boundaries | Asset-first thinking |
 
 ---
 
@@ -207,6 +157,15 @@ Frameworks help, but do not guarantee security.
 - Runs inside application
 - Better context, more coverage
 
+---
+
+### SAST vs DAST vs IAST
+
+| Method | Runs Where | Finds | Misses | SDLC Stage | Hook |
+|--------|-----------|------|--------|-----------|------|
+| SAST | Source code | Logic + design flaws | Runtime issues | Early | High false positives |
+| DAST | Running app | Runtime issues | Business logic | Late | Black-box |
+| IAST | Inside app | Both | Some logic | Mid | Best context |
 
 ---
 
@@ -214,18 +173,11 @@ Frameworks help, but do not guarantee security.
 
 Automation misses business logic abuse.
 
-- **Negative testing**
-  - Invalid input
-  - Boundary conditions
-  - Input length, type, format
-
-- **Interface testing**
-  - API boundaries
-  - Component interaction failures
-
-- **Fuzzing**
-  - Random or malformed input
-  - Crashes and unexpected behavior
+| Type | What It Finds | Automation? | Hook |
+|------|--------------|------------|------|
+| Negative | Invalid input paths | Partial | Boundary abuse |
+| Interface | Component failures | Partial | API gaps |
+| Fuzzing | Crashes | Yes | Random input |
 
 ---
 
@@ -263,13 +215,25 @@ Controls:
 
 ---
 
-## 🧪 Test Environments (Never test _destructively_ in production.)
+### Supply Chain Controls
 
-- **Development** - Fast, unsafe
-- **Test** - Controlled
-- **Staging** - Production-like
-- **Production** - Restricted
+| Control | Purpose |
+|--------|--------|
+| SBOM | Know what you ship |
+| Version pinning | Prevent surprise upgrades |
+| Trusted repos | Reduce malicious packages |
+| Patch monitoring | Track exposure |
 
+---
+
+## 🧪 Environment Usage (Never test _destructively_ in production.)
+
+| Environment | Characteristics | Risk |
+|------------|----------------|------|
+| Development | Fast, unsafe | High |
+| Test | Controlled | Medium |
+| Staging | Production-like | Low |
+| Production | Restricted | Critical |
 
 ---
 
@@ -284,21 +248,35 @@ Human review is mandatory.
 
 ---
 
-## ⚠️ ICS / SCADA Constraints (!!)
-Industrial systems prioritize **availability and safety**.
-**Do not scan or patch ICS aggressively.**
-Active scanning and frequent patching increase risk in ICS environments.
+## ⚠️ ICS / SCADA Constraints (Availability First)
 
-Characteristics:
-- Fragile systems
-- Long lifecycles
-- Legacy protocols
-- Limited patch windows
+Industrial control systems prioritize **availability and safety over security hardening**.  
+Aggressive scanning or frequent patching can **cause outages or physical damage**.
+IT protects data / ICS protects people and processes.
 
-Security priorities:
-- Availability > integrity > confidentiality
-- Monitoring over prevention
-- Change control is critical
+- 🚫 Do NOT aggressively scan ICS  
+- 🚫 Do NOT patch casually  
+- ✅ Prefer passive monitoring  
+- ✅ Enforce strict change management  
+- ✅ Segment networks (zones / conduits)  
+- ✅ Plan patches during outages  
+- ✅ Protect availability first  
+
+### ICS / SCADA Security Reality
+
+| Area | What It Means | Practical Impact | Hook |
+|------|--------------|-----------------|-----------|
+| Primary Goal | Keep systems running safely | Downtime can stop production or harm people | Availability beats everything |
+| Priority Order | Availability > Integrity > Confidentiality | Different from IT environments | Safety-first mindset |
+| System Fragility | Devices are sensitive to change | Scanning can crash controllers | Do NOT scan aggressively |
+| Lifecycles | Decades-long deployments | Old OS and firmware remain in use | Legacy is normal |
+| Protocols | Often insecure / proprietary | Little or no native auth/encryption | Compensating controls |
+| Patch Windows | Rare and tightly controlled | Patching requires shutdown planning | No "Patch Tuesday" |
+| Monitoring | Passive visibility preferred | Detect without touching systems | Monitor, don't probe |
+| Change Control | Extremely strict | Every change is reviewed and scheduled | Governance is critical |
+| Prevention Style | Limited inline blocking | IPS/firewalls may disrupt operations | Detection over prevention |
+| Architecture | Flat networks common | Segmentation becomes high value | Zones and conduits |
+| Human Safety | Physical consequences possible | Cyber incidents can become safety incidents | People > data |
 
 ---
 
@@ -321,33 +299,6 @@ Hardcoded secrets = instant fail.
 - Logging and validation
 
 Unauthorized changes = security incidents.
-
----
-
-## 🧠 Exam Priorities Recap  
-
-Recognize and apply quickly:
-
-- Security in every SDLC phase  
-- Threat modeling before coding  
-- SAST vs DAST vs IAST  
-- Negative vs interface vs fuzz testing  
-- Automation limits  
-- Manual code review value  
-- Dependency risk awareness  
-- ICS availability-first mindset  
-- Secure configuration and secrets handling  
-
----
-
-## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)
-
-- Language-specific coding examples  
-- Detailed OWASP Top 10 walkthroughs  
-- CI/CD pipeline tooling  
-- Container hardening deep dives  
-- Advanced exploit development  
-- Secure compiler internals  
 
 ---
 
