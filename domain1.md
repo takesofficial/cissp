@@ -516,15 +516,6 @@ Rules for handling personal data.
 
 ---
 
-## 💥 DAD  
-What happens when CIA fails.
-
-- **Disclosure** - Unauthorized exposure (loss of confidentiality).  
-- **Alteration** - Unauthorized changes (loss of integrity).  
-- **Destruction** - Damage or deletion (loss of availability).
-
----
-
 ## 🧭 Due Care vs Due Diligence  
 Legal and defensive security responsibilities.
 
