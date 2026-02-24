@@ -155,9 +155,7 @@ The lifecycle of identity, access, and accountability.
 ---
 
 ## 📉 Risk Management  
-Risk is never eliminated - only managed.
-
-Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
+Risk is never eliminated - only managed. Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
 
 ---
 
@@ -169,6 +167,61 @@ Defined by senior management.
 | **Risk Appetite** | Amount of risk organization is willing to pursue |
 | **Risk Tolerance** | Acceptable variation from objectives |
 | **Risk Capacity** | Maximum risk organization can survive |
+
+---
+
+---
+
+## 🔁 Risk Management Lifecycle  
+Security is a continuous management process, not a one-time calculation. Risk management never stops. Controls reduce risk, they do not eliminate it.  Residual risk remains and must be owned by senior management.
+
+### Core Flow
+
+```
+Identify > Analyze > Treat > Monitor
+```
+
+| Phase | What Happens | Output |
+|--------|-------------|--------|
+| **Identify** | Discover assets, threats, vulnerabilities, and business context | Risk register entries |
+| **Analyze** | Determine likelihood and impact (qualitative or quantitative) | Risk rating / ALE / prioritization |
+| **Treat** | Select response strategy (mitigate, transfer, avoid, accept) | Implemented controls |
+| **Monitor** | Continuously review risk posture and control effectiveness | Updated risk register |
+
+---
+
+### Phase Mapping to CISSP Concepts
+
+| Lifecycle Step | CISSP Terms You’ll See |
+|----------------|------------------------|
+| Identify | Asset inventory, threat modeling, vulnerability assessment |
+| Analyze | Risk assessment, SLE, ALE, likelihood × impact |
+| Treat | Risk response, mitigation, insurance, avoidance |
+| Monitor | Continuous monitoring, audits, metrics, governance review |
+
+---
+
+## 🏛️ NIST Risk Management Framework (RMF)
+
+A structured U.S. federal approach to managing security controls at the system level.
+
+### RMF Flow (SP 800-37 Rev. 2)
+
+RMF is system-focused. It operationalizes risk decisions made at the governance level.
+
+```
+Prepare → Categorize → Select → Implement → Assess → Authorize → Monitor
+```
+
+| Step        | Purpose                                                | Output                     | Primary Authority / Anchor |
+|-------------|--------------------------------------------------------|----------------------------|----------------------------|
+| **Prepare** | Establish risk strategy and organizational context     | Risk strategy              | NIST 800-37 Rev.2          |
+| **Categorize** | Determine impact level (Low / Moderate / High)      | Security category          | **FIPS 199**               |
+| **Select**  | Choose baseline security controls                      | Control baseline           | **NIST 800-53**            |
+| **Implement** | Deploy and configure controls                       | Operational controls       | NIST 800-53                |
+| **Assess**  | Evaluate control effectiveness                         | Assessment report          | NIST 800-53A               |
+| **Authorize** | Senior official formally accepts residual risk      | Authorization decision     | **ATO (Authorization to Operate)** |
+| **Monitor** | Continuous oversight of controls and risk posture     | Updated risk posture       | Continuous Monitoring      |
 
 ---
 
