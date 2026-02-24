@@ -117,22 +117,19 @@ Output:
 - Control gaps
 - Remediation plan
 
-## 👥 Roles and Ownership
-Clear ownership is required to protect assets properly.
-Ownership defines authority. Custodians implement. Users comply.
+## 👥 Roles and Ownership  
+Data integrity is a shared responsibility. No single role owns it. Owners set the rules, stewards govern, custodians implement controls, processors handle data correctly, and users follow policy. Everyone protects integrity, just in different ways.
 
-| Role | Primary Responsibility | Authority Level |
-|------|------------------------|-----------------|
-| **Data Owner** | Classifies data, defines handling requirements, approves access | Final authority over the data |
-| **System Owner** | Ensures system security, configuration, patching, and operational integrity | Authority over the system, not the data itself |
-| **Data Controller (GDPR)** | Determines purpose and means of processing personal data | Legal authority over personal data decisions |
-| **Data Processor (GDPR)** | Processes personal data on behalf of the controller | Acts under contractual instruction |
-| **Data Custodian** | Performs day-to-day protection (backup, storage, archiving, technical safeguards) | No classification authority |
-| **Data Steward** | Maintains data quality, governance, metadata, compliance alignment | Advisory / governance-focused |
-| **User / Data Subject** | Uses data per policy and approved access rights | No ownership authority |
+| Role | Core Responsibility | Accountable For | Authority Level | CISSP Hook |
+|------|---------------------|----------------|-----------------|-----------|
+| **Data Owner** | Classifies data, defines handling, approves access | Data value, classification, access rules | Final authority over the data | **Ownership = authority** |
+| **System Owner** | Maintains system security, configuration, patching | Operational availability + system protection | Authority over system only | **Owns the box, not the data** |
+| **Data Controller (GDPR)** | Determines purpose + means of processing | Legal compliance of personal data use | Legal authority | **Decides why/how data is used** |
+| **Data Processor (GDPR)** | Processes data for controller | Correct execution of processing | No independent authority | **Executes only, no decisions** |
+| **Data Custodian** | Implements safeguards (backup, storage, access controls) | Day-to-day technical protection | No classification authority | **Implements controls, never classifies** |
+| **Data Steward** | Governs data quality, integrity, and appropriate access | Consistency, integrity, governance alignment | Advisory only | **Ensures data is accurate + used correctly (governance layer)** |
+| **User / Data Subject** | Uses or is represented by the data | Proper usage / personal data rights | No ownership | **Consumes data under least privilege** |
 
-**Core principles:**  
-- Need-to-know & Least privilege  
 ---
 
 ## 🔺 CIA Triad  
