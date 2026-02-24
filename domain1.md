@@ -159,6 +159,17 @@ Risk is never eliminated - only managed. Identify threats, evaluate vulnerabilit
 
 ---
 
+### PDCA (Plan-Do-Check-Act)
+
+| Phase | Meaning | CISSP Context |
+|------|--------|---------------|
+| Plan | Define objectives and controls | Governance, risk strategy, policies |
+| Do | Implement the plan | Deploy controls, execute processes |
+| Check | Measure and review results | Audits, metrics, assessments |
+| Act | Improve based on findings | Corrective actions, continuous improvement |
+
+---
+
 ## 🎚️ Risk Appetite Model
 Defined by senior management.
 
@@ -170,43 +181,21 @@ Defined by senior management.
 
 ---
 
----
-
 ## 🔁 Risk Management Lifecycle  
 Security is a continuous management process, not a one-time calculation. Risk management never stops. Controls reduce risk, they do not eliminate it.  Residual risk remains and must be owned by senior management.
 
-### Core Flow
-
-```
-Identify > Analyze > Treat > Monitor
-```
-
-| Phase | What Happens | Output |
-|--------|-------------|--------|
-| **Identify** | Discover assets, threats, vulnerabilities, and business context | Risk register entries |
-| **Analyze** | Determine likelihood and impact (qualitative or quantitative) | Risk rating / ALE / prioritization |
-| **Treat** | Select response strategy (mitigate, transfer, avoid, accept) | Implemented controls |
-| **Monitor** | Continuously review risk posture and control effectiveness | Updated risk register |
+| Phase | What Happens | CISSP Terms You'll See | Output |
+|--------|-------------|------------------------|--------|
+| Identify | Discover assets, threats, vulnerabilities, and business context | Asset inventory, threat modeling, vulnerability assessment | Risk register entries |
+| Analyze | Determine likelihood and impact (qualitative or quantitative) | Risk assessment, SLE, ALE, likelihood x impact | Risk rating / ALE / prioritization |
+| Treat | Select response strategy (mitigate, transfer, avoid, accept) | Risk response, mitigation, insurance, avoidance | Implemented controls |
+| Monitor | Continuously review risk posture and control effectiveness | Continuous monitoring, audits, metrics, governance review | Updated risk register |
 
 ---
 
-### Phase Mapping to CISSP Concepts
-
-| Lifecycle Step | CISSP Terms You’ll See |
-|----------------|------------------------|
-| Identify | Asset inventory, threat modeling, vulnerability assessment |
-| Analyze | Risk assessment, SLE, ALE, likelihood × impact |
-| Treat | Risk response, mitigation, insurance, avoidance |
-| Monitor | Continuous monitoring, audits, metrics, governance review |
-
----
-
-## 🏛️ NIST Risk Management Framework (RMF)
+## 🏛️ NIST SP 800-37 Rev. 2 - Risk Management Framework (RMF) 
 
 A structured U.S. federal approach to managing security controls at the system level.
-
-### RMF Flow (SP 800-37 Rev. 2)
-
 RMF is system-focused. It operationalizes risk decisions made at the governance level.
 
 ```
@@ -222,6 +211,18 @@ Prepare → Categorize → Select → Implement → Assess → Authorize → Mon
 | **Assess**  | Evaluate control effectiveness                         | Assessment report          | NIST 800-53A               |
 | **Authorize** | Senior official formally accepts residual risk      | Authorization decision     | **ATO (Authorization to Operate)** |
 | **Monitor** | Continuous oversight of controls and risk posture     | Updated risk posture       | Continuous Monitoring      |
+
+---
+
+### CMMI (Capability Maturity Model Integration)
+
+| Level | Name | Meaning (CISSP View) | Memory Hook |
+|------|------|----------------------|-------------|
+| 1 | Initial | Ad hoc, chaotic, hero-driven. No repeatable process. | Chaos |
+| 2 | Managed | Basic planning and tracking. Work is repeatable. | Repeatable |
+| 3 | Defined | Organization-wide standard processes. Documented and trained. | Standardized |
+| 4 | Quantitatively Managed | Processes are measured and controlled with metrics. | Measured |
+| 5 | Optimizing | Continuous improvement, root cause analysis, innovation. | Optimizing |
 
 ---
 
@@ -672,93 +673,6 @@ When analyzing a system for security risk, concentrate on the areas attackers ar
   Actions that modify system state or grant elevated access (e.g., account creation, permission changes, configuration updates). These have high impact if compromised.
 - **Attack Vectors**  
   The paths or techniques an attacker may use to exploit weaknesses (e.g., phishing, injection attacks, credential theft, misconfiguration).
-
----
-
-## 🧠 Exam Priorities Recap (Domain 1)
-
-### Governance & Authority
-- Documentation hierarchy: **Policy > Standard > Baseline > Guideline > Procedure**
-- Governance sets direction; management executes.
-- Strategic vs Tactical vs Operational planning layers.
-- **Senior management accepts residual risk.**
-
----
-
-### Risk Foundations
-- Risk expressions:
-  - Risk = Likelihood × Impact
-  - Risk = Threat × Vulnerability × Asset Value
-- Quantitative: AV, EF, SLE, ARO, ALE, Safeguard Value.
-- Qualitative: Delphi, heat maps, expert ranking.
-- Risk responses: Mitigate, Transfer, Avoid, Accept, Deter.
-- Risk appetite vs tolerance vs capacity.
-
----
-
-### Security Objectives
-- CIA vs DAD failure states.
-- Authenticity and Non-repudiation as additional pillars.
-- Recognize synonyms used in exam questions.
-
----
-
-### Identity & Accountability
-- Identification > Authentication > Authorization > Accountability > Auditing.
-- Assurance levels (IAL / AAL).
-- Traceability and evidence integrity.
-
----
-
-### Control Structure
-- Control types: Administrative / Technical / Physical.
-- Control functions: Preventive / Detective / Corrective / Recovery / Compensating / Directive / Deterrent.
-- Compliance is an administrative control, not risk elimination.
-
----
-
-### Legal & Compliance
-- Law types: Civil vs Criminal vs Administrative.
-- Due care (execute) vs Due diligence (investigate).
-- Core regulations: GDPR, HIPAA, SOX, GLBA, PCI DSS, FISMA, CCPA, CFAA, ECPA, DMCA.
-- OECD and core privacy principles.
-
----
-
-### Personnel & Investigations
-- Separation of duties, least privilege, job rotation.
-- Employment lifecycle controls.
-- Chain of custody, order of volatility, admissibility.
-
----
-
-### Business Continuity
-- BCP lifecycle.
-- BIA outputs: RTO, RPO, MTD.
-- Continuity strategy selection.
-
----
-
-### Third-Party & Supply Chain
-- Right-to-audit clauses.
-- Minimum security requirements.
-- Continuous monitoring.
-- Vendor accountability remains internal responsibility.
-
----
-
-## 📦 Out of Scope
-
-- Full NIST 800-53 control catalog detail.
-- Deep ITIL / COSO / SABSA operational mapping.
-- Vendor-specific PCI implementation steps.
-- Historical legal timelines.
-- Detailed M&A execution mechanics.
-- Advanced AI / blockchain governance.
-- Court precedent analysis.
-- Project management–level BCP detail.
-
-Focus on governance reasoning, risk decisions, and executive accountability.
 
 --- 
 
