@@ -13,9 +13,9 @@ Think: **Are the controls there? Do they work? Can you prove it?**
 
 This domain is about **validation**, not design.
 
-- Design controls → Domains 1–3  
-- Operate controls → Domain 7  
-- **Verify controls → Domain 6**
+- Design controls > Domains 1-3  
+- Operate controls > Domain 7  
+- **Verify controls > Domain 6**
 
 Management wants assurance, not guesses.
 
@@ -44,6 +44,8 @@ These are **not the same**.
 
 ## 🧱 Control Effectiveness
 
+A control can exist on paper and still fail in reality.
+
 Controls are evaluated on **two dimensions**:
 
 - **Design effectiveness**
@@ -54,33 +56,36 @@ Controls are evaluated on **two dimensions**:
   - Is the control used consistently?
   - Does it actually work in real life?
 
-Exam trap: Design ≠ operation.
+---
+
+## 🧾 SOC Reports (Third-Party Assurance Artifacts)
+
+SOC reports provide **independent assurance** about a service organization's controls.  
+They are used for **vendor risk management**, not internal testing.  
+They provide **assurance**, not detection or prevention.
+
+### SOC Report Types
+
+| Report | Focus Area | Audience | Angle |
+|--------|------------|----------|-------------|
+| SOC 1 | Financial reporting controls (ICFR) | Auditors, finance | Impacts financial statements |
+| SOC 2 | Security, availability, processing integrity, confidentiality, privacy | Customers, partners | Most common vendor assurance |
+| SOC 3 | Public summary of SOC 2 | General public | Marketing-level summary |
 
 ---
 
-## 🧾 SOC Reports (assurance artifacts)
-Used for **third-party assurance**, not internal testing.
-**SOC reports provide assurance, not detection or prevention.**
+### Type 1 vs Type 2
 
-- **SOC 1**
-  - Financial reporting controls (ICFR)
+| Type | What It Evaluates | Time Scope | Assurance Level |
+|------|------------------|------------|------------------|
+| Type 1 | Design effectiveness only | Point in time | Lower |
+| Type 2 | Design + operating effectiveness | Over a defined period (typically 3-12 months) | Higher |
 
-- **SOC 2**
-  - Security, availability, confidentiality, integrity, privacy
-
-- **SOC 3**
-  - Public summary of SOC 2
-
-### Report Types
-- **Type 1**
-  - Design only
-  - Point in time
-
-- **Type 2**
-  - Design + operating effectiveness
-  - Tested over time
-
-**Best ongoing vendor assurance = SOC 2 Type 2**
+- SOC 2 **Type 2 does NOT require a prior Type 1**
+- Type 2 requires evidence collected over time
+- Best ongoing vendor assurance = **SOC 2 Type 2**
+- Type 1 = "designed correctly"
+- Type 2 = "designed correctly and working consistently"
 
 ---
 
@@ -104,13 +109,20 @@ Finds *what could be exploited*, not *what is exploitable*.
 
 ---
 
-### 🔴 Red Team / 🔵 Blue Team / 🟣 Purple Team  
+### 🔴🔵🟣 Red Team vs Blue Team vs Purple Team
 
-- **Red team** - Attacker simulation  
-- **Blue team** - Defenders  
-- **Purple team** - Collaboration and learning  
+These exercises test **real-world detection and response capability**, not just theoretical control presence.
 
-Goal: improve detection and response, not just break in.
+- Red team ≠ vulnerability scan  
+- Goal is **realistic attack simulation**
+- Success is measured by **detection and response quality**, not just breach success
+- Purple team exercises produce the **highest long-term improvement**
+
+| Team | Role | Primary Objective | Mindset | Angle |
+|------|------|------------------|----------|-------------|
+| 🔴 Red Team | Simulated attacker | Exploit weaknesses | Offensive | Tests detection and response, not just prevention |
+| 🔵 Blue Team | Defenders | Detect and respond to attacks | Defensive | Validates monitoring, logging, and IR capability |
+| 🟣 Purple Team | Collaboration between red and blue | Improve overall security posture | Cooperative | Focuses on learning and control improvement |
 
 ---
 
@@ -131,17 +143,13 @@ Lack of approval = unauthorized access.
 
 ## 🧪 Testing Knowledge Levels
 
-- **Black-box**
-  - No internal knowledge
-  - External attacker view
+Different testing levels simulate different attacker perspectives. prioritize **realism vs depth**.
 
-- **White-box**
-  - Full knowledge
-  - Source code, architecture
-
-- **Gray-box** (Often provides best value.)
-  - Partial knowledge
-  - Most realistic
+| Level | Tester Knowledge | Simulates | Typical Use | Angle | Core Takeaway |
+|------|------------------|-----------|-------------|------------|---------------|
+| ⬛**Black box** | None | External attacker | Perimeter testing | Realistic, limited visibility | Outside-in realism |
+| ⬜**White box** | Full (source code, architecture, creds) | Insider / developer | Deep technical validation | Maximum coverage, least realistic | Maximum flaw discovery |
+| 🩶**Gray box** | Partial (accounts, diagrams, roles) | Authenticated user / compromised account | Most enterprise testing | Best balance of realism + depth | **Most practical  choice** |
 
 ---
 
@@ -197,7 +205,7 @@ Peer review reduces systemic risk.
 
 ## 📊 Metrics and Measurements  
 
-If you can’t measure it, you can’t manage it.
+If you can't measure it, you can't manage it.
 
 ### Common Metrics
 - Number of vulnerabilities
@@ -238,6 +246,7 @@ Includes:
 ---
 
 ## 🔄 Continuous Monitoring (**maintains assurance over time.**)
+
 Security is not point-in-time.
 
 - Automated control monitoring
@@ -248,6 +257,8 @@ Security is not point-in-time.
 ---
 
 ## 🧾 Reporting and Remediation  
+
+Unfixed findings = accepted risk (by management).
 
 Reports must include:
 - Findings
@@ -260,46 +271,16 @@ Remediation requires:
 - Target date
 - Retesting
 
-Unfixed findings = accepted risk (by management).
-
 ---
 
 ## ⚖️ Independence and Objectivity  
+
+You should not test your own work.
 
 Assessments must be:
 - Independent
 - Objective
 - Repeatable
-
-You should not test your own work.
-
----
-
-## 🧠 Exam Priorities Recap  
-
-Recognize and apply quickly:
-
-- Assessment vs testing vs audit  
-- Design vs operating effectiveness  
-- SOC 2 Type 2 purpose  
-- Vulnerability scan vs penetration test  
-- Black-box vs white-box vs gray-box  
-- Negative vs interface vs fuzz testing  
-- Log review importance  
-- Metrics (MTTD, MTTR)  
-- Continuous monitoring concept  
-- Authorization before testing  
-
----
-
-## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)
-- Tool-specific command syntax  
-- Vendor scan score calculations  
-- Deep exploit development  
-- Full red team playbooks  
-- Regulatory audit checklists  
-- Custom SIEM rule writing  
-- Advanced threat hunting  
 
 ---
 
