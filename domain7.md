@@ -3,7 +3,7 @@
 ## 🚨 Elevator Pitch  
 Keep security running day to day and respond when things go wrong. Domain 7 is about **operating**, **monitoring**, **responding**, and **recovering**. This is where incidents happen, alerts fire, people make mistakes, and processes either save you or sink you.
 
-Think: **detect fast, respond correctly, recover cleanly, and learn afterward.**
+**Detect fast, respond correctly, recover cleanly, and learn afterward.**
 
 ---
 
