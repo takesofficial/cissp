@@ -647,7 +647,6 @@ DREAD is a threat model primarily used to measure and rank the severity of threa
  - Exploitability
  - Affected users
  - Discoverabilit
-
 - **VAST** - Scalable, Agile-friendly.  
 - **Trike** - Risk auditing.  
 
