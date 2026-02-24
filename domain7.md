@@ -113,37 +113,27 @@ Never skip isolation.
 
 ---
 
-## 🧬 Forensics Basics  
-Preservation first, investigation second. Documentation matters as much as technical skill. Volatile data is prioritized. Integrity must always be provable. Preserve, collect, analyze, and present digital evidence in a legally defensible way.  
+## 🧬 Forensics Basics
 
-> **🚨 Never analyze original evidence; always work on a verified copy.**
+Preserve first. Analyze later. Never touch originals.
+🚨 **Golden rule:** Never analyze original evidence. Always image first.
 
-- 🧾 **Chain of Custody**
-  - Document every person who handled the evidence  
-  - Record: who, when, where, why, and how  
-  - Must be continuous and traceable  
-  - Broken chain = evidence may be inadmissible  
 
-- ⚡ **Order of Volatility**
-  Collect most volatile data first (data that disappears fastest):
-  1. CPU registers / cache  
-  2. RAM  
-  3. Network connections / processes  
-  4. Disk data  
-  5. Logs / archival media  
+| Concept | Core Rule | What You Do | Why It Matters |
+|--------|-----------|-------------|-----------------------------|
+| Chain of Custody | Every handoff must be documented | Record who, when, where, why, how | Broken chain = evidence may be inadmissible |
+| Order of Volatility | Collect most volatile data first | CPU/cache > RAM > network > disk > logs | Powering off too early destroys critical evidence |
+| Forensic Imaging | Always work from a copy | Create bit-for-bit image (incl. slack/deleted space) using write blockers | Original evidence must remain untouched |
+| Integrity Verification | Prove evidence was not altered | Hash before and after imaging (e.g., SHA-256) | Matching hashes = defensible integrity |
+| Evidence Handling | Never analyze originals | Perform all work on verified images | Protects legal validity |
+| Documentation | Log everything | Actions, timestamps, tools used | Technical skill without documentation fails in court |
 
-  👉 If you power off too early, volatile evidence is lost forever.
-
-- 💽 **Forensic Imaging**
-  - Create a **bit-for-bit (forensic) copy**
-  - Includes deleted space and slack space  
-  - Use write blockers to prevent modification  
-  - Work only on the image, never the original  
-
-- 🔎 **Integrity Verification**
-  - Hash evidence before and after imaging  
-  - Matching hashes prove integrity  
-  - Common hashes: SHA-256  
+### Order of Volatility (memorize)
+1. CPU registers / cache  
+2. RAM  
+3. Network connections / running processes  
+4. Disk data  
+5. Logs / archival media  
 
 ---
 
@@ -282,13 +272,20 @@ People leave. Knowledge must stay.
 
 ---
 
-## 💽 RAID
-- Mission-critical database: **RAID 10 (1+0):** (mirroring + striping; performance + redundancy; higher cost)
-- Minimize risk of data loss in large array: **RAID 6:** (like RAID 5 but dual parity; tolerates 2 disk failures; more write penalty)
-- Maximize storage efficiency: **RAID 5:** (striping + distributed parity; balanced; tolerates 1 disk failure; write penalty)
-- **RAID 1:** **"1 = 1 mirror"** (mirroring; availability)
-- Maximum performance, no redundancy: **RAID 0:** **"0 = 0 redundancy"** (striping; performance; any disk loss = data loss)
-- ~~**RAID 2** and **RAID 3**~~ (effectively not used / rare)
+## 💽 RAID (Availability vs Performance vs Cost)
+
+RAID 2 and RAID 3 are effectively obsolete and ignored.
+
+| Emoji | RAID | Layout | Disk Failures Tolerated | Strength | Weakness | Hook |
+|------|------|--------|-------------------------|----------|----------|------------|
+| 🚀 | RAID 0 | Striping only | 0 | Maximum performance | Any disk loss = total data loss | **0 = 0 redundancy** (fast + dead) |
+| 🪞 | RAID 1 | Mirroring | 1 (per mirror pair) | High availability, simple | 50% storage loss | **1 = 1 mirror** |
+| 📦 | RAID 5 | Striping + single parity | 1 | Good storage efficiency | Write penalty, risky rebuilds on large arrays | Balanced, but fragile |
+| 🛡️ | RAID 6 | Striping + dual parity | 2 | Safer than RAID 5 for large arrays | Higher write penalty | RAID 5 with seatbelt |
+| 🏦 | RAID 10 (1+0) | Mirrored stripes | Multiple (one per mirror pair) | Best performance + redundancy | Expensive | **Mission-critical choice** |
+
+🚫 RAID = availability only.  
+🚫 RAID ≠ backup (does not protect against deletion, ransomware, or corruption).  
 
 ---
 
@@ -299,34 +296,13 @@ A backup only has value if it can be successfully restored.
 
 ### 💾 Backup Types
 
-- 1️⃣📦 **Full**
-Complete copy of all data  
-  - 🐢 Slow backup  
-  - ⚡ Fastest restore  
-  - 💾 Highest storage use  
-  - 🏭 Heavy production impact  
+| Backup Type | What It Backs Up + Hook | Backup Speed | Restore Speed | Disk Space | Production Impact | Restore Complexity | RTO Impact |
+|------------|--------------------------|-------------|--------------|-------------|-------------------|-------------------|-----------|
+| 📦 **Full** | Complete copy of all data. Simplest restore. Baseline for all others. | 🐢 Slow | ✨ Fastest | 💾 Highest | 🏭 Heavy | One step | Lowest |
+| ➕ **Incremental** | Files changed since last full *or incremental*. Clears archive bit. Full + every incremental needed to restore. More steps = higher failure risk. | ⚡ Fast | 🐢 Slowest | 💾 Lowest | 🏭 Light | Many steps | Highest |
+| 📈 **Differential** | Files changed since last **full**. Does NOT clear archive bit. Backup grows daily. Restore = full + latest differential. | ⏳ Grows daily | ⚡ Faster than incremental | 💾 Medium | Medium | Two steps | Lower than incremental |
+| 🧩 **Synthetic** | New "full" built from prior full + incrementals/differentials without touching production systems. Minimizes backup window load. | ⏱️ Very fast | ⚡ Fast | 💾 Depends on chain | 📦 Minimal | One step | Low |
 
-- 2️⃣➕ **Incremental** 👉 Small backup, but restoring takes more steps.
-Backs up only the files that changed since the last backup (full or incremental).
-After backing them up, it marks them as "saved" (clears the archive bit).
-  - ⚡ Fast backup  
-  - 🐢 Slowest restore (must restore full + every incremental)  
-  - 💾 Lowest storage use  
-  - 🏭 Light production impact  
-  - ⚠️ More restore steps = higher failure risk  
-
-- 3️⃣📈 **Differential** 👉 Backup gets bigger each day, but restore is easier (full + latest differential).
-Backs up only the files that changed since the last full backup.
-It does not mark them as "saved" (archive bit stays set).
-  - ⏳ Backup grows over time  
-  - ⚡ Faster restore than incremental (full + latest differential only)  
-  - 💾 Medium storage use  
-  - 🎯 Lower RTO than incremental  
-
-- 4️⃣🧩 **Synthetic** 👉 Less impact on production systems.
-Creates a new full backup by combining a previous full backup with incremental or differential backups, without copying everything again from the original system.
-  - ⏱️ Reduces production impact  
-  - 📦 Minimizes backup window load
 
 ---
 
