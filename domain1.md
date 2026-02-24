@@ -22,7 +22,7 @@ If public harm is involved, think Canon I.
 ---
 
 ## 🏛️ Governance  
-Ensure security directly supports the business mission, goals, and risk appetite.
+Ensure security directly supports the business mission, goals, and risk appetite. Security strategy must align to business strategy.
 
 ## 🎯 Strategic vs Tactical vs Operational Planning
 
@@ -31,8 +31,6 @@ Ensure security directly supports the business mission, goals, and risk appetite
 | **Strategic** | Long-term direction, mission alignment | 3–5 years | Executive leadership |
 | **Tactical** | Program implementation | 1 year | Senior / middle management |
 | **Operational** | Day-to-day execution | Quarterly / ongoing | Operational managers |
-
-Security strategy must align to business strategy.
 
 ---
 
