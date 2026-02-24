@@ -44,7 +44,7 @@ High level, manager brain first, engineer brain second.
 
 ---
 
-## 🧬 Security Models (just enough to recognize)  
+## 🧬 Security Models
 
 Focus on what each model protects and the simple rule you see in questions.
 
