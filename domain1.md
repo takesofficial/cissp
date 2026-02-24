@@ -117,16 +117,22 @@ Output:
 - Control gaps
 - Remediation plan
 
-## 👥 Roles & Responsibilities  
-Assign ownership, accountability, and operational duties.
-Residual risk is ALWAYS owned by senior management.
+## 👥 Roles and Ownership
+Clear ownership is required to protect assets properly.
+Ownership defines authority. Custodians implement. Users comply.
 
-- **Senior Management** - Ultimately accountable; accepts residual risk.  
-- **Owner** - Classifies data; defines access; decides on controls.  
-- **Custodian** - Implements and maintains controls (backups, access).  
-- **User** - Follows policy; uses resources securely.  
-- **Auditor** - Reviews compliance; never accepts risk.  
+| Role | Primary Responsibility | Authority Level |
+|------|------------------------|-----------------|
+| **Data Owner** | Classifies data, defines handling requirements, approves access | Final authority over the data |
+| **System Owner** | Ensures system security, configuration, patching, and operational integrity | Authority over the system, not the data itself |
+| **Data Controller (GDPR)** | Determines purpose and means of processing personal data | Legal authority over personal data decisions |
+| **Data Processor (GDPR)** | Processes personal data on behalf of the controller | Acts under contractual instruction |
+| **Data Custodian** | Performs day-to-day protection (backup, storage, archiving, technical safeguards) | No classification authority |
+| **Data Steward** | Maintains data quality, governance, metadata, compliance alignment | Advisory / governance-focused |
+| **User / Data Subject** | Uses data per policy and approved access rights | No ownership authority |
 
+**Core principles:**  
+- Need-to-know & Least privilege  
 ---
 
 ## 🔺 CIA Triad  
