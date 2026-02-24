@@ -66,7 +66,7 @@ How access decisions are managed.
 | Model | Where Decisions Live | Strengths | Risks | Exam Angle |
 |------|-----------------------|----------|------|-----------|
 | Centralized | One IAM authority (directory/IdP) | Consistent policy, easier auditing | Single high-value target | Preferred for enterprise governance |
-| Decentralized | Each system manages its own users | автономy, less dependency | Inconsistent access, weak offboarding | Common in legacy, higher risk |
+| Decentralized | Each system manages its own users | less dependency | Inconsistent access, weak offboarding | Common in legacy, higher risk |
 | Hybrid | Central identity, local app roles | Practical mix | Complexity | Most real environments |
 
 Centralized improves control and auditability, decentralized increases orphaned accounts and privilege creep.
