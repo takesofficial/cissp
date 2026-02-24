@@ -1,11 +1,13 @@
 # <p align=center>Domain 2 - Asset Security</p>
 
 ## 🚨 Elevator Pitch  
+
 Protect assets from cradle to grave. You classify what matters, assign owners, control access, protect data in every state, and destroy it correctly when its no longer needed.
 
 ---
 
 ## 🏷️ Classification Basics  
+
 You protect what you classify. Labels drive handling, controls, and access.
 
 ### 📚 Common Classification Schemes  
