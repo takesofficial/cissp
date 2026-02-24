@@ -401,40 +401,5 @@ Technical teams cannot unilaterally accept unsupported risk.
 
 ---
 
-## 🧠 Exam Priorities Recap  
-
-Recognize and apply quickly:  
-- Classification schemes and what they drive.  
-- Data states and which controls fit each state.  
-- Data lifecycle and correct destruction methods.  
-- Roles: owner, controller, processor, custodian, steward, user.  
-- Privacy techniques: anonymization vs pseudonymization vs tokenization.  
-- Remanence, crypto shredding, degaussing, and physical destruction.  
-- EOL/EOS risk and compensating controls.  
-- DLP, DRM, CASB and where they make sense.
-
----
-
-## 📦 What Was Intentionally Removed (Too Long / Not Test-Critical)
-- Full government classification procedures and clearance adjudication  
-- Detailed GDPR article-by-article legal analysis  
-- All U.S.-specific data disposal statutes and case law  
-- Deep-dive memory architecture (flip-flops, DRAM cells, SLC/MLC/TLC SSD internals)  
-- Complete NIST SP 800-88 tables (clear, purge, destroy matrix)  
-- Full CASB architectural variants (forward proxy, reverse proxy, API-mode internals)  
-- Detailed DRM vendor feature comparisons  
-- DLP tuning and rule-writing methodology (regex tuning, fingerprinting, EDM/IDM)  
-- Every anonymization model (k-anonymity, l-diversity, t-closeness)  
-- TEMPEST shield design standards (NSTISSAM specifics)  
-- Forensics-level remanence recovery techniques  
-- Complete software licensing frameworks  
-- Intellectual property law structures beyond definitions (USPTO process, WIPO treaties)  
-- Full asset management frameworks (ISO 19770, ITAM maturity models)  
-- Extensive cloud data residency law breakdowns  
-- Detailed archival formats and storage media physics  
-- All vendor-specific CASB, DLP, and DRM deployment patterns  
-
----
-
 ## 🔗 Useful Links / Mind Map  
 [CISSP Domain 2 Destination Certification](https://www.youtube.com/watch?v=WBlQQ6qTlGI)
