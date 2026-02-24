@@ -34,6 +34,32 @@ Ensure security directly supports the business mission, goals, and risk appetite
 
 ---
 
+## 💡 How CISSP Thinks About Controls (Read This First)
+
+CISSP is not about fixing things after they break. It is about stopping problems before they happen, noticing them if they happen, and fixing them only when needed. This order matters.
+
+> Always think in this sequence: **Prevent** > **Detect** > **Correct** and always think policy and process before technology.
+
+Prevention is the strongest and cheapest control because incidents that never happen cause no damage. Detection exists because prevention is never perfect. Correction and recovery are last resorts and mean the organization already took a hit. When a question asks how to prevent something, do not choose detection or cleanup. When a question describes repeated incidents, the answer is almost never "fix the system" but "fix the process, policy, or control that should have prevented it." CISSP consistently prefers controls that are repeatable, documented, and lifecycle-based, not one-time technical fixes.
+
+Security is risk management, not risk elimination. The best answer reduces risk enough while aligning with business goals, policies, and laws. Controls should be sustainable, cost-effective, and driven by governance, not impulse.
+
+
+---
+
+## ⚙️ Control Functions  
+How controls behave before, during, and after incidents.
+
+- **Preventive** - Stop incidents before they happen.  
+- **Detective** - Discover events during/after occurrence.  
+- **Corrective** - Fix damage after detection.  
+- **Recovery** - Restore full operations after major failure.  
+- **Compensating** - Alternative when the primary control is unavailable.  
+- **Directive** - Guide actions (signage, rules, banners).  
+- **Deterrent** - Discourage attempts (visible cameras, warnings).
+
+---
+
 ## 🏛️ Governance Committee
 
 Responsible for:
@@ -344,19 +370,6 @@ Firewalls, encryption, MFA, SIEM, access controls.
 
 ### 3. **Physical**  
 Locks, guards, cameras, fences.
-
----
-
-## ⚙️ Control Functions  
-How controls behave before, during, and after incidents.
-
-- **Preventive** - Stop incidents before they happen.  
-- **Detective** - Discover events during/after occurrence.  
-- **Corrective** - Fix damage after detection.  
-- **Recovery** - Restore full operations after major failure.  
-- **Compensating** - Alternative when the primary control is unavailable.  
-- **Directive** - Guide actions (signage, rules, banners).  
-- **Deterrent** - Discourage attempts (visible cameras, warnings).
 
 ---
 
