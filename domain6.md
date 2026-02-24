@@ -1,8 +1,7 @@
 # <p align=center>Domain 6 - Security Assessment and Testing</p>
 
 ## 🚨 Elevator Pitch  
-Trust nothing without evidence.  
-Domain 6 is about **verifying** that security controls exist, work as intended, and continue to work over time.  
+Trust nothing without evidence. Domain 6 is about **verifying** that security controls exist, work as intended, and continue to work over time.  
 You assess, test, audit, and measure security to prove risk is actually being reduced.
 
 Think: **Are the controls there? Do they work? Can you prove it?**
