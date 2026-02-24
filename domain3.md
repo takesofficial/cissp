@@ -1,8 +1,7 @@
 # <p align=center>Domain 3 - Security Architecture and Engineering</p>
 
 ## 🚨 Elevator Pitch  
-Design and build systems that stay secure under stress. Domain 3 is about security models, trusted computing, architecture principles, crypto basics, and physical protection.  
-Think: how to design systems so they fail secure, limit blast radius, and keep attackers from ever getting a foothold.
+Design and build systems that stay secure under stress. Domain 3 is about security models, trusted computing, architecture principles, crypto basics, and physical protection. How to design systems so they fail secure, limit blast radius, and keep attackers from ever getting a foothold.
 
 ---
 
