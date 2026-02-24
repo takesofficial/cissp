@@ -550,19 +550,7 @@ Apply correct legal and procedural rules.
 - **Regulatory** - Agencies enforcing industry rules.  
 - **Industry Standards** - PCI, ISO, SOC audits.
 
-## 📊 Service Organization Controls (SOC)
-
-**SOC = what kind of controls?**
-- **SOC 1** > Money / financial reporting
-- **SOC 2** > Security and system controls
-- **SOC 3** > Public, marketing-safe summary of SOC 2
-
-**Type = how deep is it?**
-- **Type 1** > Looks good on paper  
-  (control **design assessed by an independent auditor**, point in time)
-- **Type 2** > Proved it works  
-  (control **design and operating effectiveness tested by an independent auditor** over time)
-
+---
 
 ### 🧪 Key Forensics Rules  
 - **Chain of custody** - Track every handoff of evidence.  
