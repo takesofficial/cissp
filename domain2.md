@@ -11,12 +11,12 @@ Data integrity is a shared responsibility. No single role owns it. Owners set th
 
 | Role | Core Responsibility | Accountable For | Authority Level | CISSP Hook |
 |------|---------------------|----------------|-----------------|-----------|
-| **Data Owner** | Classifies data, defines handling, approves access | Data value, classification, access rules | Final authority over the data | **Ownership = authority** |
 | **System Owner** | Maintains system security, configuration, patching | Operational availability + system protection | Authority over system only | **Owns the box, not the data** |
-| **Data Controller (GDPR)** | Determines purpose + means of processing | Legal compliance of personal data use | Legal authority | **Decides why/how data is used** |
-| **Data Processor (GDPR)** | Processes data for controller | Correct execution of processing | No independent authority | **Executes only, no decisions** |
+| **Data Owner** | Classifies data, defines handling, approves access | Data value, classification, access rules | Final authority over the data | **Ownership = authority** |
 | **Data Custodian** | Implements safeguards (backup, storage, access controls) | Day-to-day technical protection | No classification authority | **Implements controls, never classifies** |
 | **Data Steward** | Governs data quality, integrity, and appropriate access | Consistency, integrity, governance alignment | Advisory only | **Ensures data is accurate + used correctly (governance layer)** |
+| **Data Controller (GDPR)** | Determines purpose + means of processing | Legal compliance of personal data use | Legal authority | **Decides why/how data is used** |
+| **Data Processor (GDPR)** | Processes data for controller | Correct execution of processing | No independent authority | **Executes only, no decisions** |
 | **User / Data Subject** | Uses or is represented by the data | Proper usage / personal data rights | No ownership | **Consumes data under least privilege** |
 
 ---
@@ -26,35 +26,33 @@ Data integrity is a shared responsibility. No single role owns it. Owners set th
 You protect what you classify. Labels drive handling, controls, and access.
 
 ### 📚 Common Classification Schemes  
-**Government (example):**  
+
+Classification is based on value, impact, and legal/regulatory needs. Labels are defined in policy, applied consistently, and drive handling requirements
+
+**Government:**  
 - Top Secret - Massive damage if disclosed.  
 - Secret - Serious damage to national security.  
 - Confidential - Damage but less severe.  
 - Unclassified - Not sensitive.  
 
-**Commercial (example):**  
+**Commercial:**  
 - Confidential / Proprietary - Internal only, serious impact if leaked.  
 - Private - Personal or financial info, high impact if exposed.  
 - Sensitive - Needs strong protection, but not the highest tier.  
 - Public - Safe to share externally.  
-
-**Mapping**  
 
 | `Government` | `Commercial` |
 |-------------:|-------------:|
 | Top Secret   | Confidential |
 | Secret       | Private      |
 | Confidential | Sensitive    |
-| Unclassified | Public       |
-
-**Exam mindset:**  
-- Classification is based on value, impact, and legal/regulatory needs.  
-- Labels are defined in policy, applied consistently, and drive handling requirements.
+| Unclassified | Public       |.
 
 ---
 
 ## 📊 Classification Criteria
 
+Classification is driven by impact - not convenience.
 Data classification is based on:
 
 | Factor | Description |
@@ -63,10 +61,6 @@ Data classification is based on:
 | **Sensitivity** | Impact if disclosed |
 | **Criticality** | Impact if unavailable |
 | **Legal / Regulatory Requirements** | Compliance obligations |
-
-Classification is driven by impact - not convenience.
-
----
 
 ---
 
@@ -88,6 +82,9 @@ Data is typically the highest-value asset.
 
 ## 🧠 Memory Types (Remanence-Relevant)
 
+Volatile memory = loses contents without power.  
+Nonvolatile memory = retains data after shutdown.
+
 | Memory Type | Volatile? | Erasable? | Notes |
 |--------------|------------|------------|------|
 | **RAM** | Yes | Yes (power off) | Data lost when powered down |
@@ -95,9 +92,6 @@ Data is typically the highest-value asset.
 | **PROM** | No | No (one-time programmable) | Program once |
 | **EPROM (UVEPROM)** | No | Yes (UV light) | Requires physical UV exposure |
 | **EEPROM** | No | Yes (electrically) | Can be reprogrammed |
-
-Volatile memory = loses contents without power.  
-Nonvolatile memory = retains data after shutdown.
 
 ---
 
@@ -115,15 +109,14 @@ Best single confidentiality control across states: **Strong encryption**.
 
 # 🧮 Data Aggregation Risk
 
+Low-classification data can become high-impact when aggregated.
+Classification decisions must consider aggregation effects.
+
 | Factor | Risk Impact |
 |--------|------------|
 | **Volume** | Larger datasets increase sensitivity |
 | **Correlation** | Combined datasets reveal new intelligence |
 | **Context** | Seemingly harmless data gains meaning when linked |
-
-Low-classification data can become high-impact when aggregated.
-Classification decisions must consider aggregation effects.
-
 ---
 
 ## 📦 Asset and Data Classification & Handling  
@@ -135,6 +128,7 @@ Classification decisions must consider aggregation effects.
 
 ### 📮 Handling Requirements  
 Handling is always driven by classification, not media type.
+Goal: no uncontrolled copy, movement, or disclosure of sensitive data.
 
 Key practices:  
 - Marking and labeling (human readable).  
@@ -142,20 +136,6 @@ Key practices:
 - Secure storage by classification.  
 - Controlled transport and tracking.  
 - Logging, chain of custody where necessary.  
-
-Goal: no uncontrolled copy, movement, or disclosure of sensitive data.
-
----
-
-## 🏛️ Authority Model
-
-| Role | Authority |
-|------|----------|
-| **Data Owner** | Classifies data and approves access |
-| **Custodian** | Implements controls |
-| **User** | Must comply with policy |
-
-IT does not classify data. Owners do.
 
 ---
 
