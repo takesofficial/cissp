@@ -205,12 +205,25 @@ You only need to recognize types and rough behavior.
 
 ## ⚙️ Logical Operations (used in crypto and access decisions)  
 
+You do not need truth tables, just the basic behavior and that XOR "cancels" with itself.
+
 - **NOT** - flip bit: 1 becomes 0, 0 becomes 1.  
 - **AND** - 1 if both bits are 1.  
 - **OR** - 1 if at least one bit is 1.  
 - **XOR** - 1 if bits are different. Used heavily in stream ciphers and checksums.
 
-You do not need truth tables, just the basic behavior and that XOR "cancels" with itself.
+---
+
+## 🚨 Fire Detection Types
+
+| Detection Type     | What It Detects                            | Purpose                                | Typical Use Case              | Anchor |
+|--------------------|-------------------------------------------|----------------------------------------|-------------------------------|--------------|
+| Fixed Temperature | Reaches preset heat threshold              | Triggers at specific temperature       | General rooms                 | Specific heat reached |
+| Rate-of-Rise      | Rapid temperature increase                 | Detects sudden heat changes            | Data centers, network closets | Sudden temperature spike |
+| Ionization        | Small smoke particles (fast flaming fires)| Fast response to active flames         | Older smoke detectors         | Fast-burning smoke |
+| Photoelectric     | Large smoke particles (smoldering fires)  | Better for slow-burning fires          | Offices, commercial spaces    | Smoldering smoke |
+| Aspirating (VESDA)| Airborne combustion particles (very early)| Very early smoke detection             | Server rooms                  | Early warning smoke |
+| Flame / Infrared  | Infrared energy from flames               | Detects visible flames                 | Industrial environments       | Visible flames |
 
 ---
 
