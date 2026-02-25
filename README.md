@@ -1,5 +1,5 @@
 # Nick Takes' CISSP Study
-🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  | 📌 **Last update:** 2026-02-13
+🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  | 📌 **Last update:** 2026-02-25
 
 ## Table of contents
 - [Intro](#intro)
