@@ -86,14 +86,18 @@ Nonvolatile memory = retains data after shutdown.
 
 ---
 
-## 📡 Emanations & TEMPEST
+## 👥 Roles and Ownership  
+Data integrity is a shared responsibility. No single role owns it. Owners set the rules, stewards govern, custodians implement controls, processors handle data correctly, and users follow policy. Everyone protects integrity, just in different ways.
 
-| Concept | Purpose | Countermeasures |
-|----------|----------|----------------|
-| **TEMPEST** | Prevent interception of electromagnetic signals | Shielding, Faraday cages, control zones, white noise |
-| **Emanation Risk** | Data leakage through unintended signals | Physical and architectural controls |
-
-Focus: prevent signal-based data capture.
+| Role | Core Responsibility | Accountable For | Authority Level | CISSP Hook |
+|------|---------------------|----------------|-----------------|-----------|
+| **Data Owner** | Classifies data, defines handling, approves access | Data value, classification, access rules | Final authority over the data | **Ownership = authority** |
+| **System Owner** | Maintains system security, configuration, patching | Operational availability + system protection | Authority over system only | **Owns the box, not the data** |
+| **Data Controller (GDPR)** | Determines purpose + means of processing | Legal compliance of personal data use | Legal authority | **Decides why/how data is used** |
+| **Data Processor (GDPR)** | Processes data for controller | Correct execution of processing | No independent authority | **Executes only, no decisions** |
+| **Data Custodian** | Implements safeguards (backup, storage, access controls) | Day-to-day technical protection | No classification authority | **Implements controls, never classifies** |
+| **Data Steward** | Governs data quality, integrity, and appropriate access | Consistency, integrity, governance alignment | Advisory only | **Ensures data is accurate + used correctly (governance layer)** |
+| **User / Data Subject** | Uses or is represented by the data | Proper usage / personal data rights | No ownership | **Consumes data under least privilege** |
 
 ---
 
@@ -355,6 +359,17 @@ Also: retaining data is pointless if you no longer have:
 - Hardware that can read it  
 - Software that can interpret it  
 - People who know how to operate both
+
+---
+
+## 📡 Emanations & TEMPEST
+
+| Concept | Purpose | Countermeasures |
+|----------|----------|----------------|
+| **TEMPEST** | Prevent interception of electromagnetic signals | Shielding, Faraday cages, control zones, white noise |
+| **Emanation Risk** | Data leakage through unintended signals | Physical and architectural controls |
+
+Focus: prevent signal-based data capture.
 
 ---
 
