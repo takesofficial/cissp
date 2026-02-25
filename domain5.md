@@ -7,28 +7,18 @@ Think: who you are, how you prove it, what you're allowed to do, and how it's mo
 
 ---
 
-## 🧠 IAM Mindset  
+## 🧠 Identity and Access Management (IAM)
 
-Always separate **identity**, **authentication**, and **authorization**.
+IAM failures typically result in confidentiality breaches (unauthorized access), not availability outages.
+IAM separates identity, authentication, authorization, and accountability to control and trace access to resources.
 
-- 🪪 **Identity** answers **who**  
-- 🔐 **Authentication** answers **prove it**  
-- 🚪 **Authorization** answers **what you can do**  
-- 🧾 **Accountability** answers **what you did**
-
-IAM failures usually cause **data breaches**, not outages.
-
----
-
-## 🔐 AAA (+ Auditing)
-
-The IAM lifecycle.
-
-- 🪪 **Identification** - Claiming an identity (username, ID)  
-- 🔐 **Authentication** - Proving identity  
-- 🚪 **Authorization** - Access (permission granted)  
-- 🧾 **Accountability** - Actions tied to identity  
-- 📋 **Auditing** - Logs reviewed and retained  
+| Component | Core Question | Purpose | Example |
+|------------|--------------|----------|----------|
+| 🪪 **Identification** | Who are you? | Subject claims an identity | Username / User ID |
+| 🔐 **Authentication** | Can you prove it? | Verifies the claimed identity | Password, MFA, certificate |
+| 🚪 **Authorization** | What are you allowed to do? | Grants or denies access to resources | Read-only access to database |
+| 🧾 **Accountability** | What did you do? | Links actions to an identity | User ID tied to activity |
+| 📋 **Auditing** | What happened? | Records and reviews events | Logs, SIEM reports |
 
 ---
 
