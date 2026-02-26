@@ -388,6 +388,19 @@ Goal: isolate processes so one compromise does not own the whole system.
 
 ---
 
+## 🦠 Malware Basics  
+
+| Type | Core Behavior | How It Spreads / Operates | Key Variants |
+|------|--------------|----------------------------|----------------------|
+| 🧬 **Virus** | Requires a host file; attaches and infects legitimate files | Spreads when infected file is executed or shared | 📄 **Macro virus** - abuses Office macros<br>💽 **Boot sector virus** - infects boot loader / MBR<br>🕵️ **Stealth / Polymorphic** - hides or mutates to evade AV<br>🧩 **Multipartite** - multiple infection vectors |
+| 🪱 **Worm** | Self-contained malicious program | Spreads automatically over networks without user action | 🌐 Network-based propagation; no host file required |
+| 🎭 **Trojan** | Disguised as legitimate software | User installs it believing it is useful | 🚪 Often delivers backdoors, payloads, or additional malware |
+| 🔐 **Ransomware** | Encrypts data and demands payment | Delivered via phishing, exploits, or trojans | 💰 Goal: financial extortion |
+| 👁️ **Spyware** | Secretly monitors user activity | Installed via trojans or malicious downloads | 📊 Goal: data collection / surveillance |
+| 🧱 **Rootkit** | Hides presence of malware or attacker | Modifies OS or kernel-level components | 🕳️ Goal: persistence and stealth |
+
+---
+
 ## 🚨 Fire Detection Types
 
 | Detection Type     | What It Detects                            | Purpose                                | Typical Use Case              | Anchor |
