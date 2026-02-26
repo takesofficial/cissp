@@ -168,6 +168,48 @@ Break early in the chain = prevent full compromise.
 
 ---
 
+## 🏛️ Evaluation & Assurance Frameworks
+
+These frameworks measure how much trust and assurance we can place in a system’s security design and implementation.
+
+---
+
+### 📚 TCSEC (Orange Book)
+
+TCSEC, also known as the Orange Book, was a U.S. Department of Defense standard developed to evaluate the security of computer systems. It was heavily focused on confidentiality, drawing directly from the Bell-LaPadula model, and emphasized labeled security, mandatory access control, and increasing assurance through structured design and formal verification. TCSEC was U.S.-centric and has since been superseded by the international Common Criteria standard.
+
+| Level | Meaning | Focus | Recognition |
+|--------|--------|--------|------------------|
+| 🔹 **D** | Minimal Protection | Failed evaluation | Rarely secure |
+| 🔹 **C1** | Discretionary Security | Basic DAC controls | Weak user-level controls |
+| 🔹 **C2** | Controlled Access | Stronger DAC + auditing | Commercial OS baseline |
+| 🔹 **B1** | Labeled Security | Mandatory Access Control (MAC) | Data classification labels |
+| 🔹 **B2** | Structured Protection | Formal security policy model | Increased TCB scrutiny |
+| 🔹 **B3** | Security Domains | Strong isolation & minimal TCB | High assurance systems |
+| 🔴 **A1** | Verified Design | Formally verified design | Mathematical proof of security |
+
+---
+
+### 🌍 Common Criteria (ISO/IEC 15408)
+
+Common Criteria is the international standard successor to TCSEC and provides a standardized framework for evaluating the **security assurance** of IT products. It measures how rigorously a system has been designed, tested, reviewed, and formally verified through Evaluation Assurance Levels (EALs).  
+
+Higher EAL levels do **not** mean stronger security features, they reflect increased confidence in the correctness of the design and the depth of evaluation evidence. 
+
+EAL 4 is the most common commercial level. EAL 7 requires formal mathematical verification and is extremely rare, typically realistic only for small, highly constrained, security-critical systems, not large general-purpose operating systems or complex enterprise platforms.
+
+| EAL Level | Meaning | Assurance Level | Recognition |
+|------------|----------|----------------|-----------------------------|
+| 🟢 **EAL 1** | Functionally tested | Basic testing | Simple |
+| 🟢 **EAL 2** | Structurally tested | Basic design review | Simple |
+| 🟡 **EAL 3** | Methodically tested & checked | Moderate assurance | Methodically tested |
+| 🟡 **EAL 4** | Methodically designed, tested & reviewed | Commercial baseline (**most common**) | Methodically tested |
+| 🟠 **EAL 5** | Semi-formally designed & tested | High assurance | Semi-formally designed |
+| 🟠 **EAL 6** | Semi-formally verified design & tested | Very high assurance | Semi-formally designed |
+| 🔴 **EAL 7** | Formally verified design & tested | Extremely high assurance | Formally designed & tested |
+
+---
+
 ## 🔐 Crypto Fundamentals
 
 Goal: recognize **what to use when** - not calculate key schedules.
