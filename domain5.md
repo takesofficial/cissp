@@ -1,5 +1,12 @@
 # <p align=center>Domain 5 - Identity and Access Management (IAM)</p>
 
+---
+
+## 🧠 Mind Map
+[CISSP Domain 5 Destination Certification](https://destcert.com/resources/cissp-domain-5-identity-and-access-management-iam)
+
+---
+
 ## 🚨 Elevator Pitch  
 Make sure the **right subject** gets the **right access** to the **right object** at the **right time**, for the **right reason**, and that every action is **accountable**.  Domain 5 is about identity lifecycle, authentication, authorization, access models, and preventing both abuse and accidents.
 
@@ -9,6 +16,7 @@ Think: who you are, how you prove it, what you're allowed to do, and how it's mo
 
 ## 🧠 Identity and Access Management (IAM)
 
+AAA = Authentication, Authorization, Accounting (logging and tracking of actions).
 IAM failures typically result in confidentiality breaches (unauthorized access), not availability outages.
 IAM separates identity, authentication, authorization, and accountability to control and trace access to resources.
 
@@ -20,10 +28,22 @@ IAM separates identity, authentication, authorization, and accountability to con
 | 🧾 **Accountability** | What did you do? | Links actions to an identity | User ID tied to activity |
 | 📋 **Auditing** | What happened? | Records and reviews events | Logs, SIEM reports |
 
+Identification = claim of identity. Authentication = verification of that claim.
+
+---
+
+## 👥 Subjects and Objects  
+
+- **Subject** - Active entity (user, process, service, device)  
+- **Object** - Passive resource (file, database, system)  
+
+Access control always mediates **subject > object**.
+
 ---
 
 ## 🧾 Accountability and Non-repudiation Enablers
 
+Non-repudiation requires strong authentication + integrity protection (often digital signatures).
 Accountability is a system property, not a user promise.
 
 | Control | What It Achieves | Why |
@@ -49,9 +69,21 @@ Key exam phrase: **🆕joiner** / **🔄 mover** / **🗑️ leaver**.
 
 ---
 
+### 🔄 Access Control Process (Lifecycle View)
+
+Access decisions must involve the **data owner**, not IT alone.
+
+1. 📝 Access Request  
+2. ✅ Approval (data/system owner)  
+3. 🛠️ Provisioning  
+4. 🔍 Periodic Review / Certification  
+5. 🗑️ Revocation  
+
+---
+
 ## 🏢 Access Control Administration
 
-How access decisions are managed.
+How access decisions are managed. Most centralized IAM implementations rely on directory services (e.g., LDAP / Active Directory) as the identity store.
 
 | Model | Where Decisions Live | Strengths | Risks | Exam Angle |
 |------|-----------------------|----------|------|-----------|
@@ -60,15 +92,6 @@ How access decisions are managed.
 | Hybrid | Central identity, local app roles | Practical mix | Complexity | Most real environments |
 
 Centralized improves control and auditability, decentralized increases orphaned accounts and privilege creep.
-
----
-
-## 👥 Subjects and Objects  
-
-- **Subject** - Active entity (user, process, service, device)  
-- **Object** - Passive resource (file, database, system)  
-
-Access control always mediates **subject > object**.
 
 ---
 
@@ -101,12 +124,32 @@ Biometrics trade-off:
 
 ---
 
+## 🧠 Identity Proofing  
+⚠️ Higher risk = stronger proofing.
+
+Before issuing credentials 🔑:
+- 🪪 Verify real-world identity (documents, in-person, trusted sources)  
+- 📊 Match assurance level to risk  
+- 🧱 Prove this human = this account
+
+---
+
+## 🎚️ Identity Assurance (NIST 800-63 concept)
+
+Higher risk system needs higher assurance. Proofing (IAL) and login strength (AAL) are different levers.
+
+| Assurance Area | What It Measures | Meaning |
+|----------------|------------------|---------------|
+| IAL | How well the person was identity-proofed | Strength of onboarding proof |
+| AAL | Strength of authentication | MFA strength and binding |
+| FAL | Strength of federation assertion | Token/assertion protection between IdP and SP |
+
+---
+
 ## 🎟️ Kerberos (Ticket-Based Authentication)
 
 Centralized authentication used in Active Directory. Uses tickets instead of sending passwords. 
 Kerberos = centralized, ticket-based authentication using symmetric crypto and time sync.  
-Golden ticket owns the domain.  
-Silver ticket owns one service.
 
 | Area | Key Point | Hook |
 |------|----------|-----------|
@@ -250,6 +293,23 @@ Questions often describe "entitlements" without using the word. Think effective 
 
 ---
 
+### 🗂️ Access Control Mechanisms
+
+Evaluation rule: The most restrictive rule applies. Explicit deny overrides allow.
+
+| Mechanism | What It Is | How It Works | Angle |
+|------------|------------|--------------|--------|
+| Access Control List (ACL) | Object-focused list of subjects and permissions | Stored with the object | Most common implementation |
+| Access Matrix | Table of subjects vs objects | Theoretical model of permissions | Conceptual model for exam questions |
+| Capability Table | Subject-focused list of objects and permissions | Stored with the subject | Less common, more secure in some designs |
+
+Exam thinking:
+ACL = object-centric  
+Capability = subject-centric  
+Access Matrix = theoretical view
+
+---
+
 ## 🧭 Least Privilege and Need-to-Know  
 
 - 🎯 **Least privilege** - minimum permissions required  
@@ -340,11 +400,6 @@ Exam reality:
 - 🚪 Authorization at SP  
 - 🌐 Identity shared across domains  
 
-### 🧩 Proxied Federation
-- 🧩 Broker sits between 🪪 IdP and 🖥️ SP  
-- 🔄 Translates protocols (SAML ↔ OIDC, etc.)  
-- 🕶️ Hides internal identities  
-- ⚠️ Adds latency ⏳, abstraction 🧠, and attack surface 🎯
 ---
 
 ## 🎭 Federation Roles
@@ -400,36 +455,13 @@ SoD is about process design, not technical features.
 | Concept | What It Prevents | Example | Angle |
 |--------|-------------------|---------|-----------|
 | Separation of Duties (SoD) | One person completing fraud alone | Requester cannot approve own access | Governance control |
+| Rotation of Duties | Long-term fraud concealment | Periodically rotate job roles | Detects hidden abuse over time |
 | Dual Control | Single-person abuse of critical actions | Two admins approve key export | Strong for high-impact actions |
 | Split Knowledge | One person knowing all secrets | Key parts held by different people | Common with HSM and vaults |
 
 ---
 
-## 🧠 Identity Proofing  
-⚠️ Higher risk = stronger proofing.
-
-Before issuing credentials 🔑:
-- 🪪 Verify real-world identity (documents, in-person, trusted sources)  
-- 📊 Match assurance level to risk  
-- 🧱 Prove this human = this account
-
----
-
-## 🎚️ Identity Assurance (NIST 800-63 concept)
-
-Higher risk system needs higher assurance. Proofing (IAL) and login strength (AAL) are different levers.
-
-| Assurance Area | What It Measures | Meaning |
-|----------------|------------------|---------------|
-| IAL | How well the person was identity-proofed | Strength of onboarding proof |
-| AAL | Strength of authentication | MFA strength and binding |
-| FAL | Strength of federation assertion | Token/assertion protection between IdP and SP |
-
----
-
 ## ⚠️ IAM Threats  
-
-Most breaches start with IAM failure.
 
 - 🧪 **Credential stuffing**  
 - 🔁 **Password reuse**  
@@ -452,7 +484,3 @@ MFA is the default best control for credential-based attacks.
 | Pass-the-hash / pass-the-ticket | Credential artifacts | Credential Guard, hardening, monitor auth anomalies |
 | Privilege escalation | Over-permissioned roles | Least privilege, PAM/PIM, SoD |
 | Orphaned accounts | Bad offboarding | Joiner/mover/leaver automation, reviews |
-
----
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 5 Destination Certification](https://www.youtube.com/watch?v=WBlQQ6qTlGI)
