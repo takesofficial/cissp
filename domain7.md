@@ -115,8 +115,7 @@ Never skip isolation.
 
 ## 🧬 Forensics Basics
 
-You can find more details here: [RFC 3227](https://www.rfc-editor.org/rfc/rfc3227) 
-Preserve first. Analyze later. Never touch originals.
+You can find more details here: [RFC 3227](https://www.rfc-editor.org/rfc/rfc3227). Preserve first. Analyze later. Never touch originals.  
 🚨 **Golden rule:** Never analyze original evidence. Always image first.
 
 
