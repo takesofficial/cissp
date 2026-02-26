@@ -1,5 +1,12 @@
 # <p align=center>Domain 6 - Security Assessment and Testing</p>
 
+---
+
+## 🔗 Useful Links / Mind Map  
+[CISSP Domain 6 Destination Certification](https://destcert.com/resources/cissp-domain-6-security-assessment-and-testing)
+
+---
+
 ## 🚨 Elevator Pitch  
 
 Security without verification is assumption.  
@@ -46,6 +53,15 @@ Assessment, testing, and audit are distinct activities with different objectives
 
 ---
 
+### 🏢 Internal vs External Audit
+
+| Type | Performed By | Purpose | Key Characteristic |
+|------|--------------|----------|-------------------|
+| 🏢 Internal Audit | Organization’s own audit function | Evaluate governance, risk, and control effectiveness | Independent from operations but inside the organization |
+| 🌍 External Audit | Third-party independent auditor | Provide assurance to regulators, customers, or shareholders | Higher credibility, formal reporting |
+
+---
+
 ## 🧱 Control Effectiveness
 
 Controls can exist in policy documents, architecture diagrams, or compliance reports and still fail in practice. Evaluating control effectiveness requires assessing both how the control is designed and how it operates over time. True assurance requires validation across both dimensions.
@@ -67,6 +83,37 @@ Controls can exist in policy documents, architecture diagrams, or compliance rep
 | 📝 Designed Only | Control theoretically reduces risk |
 | 📆 Designed + Operating | Control demonstrably reduces risk over time |
 | 🔁 Continuously Monitored | Ongoing validation of control effectiveness |
+
+---
+
+### ⚠️ Compliance ≠ Security
+
+A control can be compliant with policy or regulation and still fail to reduce risk.
+
+- Compliance checks adherence to rules.
+- Effectiveness validates actual risk reduction.
+- CISSP prioritizes risk reduction over checkbox compliance.
+
+---
+
+### 🛡️ Control Categories
+
+| Control Type | Example | Validation Method |
+|--------------|----------|------------------|
+| 📜 Administrative | Policies, procedures, standards | Document review, interviews |
+| 🔐 Technical | MFA, firewalls, encryption | Testing, log review, configuration validation |
+| 🏢 Physical | Badge access, cameras, guards | Observation, access log review |
+
+---
+
+### 📑 Types of Audit Evidence
+
+| Evidence Type | Example | Strength |
+|--------------|----------|----------|
+| 📄 Documentary | Policies, procedures, logs | Moderate |
+| 👀 Observation | Watching a process being performed | Moderate |
+| 🗣️ Inquiry | Interviews and verbal confirmation | Weakest alone |
+| 🔁 Reperformance | Auditor independently re-executes control | Strong |
 
 ---
 
@@ -96,6 +143,16 @@ SOC reports provide assurance evidence to customers and auditors — they do not
 
 ---
 
+### 🎯 Sampling
+
+Auditors test a representative subset of transactions or controls rather than every instance.
+
+- Larger sample size = higher assurance
+- Sampling reduces cost but introduces sampling risk
+- Used heavily in SOC 2 Type 2 and compliance audits
+
+---
+
 ## 🧪 Types of Security Testing
 
 Security testing evaluates systems for weaknesses, misconfigurations, and exploitable conditions. Different testing types provide different depths of validation. Some identify potential weaknesses, while others actively attempt exploitation to measure real-world impact.
@@ -118,13 +175,6 @@ Security testing evaluates systems for weaknesses, misconfigurations, and exploi
 | 🔁 Repeatability | High | Moderate |
 | 🧠 Answers | "What could be exploited?" | "What can actually be exploited?" |
 
-| Security Value | Organizational Impact |
-|----------------|----------------------|
-| 📉 Early Weakness Identification | Reduces attack surface |
-| 🛡️ Realistic Attack Simulation | Validates real-world resilience |
-| 📊 Evidence for Risk Decisions | Supports governance reporting |
-| 🔄 Continuous Improvement | Strengthens defensive posture |
-
 ---
 
 ### 🧨 Penetration Testing
@@ -138,14 +188,6 @@ Penetration testing is a controlled, authorized attempt to actively exploit vuln
 | 📜 **Formal Authorization Required** | Written approval defining scope & rules | Prevents legal and operational issues | Rules of engagement |
 | ⚠️ **Higher Operational Risk** | May cause service disruption | Requires planning & containment | Change control awareness |
 | 🎯 **Targeted Scope** | Focused systems, networks, or applications | Deeper analysis than scanning | Risk validation |
-
-| Dimension | 🧫 Vulnerability Scan | 🧨 Penetration Test |
-|------------|----------------------|--------------------|
-| 🔎 Identifies Weaknesses | ✅ Yes | ✅ Yes |
-| 💥 Exploits Weaknesses | ❌ No | ✅ Yes |
-| 📊 Output | Vulnerability list | Evidence of successful compromise |
-| ⚖️ Operational Risk | Low | Higher |
-| 🧠 Answers | “What could be exploited?” | “What can actually be exploited?” |
 
 | Key Requirements | Purpose |
 |------------------|----------|
@@ -205,7 +247,7 @@ Security testing must be formally planned and authorized before execution. Testi
 
 ## 🧪 Testing Knowledge Levels
 
-Different testing levels simulate different attacker perspectives. prioritize **realism vs depth**.
+Different testing levels simulate different attacker perspectives and prioritize **realism versus depth**..
 
 | Level | Tester Knowledge | Simulates | Typical Use | Angle | Takeaway |
 |------|------------------|-----------|-------------|------------|---------------|
@@ -252,14 +294,6 @@ These are dynamic testing techniques used to uncover input validation failures, 
 | 🔗 **Interface Testing** | Test interactions between components | Data flow between systems | APIs, microservices, service boundaries, third-party integrations | Broken trust assumptions, data format mismatches, missing validation between systems | Identifies integration & trust boundary weaknesses |
 | 🎲 **Fuzz Testing (Fuzzing)** | Send random, malformed, or unexpected input at scale | Runtime stability under unpredictable input | Parsers, network services, protocol handlers, file readers | Crashes, memory corruption, buffer overflows, unhandled exceptions | Dynamic testing method to expose reliability & security flaws |
 
-| Dimension | 🚫 Negative Testing | 🔗 Interface Testing | 🎲 Fuzz Testing |
-|------------|-------------------|--------------------|----------------|
-| 🔄 Static or Dynamic | Dynamic | Dynamic | Dynamic |
-| 🎯 Input Strategy | Invalid but structured input | Valid/invalid cross-system interaction | Random / semi-random malformed input |
-| ⚠️ Best At Finding | Logic & validation errors | Trust boundary issues | Memory safety & crash-level bugs |
-| 🤖 Tooling Level | Often manual + automated | Often automated integration testing | Highly automated tools |
-| 🧠 Human Logic Required | High | Moderate | Low (volume-driven) |
-
 ---
 
 ## 🔍 Code Review
@@ -275,40 +309,12 @@ Code review is a manual examination of source code to identify logic flaws, inse
 | 📋 **Logging & Auditing** | Security-relevant events properly logged | Enables detection & forensics | Lack of accountability |
 | 🔄 **Business Logic Flaws** | Workflow abuse, race conditions, logic bypass | Protects core business processes | Fraud, data manipulation |
 
-| Review Type | Purpose | Strength |
-|-------------|----------|----------|
-| 👥 **Peer Review** | Developer-to-developer validation | Reduces systemic defects |
-| 🛡️ **Security-Focused Review** | Specialized review for security flaws | Identifies architectural weaknesses |
-| 🔎 **Formal Code Inspection** | Structured, documented review process | High assurance environments |
-
 | Security Benefit | Organizational Impact |
 |------------------|----------------------|
 | 🧱 Early Defect Detection | Cheaper remediation |
 | 🔐 Stronger Access Control Logic | Reduced breach likelihood |
 | 📉 Reduced Technical Debt | Improved maintainability |
 | 🧠 Knowledge Sharing | Increased team security maturity |
-
----
-
-## 📊 Metrics and Measurements
-
-Security metrics translate risk and control performance into measurable data that management can act on. Effective metrics support governance, demonstrate control effectiveness, justify investment, and enable continuous improvement. If it cannot be measured, it cannot be managed.
-
-| Metric | What It Measures | Why It Matters | Management Insight |
-|---------|------------------|---------------|-------------------|
-| 🐞 **Number of Vulnerabilities** | Count of identified weaknesses | Indicates exposure level | Are we reducing attack surface? |
-| ⏱️ **MTTD (Mean Time To Detect)** | Average time to detect an incident | Measures monitoring effectiveness | How quickly do we notice attacks? |
-| 🚑 **MTTR (Mean Time To Respond/Recover)** | Average time to contain or remediate | Measures response efficiency | How quickly can we contain damage? |
-| 🔄 **Patch Compliance Rate** | Percentage of systems patched within policy timeframe | Reflects vulnerability management maturity | Are we maintaining secure baselines? |
-| 🛡️ **Control Coverage** | Percentage of systems protected by required controls | Measures implementation completeness | Are safeguards consistently deployed? |
-
-| Metric Quality Requirement | Meaning | Why It Is Important |
-|-----------------------------|---------|--------------------|
-| 🎯 **Relevant** | Directly tied to business risk or objectives | Avoids vanity metrics |
-| 🔁 **Repeatable** | Measured consistently over time | Enables trend analysis |
-| 📈 **Actionable** | Drives decisions or corrective action | Supports risk reduction |
-| 📊 **Quantifiable** | Objectively measurable | Reduces ambiguity |
-| 🧭 **Aligned to Risk** | Linked to defined risk appetite or thresholds | Enables governance oversight |
 
 ---
 
@@ -347,13 +353,6 @@ Technical security controls depend on stable physical and environmental infrastr
 | 🌡️ **HVAC Monitoring** | Temperature & humidity control | Protect hardware reliability | Prevent environmental damage |
 | 🪪 **Badge & Access Testing** | Physical access control systems | Validate enforcement of restrictions | Prevent unauthorized entry |
 
-| Control Objective | What It Supports |
-|-------------------|-----------------|
-| 🛡️ **Availability** | Continuous system operation |
-| 🔐 **Physical Security** | Protection against unauthorized access |
-| 🔄 **Business Continuity** | Operational resilience during disruption |
-| 📉 **Risk Reduction** | Prevent cascading infrastructure failure |
-
 ---
 
 ## 🔄 Continuous Monitoring
@@ -376,6 +375,20 @@ Continuous monitoring maintains security assurance over time by validating that 
 | 📉 Risk Visibility | Early identification of emerging threats |
 | 📜 Compliance Maintenance | Ongoing evidence for audits & regulatory reviews |
 | 🔄 Continuous Improvement | Data-driven security maturity growth |
+
+---
+
+## 📊 Metrics and Measurements
+
+Security metrics translate risk and control performance into measurable data that management can act on. Effective metrics support governance, demonstrate control effectiveness, justify investment, and enable continuous improvement. If it cannot be measured, it cannot be managed.
+
+| Metric | What It Measures | Why It Matters | Management Insight |
+|---------|------------------|---------------|-------------------|
+| 🐞 **Number of Vulnerabilities** | Count of identified weaknesses | Indicates exposure level | Are we reducing attack surface? |
+| ⏱️ **MTTD (Mean Time To Detect)** | Average time to detect an incident | Measures monitoring effectiveness | How quickly do we notice attacks? |
+| 🚑 **MTTR (Mean Time To Respond/Recover)** | Average time to contain or remediate | Measures response efficiency | How quickly can we contain damage? |
+| 🔄 **Patch Compliance Rate** | Percentage of systems patched within policy timeframe | Reflects vulnerability management maturity | Are we maintaining secure baselines? |
+| 🛡️ **Control Coverage** | Percentage of systems protected by required controls | Measures implementation completeness | Are safeguards consistently deployed? |
 
 ---
 
@@ -427,8 +440,3 @@ Security assessments must be performed with independence and objectivity to ensu
 | 🏢 Internal Audit Function | Independent internal oversight |
 | 🌍 External Audit / 3rd Party | High assurance validation |
 | 📊 Standardized Methodologies | Ensures repeatable results |
-
----
-
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 6 Destination Certification](https://youtu.be/A-aNmhB_WjM)
