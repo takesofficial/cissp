@@ -21,44 +21,24 @@ If public harm is involved, think Canon I.
 
 ---
 
+## 🔺 CIA Triad  
+Over time, the CIA model was expanded to include **Authenticity** and **Non-repudiation**, forming the **Five Pillars of Information Security**.
+These pillars represent core security objectives. On the exam, questions often use synonymous wording instead of the pillar names directly.
+
+| Pillar | Description | Key Terms | If It Fails (DAD / Equivalent) |
+|--------|------------|-----------|--------------------------------|
+| **Confidentiality** | Ensures an asset is accessible only to authorized users. Protects against unauthorized disclosure. | Concealment, Discretion, Sensitivity, Secrecy | **Disclosure** |
+| **Integrity** | Ensures an asset is not modified or deleted in an unauthorized manner. Maintains accuracy and completeness. | Accuracy, Validity, Veracity, Authenticity | **Alteration** |
+| **Availability** | Ensures authorized users can access an asset when needed. Focuses on reliability and uptime. | Accessibility, Usability, Redundancy, Resiliency | **Destruction** |
+| **Authenticity** | Ensures a user, system, or data source is genuine and truly who/what it claims to be. | Genuineness, Legitimacy, Trustworthiness, Verifiability | Impersonation / Forgery |
+| **Non-repudiation** | Ensures a user cannot deny performing an action or transaction. Provides proof of origin and delivery. | Irrefutability, Indisputability, Undeniability, Unquestionability | Repudiation |
+
+---
+
 ## 🏛️ Governance  
 Ensure security directly supports the business mission, goals, and risk appetite. Security strategy must align to business strategy.
 
-## 🎯 Strategic vs Tactical vs Operational Planning
-
-| Level | Focus | Time Horizon | Owned By |
-|-------|--------|--------------|----------|
-| **Strategic** | Long-term direction, mission alignment | 3–5 years | Executive leadership |
-| **Tactical** | Program implementation | 1 year | Senior / middle management |
-| **Operational** | Day-to-day execution | Quarterly / ongoing | Operational managers |
-
----
-
-## 💡 How CISSP Thinks About Controls (Read This First)
-
-CISSP is not about fixing things after they break. It is about stopping problems before they happen, noticing them if they happen, and fixing them only when needed. This order matters.
-
-> Always think in this sequence: **Prevent** > **Detect** > **Correct** and always think policy and process before technology.
-
-Prevention is the strongest and cheapest control because incidents that never happen cause no damage. Detection exists because prevention is never perfect. Correction and recovery are last resorts and mean the organization already took a hit. When a question asks how to prevent something, do not choose detection or cleanup. When a question describes repeated incidents, the answer is almost never "fix the system" but "fix the process, policy, or control that should have prevented it." CISSP consistently prefers controls that are repeatable, documented, and lifecycle-based, not one-time technical fixes.
-
-Security is risk management, not risk elimination. The best answer reduces risk enough while aligning with business goals, policies, and laws. Controls should be sustainable, cost-effective, and driven by governance, not impulse.
-
-
----
-
-## ⚙️ Control Functions  
-How controls behave before, during, and after incidents.
-
-- **Preventive** - Stop incidents before they happen.  
-- **Detective** - Discover events during/after occurrence.  
-- **Corrective** - Fix damage after detection.  
-- **Recovery** - Restore full operations after major failure.  
-- **Compensating** - Alternative when the primary control is unavailable.  
-- **Directive** - Guide actions (signage, rules, banners).  
-- **Deterrent** - Discourage attempts (visible cameras, warnings).
-
----
+Governance sets direction. Management executes.
 
 ## 🏛️ Governance Committee
 
@@ -71,7 +51,15 @@ Responsible for:
 - Role assignment
 - Performance metrics review
 
-Governance sets direction. Management executes.
+---
+
+## 🎯 Strategic vs Tactical vs Operational Planning
+
+| Level | Focus | Time Horizon | Owned By |
+|-------|--------|--------------|----------|
+| **Strategic** | Long-term direction, mission alignment | 3–5 years | Executive leadership |
+| **Tactical** | Program implementation | 1 year | Senior / middle management |
+| **Operational** | Day-to-day execution | Quarterly / ongoing | Operational managers |
 
 ---
 
@@ -90,95 +78,47 @@ Governance sets direction. Management executes.
 
 ---
 
-## 🧩 Scoping vs Tailoring (Control Selection)
-Used in RMF and governance-level control decisions.
+## 💡 How CISSP Thinks About Controls (Read This First)
 
-| Term | Meaning |
-|------|----------|
-| **Scoping** | Selecting which controls apply to a system |
-| **Tailoring** | Adjusting baseline controls based on risk |
+CISSP is not about fixing things after they break. It is about stopping problems before they happen, noticing them if they happen, and fixing them only when needed. This order matters.
 
----
+> Always think in this sequence: **Prevent** > **Detect** > **Correct** and always think policy and process before technology.
 
-## 🧪 Security Control Assessment (SCA)
+Prevention is the strongest and cheapest control because incidents that never happen cause no damage. Detection exists because prevention is never perfect. Correction and recovery are last resorts and mean the organization already took a hit. When a question asks how to prevent something, do not choose detection or cleanup. When a question describes repeated incidents, the answer is almost never "fix the system" but "fix the process, policy, or control that should have prevented it." CISSP consistently prefers controls that are repeatable, documented, and lifecycle-based, not one-time technical fixes.
 
-Formal evaluation of controls against a defined baseline.
-
-Purpose:
-- Implemented correctly?
-- Operating as intended?
-- Producing desired outcomes?
-
-Often paired with **ST&E (Security Test & Evaluation)**.  
-SCA is governance validation, not penetration testing.
-
-Output:
-- Formal assessment report
-- Control gaps
-- Remediation plan
+Security is risk management, not risk elimination. The best answer reduces risk enough while aligning with business goals, policies, and laws. Controls should be sustainable, cost-effective, and driven by governance, not impulse.
 
 ---
 
-## 🔺 CIA Triad  
-Over time, the CIA model was expanded to include **Authenticity** and **Non-repudiation**, forming the **Five Pillars of Information Security**.
-These pillars represent core security objectives. On the exam, questions often use synonymous wording instead of the pillar names directly.
+## ⚙️ Control Functions  
+How controls behave before, during, and after incidents.
 
-| Pillar | Description | Key Terms | If It Fails (DAD / Equivalent) |
-|--------|------------|-----------|--------------------------------|
-| **Confidentiality** | Ensures an asset is accessible only to authorized users. Protects against unauthorized disclosure. | Concealment, Discretion, Sensitivity, Secrecy | **Disclosure** |
-| **Integrity** | Ensures an asset is not modified or deleted in an unauthorized manner. Maintains accuracy and completeness. | Accuracy, Validity, Veracity, Authenticity | **Alteration** |
-| **Availability** | Ensures authorized users can access an asset when needed. Focuses on reliability and uptime. | Accessibility, Usability, Redundancy, Resiliency | **Destruction** |
-| **Authenticity** | Ensures a user, system, or data source is genuine and truly who/what it claims to be. | Genuineness, Legitimacy, Trustworthiness, Verifiability | Impersonation / Forgery |
-| **Non-repudiation** | Ensures a user cannot deny performing an action or transaction. Provides proof of origin and delivery. | Irrefutability, Indisputability, Undeniability, Unquestionability | Repudiation |
-
----
-
-## 🔐 AAA  
-The lifecycle of identity, access, and accountability.
-
-| Component | What It Answers | Purpose | Example |
-|------------|----------------|----------|----------|
-| **Identification** | Who are you? | User claims an identity. | Username: `nick.admin` |
-| **Authentication** | Can you prove it? | Verifies the claimed identity. | Password, MFA token, biometric |
-| **Authorization** | What are you allowed to do? | Grants or denies access based on permissions. | Access to HR database: Approved |
-| **Accountability** | Who performed this action? | Links actions to a specific subject. | User ID tied to activity |
-| **Auditing** | What happened? | Records and reviews events for compliance and investigation. | Log review, SIEM report |
+- **Preventive** - Stop incidents before they happen.  
+- **Detective** - Discover events during/after occurrence.  
+- **Corrective** - Fix damage after detection.  
+- **Recovery** - Restore full operations after major failure.  
+- **Compensating** - Alternative when the primary control is unavailable.  
+- **Directive** - Guide actions (signage, rules, banners).  
+- **Deterrent** - Discourage attempts (visible cameras, warnings).
 
 ---
 
-## 🏷️ Identity Assurance Levels (NIST 800-63)
+## 🧱 Control Types  
+How controls are implemented.
 
-### Identity Assurance Level (IAL)
+### 1. **Administrative (Managerial)**  
+Policies, training, background checks, risk management.
 
-| Level | Description |
-|-------|-------------|
-| **IAL1** | Self-asserted identity |
-| **IAL2** | Verified identity |
-| **IAL3** | In-person verified identity |
+### 2. **Technical (Logical)**  
+Firewalls, encryption, MFA, SIEM, access controls.
 
-### Authenticator Assurance Level (AAL)
-
-| Level | Description |
-|-------|-------------|
-| **AAL1** | Single-factor authentication |
-| **AAL2** | Multi-factor authentication |
-| **AAL3** | Hardware-based MFA with cryptographic binding |
+### 3. **Physical**  
+Locks, guards, cameras, fences.
 
 ---
 
 ## 📉 Risk Management  
 Risk is never eliminated - only managed. Identify threats, evaluate vulnerabilities, calculate business impact, and select proper responses.
-
----
-
-### PDCA (Plan-Do-Check-Act)
-
-| Phase | Meaning | CISSP Context |
-|------|--------|---------------|
-| Plan | Define objectives and controls | Governance, risk strategy, policies |
-| Do | Implement the plan | Deploy controls, execute processes |
-| Check | Measure and review results | Audits, metrics, assessments |
-| Act | Improve based on findings | Corrective actions, continuous improvement |
 
 ---
 
@@ -202,39 +142,6 @@ Security is a continuous management process, not a one-time calculation. Risk ma
 | Analyze | Determine likelihood and impact (qualitative or quantitative) | Risk assessment, SLE, ALE, likelihood x impact | Risk rating / ALE / prioritization |
 | Treat | Select response strategy (mitigate, transfer, avoid, accept) | Risk response, mitigation, insurance, avoidance | Implemented controls |
 | Monitor | Continuously review risk posture and control effectiveness | Continuous monitoring, audits, metrics, governance review | Updated risk register |
-
----
-
-## 🏛️ NIST SP 800-37 Rev. 2 - Risk Management Framework (RMF) 
-
-A structured U.S. federal approach to managing security controls at the system level.
-RMF is system-focused. It operationalizes risk decisions made at the governance level.
-
-```
-Prepare → Categorize → Select → Implement → Assess → Authorize → Monitor
-```
-
-| Step        | Purpose                                                | Output                     | Primary Authority / Anchor |
-|-------------|--------------------------------------------------------|----------------------------|----------------------------|
-| **Prepare** | Establish risk strategy and organizational context     | Risk strategy              | NIST 800-37 Rev.2          |
-| **Categorize** | Determine impact level (Low / Moderate / High)      | Security category          | **FIPS 199**               |
-| **Select**  | Choose baseline security controls                      | Control baseline           | **NIST 800-53**            |
-| **Implement** | Deploy and configure controls                       | Operational controls       | NIST 800-53                |
-| **Assess**  | Evaluate control effectiveness                         | Assessment report          | NIST 800-53A               |
-| **Authorize** | Senior official formally accepts residual risk      | Authorization decision     | **ATO (Authorization to Operate)** |
-| **Monitor** | Continuous oversight of controls and risk posture     | Updated risk posture       | Continuous Monitoring      |
-
----
-
-### CMMI (Capability Maturity Model Integration)
-
-| Level | Name | Meaning (CISSP View) | Memory Hook |
-|------|------|----------------------|-------------|
-| 1 | Initial | Ad hoc, chaotic, hero-driven. No repeatable process. | Chaos |
-| 2 | Managed | Basic planning and tracking. Work is repeatable. | Repeatable |
-| 3 | Defined | Organization-wide standard processes. Documented and trained. | Standardized |
-| 4 | Quantitatively Managed | Processes are measured and controlled with metrics. | Measured |
-| 5 | Optimizing | Continuous improvement, root cause analysis, innovation. | Optimizing |
 
 ---
 
@@ -272,10 +179,6 @@ Used when reliable numerical data is unavailable.
 | **Brainstorming** | Group threat identification |
 | **Heat Maps** | Visual likelihood vs impact matrix |
 | **Subjective Ranking** | High / Medium / Low scoring |
-
----
-
-## 📉 Quantitative Risk Analysis
 
 ---
 
@@ -342,6 +245,7 @@ Safeguard Value = ALE₁ − ALE₂ − Cost
 ---
 
 **Residual risk = Senior management.**
+
 ---
 
 ## 📊 Risk Register  
@@ -349,17 +253,36 @@ Tracks identified risks, severity, mitigation, and status.
 
 ---
 
-## 🧱 Control Types  
-How controls are implemented.
+## 🏛️ NIST SP 800-37 Rev. 2 - Risk Management Framework (RMF) 
 
-### 1. **Administrative (Managerial)**  
-Policies, training, background checks, risk management.
+A structured U.S. federal approach to managing security controls at the system level.
+RMF is system-focused. It operationalizes risk decisions made at the governance level.
 
-### 2. **Technical (Logical)**  
-Firewalls, encryption, MFA, SIEM, access controls.
+```
+Prepare → Categorize → Select → Implement → Assess → Authorize → Monitor
+```
 
-### 3. **Physical**  
-Locks, guards, cameras, fences.
+| Step        | Purpose                                                | Output                     | Primary Authority / Anchor |
+|-------------|--------------------------------------------------------|----------------------------|----------------------------|
+| **Prepare** | Establish risk strategy and organizational context     | Risk strategy              | NIST 800-37 Rev.2          |
+| **Categorize** | Determine impact level (Low / Moderate / High)      | Security category          | **FIPS 199**               |
+| **Select**  | Choose baseline security controls                      | Control baseline           | **NIST 800-53**            |
+| **Implement** | Deploy and configure controls                       | Operational controls       | NIST 800-53                |
+| **Assess**  | Evaluate control effectiveness                         | Assessment report          | NIST 800-53A               |
+| **Authorize** | Senior official formally accepts residual risk      | Authorization decision     | **ATO (Authorization to Operate)** |
+| **Monitor** | Continuous oversight of controls and risk posture     | Updated risk posture       | Continuous Monitoring      |
+
+---
+
+### CMMI (Capability Maturity Model Integration)
+
+| Level | Name | Meaning (CISSP View) | Memory Hook |
+|------|------|----------------------|-------------|
+| 1 | Initial | Ad hoc, chaotic, hero-driven. No repeatable process. | Chaos |
+| 2 | Managed | Basic planning and tracking. Work is repeatable. | Repeatable |
+| 3 | Defined | Organization-wide standard processes. Documented and trained. | Standardized |
+| 4 | Quantitatively Managed | Processes are measured and controlled with metrics. | Measured |
+| 5 | Optimizing | Continuous improvement, root cause analysis, innovation. | Optimizing |
 
 ---
 
@@ -417,11 +340,6 @@ Mitigations:
 - Security SLAs
 - Monitoring
 
-### Technical Anchors
-- Silicon Root of Trust  
-- PUF (Physically Unclonable Function)  
-- SBOM (Software Bill of Materials)  
-
 ---
 
 ## 📜 Law Types  
@@ -433,27 +351,10 @@ Different legal consequences and standards.
 
 ---
 
-## 🌐 RFC 1087 - Unethical Internet Activity  
-
-Unethical if it:
-- Gains unauthorized access
-- Disrupts intended use
-- Wastes resources
-- Destroys integrity
-- Compromises privacy
-
----
-
 ## 🏛️ Legal & Regulatory Awareness
 CISSP tests laws at two levels:
 1. **U.S. or EU-based** > know it well
 2. **Non-U.S./EU** > recognize it and apply general privacy principles
-
-**👮 FedRAMP concepts:**
-- 3PAO
-- ATO
-- Impact levels
-- Continuous monitoring
 
 **🔴 Must Know Well (High Exam Weight)** Laws you must understand and reason about
 - 🌍 **GDPR** - EU personal data protection; data subject rights and breach notification  
@@ -465,16 +366,15 @@ CISSP tests laws at two levels:
 - 🌴 **CCPA** - California consumer personal data privacy rights  
 - 👮 **CFAA** - Criminal law addressing unauthorized access to computer systems  
 - 📡 **ECPA** - Protection of electronic communications privacy (in transit and stored)  
+
+**🟡 Recognize & Classify (Lower Exam Weight)**
+
 - ©️ **DMCA** - Digital copyright protection and anti-circumvention rules  
-
-**🟡 Recognize & Classify (Lower Exam Weight)** Laws you only need to recognize and classify by region and intent
-You only need to know **what region they belong to** and **that they are privacy/data protection laws**.
-
-- 🍁 **PIPEDA (Canada)** - Canadian personal data protection law.
-- 🏯 **APPI (Japan)** - Japanese personal data protection law.
-- 👲 **PIPL (China)** - Chinese personal information protection law.
-- 🦁 **POPIA (South Africa)** - South African personal data protection law.
-- 🌅 **LGPD (Brazil)** - Brazilian personal data protection law.
+- 🍁 **PIPEDA (Canada)**  
+- 🏯 **APPI (Japan)**  
+- 👲 **PIPL (China)**  
+- 🦁 **POPIA (South Africa)**  
+- 🌅 **LGPD (Brazil)**  
 
 ---
 
@@ -518,7 +418,6 @@ Rules for handling personal data.
 ---
 
 ## 🧭 Due Care vs Due Diligence  
-Legal and defensive security responsibilities.
 
 - **Due Diligence** - Investigate, design, document (Research and find out what to do.)
 - **Due Care** - Implement, enforce, prove (Do it and prove you did it.)
@@ -526,68 +425,51 @@ Legal and defensive security responsibilities.
 ---
 
 ## 🧑‍💼 Personnel Security  
-Reduce human risk through controls and lifecycle management.
 
-- **Background Check** - Criminal history, employment verification, references.  
-- **NDAs** - Protect confidential info.  
-- **AUP** - Defines acceptable behavior.  
-- **Separation of duties** - No one person controls a full process.  
-- **Job rotation** - Detect fraud; reduce dependency.  
-- **Least privilege** - Minimum access required.
+- **Background Check**  
+- **NDAs**  
+- **AUP**  
+- **Separation of duties**  
+- **Job rotation**  
+- **Least privilege**
 
 ### 🔄 Employment Lifecycle  
-- **Onboarding** - Accounts, training, access provisioning.  
-- **Transfer** - Adjust access to match new role.  
-- **Termination** - Immediate access removal; collect assets.
+- **Onboarding**  
+- **Transfer**  
+- **Termination**
 
 ---
 
 ## 🔍 Investigations  
-Apply correct legal and procedural rules.
 
-- **Administrative** - HR or management; policy violations.  
-- **Civil** - Private disputes; financial damages.  
-- **Criminal** - Law enforcement; crimes; highest standard.  
-- **Regulatory** - Agencies enforcing industry rules.  
-- **Industry Standards** - PCI, ISO, SOC audits.
-
----
+- **Administrative**  
+- **Civil**  
+- **Criminal**  
+- **Regulatory**  
+- **Industry Standards**
 
 ### 🧪 Key Forensics Rules  
-- **Chain of custody** - Track every handoff of evidence.  
-- **Order of volatility** - RAM > disk > logs > archival data.  
-- **Admissibility** - Evidence must be legal, reliable, unaltered.
+- **Chain of custody**  
+- **Order of volatility**  
+- **Admissibility**
 
 ---
 
 ## 🕒 Business Continuity  
-Ensure critical operations survive incidents and resume quickly.
 
 ### **BCP Phases**  
 1. Scope & Planning  
-2. **BIA** - Identify impacts  
-3. Continuity Strategy (mitigation + recovery)  
+2. **BIA**  
+3. Continuity Strategy  
 4. Approval, Training, Testing, Maintenance  
 
 ### **BIA Outputs**  
-- **RTO** - How fast to restore.  
-- **RPO** - How much data loss is acceptable.  
-- **MTD** - Max downtime before business fails.
+- **RTO**  
+- **RPO**  
+- **MTD**
 
 ### **COOP**  
-Continuity of Operations Plan - Long-term functionality of essential services.
-
----
-
-## 🔗 Supply Chain Risk  
-Ensure vendors do not introduce vulnerabilities or tampered components.
-
-- Vendor due diligence  
-- Third-party risk assessments  
-- SLAs, BPAs, and security addendums  
-- Component provenance  
-- Tampering and counterfeit risk  
-- Continuous monitoring  
+Continuity of Operations Plan
 
 ---
 
@@ -599,16 +481,12 @@ Ensure vendors do not introduce vulnerabilities or tampered components.
 | **Merger** | Control misalignment and integration gaps |
 | **Divestiture** | Data leakage and residual access |
 
-Security must assess risk during business transitions.
-
 ---
 
 ## 🎯 Threat Modeling  
-Identify how attackers can exploit systems and where to apply defenses.
 
 ### **Methods**  
-Ⓜ️ **STRIDE** - Categorize threats.
-STRIDE is a threat-focused methodology that's less strategic and thorough than PASTA. It is an acronym of:
+Ⓜ️ **STRIDE**
  - Spoofing
  - Tampering
  - Repudiation
@@ -616,9 +494,7 @@ STRIDE is a threat-focused methodology that's less strategic and thorough than P
  - Denial-of-service
  - Elevation of privilege
 
-🍝**PASTA** - 7-stage risk-based modeling.
-Process for Attack Simulation and Threat Analysis (PASTA), contrary to STRIDE, is an attacker-focused, risk-centric methodology. It is much more detailed than STRIDE and performs threat analysis from a strategic perspective.
-
+🍝 **PASTA**
  - Define objectives
  - Define technical scope
  - Application decomposition
@@ -627,29 +503,15 @@ Process for Attack Simulation and Threat Analysis (PASTA), contrary to STRIDE, i
  - Attack modeling
  - Risk and impact analysis
 
-💀 **DREAD** - Prioritize impact.
-DREAD is a threat model primarily used to measure and rank the severity of threats. DREAD is often used in combination with the STRIDE model, where STRIDE identifies the threats, and DREAD is then used to rank the severity of threats. The acronym means:
+💀 **DREAD**
  - Damage
  - Reproducibility
  - Exploitability
  - Affected users
- - Discoverabilit
-- **VAST** - Scalable, Agile-friendly.  
-- **Trike** - Risk auditing.  
+ - Discoverability
 
-### 🎯 Focus Areas in Threat Modeling
-When analyzing a system for security risk, concentrate on the areas attackers are most likely to exploit:
-
-- **Trust Boundaries**  
-  Points where data or access moves between different trust levels (e.g., user > app, app > database, external > internal network). These transitions introduce risk and require strong controls.
-- **Data Flows**  
-  How information moves through the system - including storage, transmission, and processing. Evaluate confidentiality, integrity, and validation at each stage.
-- **Entry Points**  
-  All interfaces where an external or internal actor can interact with the system (APIs, login forms, open ports, admin panels). These define the attack surface.
-- **Privileged Operations**  
-  Actions that modify system state or grant elevated access (e.g., account creation, permission changes, configuration updates). These have high impact if compromised.
-- **Attack Vectors**  
-  The paths or techniques an attacker may use to exploit weaknesses (e.g., phishing, injection attacks, credential theft, misconfiguration).
+- **VAST**
+- **Trike**
 
 --- 
 
