@@ -1,5 +1,8 @@
 # <p align=center>Domain 1 - Security and Risk Management</p>
 
+## 🧠 Mind Map
+[CISSP Domain 1 Destination Certification](https://destcert.com/resources/privacy-and-intellectual-property-mindmap)
+
 ## 🚨 Elevator Pitch  
 Risk cannot be eliminated, only identified, analyzed, and managed. Domain 1 establishes the governance foundation of security: aligning risk decisions with business objectives, defining policy and accountability, understanding legal and ethical obligations, managing personnel risk, overseeing third parties, conducting investigations, and ensuring continuity of operations.
 
@@ -145,18 +148,6 @@ Security is a continuous management process, not a one-time calculation. Risk ma
 
 ---
 
-## Risk Formula Variations
-
-| Expression | Meaning |
-|------------|----------|
-| **Risk = Likelihood × Impact** | Probability of event × Business damage |
-| **Risk = Threat × Vulnerability × Asset Value** | Threat exploiting weakness affecting asset |
-
-Both expressions represent the same concept:  
-**Risk = probability combined with consequence.**
-
----
-
 ## Quantitative Risk Analysis
 
 Used when numerical data is available.
@@ -222,16 +213,6 @@ Safeguard Value = ALE₁ − ALE₂ − Cost
 
 ---
 
-## Formula Flow
-
-| Step | Formula | Output |
-|------|---------|--------|
-| 1 | AV × EF | SLE |
-| 2 | SLE × ARO | ALE |
-| 3 | ALE₁ − ALE₂ − Cost | Control decision |
-
----
-
 ## Risk Responses
 
 | Response | Meaning |
@@ -250,6 +231,39 @@ Safeguard Value = ALE₁ − ALE₂ − Cost
 
 ## 📊 Risk Register  
 Tracks identified risks, severity, mitigation, and status.
+
+---
+
+
+## 🎯 Threat Modeling  
+
+### **Methods**  
+Ⓜ️ **STRIDE**
+ - Spoofing
+ - Tampering
+ - Repudiation
+ - Information disclosure
+ - Denial-of-service
+ - Elevation of privilege
+
+🍝 **PASTA**
+ - Define objectives
+ - Define technical scope
+ - Application decomposition
+ - Threat analysis
+ - Vulnerability and weakness analysis
+ - Attack modeling
+ - Risk and impact analysis
+
+💀 **DREAD**
+ - Damage
+ - Reproducibility
+ - Exploitability
+ - Affected users
+ - Discoverability
+
+- **VAST**
+- **Trike**
 
 ---
 
@@ -274,33 +288,22 @@ Prepare → Categorize → Select → Implement → Assess → Authorize → Mon
 
 ---
 
-### CMMI (Capability Maturity Model Integration)
+## 📈 Maturity Models (Risk Maturity Modeling)  
+Measure how consistent, repeatable, and well-governed security and risk processes are.
 
-| Level | Name | Meaning (CISSP View) | Memory Hook |
-|------|------|----------------------|-------------|
-| 1 | Initial | Ad hoc, chaotic, hero-driven. No repeatable process. | Chaos |
-| 2 | Managed | Basic planning and tracking. Work is repeatable. | Repeatable |
-| 3 | Defined | Organization-wide standard processes. Documented and trained. | Standardized |
-| 4 | Quantitatively Managed | Processes are measured and controlled with metrics. | Measured |
-| 5 | Optimizing | Continuous improvement, root cause analysis, innovation. | Optimizing |
+### **Capability / Process Maturity Levels**
+1. **Initial** - Ad hoc; chaotic; no repeatable process.  
+2. **Managed / Repeatable** - Basic planning and tracking; processes are repeatable.  
+3. **Defined** - Organization-wide standardized and documented processes.  
+4. **Quantitatively Managed** - Measured and controlled using metrics.  
+5. **Optimizing** - Continuous improvement and root cause analysis.
 
----
+### **Risk Maturity Model (RMM)**
+- **Ad Hoc → Preliminary → Defined → Integrated → Optimized**
 
-## 📈 Maturity Models (CMM / RMM)  
-Measure how consistent, repeatable, and well-governed security processes are.
+Higher maturity = more predictable outcomes, better governance, and improved risk control effectiveness.
 
-### **CMM - Capability Maturity Model**
-1. **Initial** - Ad hoc; chaotic.  
-2. **Repeatable** - Some process consistency.  
-3. **Defined** - Standardized organization-wide.  
-4. **Managed** - Measured with metrics.  
-5. **Optimizing** - Continuous improvement.
-
-### **RMM - Risk Maturity Model**
-- **Ad Hoc > Preliminary > Defined > Integrated > Optimized**
-
-Higher maturity = fewer failures, more predictable outcomes.
-
+Maturity modeling supports continuous improvement and risk management effectiveness.
 ---
 
 ## 🔗 Third-Party Governance  
@@ -342,12 +345,124 @@ Mitigations:
 
 ---
 
+---
+
+## 🎓 Security Awareness, Education & Training Program  
+
+Establish and maintain a formal program that reduces human risk by improving awareness, behavior, and security culture.
+
+Security awareness is a management responsibility. Humans are a primary attack surface.
+
+---
+
+### 🎯 Program Objectives  
+
+- Reduce social engineering risk  
+- Improve phishing detection and reporting  
+- Reinforce policy compliance  
+- Support regulatory and contractual obligations  
+- Strengthen organizational security culture  
+
+---
+
+### 🧠 Awareness vs Training vs Education  
+
+| Type | Focus | Audience | Goal |
+|------|-------|----------|------|
+| **Awareness** | Broad security concepts | All employees | Change behavior |
+| **Training** | Job-specific skills | IT / security staff | Build competency |
+| **Education** | Formal learning | Security professionals | Develop expertise |
+
+Awareness = behavior  
+Training = skill  
+Education = depth  
+
+---
+
+### 🛠 Methods & Techniques  
+
+#### Social Engineering  
+- Phishing  
+- Spear phishing  
+- Pretexting  
+- Tailgating  
+- Vishing / Smishing  
+
+Employees must recognize manipulation techniques.
+
+---
+
+#### Phishing Simulations  
+- Controlled internal campaigns  
+- Measure click rates  
+- Reinforce reporting behavior  
+
+---
+
+#### Security Champions  
+- Department-level security advocates  
+- Bridge between security team and business units  
+- Reinforce secure behavior locally  
+
+---
+
+#### Gamification  
+- Quizzes  
+- Rewards  
+- Simulated exercises  
+- Competition-based engagement  
+
+Engagement increases retention.
+
+---
+
+### 🔄 Periodic Content Reviews  
+
+Content must evolve with emerging risks:
+
+- Cryptocurrency scams  
+- Artificial Intelligence misuse  
+- Deepfakes  
+- Blockchain fraud  
+- Cloud misuse  
+- Insider threats  
+
+---
+
+### 📊 Program Effectiveness Evaluation  
+
+Security awareness must be measurable.
+
+Metrics may include:
+
+- Phishing simulation failure rate  
+- Reporting rate  
+- Time to report  
+- Incident reduction trends  
+- Policy violation metrics  
+- Audit findings  
+
+If behavior does not improve, the program is not effective.
+
+---
+
 ## 📜 Law Types  
 Different legal consequences and standards.
 
 - **Civil** - Disputes; compensation; preponderance of evidence.  
 - **Criminal** - Prosecuted by government; punishment; beyond reasonable doubt.  
 - **Administrative** - Agency rules; fines, sanctions.
+
+---
+
+### 🧠 Intellectual Property Types
+
+- **Copyright** – Protects original works (software, books, music)
+- **Trademark** – Protects brand names, logos, symbols
+- **Patent** – Protects inventions and processes
+- **Trade Secret** – Protects confidential business information
+
+IP violations are typically civil matters but may carry criminal penalties in some cases.
 
 ---
 
@@ -363,12 +478,12 @@ CISSP tests laws at two levels:
 - 💵 **GLBA** - Protection of customer financial data held by financial institutions  
 - 💳 **PCI DSS** - Protection of cardholder data; contractual industry security standard  
 - 🏛️ **FISMA** - Security program requirements for U.S. federal agencies and contractors  
-- 🌴 **CCPA** - California consumer personal data privacy rights  
 - 👮 **CFAA** - Criminal law addressing unauthorized access to computer systems  
 - 📡 **ECPA** - Protection of electronic communications privacy (in transit and stored)  
 
 **🟡 Recognize & Classify (Lower Exam Weight)**
 
+- 🌴 **CCPA** - California consumer personal data privacy rights  
 - ©️ **DMCA** - Digital copyright protection and anti-circumvention rules  
 - 🍁 **PIPEDA (Canada)**  
 - 🏯 **APPI (Japan)**  
@@ -480,40 +595,3 @@ Continuity of Operations Plan
 | **Acquisition** | Unknown inherited vulnerabilities |
 | **Merger** | Control misalignment and integration gaps |
 | **Divestiture** | Data leakage and residual access |
-
----
-
-## 🎯 Threat Modeling  
-
-### **Methods**  
-Ⓜ️ **STRIDE**
- - Spoofing
- - Tampering
- - Repudiation
- - Information disclosure
- - Denial-of-service
- - Elevation of privilege
-
-🍝 **PASTA**
- - Define objectives
- - Define technical scope
- - Application decomposition
- - Threat analysis
- - Vulnerability and weakness analysis
- - Attack modeling
- - Risk and impact analysis
-
-💀 **DREAD**
- - Damage
- - Reproducibility
- - Exploitability
- - Affected users
- - Discoverability
-
-- **VAST**
-- **Trike**
-
---- 
-
-## 🧠 Mind Map 
-[CISSP Domain 1 Destination Certification](https://www.youtube.com/watch?v=hf5NwUSEkwA)
