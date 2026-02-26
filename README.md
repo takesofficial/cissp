@@ -55,7 +55,7 @@ Once the book was done, I started with Pete Zerger's [Memorization Techniques](h
 4. **Update notes**
 5. **Retest**
 
-I used these for repetition and knowing where to focus on, I tested my knowledge every week via (please note, sometimes I did 12 hour study sessions, making a CAT - revisiting the questions I got wrong, and note them down/read them):
+I used these for repetition and to identify where to focus. Each week, I tested my knowledge using a CAT exam on Quantum Exams (about 2 hours per session). After each exam, I carefully reviewed every missed question, documented weak areas, and revisited those topics until I fully understood them.
 - **[LearnZapp](https://play.google.com/store/apps/details?id=com.learnzapp.cissp&hl=en)** (they have a [web app](https://isc2-learnzapp.web.app/prepare)).
 - **[Quantum Exams](https://quantumexams.com)** to see where to focus on and kept updating this GitHub/notes during studying based on missed concepts. Wrote down gaps, and learned them, repeat.
 - **[The Infosec Vault - Zero to Hero Practice Exams](https://www.theinfosecvault.com)**
