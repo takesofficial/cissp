@@ -150,6 +150,8 @@ Security decisions flow top-down from governance to operations.
 
 The Cyber Kill Chain describes the stages of a targeted attack from initial reconnaissance to achieving objectives.
 
+You can find a detailed video on this [here](https://www.youtube.com/watch?v=19hw_CHO0X8)
+
 | Phase | Attacker Goal | What Happens | Defensive Focus |
 |-------|--------------|--------------|-----------------|
 | 🔎 **1. Reconnaissance** | Gather intelligence | Identify targets, employees, technologies, IP ranges, vulnerabilities | OSINT monitoring, attack surface reduction |
