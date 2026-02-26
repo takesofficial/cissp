@@ -3,7 +3,7 @@
 ## 🚨 Elevator Pitch  
 
 Security without verification is assumption.  
-Domain 6 is about **assurance** — proving that controls are properly designed, correctly implemented, operating effectively, and continuing to reduce risk over time.
+Domain 6 is about **assurance**, proving that controls are properly designed, correctly implemented, operating effectively, and continuing to reduce risk over time.
 
 You do not build controls here. You validate them.
 
