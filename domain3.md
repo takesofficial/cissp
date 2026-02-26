@@ -295,7 +295,7 @@ Block ciphers encrypt data in fixed-size chunks and require a mode of operation 
 
 ### 🌊 Stream Ciphers (Symmetric Encryption - Bit-by-Bit)
 
-Never reuse a **nonce / keystream** | Reuse enables attackers to recover plaintext and break confidentiality
+Never reuse a **nonce or keystream** with the same key | Reuse causes keystream duplication, allowing attackers to recover plaintext and compromise confidentiality
 
 | Characteristic | Description | Security / Operational Impact |
 |----------------|------------|-------------------------------|
