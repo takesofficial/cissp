@@ -115,13 +115,14 @@ Never skip isolation.
 
 ## 🧬 Forensics Basics
 
+You can find more details here: [RFC 3227](https://www.rfc-editor.org/rfc/rfc3227) 
 Preserve first. Analyze later. Never touch originals.
 🚨 **Golden rule:** Never analyze original evidence. Always image first.
 
 
 | Concept | Core Rule | What You Do | Why It Matters |
 |--------|-----------|-------------|-----------------------------|
-| Chain of Custody | Every handoff must be documented | Record who, when, where, why, how | Broken chain = evidence may be inadmissible |
+| Chain of Custod | Every handoff must be documented | Record who, when, where, why, how | Broken chain = evidence may be inadmissible |
 | Order of Volatility | Collect most volatile data first | CPU/cache > RAM > network > disk > logs | Powering off too early destroys critical evidence |
 | Forensic Imaging | Always work from a copy | Create bit-for-bit image (incl. slack/deleted space) using write blockers | Original evidence must remain untouched |
 | Integrity Verification | Prove evidence was not altered | Hash before and after imaging (e.g., SHA-256) | Matching hashes = defensible integrity |
