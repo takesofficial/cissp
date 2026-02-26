@@ -234,36 +234,39 @@ Tracks identified risks, severity, mitigation, and status.
 
 ---
 
-
 ## 🎯 Threat Modeling  
 
-### **Methods**  
+### **Methods**
+
 Ⓜ️ **STRIDE**
- - Spoofing
- - Tampering
- - Repudiation
- - Information disclosure
- - Denial-of-service
- - Elevation of privilege
+- Spoofing  
+- Tampering  
+- Repudiation  
+- Information Disclosure  
+- Denial of Service  
+- Elevation of Privilege  
 
 🍝 **PASTA**
- - Define objectives
- - Define technical scope
- - Application decomposition
- - Threat analysis
- - Vulnerability and weakness analysis
- - Attack modeling
- - Risk and impact analysis
+- Define objectives  
+- Define technical scope  
+- Application decomposition  
+- Threat analysis  
+- Vulnerability and weakness analysis  
+- Attack modeling  
+- Risk and impact analysis  
 
 💀 **DREAD**
- - Damage
- - Reproducibility
- - Exploitability
- - Affected users
- - Discoverability
+- Damage  
+- Reproducibility  
+- Exploitability  
+- Affected users  
+- Discoverability  
 
-- **VAST**
-- **Trike**
+🧠 **VAST**
+- Visual, Agile, and Simple Threat modeling  
+
+🔺 **Trike**
+- Risk-based threat modeling focused on assets and stakeholder-defined risk tolerance  
 
 ---
 
