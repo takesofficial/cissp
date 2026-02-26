@@ -1,5 +1,12 @@
 # <p align=center>Domain 4 - Communication and Network Security</p>
 
+---
+
+## 🧠 Mind Map
+[CISSP Domain 4 Destination Certification](https://destcert.com/resources/cissp-domain-4-communication-and-network-security/) 
+
+---
+
 ## 🚨 Elevator Pitch  
 Move data safely from A to B. Domain 4 is about how data travels across networks, how networks are designed, and how security controls are applied to prevent interception, manipulation, and disruption. Think: protocols, segmentation, secure architecture, and controlling trust across connections.
 
@@ -9,11 +16,9 @@ Move data safely from A to B. Domain 4 is about how data travels across networks
 
 Networking security is about controlling how data moves and where trust begins and ends. Every connection increases risk. CISSP thinking focuses on reducing business impact through segmentation, encryption, and architecture - not chasing packets.
 
-- **Networks exist to move data** - security exists to control how and where.
 - **Every connection is a potential attack path**.
 - **Segmentation reduces blast radius**.
 - **Encryption protects data in motion, not endpoints**.
-- **Availability matters as much as confidentiality**.
 
 ---
 
@@ -44,13 +49,13 @@ OSI is a learning model used to place problems and controls at the right layer. 
 
 | # | Mnemonic | OSI Layer      | Example        | Phrase  | PDU      |
 |---|----------|---------------|----------------|---------|----------|
-| 1 | **P**lease   | Physical      | Hardware       | **D**on't   | Data     |
-| 2 | **D**o       | Data          | MAC            | **D**on't   | Data     |
-| 3 | **N**ot      | Network       | IP             | **D**on't   | Data     |
-| 4 | **T**hrow    | Transport     | TCP/UDP        | **S**top    | Segments |
-| 5 | **S**ausage  | Session       | Connections    | **P**ouring | Packets  |
-| 6 | **P**izza    | Presentation | Encryption     | **F**ree    | Frames   |
-| 7 | **A**way     | Application  | HTTPS / DNS    | **B**eer    | Bits     |
+| 1 | **P**lease   | Physical      | Hardware       | **B**eer     | Bits     |
+| 2 | **D**o       | Data Link     | MAC            | **F**ree   | Frames   |
+| 3 | **N**ot      | Network       | IP             | **P**ouring | Packets  |
+| 4 | **T**hrow    | Transport     | TCP/UDP        | **S**top | Segments |
+| 5 | **S**ausage  | Session       | Connections    | **D**ata    | Data     |
+| 6 | **P**izza    | Presentation  | Encryption     | **D**ata    | Data     |
+| 7 | **A**way     | Application   | HTTPS / DNS    | **D**ata    | Data     |
 
 - Place controls and failures at the correct layer.
 - Troubleshooting questions almost always map to OSI.
@@ -68,6 +73,17 @@ TCP/IP is how networks actually work. CISSP uses it to explain real-world traffi
 
 OSI = learning model  
 TCP/IP = implementation model
+
+---
+
+## 🔀 Switching Methods
+
+Internet = packet-switched network.
+
+| Type | Description | Security View |
+|------|------------|---------------|
+| Circuit Switching | Dedicated path for duration of session | Predictable, less efficient |
+| Packet Switching | Data split into packets, dynamic routing | More efficient, dominant model (Internet) |
 
 ---
 
@@ -97,7 +113,7 @@ Data can go to one device, many devices, or the closest device. CISSP focuses on
 | Multicast | One sender to selected group | Streaming, routing updates | Efficient group delivery |
 | Anycast | One sender to nearest identical destination | DNS, CDNs | Improves availability and performance |
 
-Exam mindset:
+- CDNs improve availability and reduce DDoS impact through distributed architecture.
 - Broadcast increases exposure.
 - Anycast improves resiliency and latency.
 
@@ -108,18 +124,13 @@ Exam mindset:
 MPLS is used in **WAN environments** to control traffic paths. MPLS predefines traffic paths to improve speed and predictability in WANs. CISSP views it as an availability and architecture feature, not a security control.
 
 Key behavior:
-- **First router decides the path**
 - Packet is given a **label**
 - All following routers **forward based on the label**
-- No per-hop routing decisions
 
 Why this matters:
 - Faster forwarding  
 - Predictable paths  
 - Better traffic engineering  
-
-Exam hook:  
-**MPLS = first router thinks, the rest obey**
 
 ---
 
@@ -131,7 +142,6 @@ Topology describes how systems connect. More paths mean more resilience. CISSP v
 - ⭐ **Star** - Central switch, most common  
 - 💍 **Ring** - Token passing, legacy  
 - Ⓜ️ **Mesh** - Redundancy, high availability  
-- 👽 **Hybrid** - Real-world mix
 
 Availability increases with redundancy.
 
@@ -141,10 +151,8 @@ Availability increases with redundancy.
 
 Each device has a role. Switches move traffic. Firewalls enforce rules. IDS detects. IPS blocks. CISSP tests whether you understand responsibilities, not configurations.
 
-- Switches forward traffic. Firewalls enforce policy.
 - IDS = detect. IPS = block.
 - WAF protects applications, not networks.
-- L4 load balancing = speed. L7 = intelligence. (Load balancer distributes traffic / Reverse proxy terminates client connections and hides backend)
 
 | Device | OSI Layer | Primary Function | Security Role |  Note |
 |--------|-----------|------------------|---------------|-----------------|
@@ -158,6 +166,13 @@ Each device has a role. Switches move traffic. Firewalls enforce rules. IDS dete
 | **IDS** | L 3-7 | Detects malicious activity | Detective | Alerts only |
 | **IPS** | L 3-7 | Blocks malicious activity | Preventive | Inline enforcement |
 | **WAF** | L 7 | Protects web apps (HTTP/S) | Prevents OWASP-style attacks | App-specific firewall |
+
+- Port security (limit MAC addresses)
+- Disable unused ports
+- BPDU Guard
+- DHCP Snooping
+- Dynamic ARP Inspection (DAI)
+
 ---
 
 ## 🔐 Secure Network Architecture
@@ -166,20 +181,14 @@ Architecture limits damage before tools are even applied. Segmentation exists to
 
 ### Segmentation Types
 
-- **Physical segmentation** - Separate hardware  
-- **Logical segmentation** - VLANs, VRFs  
-- **Microsegmentation** - Host or workload level controls
+- **Physical segmentation** – Separate hardware  
+- **Logical segmentation** – VLANs, VRFs  
+- **Microsegmentation** – Host or workload-level controls  
 
-Goal: limit lateral movement.
+- **Zero Trust** – Assumes no implicit trust based on network location  
+- **Defense in Depth** – Multiple overlapping controls across layers  
 
----
-
-### East-West vs North-South Traffic
-
-| Direction | Meaning | Example | Angle |
-|-----------|---------|---------|-------------|
-| North-South | Into / out of network | Internet > web server | Perimeter controls |
-| East-West | Inside network | Server > database | Lateral movement risk |
+Goal: limit lateral movement and reduce blast radius.
 
 ---
 
@@ -195,15 +204,30 @@ SDN separates centralized control from packet forwarding. A compromise of the co
 
 - **Control Plane**
   - Makes forwarding decisions  
-  - Centralized in SDN controller  
-
-- **Application Plane**
-  - Defines network intent and policy  
-  - Talks to controller via APIs  
+  - Centralized in SDN controller    
 
 Why this matters:
-- Centralized control = efficiency  
 - Centralized control = high-value target  
+
+---
+
+### 🧱 Trust Boundaries & DMZ
+
+Security architecture is built around trust boundaries, where security controls change strength.
+Compromise in DMZ should NOT equal compromise of internal network.
+
+- **Trust Boundary** - Point where data moves between different trust levels
+- **DMZ (Demilitarized Zone)** - Isolated network segment between internal network and untrusted networks (e.g., Internet)
+- Public-facing systems (web, mail, DNS) belong in the DMZ
+- Internal systems should NEVER be directly exposed
+---
+
+### East-West vs North-South Traffic
+
+| Direction | Meaning | Example | Angle |
+|-----------|---------|---------|-------------|
+| North-South | Into / out of network | Internet > web server | Perimeter controls |
+| East-West | Inside network | Server > database | Lateral movement risk |
 
 ---
 
@@ -228,13 +252,30 @@ Controls:
 
 ## 🧪 Network Access Control (NAC)
 
-NAC decides who connects and under what conditions. CISSP views NAC as both preventive and detective.
+NAC decides who connects and under what conditions and is both preventive and detective.
 
+- 802.1X - Port-based network access control (often used with WPA2/WPA3 Enterprise)
 - Device posture checks  
 - Authentication before access  
 - Quarantine networks  
 
-Exam angle: NAC is **preventive and detective**.
+
+---
+
+## 🔐 AAA Protocol Roles
+
+Authentication systems decide who gets access. CISSP focuses on where each protocol is used, not how to configure it.
+
+| Protocol | Transport | Primary Use | Hook |
+|----------|-----------|-------------|-----------------|
+| RADIUS | UDP | Network access (Wi-Fi, VPN) | Auth + authz combined |
+| TACACS+ | TCP | Device administration | Separates AAA functions |
+| Kerberos | UDP/TCP | Enterprise SSO | Ticket-based authentication |
+
+Quick rules:
+- TACACS+ = network device admin  
+- RADIUS = user network access  
+- Kerberos = centralized authentication (no passwords on wire)
 
 ---
 ## 📜 Core Network Protocols (Recognize Purpose)
@@ -261,33 +302,6 @@ Protocols move data. Most were not designed securely. CISSP tests whether you re
 
 ---
 
-## 🌍 IP Addressing, NAT, and PAT
-
-Private addresses hide internal systems. NAT reduces visibility but does not equal security. Firewalls still matter.
-
-### Private IP Ranges (Not Internet Routable)
-
-| Range |
-|-------|
-| 10.0.0.0/8 |
-| 172.16.0.0 - 172.31.255.255 |
-| 192.168.0.0/16 |
-
-Public IP = globally routable.
-
----
-
-### Address Translation
-
-NAT hides internal addresses but does NOT replace firewall security.
-
-| Technology | Purpose | View |
-|------------|---------|-----------|
-| NAT | Translates private to public IPs | Reduces exposure, **not security** |
-| PAT | Multiple internal hosts share one public IP via ports | Conserves addresses |
-
----
-
 ## 🔑 Ports with Mnemonics
 
 Ports identify services. CISSP expects instant recognition of common ones to understand attack paths.
@@ -303,7 +317,6 @@ Ports identify services. CISSP expects instant recognition of common ones to und
 | 🧂 | Dad No SALT! You're | 53 | TCP/UDP | DNS |
 | ♋ | DHCP Request | 67 | UDP | DHCP Server |
 | ♋ | DHCP Response | 68 | UDP | DHCP Client |
-| 👴 | This is For The Perverts! | 69 | UDP | TFTP |
 | 👴 | Old person tired of HTTP | 80 | TCP | HTTP |
 | ⛩️ | Kerberos Gate | 88 | TCP | Kerberos |
 | 🍿 | POP Corn (with 110 kcal) | 110 | TCP | POP3 |
@@ -314,40 +327,48 @@ Ports identify services. CISSP expects instant recognition of common ones to und
 | 📂 | Directory Access | 389 | TCP | LDAP |
 | 🌍 | Secure Web | 443 | TCP | HTTPS |
 | 🔑 | Key Exchange | 500 | UDP | ISAKMP / IKE |
-| 🌐 | DHCPv6 Request | 546 | UDP | DHCPv6 Client |
-| 🌐 | DHCPv6 Response | 547 | UDP | DHCPv6 Server |
 | 🔒 | Secure LDAP | 636 | TCP | LDAPS |
-| 🔐 | Secure FTP Data | 989 | TCP | FTPS Data |
-| 🔐 | Secure FTP Control | 990 | TCP | FTPS Control |
-| 🔒 | Secure IMAP | 993 | TCP | IMAP over SSL |
-| 🔒 | Secure POP | 995 | TCP | POP3 over SSL |
-| 🗄️ | Database | 1433 | TCP | MS SQL Server |
-| 🌊 | L2 Tunnel | 1701 | UDP | L2TP |
-| 📞 | VoIP Signaling | 1720 | TCP | H.323 |
-| 🧵 | PPTP Tunnel | 1723 | TCP | PPTP |
 | 🪢 | SUIDAR (reverse RADIUS) | 1812 | UDP | RADIUS Auth |
 | 🪢 | SUIDAR (reverse RADIUS) | 1813 | UDP | RADIUS Accounting |
-| 🖥️ | Remote Desktop | 3389 | TCP/UDP | RDP |
-| 🎥 | Real-Time Media | 5004 | UDP | RTP |
-| 📡 | SIP Unsecure | 5060 | TCP/UDP | SIP |
-| 🔐 | SIP Secure | 5061 | TCP/UDP | SIP over TLS |
+
+Remote administration:
+- Telnet = insecure (plaintext)
+- SSH = secure replacement
+- Disable legacy remote protocols
 
 ---
 
-## 🔐 AAA Protocol Roles
+## 🌍 IP Addressing, NAT, and PAT
 
-Authentication systems decide who gets access. CISSP focuses on where each protocol is used, not how to configure it.
+Private addresses hide internal systems. NAT reduces visibility but does not equal security. Firewalls still matter.
 
-| Protocol | Transport | Primary Use | Hook |
-|----------|-----------|-------------|-----------------|
-| RADIUS | UDP | Network access (Wi-Fi, VPN) | Auth + authz combined |
-| TACACS+ | TCP | Device administration | Separates AAA functions |
-| Kerberos | UDP/TCP | Enterprise SSO | Ticket-based authentication |
+### Private IP Ranges (Not Internet Routable)
 
-Quick rules:
-- TACACS+ = network device admin  
-- RADIUS = user network access  
-- Kerberos = centralized authentication (no passwords on wire)
+| Range |
+|-------|
+| 10.0.0.0/8 |
+| 172.16.0.0 - 172.31.255.255 |
+| 192.168.0.0/16 |
+
+---
+
+### IPv6
+
+- 128-bit addressing
+- Larger address space
+- Built-in IPsec support (optional in practice)
+- No NAT required (conceptually)
+
+---
+
+### Address Translation
+
+NAT hides internal addresses but does NOT replace firewall security.
+
+| Technology | Purpose | View |
+|------------|---------|-----------|
+| NAT | Translates private to public IPs | Reduces exposure, **not security** |
+| PAT | Multiple internal hosts share one public IP via ports | Conserves addresses |
 
 ---
 
@@ -372,8 +393,7 @@ Encryption protects data while moving. CISSP stresses that encryption does not p
 
 ### 🔐 VPN Types
 
-VPNs protect **data in transit (confidentiality)**.  
-VPNs do **NOT** protect compromised endpoints.
+VPNs protect **data in transit (confidentiality)**.  .
 
 | VPN Type | Description | Typical Use | Angle |
 |----------|-------------|-------------|-------------|
@@ -390,7 +410,6 @@ VPNs do **NOT** protect compromised endpoints.
 | Full Tunnel | All traffic forced through VPN | Lower | Preferred. Prevents internet breakout |
 | Split Tunnel | Only corporate traffic uses VPN | Higher | Allows data leakage via local internet |
 
-VPNs protect **data in transit (confidentiality)**.  
 VPNs do **NOT** protect compromised endpoints.
 
 ---
@@ -471,21 +490,29 @@ Exam trap: firewalls enforce policy, routers forward traffic.
 
 Most network attacks exploit trust and visibility. CISSP prefers architectural prevention over reactive tools.
 
-- **ARP poisoning** - redirect traffic (MITM)
-- **DoS / DDoS** - Availability attack
-- **MAC flooding** - overflow switch CAM table > hub behavior
-- **Man-in-the-middle** - Confidentiality and integrity  
-- **Replay attacks** - Lack of freshness  
-- **Spoofing** - Identity deception  
-- **Sniffing** - Unencrypted traffic capture  
+- **ARP poisoning** - Redirects traffic by falsifying ARP mappings (MITM)
+- **DoS / DDoS** - Availability attack designed to exhaust resources
+- **MAC flooding** - Overflows switch CAM table, forcing hub-like behavior
+- **Man-in-the-middle (MITM)** - Intercepts and possibly alters communication (confidentiality & integrity impact)
+- **Replay attacks** - Reuses captured transmissions due to lack of freshness controls
+- **Spoofing** - Impersonates identity (IP, MAC, DNS, email, etc.)
+- **Sniffing** - Captures unencrypted traffic
 
-Best defense often involves **architecture**, not tools.
+### DDoS Mitigation
+
+- Rate limiting  
+- Blackholing  
+- Sinkholing  
+- CDN / distributed architecture  
+- Upstream ISP filtering  
+
+Best defense often involves **architecture, segmentation, and redundancy - not just tools.**
 
 ---
 
 ## 🕸️ WAN Availability and Resilience
 
-WAN resilience means assuming links will fail and designing so the business keeps running. Use redundancy, diverse paths, failover, and SLAs. Architecture beats filters.
+WAN resilience means assuming links will fail and designing so the business keeps running. Use redundancy, diverse paths, failover, and SLAs.
 
 | Topic | Description | Angle |
 |------|-------------|------------------|
@@ -493,13 +520,3 @@ WAN resilience means assuming links will fail and designing so the business keep
 | Diverse Physical Paths | Circuits routed through different buildings/streets/providers | Prevents one cut from killing everything |
 | Failover & Load Sharing | Automatic rerouting and traffic distribution | Design for failure, not perfection |
 | SLA-Driven Design | Contracts define uptime, latency, recovery expectations | Business requirements drive architecture |
-| Predictability | Stable, consistent WAN behavior | Reliability matters more than raw speed |
-| Business Impact | WAN outages affect revenue and operations | WAN outage = business outage |
-| Security Balance | Availability matters as much as encryption | CIA pillars are equal |
-| Architecture Priority | Network design over filtering rules | Architecture beats firewall tuning |
-| Failure Assumption | Assume links will fail | Always engineer for failure |
-
----
-
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 4 Destination Certification](https://youtu.be/KpULwJNlX9g)
