@@ -111,6 +111,27 @@ Always focus on: Trust boundaries, data flows, entry points, privileged operatio
 
 ---
 
+## 🌐 OWASP Top 10
+
+The OWASP Top 10 is an industry-recognized awareness document identifying the most critical security risks to web applications. It is risk-based, updated periodically, and widely used to guide secure coding practices, security testing, and application security programs. It is not a compliance framework, but a developer-focused risk prioritization reference.
+
+Official site: https://owasp.org/www-project-top-ten/
+
+| # | Category | What It Means (Managerial View) | Typical Root Cause |
+|---|-----------|---------------------------------|-------------------|
+| 1 | 🔓 Broken Access Control | Users can access data or functions they should not | Missing authorization checks |
+| 2 | 🔐 Cryptographic Failures | Sensitive data exposed due to weak or missing encryption | Improper crypto implementation |
+| 3 | 💉 Injection | Untrusted input executed as commands or queries | Lack of input validation / parameterization |
+| 4 | 🧱 Insecure Design | Security not built into architecture | Missing threat modeling / secure patterns |
+| 5 | ⚙️ Security Misconfiguration | Default settings or misconfigured services expose systems | Poor hardening |
+| 6 | 📦 Vulnerable & Outdated Components | Using libraries with known vulnerabilities | Lack of patching / dependency management |
+| 7 | 🪪 Identification & Authentication Failures | Broken login/session management | Weak authentication controls |
+| 8 | 🔁 Software & Data Integrity Failures | Trusting unverified updates or CI/CD pipelines | Missing integrity validation |
+| 9 | 📊 Security Logging & Monitoring Failures | Attacks not detected or investigated | Insufficient logging / alerting |
+| 10 | 🌐 Server-Side Request Forgery (SSRF) | Server abused to access internal resources | Improper URL/request validation |
+
+---
+
 ## 🧱 Secure Design Principles  
 Encryption does not fix poor design.
 
@@ -146,7 +167,7 @@ Frameworks help, but do not guarantee security.
 - Early SDLC
 - High false positives
 
-### DAST (Dynamic)
+### DAST (Dynamic) like 
 - Tests running app
 - Finds runtime issues
 - Black-box
