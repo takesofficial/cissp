@@ -148,7 +148,7 @@ Security decisions flow top-down from governance to operations.
 
 ## 🎯 Cyber Kill Chain
 
-The Cyber Kill Chain describes the stages of a targeted attack from initial reconnaissance to achieving objectives.
+The cyber kill chain is a security framework developed by Lockheed Martin that breaks down a cyberattack into various stages to help identify and mitigate security incidents. It outlines the steps attackers typically follow, allowing security teams to prevent, detect, or intercept attacks at different points in the process. The framework is inspired by military strategies and aims to enhance the effectiveness of cybersecurity measures by providing a structured approach to understanding and responding to threats.
 
 You can find a detailed video on this [here](https://www.youtube.com/watch?v=19hw_CHO0X8)
 
