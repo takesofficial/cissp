@@ -1,5 +1,10 @@
 # <p align=center>Domain 2 - Asset Security</p>
 
+## 🧠 Mind Map
+[CISSP Domain 2 Destination Certification](https://www.youtube.com/watch?v=WBlQQ6qTlGI)
+
+---
+
 ## 🚨 Elevator Pitch  
 
 Protect assets from cradle to grave. You classify what matters, assign owners, control access, protect data in every state, and destroy it correctly when its no longer needed.
@@ -7,6 +12,7 @@ Protect assets from cradle to grave. You classify what matters, assign owners, c
 ---
 
 ## 👥 Roles and Ownership  
+
 Data integrity is a shared responsibility. No single role owns it. Owners set the rules, stewards govern, custodians implement controls, processors handle data correctly, and users follow policy. Everyone protects integrity, just in different ways.
 
 | Role | Core Responsibility | Accountable For | Authority Level | CISSP Hook |
@@ -18,6 +24,11 @@ Data integrity is a shared responsibility. No single role owns it. Owners set th
 | **Data Controller (GDPR)** | Determines purpose + means of processing | Legal compliance of personal data use | Legal authority | **Decides why/how data is used** |
 | **Data Processor (GDPR)** | Processes data for controller | Correct execution of processing | No independent authority | **Executes only, no decisions** |
 | **User / Data Subject** | Uses or is represented by the data | Proper usage / personal data rights | No ownership | **Consumes data under least privilege** |
+
+⚠️ On the exam:
+- The **Data Owner** classifies data and approves access.
+- The **System Owner** manages the system.
+- IT implements controls but does NOT classify data.
 
 ---
 
@@ -80,21 +91,6 @@ Data is typically the highest-value asset.
 
 ---
 
-## 🧠 Memory Types (Remanence-Relevant)
-
-Volatile memory = loses contents without power.  
-Nonvolatile memory = retains data after shutdown.
-
-| Memory Type | Volatile? | Erasable? | Notes |
-|--------------|------------|------------|------|
-| **RAM** | Yes | Yes (power off) | Data lost when powered down |
-| **ROM** | No | No | Firmware storage |
-| **PROM** | No | No (one-time programmable) | Program once |
-| **EPROM (UVEPROM)** | No | Yes (UV light) | Requires physical UV exposure |
-| **EEPROM** | No | Yes (electrically) | Can be reprogrammed |
-
----
-
 # 🌊 Data States
 
 | State | Description | Primary Controls |
@@ -117,85 +113,14 @@ Classification decisions must consider aggregation effects.
 | **Volume** | Larger datasets increase sensitivity |
 | **Correlation** | Combined datasets reveal new intelligence |
 | **Context** | Seemingly harmless data gains meaning when linked |
----
-
-## 📦 Asset and Data Classification & Handling  
-
-### 🏗️ Asset Classification  
-- Assets (systems, devices, media) are classified based on the highest classification of data they handle.  
-- Classification drives: where it can be stored, who can access it, and how it can be transported and destroyed.  
-- Formal access approvals come from the owner, not IT.
-
-### 📮 Handling Requirements  
-Handling is always driven by classification, not media type.
-Goal: no uncontrolled copy, movement, or disclosure of sensitive data.
-
-Key practices:  
-- Marking and labeling (human readable).  
-- Labeling (machine readable: metadata, barcodes, QR, RFID, GPS tags).  
-- Secure storage by classification.  
-- Controlled transport and tracking.  
-- Logging, chain of custody where necessary.  
-
----
-
-## 🔐 Data Protection Methods
-
-- **Anonymization = irreversible**
-- **Pseudonymization / Tokenization = reversible**
-- Encryption protects confidentiality.
-- DLP detects movement.
-- DRM controls usage.
-- CASB governs cloud data behavior.
-
-### 🧰 Core Protection Controls
-
-| Method | Purpose | Where It Applies | Key Point |
-|--------|----------|----------------|-----------|
-| **Encryption** | Protect confidentiality | Data at rest & in transit | Strongest single control for confidentiality |
-| **DRM (Digital Rights Management)** | Control usage after access | Documents, media | Restricts viewing, printing, forwarding |
-| **DLP (Data Loss Prevention)** | Detect and prevent data exfiltration | Network, Endpoint, Cloud | Monitors and blocks sensitive data movement |
-| **CASB (Cloud Access Security Broker)** | Enforce cloud data security policies | SaaS / Cloud services | Adds visibility, DLP, auth, logging, compliance |
-
-### DLP Types
-
-| Type | Focus Area |
-|------|------------|
-| **Network DLP** | Monitors outbound traffic |
-| **Endpoint DLP** | Monitors local files, USB, printing |
-| **Cloud DLP** | Protects data inside cloud apps/storage |
-
----
-
-## 🧬 Privacy & Data Transformation Techniques
-
-| Method | Reversible? | Description | Use Case |
-|--------|------------|-------------|----------|
-| **Anonymization** | ❌ No | Permanently removes link to individual | Public data release |
-| **Pseudonymization** | ✅ Yes | Replaces identifiers; mapping stored separately | GDPR risk reduction |
-| **Tokenization** | ✅ Yes | Replaces sensitive data with token; vault stores mapping | Payment systems |
-| **Randomized Masking** | Depends | Alters data while preserving statistical utility | Testing / analytics |
-
----
-
-## ☁️ Cloud Data Responsibility
-
-Cloud providers secure infrastructure.  
-Customers remain responsible for:
-
-- Data classification
-- Encryption decisions
-- Retention policy
-- Access control
-- Regulatory compliance
-
-Outsourcing storage does not transfer ownership.
 
 ---
 
 ## 🔄 Data Lifecycle
 Security must exist at every stage of the data lifecycle.
 Data security is continuous, not a single control at a single stage.
+
+---
 
 ### 📊 Lifecycle Stages
 
@@ -252,6 +177,88 @@ Reduces:
 - Ensure availability and integrity across lifecycle.  
 - Enforce policies, standards, and procedures for storage, access, and archiving.  
 - Maintain hardware and knowledge so old media can still be read while required.
+
+---
+
+## 📦 Asset and Data Classification & Handling  
+
+### 🏗️ Asset Classification  
+- Assets (systems, devices, media) are classified based on the highest classification of data they handle.  
+- Classification drives: where it can be stored, who can access it, and how it can be transported and destroyed.  
+- Formal access approvals come from the owner, not IT.
+
+### 📮 Handling Requirements  
+Marking = visible classification marking for humans.
+Labeling = metadata or automated tagging for systems.
+Handling is always driven by classification, not media type.
+Goal: no uncontrolled copy, movement, or disclosure of sensitive data.
+
+Key practices:  
+- Marking and labeling (human readable).  
+- Labeling (machine readable: metadata, barcodes, QR, RFID, GPS tags).  
+- Secure storage by classification.  
+- Controlled transport and tracking.  
+- Logging, chain of custody where necessary.  
+
+---
+
+## 🔐 Data Protection Methods
+
+- **Anonymization = irreversible**
+- **Pseudonymization / Tokenization = reversible**
+- Encryption protects confidentiality.
+- DLP detects movement.
+- DRM controls usage.
+- CASB governs cloud data behavior.
+
+Data Loss = accidental destruction or corruption.
+Data Leakage = unauthorized exposure or disclosure.
+DLP primarily addresses leakage.
+
+---
+
+## 🧬 Privacy & Data Transformation Techniques
+
+| Method | Reversible? | Description | Use Case |
+|--------|------------|-------------|----------|
+| **Anonymization** | ❌ No | Permanently removes link to individual | Public data release |
+| **Pseudonymization** | ✅ Yes | Replaces identifiers; mapping stored separately | GDPR risk reduction |
+| **Tokenization** | ✅ Yes | Replaces sensitive data with token; vault stores mapping | Payment systems |
+| **Randomized Masking** | Depends | Alters data while preserving statistical utility | Testing / analytics |
+
+---
+
+### 🧰 Core Protection Controls
+
+| Method | Purpose | Where It Applies | Key Point |
+|--------|----------|----------------|-----------|
+| **Encryption** | Protect confidentiality | Data at rest & in transit | Strongest single control for confidentiality |
+| **DRM (Digital Rights Management)** | Control usage after access | Documents, media | Restricts viewing, printing, forwarding |
+| **DLP (Data Loss Prevention)** | Detect and prevent data exfiltration | Network, Endpoint, Cloud | Monitors and blocks sensitive data movement |
+| **CASB (Cloud Access Security Broker)** | Enforce cloud data security policies | SaaS / Cloud services | Adds visibility, DLP, auth, logging, compliance |
+
+### DLP Types
+
+| Type | Focus Area |
+|------|------------|
+| **Network DLP** | Monitors outbound traffic |
+| **Endpoint DLP** | Monitors local files, USB, printing |
+| **Cloud DLP** | Protects data inside cloud apps/storage |
+
+---
+
+## ☁️ Cloud Data Responsibility
+
+Cloud providers secure infrastructure.  
+Customers remain responsible for:
+
+- Data classification
+- Encryption decisions
+- Retention policy
+- Access control
+- Regulatory compliance
+
+Outsourcing storage does not transfer ownership.
 
 ---
 
@@ -342,17 +349,6 @@ Also: retaining data is pointless if you no longer have:
 
 ---
 
-## 📡 Emanations & TEMPEST
-
-| Concept | Purpose | Countermeasures |
-|----------|----------|----------------|
-| **TEMPEST** | Prevent interception of electromagnetic signals | Shielding, Faraday cages, control zones, white noise |
-| **Emanation Risk** | Data leakage through unintended signals | Physical and architectural controls |
-
-Focus: prevent signal-based data capture.
-
----
-
 ## ⚠️ Unsupported Systems Risk Handling
 Options for EOL/EOS systems:
 
@@ -362,22 +358,3 @@ Options for EOL/EOS systems:
 - Accept risk (management decision)
 
 Technical teams cannot unilaterally accept unsupported risk.
-
----
-
-## ⚙️ Scoping, Tailoring, and Standards Selection  
-
-### 🎛️ Baselines, Scoping, Tailoring  
-- **Baseline** - Minimum required security configuration.  
-- **Scoping** - Remove controls that clearly do not apply.  
-- **Tailoring** - Adjust and refine controls to match business mission and environment, add compensating controls where needed.
-
-### 📐 Standards and Compliance  
-- Identify applicable standards and regulations (PCI DSS, GDPR, HIPAA, local laws).  
-- Use community standards like NIST SP 800 series for structure, even when not mandated.  
-- **Standards selection** - Objective, repeatable criteria to choose technologies and vendors that meet required controls.
-
----
-
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 2 Destination Certification](https://www.youtube.com/watch?v=WBlQQ6qTlGI)
