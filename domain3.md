@@ -5,19 +5,29 @@ Design and build systems that stay secure under stress. Domain 3 is about securi
 
 ---
 
-## 🧠 Architecture Mindset  
+## 🧠 Secure Architecture Principles
 
-High level, manager brain first, engineer brain second.
+Security architecture defines how systems are designed to reduce risk, contain failure, and enforce policy by design.
 
-- **Defense in depth** - Multiple independent layers of controls, not one big firewall.
-- **Least privilege** - Give every component the minimum rights needed.
-- **Separation of duties** - No single role should be able to cause unreviewed damage.
-- **Fail secure** - On failure, default to secure state, not convenient state.
-- **Zero trust** - Never automatically trust network location, user, or device.
-- **Secure defaults** - Start locked down; users can request access, not the other way around.
-- **Economy of mechanism** - Design should be simple and small to reduce bugs.
-- **Complete mediation** - Every access to an object is checked, not just the first time.
-- **Open design** - Rely on key secrecy, not algorithm secrecy.
+| Principle | Core Idea | Why It Matters | Pattern |
+|------------|-----------|----------------|--------------------|
+| 🛡️ **Defense in Depth** | Multiple independent control layers | No single control failure leads to compromise | Layered controls (firewall + IDS + segmentation) |
+| 🔐 **Least Privilege** | Grant minimum rights required | Limits blast radius if compromised | RBAC, minimal service accounts |
+| 👥 **Separation of Duties** | Split critical tasks across roles | Prevents fraud and abuse | Dev ≠ Prod, Admin ≠ Auditor |
+| 🔒 **Fail Secure** | Default to secure state on failure | Prevents accidental exposure | Firewall fails closed, not open |
+| 🌐 **Zero Trust** | Never trust implicitly | Continuous verification required | Authenticate & authorize every request |
+| 🔧 **Secure Defaults** | Systems start locked down | Reduces misconfiguration risk | Services disabled by default |
+| 🧩 **Economy of Mechanism** | Keep design simple and small | Fewer bugs, easier to verify | Smaller TCB = easier to trust |
+| 👁️ **Complete Mediation** | Check every access request | Prevents bypass after initial check | Session revalidation, API authorization |
+| 🔑 **Open Design** | Security not dependent on secrecy of design | Encourages strong cryptography | Algorithms public, keys secret |
+| 📉 **Least Common Mechanism** | Minimize shared components | Reduces unintended information flow | Dedicated resources, isolation |
+| 🙋 **Psychological Acceptability** | Security mechanisms must be usable | Users bypass unusable controls | MFA usable, not obstructive |
+| 🔄 **Compartmentalization** | Isolate systems into segments | Limits lateral movement | Network segmentation, VLANs |
+| 📦 **Abstraction Layers** | Separate logical layers of control | Easier maintenance and containment | App tier ≠ DB tier |
+| 🧪 **Defense Against Insider Threats** | Design assuming internal misuse | Reduces trusted-user abuse risk | Logging, dual control |
+| 🧱 **Minimize Attack Surface** | Reduce exposed services and interfaces | Fewer entry points for attackers | Disable unused ports/services |
+
+
 
 ---
 
@@ -47,13 +57,113 @@ Security models define formal rules for access control based on confidentiality 
 
 ---
 
-| Other Formal Models | What to Know for CISSP |
+| Other Formal Models | What to Know |
 |---------------------|------------------------|
 | **Goguen-Meseguer** | Non-interference / information flow model |
 | **Sutherland** | Information flow integrity |
 | **Lattice Models** | Mathematical structure for ordered security levels |
 
-These are formal theoretical models — not implementation technologies.
+```
+These are formal theoretical models - not implementation technologies.
+```
+
+---
+
+## 🏗️ Governance > Risk > Controls > Architecture > Operations (Unified Model)
+
+Security flows from governance decisions down to operational enforcement.
+
+| Layer | Primary Purpose | Frameworks / Standards | Core Steps / Structure | Trigger |
+|--------|----------------|------------------------|------------------------|--------------------|
+| 🏛️ **Governance** | Align security with business objectives & risk appetite | COBIT, ISO 27001, COSO | Evaluate > Direct > Monitor (COBIT)<br>PDCA (ISO 27001) | Board oversight, policy approval |
+| 📊 **Enterprise Risk** | Identify and manage organizational risk | ISO 31000, NIST 800-30 | Identify > Analyze > Evaluate > Treat > Monitor | Risk register, enterprise risk discussion |
+| 🧭 **Control Selection** | Determine required safeguards | NIST 800-53, ISO 27002, PCI DSS | Control families / Annex A / 12 PCI requirements | "Which control applies?" |
+| 🏛️ **System Authorization** | Authorize systems to operate | NIST RMF (800-37), FISMA | Prepare > Categorize > Select > Implement > Assess > Authorize > Monitor | ATO, federal system lifecycle |
+| ☁️ **Cloud Authorization** | Standardize federal cloud approval | FedRAMP | Categorize > 3PAO Assessment > ATO > Continuous Monitoring | 3PAO, cloud impact levels |
+| 🧱 **Architecture & Engineering** | Design systems to enforce controls securely | SABSA, NIST SP 800-160 | Business requirements > Architecture layers > Secure design | Defense in depth, TCB |
+| ⚙️ **Operations & Service Mgmt** | Maintain secure daily operations | ITIL | Strategy > Design > Transition > Operation > Continual Improvement | Incident, change, problem management |
+| 🏥 **Regulatory Enforcement** | Mandate sector-specific compliance | HIPAA, SOX, PCI DSS | Safeguard categories / internal controls / 12 PCI controls | Industry breach scenario |
+| 📈 **Internal Control & Financial Assurance** | Prevent financial fraud & reporting errors | COSO | Control environment > Risk assessment > Control activities > Info & communication > Monitoring | Financial system integrity |
+
+---
+
+## 🏛️ Security Frameworks, Standards & Regulations (What They’re Used For)
+
+These frameworks define governance, control selection, auditing, compliance, and system authorization requirements.
+
+| Framework / Regulation | Type | What It’s Used For | Core Structure / Steps | Anchor |
+|------------------------|------|-------------------|------------------------|-------------------|
+| 🌍 **ISO 27001** | International Standard (Certifiable) | Establishing and certifying an ISMS (Information Security Management System) | PDCA Cycle: Plan > Do > Check > Act | "ISMS certification", risk-based governance |
+| 📘 **ISO 27002** | Control Guidance | Implementation guidance for security controls | Control domains mapped to Annex A of ISO 27001 | "How to implement controls" |
+| 🇺🇸 **NIST RMF (SP 800-37)** | Risk Framework | Authorizing and managing security of federal systems | Prepare > Categorize > Select > Implement > Assess > Authorize > Monitor | ATO, federal system lifecycle |
+| 🇺🇸 **NIST SP 800-53** | Control Catalog | Selecting baseline security & privacy controls | Control families (AC, IA, SC, etc.) mapped to impact level | "Which control applies?" |
+| 🇺🇸 **FIPS 199** | Federal Standard | Impact categorization of systems | Low / Moderate / High impact levels | Drives 800-53 baseline selection |
+| 🛡️ **FISMA** | U.S. Federal Law | Mandates federal agency security programs | Requires RMF + continuous monitoring | Federal contractor compliance |
+| ☁️ **FedRAMP** | U.S. Cloud Authorization Program | Standardized security assessment for federal cloud providers | Categorize > 3PAO Assessment > ATO > Continuous Monitoring | 3PAO, reuse of ATO, cloud impact levels |
+| 📊 **COBIT** | IT Governance Framework | Aligning IT controls with business objectives; auditing & governance | Governance & Management Objectives (Evaluate, Direct, Monitor) | Board-level governance, audit alignment |
+| ⚙️ **ITIL** | IT Service Management | Managing IT operations & service lifecycle | Service Strategy > Design > Transition > Operation > Continual Improvement | Incident, change, problem management |
+| 🏥 **HIPAA** | U.S. Regulation | Protecting healthcare data (PHI) | Administrative, Physical, Technical safeguards | Healthcare breach scenario |
+| 💰 **SOX** | U.S. Regulation | Financial reporting integrity & internal controls | Internal control requirements over financial systems | Separation of duties, audit trails |
+| 💳 **PCI DSS** | Industry Standard | Protecting cardholder data | 12 control requirements | Payment processing environment |
+| 📈 **ISO 31000** | Risk Management Standard | Enterprise risk management | Establish Context > Identify > Analyze > Evaluate > Treat > Monitor | Enterprise risk lifecycle |
+
+---
+
+## 🧭 Which Framework Do I Use?
+
+Choose the framework based on the business objective, regulatory scope, and system environment.
+
+| Scenario | Use This | Why |
+|----------|----------|-----|
+| Board wants IT governance alignment | 📊 COBIT | Aligns IT objectives with business strategy; audit-focused |
+| Organization wants security certification | 🌍 ISO 27001 | Certifiable ISMS standard |
+| Need guidance on implementing controls | 📘 ISO 27002 | Detailed control implementation guidance |
+| U.S. federal system authorization | 🏛️ NIST RMF | Required for ATO under FISMA |
+| Selecting federal security controls | 🇺🇸 NIST 800-53 | Official control catalog |
+| Federal cloud provider authorization | ☁️ FedRAMP | Standardized cloud ATO reuse |
+| Enterprise-wide risk management | 📈 ISO 31000 | Enterprise risk lifecycle |
+| Improve IT operations | ⚙️ ITIL | Service management lifecycle |
+| Financial reporting controls | 💰 SOX + COSO | Internal control & audit assurance |
+| Healthcare data protection | 🏥 HIPAA | PHI regulatory safeguards |
+| Payment card processing | 💳 PCI DSS | 12 mandatory cardholder controls |
+
+---
+
+## 🧠 Managerial Security Decision Flow
+
+Security decisions flow top-down from governance to operations.
+
+| ❓ Question | ✅ If Yes | ➡️ If No |
+|-------------|----------|----------|
+| 🇺🇸 Are you a U.S. federal agency or contractor? | 🏛️ Use FISMA → 📘 RMF → 📚 800-53 → 📝 ATO | ⬇️ Continue below |
+| 🌍 Do you need formal certification? | 📜 ISO 27001 (ISMS certification) | ⬇️ Continue below |
+| 🏢 Is this enterprise IT governance alignment? | 📊 COBIT | ⬇️ Continue below |
+| 💰 Is this financial reporting risk? | 🧾 SOX + 📈 COSO | ⬇️ Continue below |
+| 🏥 Is this healthcare data (PHI)? | 🩺 HIPAA safeguards | ⬇️ Continue below |
+| 💳 Is this payment card data? | 🔐 PCI DSS (12 controls) | ⬇️ Continue below |
+| ☁️ Is this cloud service for U.S. government? | 🛡️ FedRAMP (3PAO → ATO → Continuous Monitoring) | ⬇️ Continue below |
+| ⚙️ Is this operational service improvement? | 🔄 ITIL lifecycle | 📈 Use enterprise risk framework (ISO 31000) |
+
+---
+
+## 🎯 Cyber Kill Chain
+
+The Cyber Kill Chain describes the stages of a targeted attack from initial reconnaissance to achieving objectives.
+
+| Phase | Attacker Goal | What Happens | Defensive Focus |
+|-------|--------------|--------------|-----------------|
+| 🔎 **1. Reconnaissance** | Gather intelligence | Identify targets, employees, technologies, IP ranges, vulnerabilities | OSINT monitoring, attack surface reduction |
+| 🛠️ **2. Weaponization** | Prepare attack payload | Combine exploit with malware (e.g., malicious document, exploit kit) | Threat intelligence, malware analysis |
+| 📤 **3. Delivery** | Transmit payload to victim | Phishing email, malicious link, USB drop, drive-by download | Email security, web filtering, user awareness |
+| 💥 **4. Exploitation** | Trigger vulnerability | Malicious code executes by exploiting software flaw or user action | Patch management, EDR, exploit prevention |
+| 📦 **5. Installation** | Establish persistence | Malware installs backdoor, rootkit, or persistence mechanism | Application control, endpoint monitoring |
+| 📡 **6. Command & Control (C2)** | Maintain remote access | Infected host communicates with attacker-controlled server | Network monitoring, IDS/IPS, egress filtering |
+| 🎯 **7. Actions on Objectives** | Achieve mission goal | Data exfiltration, ransomware deployment, destruction, lateral movement | DLP, segmentation, anomaly detection |
+
+```
+Break early in the chain = prevent full compromise.
+```
+
 ---
 
 ## 🔐 Crypto Fundamentals
@@ -230,7 +340,7 @@ Logical operations manipulate bits and are heavily used in cryptography and acce
 
 | Operation | Behavior | When Result = 1 | Security Relevance |
 |------------|----------|----------------|-------------------|
-| 🔄 **NOT** | Flips the bit | Input 0 → 1<br>Input 1 → 0 | Bit inversion in masking and transformations |
+| 🔄 **NOT** | Flips the bit | Input 0 > 1<br>Input 1 > 0 | Bit inversion in masking and transformations |
 | 🔗 **AND** | Both bits must be 1 | 1 AND 1 | Used in masking, permission checks |
 | 🔓 **OR** | At least one bit is 1 | 1 OR 0 / 1 OR 1 | Combining flags or permissions |
 | 🔀 **XOR** | Bits must be different | 1 XOR 0 | Core operation in stream ciphers and checksums; XORing twice with same value restores original data |
