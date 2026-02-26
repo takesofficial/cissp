@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗 Useful Links / Mind Map  
+## 🧠 Mind Map
 [CISSP Domain 6 Destination Certification](https://destcert.com/resources/cissp-domain-6-security-assessment-and-testing)
 
 ---
