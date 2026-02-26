@@ -135,13 +135,13 @@ Security decisions flow top-down from governance to operations.
 
 | ❓ Question | ✅ If Yes | ➡️ If No |
 |-------------|----------|----------|
-| 🇺🇸 Are you a U.S. federal agency or contractor? | 🏛️ Use FISMA → 📘 RMF → 📚 800-53 → 📝 ATO | ⬇️ Continue below |
+| 🇺🇸 Are you a U.S. federal agency or contractor? | 🏛️ Use FISMA > 📘 RMF > 📚 800-53 > 📝 ATO | ⬇️ Continue below |
 | 🌍 Do you need formal certification? | 📜 ISO 27001 (ISMS certification) | ⬇️ Continue below |
 | 🏢 Is this enterprise IT governance alignment? | 📊 COBIT | ⬇️ Continue below |
 | 💰 Is this financial reporting risk? | 🧾 SOX + 📈 COSO | ⬇️ Continue below |
 | 🏥 Is this healthcare data (PHI)? | 🩺 HIPAA safeguards | ⬇️ Continue below |
 | 💳 Is this payment card data? | 🔐 PCI DSS (12 controls) | ⬇️ Continue below |
-| ☁️ Is this cloud service for U.S. government? | 🛡️ FedRAMP (3PAO → ATO → Continuous Monitoring) | ⬇️ Continue below |
+| ☁️ Is this cloud service for U.S. government? | 🛡️ FedRAMP (3PAO > ATO > Continuous Monitoring) | ⬇️ Continue below |
 | ⚙️ Is this operational service improvement? | 🔄 ITIL lifecycle | 📈 Use enterprise risk framework (ISO 31000) |
 
 ---
