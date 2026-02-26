@@ -113,6 +113,29 @@ Never skip isolation.
 
 ---
 
+## 🎯 Cyber Kill Chain
+
+The cyber kill chain is a security framework developed by Lockheed Martin that breaks down a cyberattack into various stages to help identify and mitigate security incidents. It outlines the steps attackers typically follow, allowing security teams to prevent, detect, or intercept attacks at different points in the process. The framework is inspired by military strategies and aims to enhance the effectiveness of cybersecurity measures by providing a structured approach to understanding and responding to threats.
+
+You can find a detailed video on this [here](https://www.youtube.com/watch?v=19hw_CHO0X8)
+
+| Phase | Attacker Goal | What Happens | Defensive Focus |
+|-------|--------------|--------------|-----------------|
+| 🔎 **1. Reconnaissance** | Gather intelligence | Identify targets, employees, technologies, IP ranges, vulnerabilities | OSINT monitoring, attack surface reduction |
+| 🛠️ **2. Weaponization** | Prepare attack payload | Combine exploit with malware (e.g., malicious document, exploit kit) | Threat intelligence, malware analysis |
+| 📤 **3. Delivery** | Transmit payload to victim | Phishing email, malicious link, USB drop, drive-by download | Email security, web filtering, user awareness |
+| 💥 **4. Exploitation** | Trigger vulnerability | Malicious code executes by exploiting software flaw or user action | Patch management, EDR, exploit prevention |
+| 📦 **5. Installation** | Establish persistence | Malware installs backdoor, rootkit, or persistence mechanism | Application control, endpoint monitoring |
+| 📡 **6. Command & Control (C2)** | Maintain remote access | Infected host communicates with attacker-controlled server | Network monitoring, IDS/IPS, egress filtering |
+| 🎯 **7. Actions on Objectives** | Achieve mission goal | Data exfiltration, ransomware deployment, destruction, lateral movement | DLP, segmentation, anomaly detection |
+
+```
+Break early in the chain = prevent full compromise.
+```
+
+
+---
+
 ## 🧬 Forensics Basics
 
 You can find more details here: [RFC 3227](https://www.rfc-editor.org/rfc/rfc3227). Preserve first. Analyze later. Never touch originals.  
