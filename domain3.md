@@ -1,5 +1,10 @@
 # <p align=center>Domain 3 - Security Architecture and Engineering</p>
 
+## 🧠 Mind Map
+[CISSP Domain 3 Destination Certification](https://destcert.com/resources/domain-3-security-architecture-and-engineering)
+
+---
+
 ## 🚨 Elevator Pitch  
 Design and build systems that stay secure under stress. Domain 3 is about security models, trusted computing, architecture principles, crypto basics, and physical protection. How to design systems so they fail secure, limit blast radius, and keep attackers from ever getting a foothold.
 
@@ -16,6 +21,7 @@ Security architecture defines how systems are designed to reduce risk, contain f
 | 👥 **Separation of Duties** | Split critical tasks across roles | Prevents fraud and abuse | Dev ≠ Prod, Admin ≠ Auditor |
 | 🔒 **Fail Secure** | Default to secure state on failure | Prevents accidental exposure | Firewall fails closed, not open |
 | 🌐 **Zero Trust** | Never trust implicitly | Continuous verification required | Authenticate & authorize every request |
+| 🔐 **Trusted Path** | Secure communication between user and security kernel | Prevents credential interception | Secure Attention Sequence (Ctrl+Alt+Del) |
 | 🔧 **Secure Defaults** | Systems start locked down | Reduces misconfiguration risk | Services disabled by default |
 | 🧩 **Economy of Mechanism** | Keep design simple and small | Fewer bugs, easier to verify | Smaller TCB = easier to trust |
 | 👁️ **Complete Mediation** | Check every access request | Prevents bypass after initial check | Session revalidation, API authorization |
@@ -27,39 +33,85 @@ Security architecture defines how systems are designed to reduce risk, contain f
 | 🧪 **Defense Against Insider Threats** | Design assuming internal misuse | Reduces trusted-user abuse risk | Logging, dual control |
 | 🧱 **Minimize Attack Surface** | Reduce exposed services and interfaces | Fewer entry points for attackers | Disable unused ports/services |
 
-
+---
 
 ---
 
-## 🧱 Trusted Computing Concepts  
+## 🏗️ System Architecture Concepts  
 
-Trusted computing defines the minimal components required to enforce a system's security policy.
+Security architecture must consider how systems are logically and physically structured.
 
-| Concept | Definition | Key Properties | Exam Focus |
+### 🖥️ System Architecture Types
+
+| Architecture | Description | Security Implication |
+|--------------|------------|----------------------|
+| 🏛️ **Security Domains** | Logical separation of trust levels | Supports isolation and policy enforcement |
+| 🧱 **Monolithic** | All components tightly integrated | Larger attack surface; harder to isolate failures |
+| 🧩 **Layered Architecture** | Separation of presentation, logic, and data layers | Supports isolation and defense in depth |
+| ☁️ **Microservices** | Small independent services communicating via APIs | Strong segmentation required; API security critical |
+| 🏢 **Client-Server** | Central server provides services to multiple clients | Server becomes high-value target |
+| 🌐 **Distributed Systems** | Components across multiple nodes | Requires secure communication and synchronization |
+
+---
+
+### 🧠 Virtualization & Isolation
+
+| Technology | Security Relevance |
+|------------|-------------------|
+| 🖥️ **Hypervisor (Type 1 / Type 2)** | Enforces isolation between virtual machines |
+| 📦 **Containers** | Lightweight isolation; share kernel (less isolation than VMs) |
+| 🧬 **Sandboxing** | Restricted execution environment for untrusted code |
+| 🧪 **Air Gapping** | Physical isolation from networks |
+
+Isolation strength:  
+Hardware isolation > Virtual machine isolation > Container isolation > Process isolation
+
+---
+
+## 🧱 Trusted Computing & Protection Rings  
+
+Trusted computing defines the minimal components required to enforce a system's security policy.  
+The goal is to minimize what must be trusted and strictly control privilege boundaries.
+Understand how hardware-enforced privilege separation supports secure system architecture.
+
+| Concept | Definition | Key Properties | Focus |
 |----------|------------|----------------|------------|
-| 🏛️ **Trusted Computing Base (TCB)** | All hardware, firmware, and software that enforce the security policy | Smaller TCB = easier to verify and trust | Scope of what must be trusted |
-| 👁️ **Reference Monitor** | Conceptual access control engine that validates every access request | ✔ Tamperproof ✔ Always invoked ✔ Small and simple | Theoretical model of access enforcement |
-| 🧠 **Security Kernel** | Implementation of the reference monitor within the OS | Runs in most privileged mode | Enforces access control in practice |
-| 🧿 **Protection Rings** | Hierarchical privilege levels within CPU architecture | 🥇 Ring 0 - Kernel (most trusted) ⚙ Ring 1/2 - OS services, drivers 👤 Ring 3 - User space (least trusted) | Isolation of privileges and fault containment |
+| 🏛️ **Trusted Computing Base (TCB)** | All hardware, firmware, and software that enforce the security policy | Smaller TCB = easier to verify, test, and trust | Identify what must be trusted for security enforcement |
+| 👁️ **Reference Monitor** | Conceptual access control mechanism that validates every access request | ✔ Tamperproof<br>✔ Always invoked<br>✔ Small & simple | Theoretical enforcement model |
+| 🧠 **Security Kernel** | Implementation of the reference monitor within the OS | Runs in most privileged mode (Ring 0) | Practical enforcement of access control |
+| 🧿 **Protection Rings** | Hardware-enforced privilege levels within CPU architecture | Enforces privilege separation and fault isolation | Understand privilege hierarchy and containment |
 
 ---
 
-## 🧿 Ring Protection Model
+### 🕵️ Covert Channels
 
-The Ring Protection Model is a CPU-based hardware isolation mechanism that enforces privilege separation by assigning different levels of trust to code execution. It limits what lower-privileged processes can access, reducing the blast radius of compromise. A video on this in more detail can be found [here](https://www.youtube.com/watch?v=zoQZ_3u7eeg)
+| Concept | Definition | Types | Focus |
+|----------|------------|--------|------------|
+| 🕵️ **Covert Channels** | Unintended communication paths that violate security policy | Storage channel (uses shared resources)<br>Timing channel (uses system timing variations) | Breaks mandatory access control; common in multilevel secure systems |
 
-| Ring Level | Privilege | Typical Components | Trust Level | Security Purpose | Recognition |
-|------------|------------|-------------------|--------------|------------------|------------------|
-| 🥇 **Ring 0** | Most Privileged | 🧠 System Kernel | Most Trusted | Full hardware & memory control | If compromised > entire system owned |
-| 🔧 **Ring 1** | High Privilege | Drivers / OS services | Highly Trusted | Direct hardware interaction | Often merged with Ring 0 in modern OS |
-| 📚 **Ring 2** | Medium Privilege | Libraries / system utilities | Moderately Trusted | Controlled system-level support | Rarely distinct in practice |
-| 👤 **Ring 3** | Least Privileged | User programs / applications | Least Trusted | Restricted hardware access via kernel mediation | Malware typically executes here |
+---
 
-| Concept | What It Enforces | Security Benefit |
-|----------|-----------------|-----------------|
-| 🔒 Privilege Separation | Code runs only with required rights | Supports least privilege |
-| 🛡️ Fault Isolation | User processes cannot directly access kernel memory | Prevents full system compromise |
-| 🚫 Direct Hardware Access Blocked | User space cannot access hardware without kernel mediation | Enforces complete mediation |
+### 🧿 Protection Ring Levels (Hardware Privilege Hierarchy)
+
+The Ring Model enforces isolation by assigning execution levels with decreasing privilege.
+
+| Ring | Privilege Level | Typical Components | Trust Level | Security Impact |
+|------|-----------------|-------------------|------------|----------------|
+| 🥇 **Ring 0** | Most Privileged | OS Kernel, core security functions | Highest | Full hardware & memory control. If compromised → entire system compromised. |
+| 🔧 **Ring 1** | High Privilege | Device drivers, OS services | High | Direct hardware interaction. Often merged with Ring 0 in modern systems. |
+| 📚 **Ring 2** | Medium Privilege | System utilities, libraries | Moderate | Controlled support services. Rarely distinct in practice. |
+| 👤 **Ring 3** | Least Privileged | User applications, processes | Lowest | Restricted from direct hardware access. Malware typically executes here. |
+
+---
+
+### 🔐 What Rings Enforce
+
+| Control Mechanism | Security Benefit |
+|-------------------|-----------------|
+| 🔒 **Privilege Separation** | Supports least privilege and limits blast radius |
+| 🛡️ **Fault Isolation** | Prevents user-space compromise from affecting kernel |
+| 🚫 **Hardware Mediation** | All hardware access must pass through kernel |
+| 🧱 **Containment** | Compromise in lower ring does not automatically escalate |
 
 ---
 
@@ -67,20 +119,12 @@ The Ring Protection Model is a CPU-based hardware isolation mechanism that enfor
 
 Security models define formal rules for access control based on confidentiality or integrity objectives.
 
-| Model | Protects | Core Rules | Exam Pattern Recognition |
+| Model | Protects | Core Rules | Pattern Recognition |
 |-------|----------|------------|--------------------------|
-| 🔐 **Bell-LaPadula (BLUD)** | Confidentiality | 🚫 No Read Up<br>🚫 No Write Down | Military classification, clearance levels, preventing data leakage downward |
-| 🧱 **Biba (BibaDU)** | Integrity | 🚫 No Read Down<br>🚫 No Write Up | Preventing contamination of high-integrity data |
-| 🧾 **Clark-Wilson** | Integrity | ✔ Well-formed transactions<br>✔ Separation of duties | Commercial systems, controlled programs, no direct user data modification |
+| 🔐 **Bell-LaPadula (BLUD)** | Confidentiality | 🚫 No Read Up ↑ 🚫 No Write Down ↓ | Military classification, clearance levels, preventing data leakage downward |
+| 🧱 **Biba (BibaDU)** | Integrity | 🚫 No Read Down ↓ 🚫 No Write Up ↑ | Preventing contamination of high-integrity data |
+| 🧾 **Clark-Wilson** | Integrity | ✔ Well-formed transactions ✔ Separation of duties | Commercial systems, controlled programs, no direct user data modification |
 | 🏦 **Brewer-Nash (Chinese Wall)** | Confidentiality | Dynamic access based on prior access | Conflict of interest scenarios (e.g., consulting firms, banks) |
-
----
-
-| Other Formal Models | What to Know |
-|---------------------|------------------------|
-| **Goguen-Meseguer** | Non-interference / information flow model |
-| **Sutherland** | Information flow integrity |
-| **Lattice Models** | Mathematical structure for ordered security levels |
 
 ```
 These are formal theoretical models - not implementation technologies.
@@ -88,102 +132,45 @@ These are formal theoretical models - not implementation technologies.
 
 ---
 
-## 🏗️ Governance > Risk > Controls > Architecture > Operations (Unified Model)
+## 🗄️ Database Security Concepts  
 
-Security flows from governance decisions down to operational enforcement.
+Databases must enforce confidentiality, integrity, and separation of duties at the data layer.
 
-| Layer | Primary Purpose | Frameworks / Standards | Core Steps / Structure | Trigger |
-|--------|----------------|------------------------|------------------------|--------------------|
-| 🏛️ **Governance** | Align security with business objectives & risk appetite | COBIT, ISO 27001, COSO | Evaluate > Direct > Monitor (COBIT)<br>PDCA (ISO 27001) | Board oversight, policy approval |
-| 📊 **Enterprise Risk** | Identify and manage organizational risk | ISO 31000, NIST 800-30 | Identify > Analyze > Evaluate > Treat > Monitor | Risk register, enterprise risk discussion |
-| 🧭 **Control Selection** | Determine required safeguards | NIST 800-53, ISO 27002, PCI DSS | Control families / Annex A / 12 PCI requirements | "Which control applies?" |
-| 🏛️ **System Authorization** | Authorize systems to operate | NIST RMF (800-37), FISMA | Prepare > Categorize > Select > Implement > Assess > Authorize > Monitor | ATO, federal system lifecycle |
-| ☁️ **Cloud Authorization** | Standardize federal cloud approval | FedRAMP | Categorize > 3PAO Assessment > ATO > Continuous Monitoring | 3PAO, cloud impact levels |
-| 🧱 **Architecture & Engineering** | Design systems to enforce controls securely | SABSA, NIST SP 800-160 | Business requirements > Architecture layers > Secure design | Defense in depth, TCB |
-| ⚙️ **Operations & Service Mgmt** | Maintain secure daily operations | ITIL | Strategy > Design > Transition > Operation > Continual Improvement | Incident, change, problem management |
-| 🏥 **Regulatory Enforcement** | Mandate sector-specific compliance | HIPAA, SOX, PCI DSS | Safeguard categories / internal controls / 12 PCI controls | Industry breach scenario |
-| 📈 **Internal Control & Financial Assurance** | Prevent financial fraud & reporting errors | COSO | Control environment > Risk assessment > Control activities > Info & communication > Monitoring | Financial system integrity |
+| Concept | Purpose | Anchor |
+|----------|---------|------------|
+| 🔐 **Views** | Restrict data exposure | Limit access to specific rows/columns |
+| 🧱 **Stored Procedures** | Controlled transactions | Prevent direct user table modification |
+| 🧾 **Inference Control** | Prevent deduction of sensitive data from aggregates | Aggregation risk |
+| 🧬 **Polyinstantiation** | Prevent inference in multilevel secure systems | Multiple rows with same key but different classification |
+| 🛡️ **Data Masking** | Obfuscate sensitive data | Used in testing environments |
 
 ---
 
-## 🏛️ Security Frameworks, Standards & Regulations (What They're Used For)
+## ♻️ Resilience & Fault Tolerance  
 
-These frameworks define governance, control selection, auditing, compliance, and system authorization requirements.
+Systems must continue operating under stress or partial failure.
 
-| Framework / Regulation | Type | What It's Used For | Core Structure / Steps | Anchor |
-|------------------------|------|-------------------|------------------------|-------------------|
-| 🌍 **ISO 27001** | International Standard (Certifiable) | Establishing and certifying an ISMS (Information Security Management System) | PDCA Cycle: Plan > Do > Check > Act | "ISMS certification", risk-based governance |
-| 📘 **ISO 27002** | Control Guidance | Implementation guidance for security controls | Control domains mapped to Annex A of ISO 27001 | "How to implement controls" |
-| 🇺🇸 **NIST RMF (SP 800-37)** | Risk Framework | Authorizing and managing security of federal systems | Prepare > Categorize > Select > Implement > Assess > Authorize > Monitor | ATO, federal system lifecycle |
-| 🇺🇸 **NIST SP 800-53** | Control Catalog | Selecting baseline security & privacy controls | Control families (AC, IA, SC, etc.) mapped to impact level | "Which control applies?" |
-| 🇺🇸 **FIPS 199** | Federal Standard | Impact categorization of systems | Low / Moderate / High impact levels | Drives 800-53 baseline selection |
-| 🛡️ **FISMA** | U.S. Federal Law | Mandates federal agency security programs | Requires RMF + continuous monitoring | Federal contractor compliance |
-| ☁️ **FedRAMP** | U.S. Cloud Authorization Program | Standardized security assessment for federal cloud providers | Categorize > 3PAO Assessment > ATO > Continuous Monitoring | 3PAO, reuse of ATO, cloud impact levels |
-| 📊 **COBIT** | IT Governance Framework | Aligning IT controls with business objectives; auditing & governance | Governance & Management Objectives (Evaluate, Direct, Monitor) | Board-level governance, audit alignment |
-| ⚙️ **ITIL** | IT Service Management | Managing IT operations & service lifecycle | Service Strategy > Design > Transition > Operation > Continual Improvement | Incident, change, problem management |
-| 🏥 **HIPAA** | U.S. Regulation | Protecting healthcare data (PHI) | Administrative, Physical, Technical safeguards | Healthcare breach scenario |
-| 💰 **SOX** | U.S. Regulation | Financial reporting integrity & internal controls | Internal control requirements over financial systems | Separation of duties, audit trails |
-| 💳 **PCI DSS** | Industry Standard | Protecting cardholder data | 12 control requirements | Payment processing environment |
-| 📈 **ISO 31000** | Risk Management Standard | Enterprise risk management | Establish Context > Identify > Analyze > Evaluate > Treat > Monitor | Enterprise risk lifecycle |
+| Concept | Description | Security Benefit |
+|----------|------------|-----------------|
+| 🔁 **Redundancy** | Duplicate components | Prevent single point of failure |
+| ⚖️ **Load Balancing** | Distribute workload | Prevent resource exhaustion |
+| 🧩 **Clustering** | Multiple systems operate as one | High availability |
+| 🔄 **Failover** | Automatic switch to backup system | Maintains availability |
+| 🛑 **Graceful Degradation** | Reduce functionality safely | Maintain critical services |
 
 ---
 
-## 🧭 Which Framework Do I Use?
+## 🧑‍💻 Secure Engineering Practices  
 
-Choose the framework based on the business objective, regulatory scope, and system environment.
+Architecture decisions must integrate secure development principles.
 
-| Scenario | Use This | Why |
-|----------|----------|-----|
-| Board wants IT governance alignment | 📊 COBIT | Aligns IT objectives with business strategy; audit-focused |
-| Organization wants security certification | 🌍 ISO 27001 | Certifiable ISMS standard |
-| Need guidance on implementing controls | 📘 ISO 27002 | Detailed control implementation guidance |
-| U.S. federal system authorization | 🏛️ NIST RMF | Required for ATO under FISMA |
-| Selecting federal security controls | 🇺🇸 NIST 800-53 | Official control catalog |
-| Federal cloud provider authorization | ☁️ FedRAMP | Standardized cloud ATO reuse |
-| Enterprise-wide risk management | 📈 ISO 31000 | Enterprise risk lifecycle |
-| Improve IT operations | ⚙️ ITIL | Service management lifecycle |
-| Financial reporting controls | 💰 SOX + COSO | Internal control & audit assurance |
-| Healthcare data protection | 🏥 HIPAA | PHI regulatory safeguards |
-| Payment card processing | 💳 PCI DSS | 12 mandatory cardholder controls |
-
----
-
-## 🧠 Managerial Security Decision Flow
-
-Security decisions flow top-down from governance to operations.
-
-| ❓ Question | ✅ If Yes | ➡️ If No |
-|-------------|----------|----------|
-| 🇺🇸 Are you a U.S. federal agency or contractor? | 🏛️ Use FISMA > 📘 RMF > 📚 800-53 > 📝 ATO | ⬇️ Continue below |
-| 🌍 Do you need formal certification? | 📜 ISO 27001 (ISMS certification) | ⬇️ Continue below |
-| 🏢 Is this enterprise IT governance alignment? | 📊 COBIT | ⬇️ Continue below |
-| 💰 Is this financial reporting risk? | 🧾 SOX + 📈 COSO | ⬇️ Continue below |
-| 🏥 Is this healthcare data (PHI)? | 🩺 HIPAA safeguards | ⬇️ Continue below |
-| 💳 Is this payment card data? | 🔐 PCI DSS (12 controls) | ⬇️ Continue below |
-| ☁️ Is this cloud service for U.S. government? | 🛡️ FedRAMP (3PAO > ATO > Continuous Monitoring) | ⬇️ Continue below |
-| ⚙️ Is this operational service improvement? | 🔄 ITIL lifecycle | 📈 Use enterprise risk framework (ISO 31000) |
-
----
-
-## 🎯 Cyber Kill Chain
-
-The cyber kill chain is a security framework developed by Lockheed Martin that breaks down a cyberattack into various stages to help identify and mitigate security incidents. It outlines the steps attackers typically follow, allowing security teams to prevent, detect, or intercept attacks at different points in the process. The framework is inspired by military strategies and aims to enhance the effectiveness of cybersecurity measures by providing a structured approach to understanding and responding to threats.
-
-You can find a detailed video on this [here](https://www.youtube.com/watch?v=19hw_CHO0X8)
-
-| Phase | Attacker Goal | What Happens | Defensive Focus |
-|-------|--------------|--------------|-----------------|
-| 🔎 **1. Reconnaissance** | Gather intelligence | Identify targets, employees, technologies, IP ranges, vulnerabilities | OSINT monitoring, attack surface reduction |
-| 🛠️ **2. Weaponization** | Prepare attack payload | Combine exploit with malware (e.g., malicious document, exploit kit) | Threat intelligence, malware analysis |
-| 📤 **3. Delivery** | Transmit payload to victim | Phishing email, malicious link, USB drop, drive-by download | Email security, web filtering, user awareness |
-| 💥 **4. Exploitation** | Trigger vulnerability | Malicious code executes by exploiting software flaw or user action | Patch management, EDR, exploit prevention |
-| 📦 **5. Installation** | Establish persistence | Malware installs backdoor, rootkit, or persistence mechanism | Application control, endpoint monitoring |
-| 📡 **6. Command & Control (C2)** | Maintain remote access | Infected host communicates with attacker-controlled server | Network monitoring, IDS/IPS, egress filtering |
-| 🎯 **7. Actions on Objectives** | Achieve mission goal | Data exfiltration, ransomware deployment, destruction, lateral movement | DLP, segmentation, anomaly detection |
-
-```
-Break early in the chain = prevent full compromise.
-```
+| Practice | Purpose | Angle |
+|----------|----------|------------|
+| 🔍 **Code Review** | Peer validation of secure implementation | Prevent logic flaws and injection risks |
+| 🔎 **Threat Modeling** | Identify design weaknesses early | Prevent architectural flaws |
+| 🧪 **Static Testing (SAST)** | Analyze source code | Detect coding errors before runtime |
+| 🧬 **Dynamic Testing (DAST)** | Test running application | Identify runtime vulnerabilities |
+| 🔐 **Secure SDLC Integration** | Embed security into development lifecycle | Prevent security as afterthought |
 
 ---
 
@@ -235,30 +222,6 @@ Goal: recognize **what to use when** - not calculate key schedules.
 
 ---
 
-## 🔐 HMAC (Keyed Hash for Integrity + Authentication)
-
-HMAC (Hash-based Message Authentication Code) is a cryptographic construction that combines a secure hash function (such as SHA-256) with a shared secret key. Unlike a plain hash, which only provides integrity, HMAC ensures both integrity and authentication by proving that the sender possesses the secret key.  
-
-It is widely used in modern protocols because it is efficient, resistant to known hash extension attacks, and suitable for high-volume secure communications.
-
-| Property | Description | Security Impact |
-|-----------|------------|----------------|
-| 🔑 **Keyed Construction** | Combines secret key + hash function (e.g., HMAC-SHA256) | Prevents forgery without knowledge of key |
-| 🔒 **Integrity Protection** | Detects any modification of transmitted data | Ensures message has not been altered |
-| 🪪 **Authentication** | Verifies sender knows the shared secret | Confirms message origin |
-| 🚫 **No Non-Repudiation** | Uses symmetric shared key | Both parties could generate valid HMAC |
-| 🛡️ **Length-Extension Resistant** | Designed to prevent hash extension attacks | More secure than plain hashing |
-| ⚡ **Efficient** | Faster than digital signatures | Suitable for high-throughput systems |
-
-| Common Usage | Why It Is Used |
-|---------------|----------------|
-| 🌐 **TLS** | Message authentication within secure sessions |
-| 🔐 **IPsec** | Packet integrity verification |
-| 🔑 **API Request Signing** | Validate authenticity of API calls (shared secret model) |
-| 📡 **Secure Messaging Protocols** | Ensure sender authenticity + data integrity |
-
----
-
 ### 🔑 Symmetric Cryptography (Bulk Data Encryption - Fast & Efficient)
 
 Symmetric encryption uses a single shared key for both encryption and decryption and is optimized for high-speed data protection.
@@ -285,7 +248,7 @@ Symmetric encryption uses a single shared key for both encryption and decryption
 
 Block ciphers encrypt data in fixed-size chunks and require a mode of operation to securely process larger data.
 
-| Mode | Core Behavior | Security Properties | Exam Notes |
+| Mode | Core Behavior | Security Properties | Notes |
 |------|--------------|--------------------|------------|
 | 📕 **ECB (Electronic Codebook)** | No IV; identical plaintext blocks produce identical ciphertext | ❌ Confidentiality weakness (pattern leakage) | Avoid; only acceptable for very short, non-sensitive data |
 | 🔄 **CBC (Cipher Block Chaining)** | Uses IV; each block chained to previous ciphertext | ✅ Confidentiality only | Older mode; no built-in integrity protection |
@@ -303,10 +266,14 @@ Never reuse a **nonce or keystream** with the same key | Reuse causes keystream 
 | 🔀 **Encryption Method** | Plaintext ⊕ Keystream (XOR operation) | Simple and efficient transformation |
 | ⚡ **Performance** | Very fast, low latency | Suitable for real-time environments |
 
-| Ideal For | Reason |
-|-----------|--------|
-| 📞 **Real-Time Communication** (VoIP, video, wireless) | Minimal delay during encryption |
-| 🔗 **Error-Sensitive Links** | Bit errors affect only corresponding bits, not entire blocks |
+### ⚙️ Logical Operations (Relevant Concepts)
+
+Logical operations underpin cryptography and access control decisions. Understand where logical operations are used, not perform binary math.
+
+| Operation | Relevant Use |
+|------------|-------------------|
+| 🔀 **XOR** | Core operation in stream ciphers (plaintext ⊕ keystream). Reapplying XOR with same key restores original data. |
+| 🔗 **AND / OR** | Used in permission masking and access control logic (combining or restricting flags). |
 
 ---
 
@@ -349,11 +316,21 @@ Never reuse a **nonce or keystream** with the same key | Reuse causes keystream 
 
 ---
 
-| Security Property | Meaning |
-|-------------------|---------|
-| 🚫 **Preimage Resistance** | Cannot determine original input from its hash |
-| 🚫 **Second Preimage Resistance** | Cannot find a different input with the same hash as a known input |
-| 🚫 **Collision Resistance** | Cannot find two different inputs that produce the same hash |
+## 🔐 HMAC (Keyed Hash for Integrity + Authentication)
+
+HMAC (Hash-based Message Authentication Code) is a cryptographic construction that combines a secure hash function (such as SHA-256) with a shared secret key. Unlike a plain hash, which only provides integrity, HMAC ensures both integrity and authentication by proving that the sender possesses the secret key.  
+
+It is widely used in modern protocols because it is efficient, resistant to known hash extension attacks, and suitable for high-volume secure communications.
+
+| Property | Description | Security Impact |
+|-----------|------------|----------------|
+| 🔑 **Keyed Construction** | Combines secret key + hash function (e.g., HMAC-SHA256) | Prevents forgery without knowledge of key |
+| 🔒 **Integrity Protection** | Detects any modification of transmitted data | Ensures message has not been altered |
+| 🪪 **Authentication** | Verifies sender knows the shared secret | Confirms message origin |
+| 🚫 **No Non-Repudiation** | Uses symmetric shared key | Both parties could generate valid HMAC |
+| 🛡️ **Length-Extension Resistant** | Designed to prevent hash extension attacks | More secure than plain hashing |
+| ⚡ **Efficient** | Faster than digital signatures | Suitable for high-throughput systems |
+
 ---
 
 ## ✍️ Digital Signatures & PKI  
@@ -383,6 +360,7 @@ Never reuse a **nonce or keystream** with the same key | Reuse causes keystream 
 | ⏱️ **Side Channel** | Observe system behavior instead of attacking algorithm directly | Learns secrets by measuring timing, power usage, electromagnetic leaks, or sound | ⚡ Implementation leakage (timing, power, TEMPEST-style signals) |
 | 📤 **Chosen Plaintext (CPA)** | Control what gets encrypted | Attacker submits chosen plaintexts and analyzes resulting ciphertexts | 🔐 Encryption behavior analysis |
 | 📥 **Chosen Ciphertext (CCA)** | Control what gets decrypted | Attacker submits chosen ciphertexts and studies decrypted output | 🔓 Decryption oracle / key recovery weaknesses |
+| 🔍 **Known Plaintext Attack (KPA)** | Attacker has both plaintext and matching ciphertext | Analyzes patterns to derive key material | Weak encryption implementations |
 
 ---
 
@@ -410,32 +388,6 @@ Goal: isolate processes so one compromise does not own the whole system.
 
 ---
 
-## 🦠 Malware Basics  
-
-| Type | Core Behavior | How It Spreads / Operates | Key Variants |
-|------|--------------|----------------------------|----------------------|
-| 🧬 **Virus** | Requires a host file; attaches and infects legitimate files | Spreads when infected file is executed or shared | 📄 **Macro virus** - abuses Office macros<br>💽 **Boot sector virus** - infects boot loader / MBR<br>🕵️ **Stealth / Polymorphic** - hides or mutates to evade AV<br>🧩 **Multipartite** - multiple infection vectors |
-| 🪱 **Worm** | Self-contained malicious program | Spreads automatically over networks without user action | 🌐 Network-based propagation; no host file required |
-| 🎭 **Trojan** | Disguised as legitimate software | User installs it believing it is useful | 🚪 Often delivers backdoors, payloads, or additional malware |
-| 🔐 **Ransomware** | Encrypts data and demands payment | Delivered via phishing, exploits, or trojans | 💰 Goal: financial extortion |
-| 👁️ **Spyware** | Secretly monitors user activity | Installed via trojans or malicious downloads | 📊 Goal: data collection / surveillance |
-| 🧱 **Rootkit** | Hides presence of malware or attacker | Modifies OS or kernel-level components | 🕳️ Goal: persistence and stealth |
-
----
-
-## ⚙️ Logical Operations (Crypto & Access Decisions)
-
-Logical operations manipulate bits and are heavily used in cryptography and access control mechanisms.
-
-| Operation | Behavior | When Result = 1 | Security Relevance |
-|------------|----------|----------------|-------------------|
-| 🔄 **NOT** | Flips the bit | Input 0 > 1<br>Input 1 > 0 | Bit inversion in masking and transformations |
-| 🔗 **AND** | Both bits must be 1 | 1 AND 1 | Used in masking, permission checks |
-| 🔓 **OR** | At least one bit is 1 | 1 OR 0 / 1 OR 1 | Combining flags or permissions |
-| 🔀 **XOR** | Bits must be different | 1 XOR 0 | Core operation in stream ciphers and checksums; XORing twice with same value restores original data |
-
----
-
 ## 🚨 Fire Detection Types
 
 | Detection Type     | What It Detects                            | Purpose                                | Typical Use Case              | Anchor |
@@ -445,7 +397,6 @@ Logical operations manipulate bits and are heavily used in cryptography and acce
 | ☢️ Ionization        | Small smoke particles (fast flaming fires)| Fast response to active flames         | Older smoke detectors         | Fast-burning smoke |
 | 💨 Photoelectric     | Large smoke particles (smoldering fires)  | Better for slow-burning fires          | Offices, commercial spaces    | Smoldering smoke |
 | 🚀 Aspirating (VESDA)| Airborne combustion particles (very early)| Very early smoke detection             | Server rooms                  | Early warning smoke |
-| 🏭 Infrared  | Infrared energy from flames               | Detects visible flames                 | Industrial environments       | Visible flames |
 
 ---
 
@@ -467,6 +418,8 @@ Logical operations manipulate bits and are heavily used in cryptography and acce
 | ❄️ **Dry Pipe** | Pipes filled with pressurized air; water held back | Heat activates head > air released > valve opens > water flows | Used in cold environments where pipes could freeze |
 | 🌊 **Deluge** | Open sprinkler heads; pipes empty until activation | Detection system triggers > all heads discharge simultaneously | High-hazard industrial areas; not suitable for server rooms |
 | 🚨💧 **Preaction** | Pipes empty until detection event | Detection system fills pipes > second trigger (heat) releases water | Best for data centers and areas with people & computers; reduces accidental discharge risk |
+| 🧯 **Clean Agent (FM-200 / Inert Gas)** | Displaces oxygen or absorbs heat without residue | Detection-triggered | Data centers; safe for electronics |
+
 
 ---
 
@@ -483,6 +436,19 @@ Logical operations manipulate bits and are heavily used in cryptography and acce
 
 ---
 
+## 📱 Embedded & Mobile System Security  
+
+Specialized systems require constrained and hardened security design.
+
+| System Type | Security Focus |
+|--------------|----------------|
+| 📱 **Mobile Devices** | Secure boot, sandboxing, app signing, MDM |
+| 🤖 **Embedded Systems** | Minimal OS, limited patching capability |
+| 🛰️ **IoT Devices** | Hardcoded credentials risk, firmware security, update integrity |
+| 🚗 **Safety-Critical Systems** | Availability and human safety prioritized |
+
+---
+
 ## 🏭 ICS / Operational Technology (SCADA / DCS / PLC)
 
 | System | Stands For | Scope | Typical Environment / Examples | Primary Role |
@@ -490,7 +456,3 @@ Logical operations manipulate bits and are heavily used in cryptography and acce
 | 🌍 **SCADA** | **S**upervisory **C**ontrol **A**nd **D**ata **A**cquisition | Wide-area, geographically dispersed systems | ⚡ Power grids, 💧 water utilities, 🛢 pipelines | Centralized monitoring and supervisory control over remote sites |
 | 🏭 **DCS** | **D**istributed **C**ontrol **S**ystem | Single facility, tightly integrated processes | 🛢 Refinery, 🧪 chemical plant, 🏭 manufacturing plant | Continuous process control within one industrial site |
 | 🤖 **PLC** | **P**rogrammable **L**ogic **C**ontroller | Device-level / machine-level control | 🛠 Individual machines, 🔧 assembly lines | Real-time control of specific equipment or processes |
-
----
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 3 Destination Certification](https://youtu.be/TreDxg9Y3yo)
