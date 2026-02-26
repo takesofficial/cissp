@@ -1,5 +1,12 @@
 # <p align=center>Domain 7 - Security Operations</p>
 
+---
+
+## 🧠 Mind Map
+[CISSP Domain 7 Destination Certification](https://destcert.com/resources/cissp-domain-7-security-operations/)
+
+---
+
 ## 🚨 Elevator Pitch  
 Keep security running day to day and respond when things go wrong. Domain 7 is about **operating**, **monitoring**, **responding**, and **recovering**. This is where incidents happen, alerts fire, people make mistakes, and processes either save you or sink you.
 
@@ -14,8 +21,6 @@ This domain is about **execution**, not theory.
 - Design controls > Domains 1-3  
 - Secure systems > Domains 4-5  
 - **Run and defend systems > Domain 7**
-
-When security fails, this domain decides the damage.
 
 ---
 
@@ -36,12 +41,11 @@ You cannot respond to what you cannot see.
 - EDR/XDR  
 - IDS/IPS  
 - File integrity monitoring  
+- SOAR (automated response orchestration)
 
 ---
 
 ### Monitoring Quick Reference
-
-Visibility without response = wasted telemetry.
 
 | Area | What You Watch | Why |
 |------|---------------|-----|
@@ -59,20 +63,14 @@ Visibility without response = wasted telemetry.
 - **Event** - Something happened  
 - **Incident** - Security impact or policy violation  
 
+### Incident Communication
+
+- Legal involvement
+- Executive notification
+- Regulatory reporting (where required)
+- Public relations coordination
+
 Not every event is an incident.
-
----
-
-## 🔥 Incident Response Lifecycle  
-
-1. **Preparation**  
-2. **Detection and Analysis**  
-3. **Containment**  
-4. **Eradication**  
-5. **Recovery**  
-6. **Lessons Learned**
-
-Order matters. Do not skip steps.
 
 ---
 
@@ -89,8 +87,6 @@ Containment is not equal to eradication. Stop spread first. Remove root cause la
 | **Recovery** | Restore service | Return to production safely | Rebuild systems, monitor closely, validate operations | Watch for recurrence |
 | **Lessons Learned** | Fix process | Improve posture | Document findings, update controls, refine IR plan | Prevent repeat incidents |
 
-Never jump straight to eradication. Never skip lessons learned.
-
 ---
 
 ## 🧪 Incident Classification  
@@ -102,14 +98,6 @@ Classification drives response and reporting.
 - Denial of service  
 - Insider threat  
 - Physical security incident  
-
----
-
-### Malware Response
-
-Detect > Isolate > Analyze > Eradicate > Restore > Review
-
-Never skip isolation.
 
 ---
 
@@ -129,11 +117,6 @@ You can find a detailed video on this [here](https://www.youtube.com/watch?v=19h
 | 📡 **6. Command & Control (C2)** | Maintain remote access | Infected host communicates with attacker-controlled server | Network monitoring, IDS/IPS, egress filtering |
 | 🎯 **7. Actions on Objectives** | Achieve mission goal | Data exfiltration, ransomware deployment, destruction, lateral movement | DLP, segmentation, anomaly detection |
 
-```
-Break early in the chain = prevent full compromise.
-```
-
-
 ---
 
 ## 🧬 Forensics Basics
@@ -144,7 +127,7 @@ You can find more details here: [RFC 3227](https://www.rfc-editor.org/rfc/rfc322
 
 | Concept | Core Rule | What You Do | Why It Matters |
 |--------|-----------|-------------|-----------------------------|
-| Chain of Custod | Every handoff must be documented | Record who, when, where, why, how | Broken chain = evidence may be inadmissible |
+| Chain of Custody | Every handoff must be documented | Record who, when, where, why, how | Broken chain = evidence may be inadmissible |
 | Order of Volatility | Collect most volatile data first | CPU/cache > RAM > network > disk > logs | Powering off too early destroys critical evidence |
 | Forensic Imaging | Always work from a copy | Create bit-for-bit image (incl. slack/deleted space) using write blockers | Original evidence must remain untouched |
 | Integrity Verification | Prove evidence was not altered | Hash before and after imaging (e.g., SHA-256) | Matching hashes = defensible integrity |
@@ -157,6 +140,17 @@ You can find more details here: [RFC 3227](https://www.rfc-editor.org/rfc/rfc322
 3. Network connections / running processes  
 4. Disk data  
 5. Logs / archival media  
+
+---
+
+### Types of Evidence
+
+| Type | Meaning |
+|------|--------|
+| Real | Physical objects (hardware, drives) |
+| Documentary | Logs, records, files |
+| Testimonial | Verbal statements |
+| Demonstrative | Visual aids, diagrams |
 
 ---
 
@@ -180,8 +174,6 @@ Powering off early destroys evidence.
 - Review and recertification  
 - Deprovisioning  
 
-Failures here cause most breaches.
-
 ---
 
 ### Privileged Access  
@@ -190,13 +182,10 @@ Failures here cause most breaches.
 - Logging and monitoring  
 - Just-in-time access  
 
-Privileged misuse = high impact.
-
 ---
 
 ## 🔄 Change and Configuration Management  
 
-Changes introduce risk.
 
 ### Change Types  
 - Standard  
@@ -208,8 +197,6 @@ All changes require:
 - Documentation  
 - Rollback plan  
 
-Unauthorized changes = security incident.
-
 ---
 
 ## 🧰 Patch and Vulnerability Management  
@@ -219,8 +206,6 @@ Unauthorized changes = security incident.
 - Test  
 - Deploy  
 - Verify  
-
-Delays increase risk exposure.
 
 ---
 
@@ -247,7 +232,13 @@ Key metrics:
 - **RTO** - restore time  
 - **RPO** - acceptable data loss  
 
-DR is technical. BCP is business.
+### Recovery Sites
+
+| Type | Speed | Cost | Notes |
+|------|-------|------|------|
+| 🔥 Hot | Fastest | Most expensive | Fully operational duplicate site |
+| 🥵 Warm | Moderate | Medium | Partial systems ready |
+| 🥶 Cold | Slowest | Cheapest | Empty facility, hardware installed later |
 
 ---
 
@@ -263,18 +254,8 @@ IR handles security events. DR restores systems. BCP keeps operations alive.
 
 ---
 
-## 🕒 Business Continuity vs DR  
-
-- **BCP** - keep business running  
-- **DR** - restore IT systems  
-
-BCP may operate without IT. DR restores IT.
-
----
-
 ## 🧪 Exercises and Testing  
 
-Practice before real incidents.
 **C-T-P-F** = **C**hecklist > **T**abletop > **P**arallel > **F**ull interruption (least > most disruptive)
 
 - Tabletop exercises  
@@ -284,20 +265,7 @@ Practice before real incidents.
 
 ---
 
-## 🧠 Knowledge Management  
-
-- Runbooks  
-- Playbooks  
-- Procedures  
-- Documentation  
-
-People leave. Knowledge must stay.
-
----
-
 ## 💽 RAID (Availability vs Performance vs Cost)
-
-RAID 2 and RAID 3 are effectively obsolete and ignored.
 
 | Emoji | RAID | Layout | Disk Failures Tolerated | Strength | Weakness | Hook |
 |------|------|--------|-------------------------|----------|----------|------------|
@@ -387,26 +355,14 @@ Controls:
 
 ---
 
-## 🧯 Operational Resilience  
-
-- Redundancy  
-- Fault tolerance  
-- Graceful degradation  
-
-Systems should fail safely, not catastrophically.
-
----
-
 ## 📊 Operational Metrics
-
-Lower is better.
 
 | Metric | Meaning |
 |-------|--------|
 | MTTD | Time to detect |
 | MTTR | Time to respond |
+| MTBF | Mean Time Between Failures (repairable systems) |
+| MTTF | Mean Time To Failure (non-repairable systems) |
 
----
-
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 7 Destination Certification](https://youtu.be/ECUnAw3uDLY)
+Availability = MTBF / (MTBF + MTTR)
+Higher MTBF + Lower MTTR = Higher availability
