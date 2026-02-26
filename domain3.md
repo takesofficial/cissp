@@ -33,7 +33,7 @@ Security architecture defines how systems are designed to reduce risk, contain f
 
 ## 🧱 Trusted Computing Concepts  
 
-Trusted computing defines the minimal components required to enforce a system’s security policy.
+Trusted computing defines the minimal components required to enforce a system's security policy.
 
 | Concept | Definition | Key Properties | Exam Focus |
 |----------|------------|----------------|------------|
@@ -87,11 +87,11 @@ Security flows from governance decisions down to operational enforcement.
 
 ---
 
-## 🏛️ Security Frameworks, Standards & Regulations (What They’re Used For)
+## 🏛️ Security Frameworks, Standards & Regulations (What They're Used For)
 
 These frameworks define governance, control selection, auditing, compliance, and system authorization requirements.
 
-| Framework / Regulation | Type | What It’s Used For | Core Structure / Steps | Anchor |
+| Framework / Regulation | Type | What It's Used For | Core Structure / Steps | Anchor |
 |------------------------|------|-------------------|------------------------|-------------------|
 | 🌍 **ISO 27001** | International Standard (Certifiable) | Establishing and certifying an ISMS (Information Security Management System) | PDCA Cycle: Plan > Do > Check > Act | "ISMS certification", risk-based governance |
 | 📘 **ISO 27002** | Control Guidance | Implementation guidance for security controls | Control domains mapped to Annex A of ISO 27001 | "How to implement controls" |
@@ -272,7 +272,7 @@ Never reuse a **nonce / keystream** | Reuse enables attackers to recover plainte
 | Concept | Core Principle | How It Works | Security Property |
 |----------|---------------|--------------|-------------------|
 | 🔐 **Digital Signature** | Sign with **private key** | Sender signs data using their private key | 🧾 Authenticity + Integrity + Non-repudiation |
-| 🔓 **Signature Verification** | Verify with **public key** | Receiver validates signature using sender’s public key | ✅ Confirms signer identity and data integrity |
+| 🔓 **Signature Verification** | Verify with **public key** | Receiver validates signature using sender's public key | ✅ Confirms signer identity and data integrity |
 
 ---
 
