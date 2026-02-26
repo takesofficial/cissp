@@ -1,9 +1,16 @@
 # <p align=center>Domain 8 - Software Development Security</p>
 
+---
+
+## 🧠 Mind Map
+[CISSP Domain 8 Destination Certification](https://destcert.com/resources/secure-software-development-mindmap-cissp-domain-8)
+
+---
+
 ## 🚨 Elevator Pitch  
 Build security into software, not around it. Domain 8 focuses on integrating security throughout the **software development lifecycle (SDLC)** to reduce risk before deployment. It covers secure design, secure coding practices, application testing, and the operational realities that shape how software can be protected in production.
 
-The emphasis is on preventing vulnerabilities early through proper requirements, architecture, and development practices, understanding the strengths and limitations of automated testing, and recognizing when human review is required. The domain also addresses environments where availability and safety outweigh confidentiality, such as ICS/SCADA systems, and highlights why design decisions matter more than tools in determining long-term security outcomes.
+The emphasis is on preventing vulnerabilities early through proper requirements, architecture, and development practices, understanding the strengths and limitations of automated testing, and recognizing when human review is required. Some environments prioritize availability and safety over confidentiality, which affects secure software design decisions.
 
 ---
 
@@ -22,12 +29,31 @@ Security must be present in **every phase**.
 **Security added late is weak security.**
 | Phase | Security Activities | Hook |
 |------|---------------------|-----------|
-| **Requirements** | Security requirements, abuse cases | Security starts here |
+| **Requirements** | Security requirements, regulatory requirements, abuse/misuse cases | Security starts here |
 | **Design** | Threat modeling, trust boundaries | Design flaws > code flaws |
 | **Development** | Secure coding, dependency mgmt | Humans catch logic |
 | **Testing** | SAST, DAST, IAST, negative tests | No tool finds everything |
 | **Deployment** | Secure config, secrets handling | Misconfig = breach |
 | **Maintenance** | Patching, monitoring | Security never ends |
+
+---
+
+## 🚀 DevSecOps & CI/CD Security
+
+Modern development integrates security into automated pipelines.
+
+Risks:
+- Insecure build pipelines
+- Compromised dependencies
+- Tampered build artifacts
+
+Controls:
+- Protect integrity of build artifacts (hashing and verification)
+- Code signing for builds
+- Automated security testing in CI/CD
+- Access control for pipeline systems
+- Separation of duties in release approval
+- Protect secrets in pipeline environments
 
 ---
 
@@ -48,6 +74,33 @@ Security maturity matters because mature organizations handle incidents, change,
 | **SAMM** | Secure software development | 4 Functions × 3 Practices × 5 Levels | Improving secure SDLC maturity |
 | **IDEAL** | Change lifecycle | 5 Phases | Implementing structured improvement |
 
+---
+
+## 🧱 Applying Secure Design in Software
+
+Architecture principles must be enforced in code.
+
+- Enforce least privilege in application roles and service accounts  
+- Validate inputs at every trust boundary  
+- Fail securely on exceptions and error conditions  
+- Do not trust client-side controls  
+- Implement server-side authorization checks  
+- Use secure configuration by default
+
+---
+
+## 🧠 Threat Modeling (early risk reduction)
+
+Threat modeling happens **before coding** by analyzing architecture, data flows, and trust boundaries. Design flaws beat code flaws.
+Always focus on: Trust boundaries, data flows, entry points, privileged operations  
+
+| Method | Core Purpose | What It Emphasizes | Hook |
+|--------|-------------|-------------------|-----------|
+| Ⓜ️ STRIDE | Categorize threats | Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation | Think attacker techniques |
+| 💀 DREAD | Prioritize risk | Damage, Reproducibility, Exploitability, Affected users, Discoverability | Ranking and scoring |
+| 🍝  PASTA | Risk-driven modeling | Business impact + attacker paths | Business-context threats |
+| 🏴‍☠️ VAST | Scalable modeling | Enterprise-wide automation | DevOps-friendly |
+| 🦖 Trike | Risk auditing | Assets + trust boundaries | Asset-first thinking |
 
 ---
 
@@ -96,21 +149,6 @@ Acronym:
 
 ---
 
-## 🧠 Threat Modeling (early risk reduction)
-
-Threat modeling happens **before coding** by analyzing architecture, data flows, and trust boundaries. Design flaws beat code flaws.
-Always focus on: Trust boundaries, data flows, entry points, privileged operations  
-
-| Method | Core Purpose | What It Emphasizes | Hook |
-|--------|-------------|-------------------|-----------|
-| Ⓜ️ STRIDE | Categorize threats | Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation | Think attacker techniques |
-| 💀 DREAD | Prioritize risk | Damage, Reproducibility, Exploitability, Affected users, Discoverability | Ranking and scoring |
-| 🍝  PASTA | Risk-driven modeling | Business impact + attacker paths | Business-context threats |
-| 🏴‍☠️ VAST | Scalable modeling | Enterprise-wide automation | DevOps-friendly |
-| 🦖 Trike | Risk auditing | Assets + trust boundaries | Asset-first thinking |
-
----
-
 ## 🌐 OWASP Top 10
 
 The OWASP Top 10 is an industry-recognized awareness document identifying the most critical security risks to web applications. It is risk-based, updated periodically, and widely used to guide secure coding practices, security testing, and application security programs. It is not a compliance framework, but a developer-focused risk prioritization reference.
@@ -129,31 +167,6 @@ Official site: https://owasp.org/www-project-top-ten/
 | 8 | 🔁 Software & Data Integrity Failures | Trusting unverified updates or CI/CD pipelines | Missing integrity validation |
 | 9 | 📊 Security Logging & Monitoring Failures | Attacks not detected or investigated | Insufficient logging / alerting |
 | 10 | 🌐 Server-Side Request Forgery (SSRF) | Server abused to access internal resources | Improper URL/request validation |
-
----
-
-## 🦠 Malware Basics  
-
-| Type | Core Behavior | How It Spreads / Operates | Key Variants |
-|------|--------------|----------------------------|----------------------|
-| 🧬 **Virus** | Requires a host file; attaches and infects legitimate files | Spreads when infected file is executed or shared | 📄 **Macro virus** - abuses Office macros<br>💽 **Boot sector virus** - infects boot loader / MBR<br>🕵️ **Stealth / Polymorphic** - hides or mutates to evade AV<br>🧩 **Multipartite** - multiple infection vectors |
-| 🪱 **Worm** | Self-contained malicious program | Spreads automatically over networks without user action | 🌐 Network-based propagation; no host file required |
-| 🎭 **Trojan** | Disguised as legitimate software | User installs it believing it is useful | 🚪 Often delivers backdoors, payloads, or additional malware |
-| 🔐 **Ransomware** | Encrypts data and demands payment | Delivered via phishing, exploits, or trojans | 💰 Goal: financial extortion |
-| 👁️ **Spyware** | Secretly monitors user activity | Installed via trojans or malicious downloads | 📊 Goal: data collection / surveillance |
-| 🧱 **Rootkit** | Hides presence of malware or attacker | Modifies OS or kernel-level components | 🕳️ Goal: persistence and stealth |
-
----
-
-## 🧱 Secure Design Principles  
-Encryption does not fix poor design.
-
-- Least privilege  
-- Defense in depth  
-- Fail secure  
-- Secure defaults  
-- Input validation  
-- Complete mediation  
 
 ---
 
@@ -180,7 +193,7 @@ Frameworks help, but do not guarantee security.
 - Early SDLC
 - High false positives
 
-### DAST (Dynamic) like 
+### DAST (Dynamic)
 - Tests running app
 - Finds runtime issues
 - Black-box
@@ -249,6 +262,26 @@ Controls:
 
 ---
 
+## 📑 Software Acquisition & Third-Party Development Risk
+
+Security must be evaluated when software is purchased, reused, or outsourced.
+
+Risks:
+- Insecure COTS (Commercial Off-The-Shelf) software
+- Poor vendor security practices
+- Lack of secure coding standards
+- Hidden backdoors or vulnerable components
+
+Controls:
+- Perform security due diligence before procurement
+- Define security requirements in contracts and SLAs
+- Require secure development practices from vendors
+- Conduct independent security testing
+- Use code escrow agreements to ensure access to source code if the vendor goes out of business
+- Verify integrity of updates and patches
+
+---
+
 ### Supply Chain Controls
 
 | Control | Purpose |
@@ -257,17 +290,6 @@ Controls:
 | Version pinning | Prevent surprise upgrades |
 | Trusted repos | Reduce malicious packages |
 | Patch monitoring | Track exposure |
-
----
-
-## 🧪 Environment Usage (Never test _destructively_ in production.)
-
-| Environment | Characteristics | Risk |
-|------------|----------------|------|
-| Development | Fast, unsafe | High |
-| Test | Controlled | Medium |
-| Staging | Production-like | Low |
-| Production | Restricted | Critical |
 
 ---
 
@@ -284,33 +306,10 @@ Human review is mandatory.
 
 ## ⚠️ ICS / SCADA Constraints (Availability First)
 
-Industrial control systems prioritize **availability and safety over security hardening**.  
-Aggressive scanning or frequent patching can **cause outages or physical damage**.
-IT protects data / ICS protects people and processes.
-
-- 🚫 Do NOT aggressively scan ICS  
-- 🚫 Do NOT patch casually  
-- ✅ Prefer passive monitoring  
-- ✅ Enforce strict change management  
-- ✅ Segment networks (zones / conduits)  
-- ✅ Plan patches during outages  
-- ✅ Protect availability first  
-
-### ICS / SCADA Security Reality
-
-| Area | What It Means | Practical Impact | Hook |
-|------|--------------|-----------------|-----------|
-| Primary Goal | Keep systems running safely | Downtime can stop production or harm people | Availability beats everything |
-| Priority Order | Availability > Integrity > Confidentiality | Different from IT environments | Safety-first mindset |
-| System Fragility | Devices are sensitive to change | Scanning can crash controllers | Do NOT scan aggressively |
-| Lifecycles | Decades-long deployments | Old OS and firmware remain in use | Legacy is normal |
-| Protocols | Often insecure / proprietary | Little or no native auth/encryption | Compensating controls |
-| Patch Windows | Rare and tightly controlled | Patching requires shutdown planning | No "Patch Tuesday" |
-| Monitoring | Passive visibility preferred | Detect without touching systems | Monitor, don't probe |
-| Change Control | Extremely strict | Every change is reviewed and scheduled | Governance is critical |
-| Prevention Style | Limited inline blocking | IPS/firewalls may disrupt operations | Detection over prevention |
-| Architecture | Flat networks common | Segmentation becomes high value | Zones and conduits |
-| Human Safety | Physical consequences possible | Cyber incidents can become safety incidents | People > data |
+- Industrial control systems prioritize **availability and safety over security hardening**.  
+- Aggressive scanning or frequent patching can **cause outages or physical damage**.
+- Traditional IT prioritizes confidentiality; ICS prioritizes availability and human safety.
+- Software changes in these environments require extremely strict change control and extended validation cycles.
 
 ---
 
@@ -323,18 +322,3 @@ IT protects data / ICS protects people and processes.
 
 Hardcoded secrets = instant fail.
 
----
-
-## 🧾 Change and Release Management  
-
-- Approved changes only
-- Rollback plans
-- Segregation of duties
-- Logging and validation
-
-Unauthorized changes = security incidents.
-
----
-
-## 🔗 Useful Links / Mind Map  
-[CISSP Domain 8 Destination Certification](https://www.youtube.com/watch?v=ZK_S3Z5r6dM)
