@@ -48,12 +48,12 @@ Trusted computing defines the minimal components required to enforce a system's 
 
 The Ring Protection Model is a CPU-based hardware isolation mechanism that enforces privilege separation by assigning different levels of trust to code execution. It limits what lower-privileged processes can access, reducing the blast radius of compromise. A video on this in more detail can be found [here](https://www.youtube.com/watch?v=zoQZ_3u7eeg)
 
-| Ring Level | Privilege Level | Who Runs Here | Security Purpose | CISSP Recognition |
-|------------|----------------|---------------|------------------|------------------|
-| 🥇 **Ring 0** | Most Privileged | 🧠 Kernel | Full hardware access | If compromised → entire system owned |
-| ⚙️ **Ring 1** | High Privilege | OS services / drivers | Controlled system functions | Rarely distinct in modern OS |
-| ⚙️ **Ring 2** | Medium Privilege | Drivers / subsystems | Additional isolation layer | Often unused in practice |
-| 👤 **Ring 3** | Least Privileged | User applications | Restricted access to hardware | Malware usually executes here |
+| Ring Level | Privilege | Typical Components | Trust Level | Security Purpose | Recognition |
+|------------|------------|-------------------|--------------|------------------|------------------|
+| 🥇 **Ring 0** | Most Privileged | 🧠 System Kernel | Most Trusted | Full hardware & memory control | If compromised > entire system owned |
+| 🔧 **Ring 1** | High Privilege | Drivers / OS services | Highly Trusted | Direct hardware interaction | Often merged with Ring 0 in modern OS |
+| 📚 **Ring 2** | Medium Privilege | Libraries / system utilities | Moderately Trusted | Controlled system-level support | Rarely distinct in practice |
+| 👤 **Ring 3** | Least Privileged | User programs / applications | Least Trusted | Restricted hardware access via kernel mediation | Malware typically executes here |
 
 | Concept | What It Enforces | Security Benefit |
 |----------|-----------------|-----------------|
