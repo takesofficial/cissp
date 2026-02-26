@@ -233,6 +233,32 @@ EAL 4 is the most common commercial level. EAL 7 requires formal mathematical ve
 
 Goal: recognize **what to use when** - not calculate key schedules.
 
+---
+
+## 🔐 HMAC (Keyed Hash for Integrity + Authentication)
+
+HMAC (Hash-based Message Authentication Code) is a cryptographic construction that combines a secure hash function (such as SHA-256) with a shared secret key. Unlike a plain hash, which only provides integrity, HMAC ensures both integrity and authentication by proving that the sender possesses the secret key.  
+
+It is widely used in modern protocols because it is efficient, resistant to known hash extension attacks, and suitable for high-volume secure communications.
+
+| Property | Description | Security Impact |
+|-----------|------------|----------------|
+| 🔑 **Keyed Construction** | Combines secret key + hash function (e.g., HMAC-SHA256) | Prevents forgery without knowledge of key |
+| 🔒 **Integrity Protection** | Detects any modification of transmitted data | Ensures message has not been altered |
+| 🪪 **Authentication** | Verifies sender knows the shared secret | Confirms message origin |
+| 🚫 **No Non-Repudiation** | Uses symmetric shared key | Both parties could generate valid HMAC |
+| 🛡️ **Length-Extension Resistant** | Designed to prevent hash extension attacks | More secure than plain hashing |
+| ⚡ **Efficient** | Faster than digital signatures | Suitable for high-throughput systems |
+
+| Common Usage | Why It Is Used |
+|---------------|----------------|
+| 🌐 **TLS** | Message authentication within secure sessions |
+| 🔐 **IPsec** | Packet integrity verification |
+| 🔑 **API Request Signing** | Validate authenticity of API calls (shared secret model) |
+| 📡 **Secure Messaging Protocols** | Ensure sender authenticity + data integrity |
+
+---
+
 ### 🔑 Symmetric Cryptography (Bulk Data Encryption - Fast & Efficient)
 
 Symmetric encryption uses a single shared key for both encryption and decryption and is optimized for high-speed data protection.
