@@ -9,12 +9,12 @@ Risk cannot be eliminated, only identified, analyzed, and managed. Domain 1 esta
 ---
 
 ## ⚖️ ISC2 Code of Ethics  
-- Protect society and the common good.  
-- Act honorably, legally, and responsibly.  
-- Provide diligent and competent service.  
-- Advance and protect the profession.  
+1. Protect society, the common good, public trust, and confidence  
+2. Act honorably, honestly, justly, responsibly, and legally  
+3. Provide diligent and competent service to principals  
+4. Advance and protect the profession  
 
-### Ethics Complaint Rules
+### 🧾 Ethics Complaint Rules
 Who can file complaints
 - **Canon I & II** - Anyone (including the public)
 - **Canon III** - Only employer or contractual client
@@ -148,7 +148,7 @@ Security is a continuous management process, not a one-time calculation. Risk ma
 
 ---
 
-## Quantitative Risk Analysis
+## 🔢 Quantitative Risk Analysis
 
 Used when numerical data is available.
 
@@ -160,7 +160,7 @@ Used when numerical data is available.
 
 ---
 
-## Qualitative Risk Analysis
+## 🧮 Qualitative Risk Analysis
 
 Used when reliable numerical data is unavailable.
 
@@ -173,47 +173,46 @@ Used when reliable numerical data is unavailable.
 
 ---
 
-## Step 1 - SLE
+## ✖️ Risk Analysis Formulas
 
-```
-SLE = AV × EF
-```
+## Step 1 - SLE (Single Loss Expectancy)
+
+**Formula**:  
+`SLE = AV × EF`
 
 | Term | Meaning |
-|------|--------|
-| **AV (Asset Value)** | Total value of asset |
-| **EF (Exposure Factor)** | % of loss per incident |
-| **SLE (Single Loss Expectancy)** | Loss per single event |
+|------|---------|
+| **AV** (Asset Value) | Total value of the asset |
+| **EF** (Exposure Factor) | Percentage of asset value lost per incident |
+| **SLE** (Single Loss Expectancy) | Loss per single incident (AV × EF) |
 
 ---
 
-## Step 2 - ALE
+## Step 2 - ALE (Annualized Loss Expectancy)
 
-```
-ALE = SLE × ARO
-```
+**Formula**:  
+`ALE = SLE × ARO`
 
 | Term | Meaning |
-|------|--------|
-| **ARO (Annualized Rate of Occurrence)** | Frequency per year |
-| **ALE (Annualized Loss Expectancy)** | Expected yearly loss |
+|------|---------|
+| **ARO** (Annualized Rate of Occurrence) | Frequency of incident per year |
+| **ALE** (Annualized Loss Expectancy) | Expected loss per year (SLE × ARO) |
 
 ---
 
 ## Step 3 - Safeguard Value
 
-```
-Safeguard Value = ALE₁ − ALE₂ − Cost
-```
+**Formula**:  
+`Safeguard Value = ALE₁ − ALE₂ − Cost`
 
 | Result | Decision |
 |--------|----------|
-| Positive | Implement control |
-| Negative | Do not implement |
+| Positive | Implement the control (cost-benefit analysis favors it) |
+| Negative | Do not implement (cost exceeds benefit) |
 
 ---
 
-## Risk Responses
+## 🚩 Risk Responses
 
 | Response | Meaning |
 |----------|--------|
@@ -223,14 +222,12 @@ Safeguard Value = ALE₁ − ALE₂ − Cost
 | **Accept** | Management approval |
 | **Deter** | Discourage threat |
 
----
-
 **Residual risk = Senior management.**
 
 ---
 
 ## 📊 Risk Register  
-Tracks identified risks, severity, mitigation, and status.
+A tool used to document identified risks, assess their severity, track mitigation efforts, and monitor the current status of risk treatment actions.
 
 ---
 
@@ -466,6 +463,17 @@ Different legal consequences and standards.
 - **Trade Secret** – Protects confidential business information
 
 IP violations are typically civil matters but may carry criminal penalties in some cases.
+
+---
+
+## 📄 Contract Types
+
+| Type | Purpose |
+|------|---------|
+| NDA | Protect confidentiality |
+| SLA | Define service expectations |
+| MOU | Formal understanding between parties |
+| BAA | Protect health information (HIPAA context) |
 
 ---
 
