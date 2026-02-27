@@ -222,6 +222,36 @@ Goal: recognize **what to use when** - not calculate key schedules.
 
 ---
 
+## 🧠 Crypto Concept Map (What Does What?)
+
+| Tool | What It Is | Primary Security Property | Example |
+|------|------------|---------------------------|----------|
+| **Hash Function** | One-way mathematical function | **Integrity** | SHA-256 |
+| **Cipher (Algorithm)** | Reversible encryption algorithm using a key | **Confidentiality** | AES |
+| **Mode of Operation** | Defines how a block cipher processes data | Controls security behavior | CBC, CTR, GCM |
+| **AEAD Mode** | Encryption mode providing confidentiality + integrity | **Confidentiality + Integrity** | AES-GCM |
+
+---
+
+### 🔎 Quick Mental Model
+
+- Hash → Detects modification  
+- Cipher → Hides data  
+- Mode → Determines how encryption behaves  
+- GCM → Encrypts + Authenticates in one step  
+
+---
+
+### 🚨 Distinctions
+
+- **CTR** = Confidentiality only  
+- **CBC** = Confidentiality only (needs HMAC for integrity)  
+- **GCM** = Confidentiality + Integrity (modern standard)  
+- Fingerprint = Hash of certificate (identification)  
+- Digital Signature = Hash + Private Key (authenticity + integrity)
+
+---
+
 ### 🔑 Symmetric Cryptography (Bulk Data Encryption - Fast & Efficient)
 
 Symmetric encryption uses a single shared key for both encryption and decryption and is optimized for high-speed data protection.
