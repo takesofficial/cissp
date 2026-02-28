@@ -47,15 +47,18 @@ Different cables and wireless technologies create different risks. Some are easy
 
 OSI is a learning model used to place problems and controls at the right layer. On the exam, it helps you identify where failures occur and where security belongs.
 
-| # | Mnemonic | OSI Layer      | Example        | Phrase  | PDU      |
-|---|----------|---------------|----------------|---------|----------|
-| 1 | **P**lease   | Physical      | Hardware       | **B**eer     | Bits     |
-| 2 | **D**o       | Data Link     | MAC            | **F**ree   | Frames   |
-| 3 | **N**ot      | Network       | IP             | **P**ouring | Packets  |
-| 4 | **T**hrow    | Transport     | TCP/UDP        | **S**top | Segments |
-| 5 | **S**ausage  | Session       | Connections    | **D**ata    | Data     |
-| 6 | **P**izza    | Presentation  | Encryption     | **D**ata    | Data     |
-| 7 | **A**way     | Application   | HTTPS / DNS    | **D**ata    | Data     |
+| # | Attack Clue                          | Mnemonic | OSI Layer     | Core Concept            | Key Protocols / Ports (bare minimum) | PDU       |
+|---|--------------------------------------|----------|--------------|-------------------------|--------------------------------------|-----------|
+| 1 | Cable, EMI, jam              | Please   | Physical      | Signals / Hardware      | -                                    | Bits      |
+| 2 | ARP, MAC              | Do       | Data Link     | MAC / Local switching   | ARP                                  | Frames    |
+| 3 | IP         | Not      | Network       | IP / Routing            | IP, ICMP                             | Packets   |
+| 4 | SYN, PORT                 | Throw    | Transport     | Ports / Delivery        | TCP, UDP                             | Segments  |
+| 5 | Hijacking                    | Sausage  | Session       | Session management      | NetBIOS 139                          | Data      |
+| 6 | TLS, CERT    | Pizza    | Presentation  | Encryption / Formatting | TLS / SSL                            | Data      |
+| 7 | DNS poisoning, Exploits          | Away     | Application   | Application protocols   | See Layer 7 list below               | Data      |
+
+Yes, it's almost all Layer 7: 
+80 HTTP, 443 HTTPS, 21 FTP, 22 SSH, 25 SMTP, 53 DNS, 88 Kerberos, 110 POP3, 143 IMAP, 161 SNMP, 389 LDAP, 3389 RDP, 123 NTP
 
 - Place controls and failures at the correct layer.
 - Troubleshooting questions almost always map to OSI.
