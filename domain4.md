@@ -62,7 +62,7 @@ OSI is a learning model used to place problems and controls at the right layer. 
 
 ---
 
-## 🧭 TCP/IP Model (real-world view)
+## 🧭 TCP/IP Model
 
 TCP/IP is how networks actually work. CISSP uses it to explain real-world traffic flow while OSI explains concepts.
 
@@ -70,9 +70,6 @@ TCP/IP is how networks actually work. CISSP uses it to explain real-world traffi
 - **Internet** - IP, ICMP  
 - **Transport** - TCP, UDP  
 - **Application** - Everything user-facing
-
-OSI = learning model  
-TCP/IP = implementation model
 
 ---
 
