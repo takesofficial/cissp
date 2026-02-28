@@ -47,18 +47,15 @@ Different cables and wireless technologies create different risks. Some are easy
 
 OSI is a learning model used to place problems and controls at the right layer. On the exam, it helps you identify where failures occur and where security belongs.
 
-| # | Attack Clue                          | Mnemonic | OSI Layer     | Core Concept            | Key Protocols / Ports (bare minimum) | PDU       |
-|---|--------------------------------------|----------|--------------|-------------------------|--------------------------------------|-----------|
-| 1 | Cable, EMI, jam              | Please   | Physical      | Signals / Hardware      | -                                    | Bits      |
-| 2 | ARP, MAC              | Do       | Data Link     | MAC / Local switching   | ARP                                  | Frames    |
-| 3 | IP         | Not      | Network       | IP / Routing            | IP, ICMP                             | Packets   |
-| 4 | SYN, PORT                 | Throw    | Transport     | Ports / Delivery        | TCP, UDP                             | Segments  |
-| 5 | Hijacking                    | Sausage  | Session       | Session management      | NetBIOS 139                          | Data      |
-| 6 | TLS, CERT    | Pizza    | Presentation  | Encryption / Formatting | TLS / SSL                            | Data      |
-| 7 | DNS poisoning, Exploits          | Away     | Application   | Application protocols   | See Layer 7 list below               | Data      |
-
-Yes, it's almost all Layer 7: 
-80 HTTP, 443 HTTPS, 21 FTP, 22 SSH, 25 SMTP, 53 DNS, 88 Kerberos, 110 POP3, 143 IMAP, 161 SNMP, 389 LDAP, 3389 RDP, 123 NTP
+| # | Attack Clue                 | Mnemonic | OSI Layer    | Core Function                    | Typical Control Focus                  | PDU      |
+|---|-----------------------------|----------|-------------|----------------------------------|----------------------------------------|----------|
+| 1 | Cable, EMI, Jamming     | Please   | Physical    | Signal transmission              | Physical protection / redundancy       | Bits     |
+| 2 | ARP, MAC     | Do       | Data Link   | Local switching (same subnet)    | Port security / VLAN isolation         | Frames   |
+| 3 | IP, routing  | Not      | Network     | Routing between networks         | ACLs / network segmentation            | Packets  |
+| 4 | SYN, port scan    | Throw    | Transport   | End-to-end delivery via ports    | Stateful inspection / rate limiting    | Segments |
+| 5 | Hijack           | Sausage  | Session     | Session setup / persistence      | Re-auth / timeout controls             | Data     |
+| 6 | TLS downgrade, cert abuse   | Pizza    | Presentation| Encryption / data formatting     | Certificate validation / PKI           | Data     |
+| 7 | SQLi, XSS, DNS poisoning    | Away     | Application | Application logic & protocols    | Input validation / WAF                 | Data     ||
 
 - Place controls and failures at the correct layer.
 - Troubleshooting questions almost always map to OSI.
