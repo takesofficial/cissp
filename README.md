@@ -1,5 +1,5 @@
 # Nick Takes' CISSP Study
-🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  | 📌 **Last update:** 2026-02-26
+🗓️ **Started:** 2025-11-01 | 🎯 **Exam date:** 2026-03-25  (Status: PASSED) | 📌 **Last update:** 2026-03-25
 
 ## Table of contents
 - [Intro](#intro)
@@ -73,7 +73,7 @@ I used these for repetition and to identify where to focus. Each week, I tested 
 | 2025-11-08 | 2025-11-11 | Planning learning approach | Time estimates and study strategy | - | - |
 | 2025-11-12 | 2025-11-14 | Overall difficulty assessment | Source review and expectations | - | - |
 | 2025-11-15 | 2025-11-16 | Phase 1 Plan | Set for reading 1 domain per week | - | - |
-| 2025-11-25 | TBD | GitHub repository creation | Helped me structure my study path tremendously | - | - |
+| 2025-11-25 |  | GitHub repository creation | Helped me structure my study path tremendously | - | - |
 | 2025-11-17 | 2025-11-23 | Domain 1 - OSG 10th book | Slow reading, 1 week completion | 5 | 24% |
 | 2025-11-24 | 2025-11-26 | Domain 2 - OSG 10th book | Completed in 2 days | 2 | 10% |
 | 2025-11-27 | 2025-12-16 | Domain 3 - OSG 10th book | Completed in 3 weeks | 8 | 38% |
@@ -91,16 +91,14 @@ I used these for repetition and to identify where to focus. Each week, I tested 
 | 2026-01-12 | 2026-01-12 | [CISSP Math](https://youtu.be/ttOKJYOedNo?si=uk71j4GALOgfxNPj) | by Peter Zerger, Inside Cloud and Security | 20 | min |
 | 2026-01-14 | 2026-02-23 | [This Course](https://www.udemy.com/course/cisspcertification) | by Andrew Ramdayal, TIA Education | 41 | hrs |
 | 2026-02-26 | 2026-02-26 | [Why You WILL Pass the CISSP Exam (New)](https://www.youtube.com/watch?v=gKe88tIeVYo) | by Kelly Handerhan, Destination Certification | 20 | min |
-| 2026-03-?? | 2026-03-?? | [CISSP Videos](https://www.youtube.com/watch?v=NdsP0yM1yTo&list=PLrjhjv3vQi5DZ3FO0Eb-iMJoI4RzoANOw) | by Gwen Bettwy, Tactical Security Inc. | 4 | hrs |
-| 2026-03-?? | 2026-03-?? | [CISSP Exam Prep 2025](https://youtu.be/aLIFzIBNM_8) | by Peter Zerger, Inside Cloud and Security | 8 | hrs |
-| 2026-03-?? | 2026-03-?? | [Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW) | by Peter Zerger, Dion Training Solutions | 8 | hrs |
-| 2026-03-?? | 2026-03-?? | [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) | by Jason Dion, Dion Training Solutions | 4 | hrs |
-| 2026-03-11 | 2026-03-?? | [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) | by Jason Dion, Dion Training Solutions | - | hrs |
+| 2026-02-26 | 2026-02-28 | [This Course](https://www.udemy.com/course/cissp-exam-secrets-proven-strategies-for-passing/) | by Jason Dion, Dion Training Solutions | 4 | hrs |
+| 2026-03-23 | 2026-03-23 | [CISSP Exam Prep 2025](https://youtu.be/aLIFzIBNM_8) | by Peter Zerger, Inside Cloud and Security | 8 | hrs |
+| 2026-03-20 | 2026-03-21 | [Destination CISSP Mind Maps](https://www.youtube.com/playlist?list=PLZKdGEfEyJhKWyryIvx_jm1jn6ZMTi7gW) | by Peter Zerger, Dion Training Solutions | 8 | hrs |
+| 2026-03-21 | 2026-03-22 | [Pete Zerger's CISSP Exam Cram](https://www.youtube.com/watch?v=_nyZhYnCNLA) | by Pete Zerger | 8 | hrs |
 
 > [!IMPORTANT]
 > Progress of the OSG book is tracked by chapters. Because CISSP domains overlap, chapters first covered in earlier domains were not reread in later ones and are counted as already completed. Chapter counts reflect the book's structure.
->
-> I started [Pete Zerger's CISSP Exam Cram](https://github.com/pzerger/cisspexamcram/blob/main/Resources.md) 2 weeks before my exam.
+
 
 # Taking The Exam
 1. Read the question without reading the answers and try to answer it in your head.
